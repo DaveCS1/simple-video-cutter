@@ -320,6 +320,9 @@
     <EmbeddedResource Include="VideoCutterTimeline.zh-CN.resx">
       <DependentUpon>VideoCutterTimeline.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="Data\VideoCutterData.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
