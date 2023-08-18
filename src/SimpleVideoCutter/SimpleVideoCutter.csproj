@@ -529,6 +529,7 @@
     <EmbeddedResource Include="Images\icons8-video-trimming-32.png" />
     <EmbeddedResource Include="Images\imagecutinverted.png" />
     <None Include="Images\imagecutinverted32 .png" />
+    <Content Include="DevNotes_Exclude\Notes.txt" />
     <Content Include="Images\icons8-video-trimming-32copy.png" />
     <Content Include="Images\icons8-video-trimming-80 white transback32.png" />
     <Content Include="Images\Settings.png" />
@@ -614,7 +615,6 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="DAL\" />
-    <Folder Include="DevNotes_Exclude\" />
     <Folder Include="Settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
