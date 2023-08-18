@@ -102,6 +102,7 @@ namespace SimpleVideoCutter
             }
 
             this.videoViewHover.Visible = VideoCutterSettings.Instance.ShowPreview;
+
         }
 
         private async void MainForm_Load(object sender, EventArgs e)
@@ -164,6 +165,8 @@ namespace SimpleVideoCutter
             }
 
             ResizePreview();
+
+                     
         }
 
 
