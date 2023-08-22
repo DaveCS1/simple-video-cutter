@@ -95,6 +95,21 @@ namespace SimpleVideoCutter.TelerikForms
         {
             //MessageBox.Show("Test");
         }
+
+        private void radTrackBar2_ValueChanged(object sender, EventArgs e)
+        {
+            radPopupEditor1.Text= radTrackBar2.Value.ToString();
+        }
+
+        private void radPopupContainer2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radPopupContainer3_Click(object sender, EventArgs e)
+        {
+
+        }
         //  explorerControl1.ThemeName = "FluentDark";
         //  explorerControl1.MultiSelect = true;
     }

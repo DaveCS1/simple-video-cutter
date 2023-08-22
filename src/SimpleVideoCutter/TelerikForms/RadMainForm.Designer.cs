@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem5 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 4");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem6 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 5");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem7 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 6");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem8 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 7");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem1 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 4");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem2 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 5");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem3 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 6");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem4 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 7");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadMainForm));
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.radStatusStrip1 = new Telerik.WinControls.UI.RadStatusStrip();
@@ -42,22 +42,53 @@
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
-            this.radButton3 = new Telerik.WinControls.UI.RadButton();
-            this.radButton4 = new Telerik.WinControls.UI.RadButton();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radCheckedListBox1 = new Telerik.WinControls.UI.RadCheckedListBox();
             this.radPageViewPageTrimVideos = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radPageViewPage4 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radPageViewPage1 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radCommandBar1 = new Telerik.WinControls.UI.RadCommandBar();
             this.commandBarRowElement1 = new Telerik.WinControls.UI.CommandBarRowElement();
             this.commandBarStripElement1 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.commandBarLabel1 = new Telerik.WinControls.UI.CommandBarLabel();
+            this.commandBarSeparator1 = new Telerik.WinControls.UI.CommandBarSeparator();
+            this.commandBarRowElement2 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.radOpenFileDialogSelectVideo = new Telerik.WinControls.UI.RadOpenFileDialog();
+            this.radOpenFolderDialogSelectVideos = new Telerik.WinControls.UI.RadOpenFolderDialog();
+            this.imageListMainPlayerControls = new System.Windows.Forms.ImageList(this.components);
+            this.radMenuItem5 = new Telerik.WinControls.UI.RadMenuItem();
+            this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
+            this.radTrackBar1 = new Telerik.WinControls.UI.RadTrackBar();
+            this.radButton6 = new Telerik.WinControls.UI.RadButton();
+            this.radButton7 = new Telerik.WinControls.UI.RadButton();
+            this.radButton8 = new Telerik.WinControls.UI.RadButton();
+            this.radButton9 = new Telerik.WinControls.UI.RadButton();
+            this.radButton10 = new Telerik.WinControls.UI.RadButton();
+            this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
+            this.radTrackBar2 = new Telerik.WinControls.UI.RadTrackBar();
+            this.radPopupContainer1 = new Telerik.WinControls.UI.RadPopupContainer();
+            this.radPopupEditor1 = new Telerik.WinControls.UI.RadPopupEditor();
+            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.radButton5 = new Telerik.WinControls.UI.RadButton();
+            this.radButton11 = new Telerik.WinControls.UI.RadButton();
+            this.radButton12 = new Telerik.WinControls.UI.RadButton();
+            this.radButton13 = new Telerik.WinControls.UI.RadButton();
+            this.radButton14 = new Telerik.WinControls.UI.RadButton();
+            this.radButton15 = new Telerik.WinControls.UI.RadButton();
+            this.radPopupEditor2 = new Telerik.WinControls.UI.RadPopupEditor();
+            this.radPopupContainer2 = new Telerik.WinControls.UI.RadPopupContainer();
+            this.radButton16 = new Telerik.WinControls.UI.RadButton();
+            this.radButton17 = new Telerik.WinControls.UI.RadButton();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.radButton3 = new Telerik.WinControls.UI.RadButton();
+            this.radButton4 = new Telerik.WinControls.UI.RadButton();
+            this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
+            this.radMenuButtonItem2 = new Telerik.WinControls.UI.RadMenuButtonItem();
+            this.radMenuButtonItem1 = new Telerik.WinControls.UI.RadMenuButtonItem();
             this.commandBarButton1 = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarButton2 = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarButton3 = new Telerik.WinControls.UI.CommandBarButton();
@@ -71,27 +102,9 @@
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem4 = new Telerik.WinControls.UI.RadMenuItem();
             this.commandBarButton9 = new Telerik.WinControls.UI.CommandBarButton();
-            this.commandBarLabel1 = new Telerik.WinControls.UI.CommandBarLabel();
-            this.commandBarSeparator1 = new Telerik.WinControls.UI.CommandBarSeparator();
             this.commandBarButton11 = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarButton10 = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
-            this.commandBarRowElement2 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.radOpenFileDialogSelectVideo = new Telerik.WinControls.UI.RadOpenFileDialog();
-            this.radOpenFolderDialogSelectVideos = new Telerik.WinControls.UI.RadOpenFolderDialog();
-            this.radMenuButtonItem2 = new Telerik.WinControls.UI.RadMenuButtonItem();
-            this.radMenuButtonItem1 = new Telerik.WinControls.UI.RadMenuButtonItem();
-            this.imageListMainPlayerControls = new System.Windows.Forms.ImageList(this.components);
-            this.radMenuItem5 = new Telerik.WinControls.UI.RadMenuItem();
-            this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
-            this.radTrackBar1 = new Telerik.WinControls.UI.RadTrackBar();
-            this.radButton5 = new Telerik.WinControls.UI.RadButton();
-            this.radButton6 = new Telerik.WinControls.UI.RadButton();
-            this.radButton7 = new Telerik.WinControls.UI.RadButton();
-            this.radSplitButton1 = new Telerik.WinControls.UI.RadSplitButton();
-            this.radMenuItem6 = new Telerik.WinControls.UI.RadMenuItem();
-            this.radMenuItem7 = new Telerik.WinControls.UI.RadMenuItem();
-            this.radMenuItem8 = new Telerik.WinControls.UI.RadMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -101,26 +114,47 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
             this.splitPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).BeginInit();
             this.splitPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedListBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             this.radPageViewPageTrimVideos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             this.radPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radTrackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
+            this.radPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radTrackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer1)).BeginInit();
+            this.radPopupContainer1.PanelContainer.SuspendLayout();
+            this.radPopupContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupEditor1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupEditor2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer2)).BeginInit();
+            this.radPopupContainer2.PanelContainer.SuspendLayout();
+            this.radPopupContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,7 +193,7 @@
             // 
             this.radPageViewPageAddFiles.AllowDrop = true;
             this.radPageViewPageAddFiles.Controls.Add(this.radSplitContainer1);
-            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(64F, 29F);
+            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(62F, 25F);
             this.radPageViewPageAddFiles.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPageAddFiles.Name = "radPageViewPageAddFiles";
             this.radPageViewPageAddFiles.Size = new System.Drawing.Size(1004, 615);
@@ -225,6 +259,429 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1004, 309);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // radLabel1
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.radLabel1, 2);
+            this.radLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel1.Location = new System.Drawing.Point(211, 116);
+            this.radLabel1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(431, 190);
+            this.radLabel1.TabIndex = 5;
+            this.radLabel1.Text = "Drag And Drop Files";
+            this.radLabel1.ThemeName = "FluentDark";
+            // 
+            // splitPanel2
+            // 
+            this.splitPanel2.Controls.Add(this.radPanel1);
+            this.splitPanel2.Location = new System.Drawing.Point(0, 317);
+            this.splitPanel2.Name = "splitPanel2";
+            // 
+            // 
+            // 
+            this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
+            this.splitPanel2.Size = new System.Drawing.Size(1004, 298);
+            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.009060956F);
+            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -5);
+            this.splitPanel2.TabIndex = 1;
+            this.splitPanel2.TabStop = false;
+            this.splitPanel2.Text = "splitPanel2";
+            this.splitPanel2.ThemeName = "FluentDark";
+            // 
+            // radPanel1
+            // 
+            this.radPanel1.Controls.Add(this.radCheckedListBox1);
+            this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radPanel1.Location = new System.Drawing.Point(0, 0);
+            this.radPanel1.Name = "radPanel1";
+            this.radPanel1.Size = new System.Drawing.Size(1004, 298);
+            this.radPanel1.TabIndex = 0;
+            this.radPanel1.ThemeName = "FluentDark";
+            // 
+            // radCheckedListBox1
+            // 
+            this.radCheckedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radCheckedListBox1.GroupItemSize = new System.Drawing.Size(200, 28);
+            listViewDataItem1.Text = "ListViewItem 4";
+            listViewDataItem2.Text = "ListViewItem 5";
+            listViewDataItem3.Text = "ListViewItem 6";
+            listViewDataItem4.Text = "ListViewItem 7";
+            this.radCheckedListBox1.Items.AddRange(new Telerik.WinControls.UI.ListViewDataItem[] {
+            listViewDataItem1,
+            listViewDataItem2,
+            listViewDataItem3,
+            listViewDataItem4});
+            this.radCheckedListBox1.ItemSize = new System.Drawing.Size(200, 28);
+            this.radCheckedListBox1.Location = new System.Drawing.Point(0, 0);
+            this.radCheckedListBox1.Name = "radCheckedListBox1";
+            this.radCheckedListBox1.Size = new System.Drawing.Size(1004, 298);
+            this.radCheckedListBox1.TabIndex = 0;
+            this.radCheckedListBox1.ThemeName = "FluentDark";
+            // 
+            // radPageViewPageTrimVideos
+            // 
+            this.radPageViewPageTrimVideos.Controls.Add(this.radPopupContainer2);
+            this.radPageViewPageTrimVideos.Controls.Add(this.radPopupContainer1);
+            this.radPageViewPageTrimVideos.Controls.Add(this.radPanel3);
+            this.radPageViewPageTrimVideos.Controls.Add(this.radPanel2);
+            this.radPageViewPageTrimVideos.Controls.Add(this.radMenu1);
+            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(77F, 25F);
+            this.radPageViewPageTrimVideos.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPageTrimVideos.Name = "radPageViewPageTrimVideos";
+            this.radPageViewPageTrimVideos.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewPageTrimVideos.Text = "Trim Videos";
+            // 
+            // radPageViewPage3
+            // 
+            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(117F, 25F);
+            this.radPageViewPage3.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage3.Name = "radPageViewPage3";
+            this.radPageViewPage3.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewPage3.Text = "radPageViewPage3";
+            // 
+            // radPageViewPage4
+            // 
+            this.radPageViewPage4.ItemSize = new System.Drawing.SizeF(117F, 25F);
+            this.radPageViewPage4.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage4.Name = "radPageViewPage4";
+            this.radPageViewPage4.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewPage4.Text = "radPageViewPage4";
+            // 
+            // radPageViewPage1
+            // 
+            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(117F, 25F);
+            this.radPageViewPage1.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage1.Name = "radPageViewPage1";
+            this.radPageViewPage1.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewPage1.Text = "radPageViewPage1";
+            // 
+            // radCommandBar1
+            // 
+            this.radCommandBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radCommandBar1.Location = new System.Drawing.Point(0, 0);
+            this.radCommandBar1.Name = "radCommandBar1";
+            this.radCommandBar1.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement1});
+            this.radCommandBar1.Size = new System.Drawing.Size(1016, 54);
+            this.radCommandBar1.TabIndex = 0;
+            this.radCommandBar1.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement1
+            // 
+            this.commandBarRowElement1.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement1.Name = "commandBarRowElement1";
+            this.commandBarRowElement1.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement1});
+            // 
+            // commandBarStripElement1
+            // 
+            this.commandBarStripElement1.DisplayName = "commandBarStripElement1";
+            this.commandBarStripElement1.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.commandBarButton1,
+            this.commandBarButton2,
+            this.commandBarButton3,
+            this.commandBarButton5,
+            this.commandBarButton6,
+            this.commandBarButton7,
+            this.commandBarButton8,
+            this.commandBarDropDownButton1,
+            this.commandBarButton9,
+            this.commandBarLabel1,
+            this.commandBarSeparator1,
+            this.commandBarButton11,
+            this.commandBarButton10});
+            this.commandBarStripElement1.Name = "commandBarStripElement1";
+            // 
+            // commandBarLabel1
+            // 
+            this.commandBarLabel1.DisplayName = "commandBarLabel1";
+            this.commandBarLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commandBarLabel1.Name = "commandBarLabel1";
+            this.commandBarLabel1.Text = "0";
+            this.commandBarLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.commandBarLabel1.ToolTipText = "Trimmed Videos";
+            // 
+            // commandBarSeparator1
+            // 
+            this.commandBarSeparator1.DisplayName = "commandBarSeparator1";
+            this.commandBarSeparator1.Name = "commandBarSeparator1";
+            this.commandBarSeparator1.VisibleInOverflowMenu = false;
+            // 
+            // commandBarRowElement2
+            // 
+            this.commandBarRowElement2.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement2.Name = "commandBarRowElement2";
+            // 
+            // radOpenFileDialogSelectVideo
+            // 
+            this.radOpenFileDialogSelectVideo.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
+            // 
+            // radOpenFolderDialogSelectVideos
+            // 
+            this.radOpenFolderDialogSelectVideos.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
+            this.radOpenFolderDialogSelectVideos.MultiSelect = true;
+            // 
+            // imageListMainPlayerControls
+            // 
+            this.imageListMainPlayerControls.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMainPlayerControls.ImageStream")));
+            this.imageListMainPlayerControls.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListMainPlayerControls.Images.SetKeyName(0, "Media Control-07-WF.png");
+            this.imageListMainPlayerControls.Images.SetKeyName(1, "Media Control-08-WF.png");
+            // 
+            // radMenuItem5
+            // 
+            this.radMenuItem5.Name = "radMenuItem5";
+            this.radMenuItem5.Text = "radMenuItem5";
+            // 
+            // radPanel2
+            // 
+            this.radPanel2.AutoSize = true;
+            this.radPanel2.Controls.Add(this.radPopupEditor2);
+            this.radPanel2.Controls.Add(this.radButton15);
+            this.radPanel2.Controls.Add(this.radButton14);
+            this.radPanel2.Controls.Add(this.radButton13);
+            this.radPanel2.Controls.Add(this.radButton12);
+            this.radPanel2.Controls.Add(this.radButton11);
+            this.radPanel2.Controls.Add(this.radButton5);
+            this.radPanel2.Controls.Add(this.radPopupEditor1);
+            this.radPanel2.Controls.Add(this.radButton10);
+            this.radPanel2.Controls.Add(this.radButton9);
+            this.radPanel2.Controls.Add(this.radButton8);
+            this.radPanel2.Controls.Add(this.radButton7);
+            this.radPanel2.Controls.Add(this.radButton6);
+            this.radPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.radPanel2.ImageList = this.imageListMainPlayerControls;
+            this.radPanel2.Location = new System.Drawing.Point(0, 567);
+            this.radPanel2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.radPanel2.Name = "radPanel2";
+            this.radPanel2.Size = new System.Drawing.Size(1004, 48);
+            this.radPanel2.TabIndex = 1;
+            this.radPanel2.ThemeName = "FluentDark";
+            // 
+            // radTrackBar1
+            // 
+            this.radTrackBar1.Location = new System.Drawing.Point(129, 11);
+            this.radTrackBar1.Name = "radTrackBar1";
+            this.radTrackBar1.ShowButtons = true;
+            this.radTrackBar1.Size = new System.Drawing.Size(820, 26);
+            this.radTrackBar1.TabIndex = 0;
+            this.radTrackBar1.ThemeName = "FluentDark";
+            this.radTrackBar1.ThumbSize = new System.Drawing.Size(8, 20);
+            this.radTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None;
+            // 
+            // radButton6
+            // 
+            this.radButton6.Location = new System.Drawing.Point(6, 4);
+            this.radButton6.Name = "radButton6";
+            this.radButton6.Size = new System.Drawing.Size(40, 30);
+            this.radButton6.TabIndex = 2;
+            this.radButton6.Text = "10+";
+            this.radButton6.ThemeName = "FluentDark";
+            // 
+            // radButton7
+            // 
+            this.radButton7.Location = new System.Drawing.Point(52, 4);
+            this.radButton7.Name = "radButton7";
+            this.radButton7.Size = new System.Drawing.Size(38, 30);
+            this.radButton7.TabIndex = 3;
+            this.radButton7.Text = "-30";
+            this.radButton7.ThemeName = "FluentDark";
+            // 
+            // radButton8
+            // 
+            this.radButton8.Location = new System.Drawing.Point(96, 6);
+            this.radButton8.Name = "radButton8";
+            this.radButton8.Size = new System.Drawing.Size(57, 30);
+            this.radButton8.TabIndex = 4;
+            this.radButton8.Text = "cut start";
+            this.radButton8.ThemeName = "FluentDark";
+            // 
+            // radButton9
+            // 
+            this.radButton9.Location = new System.Drawing.Point(159, 7);
+            this.radButton9.Name = "radButton9";
+            this.radButton9.Size = new System.Drawing.Size(64, 30);
+            this.radButton9.TabIndex = 5;
+            this.radButton9.Text = "cut end";
+            this.radButton9.ThemeName = "FluentDark";
+            // 
+            // radButton10
+            // 
+            this.radButton10.Location = new System.Drawing.Point(229, 7);
+            this.radButton10.Name = "radButton10";
+            this.radButton10.Size = new System.Drawing.Size(66, 30);
+            this.radButton10.TabIndex = 6;
+            this.radButton10.Text = "play range";
+            this.radButton10.ThemeName = "FluentDark";
+            // 
+            // radPanel3
+            // 
+            this.radPanel3.AutoSize = true;
+            this.radPanel3.Controls.Add(this.radLabel2);
+            this.radPanel3.Controls.Add(this.radTrackBar1);
+            this.radPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.radPanel3.Location = new System.Drawing.Point(0, 530);
+            this.radPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.radPanel3.Name = "radPanel3";
+            this.radPanel3.Size = new System.Drawing.Size(1004, 37);
+            this.radPanel3.TabIndex = 2;
+            this.radPanel3.ThemeName = "FluentDark";
+            // 
+            // radTrackBar2
+            // 
+            this.radTrackBar2.Location = new System.Drawing.Point(17, 33);
+            this.radTrackBar2.Maximum = 100F;
+            this.radTrackBar2.Name = "radTrackBar2";
+            this.radTrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
+            // 
+            // 
+            // 
+            this.radTrackBar2.RootElement.StretchHorizontally = false;
+            this.radTrackBar2.RootElement.StretchVertically = true;
+            this.radTrackBar2.Size = new System.Drawing.Size(42, 153);
+            this.radTrackBar2.TabIndex = 7;
+            this.radTrackBar2.ThemeName = "FluentDark";
+            this.radTrackBar2.ThumbSize = new System.Drawing.Size(8, 20);
+            this.radTrackBar2.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None;
+            this.radTrackBar2.ValueChanged += new System.EventHandler(this.radTrackBar2_ValueChanged);
+            // 
+            // radPopupContainer1
+            // 
+            this.radPopupContainer1.Location = new System.Drawing.Point(934, 339);
+            this.radPopupContainer1.Name = "radPopupContainer1";
+            // 
+            // radPopupContainer1.PanelContainer
+            // 
+            this.radPopupContainer1.PanelContainer.Controls.Add(this.radTrackBar2);
+            this.radPopupContainer1.PanelContainer.Size = new System.Drawing.Size(62, 189);
+            this.radPopupContainer1.Size = new System.Drawing.Size(64, 191);
+            this.radPopupContainer1.TabIndex = 3;
+            this.radPopupContainer1.ThemeName = "FluentDark";
+            // 
+            // radPopupEditor1
+            // 
+            this.radPopupEditor1.AssociatedControl = this.radPopupContainer1;
+            this.radPopupEditor1.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.None;
+            this.radPopupEditor1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPopupEditor1.Location = new System.Drawing.Point(911, 0);
+            this.radPopupEditor1.Name = "radPopupEditor1";
+            this.radPopupEditor1.ShowTextBox = false;
+            this.radPopupEditor1.Size = new System.Drawing.Size(87, 40);
+            this.radPopupEditor1.TabIndex = 4;
+            this.radPopupEditor1.Text = "0";
+            this.radPopupEditor1.ThemeName = "FluentDark";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radPopupEditor1.GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(4))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radPopupEditor1.GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(4))).ShouldPaint = true;
+            // 
+            // radLabel2
+            // 
+            this.radLabel2.Location = new System.Drawing.Point(3, 11);
+            this.radLabel2.Name = "radLabel2";
+            this.radLabel2.Size = new System.Drawing.Size(71, 18);
+            this.radLabel2.TabIndex = 1;
+            this.radLabel2.Text = "00:00 / 10:00";
+            this.radLabel2.ThemeName = "FluentDark";
+            // 
+            // radButton5
+            // 
+            this.radButton5.Location = new System.Drawing.Point(301, 8);
+            this.radButton5.Name = "radButton5";
+            this.radButton5.Size = new System.Drawing.Size(97, 30);
+            this.radButton5.TabIndex = 7;
+            this.radButton5.Text = "Clear Selection";
+            this.radButton5.ThemeName = "FluentDark";
+            // 
+            // radButton11
+            // 
+            this.radButton11.Location = new System.Drawing.Point(404, 8);
+            this.radButton11.Name = "radButton11";
+            this.radButton11.Size = new System.Drawing.Size(61, 30);
+            this.radButton11.TabIndex = 8;
+            this.radButton11.Text = "Go Start";
+            this.radButton11.ThemeName = "FluentDark";
+            // 
+            // radButton12
+            // 
+            this.radButton12.Location = new System.Drawing.Point(471, 8);
+            this.radButton12.Name = "radButton12";
+            this.radButton12.Size = new System.Drawing.Size(64, 30);
+            this.radButton12.TabIndex = 9;
+            this.radButton12.Text = "Go End";
+            this.radButton12.ThemeName = "FluentDark";
+            // 
+            // radButton13
+            // 
+            this.radButton13.Location = new System.Drawing.Point(541, 8);
+            this.radButton13.Name = "radButton13";
+            this.radButton13.Size = new System.Drawing.Size(73, 30);
+            this.radButton13.TabIndex = 10;
+            this.radButton13.Text = "Do Cut";
+            this.radButton13.ThemeName = "FluentDark";
+            // 
+            // radButton14
+            // 
+            this.radButton14.Location = new System.Drawing.Point(632, 8);
+            this.radButton14.Name = "radButton14";
+            this.radButton14.Size = new System.Drawing.Size(79, 30);
+            this.radButton14.TabIndex = 11;
+            this.radButton14.Text = "Zoom Auto";
+            this.radButton14.ThemeName = "FluentDark";
+            // 
+            // radButton15
+            // 
+            this.radButton15.Location = new System.Drawing.Point(717, 7);
+            this.radButton15.Name = "radButton15";
+            this.radButton15.Size = new System.Drawing.Size(90, 30);
+            this.radButton15.TabIndex = 12;
+            this.radButton15.Text = "ZoomOut";
+            this.radButton15.ThemeName = "FluentDark";
+            // 
+            // radPopupEditor2
+            // 
+            this.radPopupEditor2.AssociatedControl = this.radPopupContainer2;
+            this.radPopupEditor2.Location = new System.Drawing.Point(814, 8);
+            this.radPopupEditor2.Name = "radPopupEditor2";
+            this.radPopupEditor2.ShowTextBox = false;
+            this.radPopupEditor2.Size = new System.Drawing.Size(91, 40);
+            this.radPopupEditor2.TabIndex = 13;
+            this.radPopupEditor2.Text = "Timeline";
+            this.radPopupEditor2.ThemeName = "FluentDark";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radPopupEditor2.GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(4))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            // 
+            // radPopupContainer2
+            // 
+            this.radPopupContainer2.Location = new System.Drawing.Point(609, 392);
+            this.radPopupContainer2.Name = "radPopupContainer2";
+            // 
+            // radPopupContainer2.PanelContainer
+            // 
+            this.radPopupContainer2.PanelContainer.Controls.Add(this.radButton17);
+            this.radPopupContainer2.PanelContainer.Controls.Add(this.radButton16);
+            this.radPopupContainer2.PanelContainer.Size = new System.Drawing.Size(248, 123);
+            this.radPopupContainer2.Size = new System.Drawing.Size(250, 125);
+            this.radPopupContainer2.TabIndex = 4;
+            this.radPopupContainer2.ThemeName = "FluentDark";
+            this.radPopupContainer2.Click += new System.EventHandler(this.radPopupContainer2_Click);
+            // 
+            // radButton16
+            // 
+            this.radButton16.Location = new System.Drawing.Point(22, 3);
+            this.radButton16.Name = "radButton16";
+            this.radButton16.Size = new System.Drawing.Size(121, 30);
+            this.radButton16.TabIndex = 0;
+            this.radButton16.Text = "zoom out";
+            this.radButton16.ThemeName = "FluentDark";
+            // 
+            // radButton17
+            // 
+            this.radButton17.Location = new System.Drawing.Point(22, 56);
+            this.radButton17.Name = "radButton17";
+            this.radButton17.Size = new System.Drawing.Size(121, 30);
+            this.radButton17.TabIndex = 1;
+            this.radButton17.Text = "zoom auto";
+            this.radButton17.ThemeName = "FluentDark";
+            // 
             // radButton1
             // 
             this.radButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -270,69 +727,6 @@
             this.radButton4.ThemeName = "FluentDark";
             this.radButton4.Click += new System.EventHandler(this.radButton4_Click);
             // 
-            // radLabel1
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.radLabel1, 2);
-            this.radLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel1.Location = new System.Drawing.Point(211, 116);
-            this.radLabel1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(431, 190);
-            this.radLabel1.TabIndex = 5;
-            this.radLabel1.Text = "Drag And Drop Files";
-            this.radLabel1.ThemeName = "FluentDark";
-            // 
-            // splitPanel2
-            // 
-            this.splitPanel2.Controls.Add(this.radPanel1);
-            this.splitPanel2.Location = new System.Drawing.Point(0, 317);
-            this.splitPanel2.Name = "splitPanel2";
-            // 
-            // 
-            // 
-            this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(1004, 298);
-            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.009060956F);
-            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -5);
-            this.splitPanel2.TabIndex = 1;
-            this.splitPanel2.TabStop = false;
-            this.splitPanel2.Text = "splitPanel2";
-            this.splitPanel2.ThemeName = "FluentDark";
-            // 
-            // radPanel1
-            // 
-            this.radPanel1.Controls.Add(this.radCheckedListBox1);
-            this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radPanel1.Location = new System.Drawing.Point(0, 0);
-            this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(1004, 298);
-            this.radPanel1.TabIndex = 0;
-            this.radPanel1.ThemeName = "FluentDark";
-            // 
-            // radCheckedListBox1
-            // 
-            this.radCheckedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radCheckedListBox1.GroupItemSize = new System.Drawing.Size(200, 28);
-            listViewDataItem5.Text = "ListViewItem 4";
-            listViewDataItem6.Text = "ListViewItem 5";
-            listViewDataItem7.Text = "ListViewItem 6";
-            listViewDataItem8.Text = "ListViewItem 7";
-            this.radCheckedListBox1.Items.AddRange(new Telerik.WinControls.UI.ListViewDataItem[] {
-            listViewDataItem5,
-            listViewDataItem6,
-            listViewDataItem7,
-            listViewDataItem8});
-            this.radCheckedListBox1.ItemSize = new System.Drawing.Size(200, 28);
-            this.radCheckedListBox1.Location = new System.Drawing.Point(0, 0);
-            this.radCheckedListBox1.Name = "radCheckedListBox1";
-            this.radCheckedListBox1.Size = new System.Drawing.Size(1004, 298);
-            this.radCheckedListBox1.TabIndex = 0;
-            this.radCheckedListBox1.ThemeName = "FluentDark";
-            // 
-            // radPageViewPageTrimVideos
-            // 
-            // 
             // radMenu1
             // 
             this.radMenu1.ImageList = this.imageListMainPlayerControls;
@@ -345,74 +739,30 @@
             this.radMenu1.Size = new System.Drawing.Size(1004, 30);
             this.radMenu1.TabIndex = 0;
             this.radMenu1.ThemeName = "FluentDark";
-            this.radPageViewPageTrimVideos.Controls.Add(this.radPanel2);
-            this.radPageViewPageTrimVideos.Controls.Add(this.radMenu1);
-            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(79F, 29F);
-            this.radPageViewPageTrimVideos.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewPageTrimVideos.Name = "radPageViewPageTrimVideos";
-            this.radPageViewPageTrimVideos.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewPageTrimVideos.Text = "Trim Videos";
             // 
-            // radPageViewPage3
+            // radMenuButtonItem2
             // 
-            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(119F, 29F);
-            this.radPageViewPage3.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewPage3.Name = "radPageViewPage3";
-            this.radPageViewPage3.Size = new System.Drawing.Size(488, 333);
-            this.radPageViewPage3.Text = "radPageViewPage3";
             // 
-            // radPageViewPage4
             // 
-            this.radPageViewPage4.ItemSize = new System.Drawing.SizeF(119F, 29F);
-            this.radPageViewPage4.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewPage4.Name = "radPageViewPage4";
-            this.radPageViewPage4.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewPage4.Text = "radPageViewPage4";
             // 
-            // radPageViewPage1
+            this.radMenuButtonItem2.ButtonElement.ShowBorder = false;
+            this.radMenuButtonItem2.Image = ((System.Drawing.Image)(resources.GetObject("radMenuButtonItem2.Image")));
+            this.radMenuButtonItem2.ImageIndex = 1;
+            this.radMenuButtonItem2.Name = "radMenuButtonItem2";
+            this.radMenuButtonItem2.Text = "Start";
             // 
-            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(119F, 29F);
-            this.radPageViewPage1.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewPage1.Name = "radPageViewPage1";
-            this.radPageViewPage1.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewPage1.Text = "radPageViewPage1";
+            // radMenuButtonItem1
             // 
-            // radCommandBar1
             // 
-            this.radCommandBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radCommandBar1.Location = new System.Drawing.Point(0, 0);
-            this.radCommandBar1.Name = "radCommandBar1";
-            this.radCommandBar1.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement1});
-            this.radCommandBar1.Size = new System.Drawing.Size(1016, 54);
-            this.radCommandBar1.TabIndex = 0;
-            this.radCommandBar1.ThemeName = "FluentDark";
             // 
-            // commandBarRowElement1
             // 
-            this.commandBarRowElement1.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement1.Name = "commandBarRowElement1";
-            this.commandBarRowElement1.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement1});
-            // 
-            // commandBarStripElement1
-            // 
-            this.commandBarStripElement1.DisplayName = "commandBarStripElement1";
-            this.commandBarStripElement1.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.commandBarButton1,
-            this.commandBarButton2,
-            this.commandBarButton3,
-            this.commandBarButton5,
-            this.commandBarButton6,
-            this.commandBarButton7,
-            this.commandBarButton8,
-            this.commandBarDropDownButton1,
-            this.commandBarButton9,
-            this.commandBarLabel1,
-            this.commandBarSeparator1,
-            this.commandBarButton11,
-            this.commandBarButton10});
-            this.commandBarStripElement1.Name = "commandBarStripElement1";
+            this.radMenuButtonItem1.ButtonElement.ShowBorder = false;
+            this.radMenuButtonItem1.Image = ((System.Drawing.Image)(resources.GetObject("radMenuButtonItem1.Image")));
+            this.radMenuButtonItem1.ImageIndex = 0;
+            this.radMenuButtonItem1.Name = "radMenuButtonItem1";
+            this.radMenuButtonItem1.Text = "End";
+            this.radMenuButtonItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.radMenuButtonItem1.Click += new System.EventHandler(this.radMenuButtonItem1_Click);
             // 
             // commandBarButton1
             // 
@@ -533,21 +883,6 @@
             this.commandBarButton9.Text = "Trimed Videos";
             this.commandBarButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // commandBarLabel1
-            // 
-            this.commandBarLabel1.DisplayName = "commandBarLabel1";
-            this.commandBarLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commandBarLabel1.Name = "commandBarLabel1";
-            this.commandBarLabel1.Text = "0";
-            this.commandBarLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.commandBarLabel1.ToolTipText = "Trimmed Videos";
-            // 
-            // commandBarSeparator1
-            // 
-            this.commandBarSeparator1.DisplayName = "commandBarSeparator1";
-            this.commandBarSeparator1.Name = "commandBarSeparator1";
-            this.commandBarSeparator1.VisibleInOverflowMenu = false;
-            // 
             // commandBarButton11
             // 
             this.commandBarButton11.DisplayName = "commandBarButton11";
@@ -576,146 +911,6 @@
             this.commandBarButton4.Text = "commandBarButton3";
             this.commandBarButton4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.commandBarButton4.UseCompatibleTextRendering = false;
-            // 
-            // commandBarRowElement2
-            // 
-            this.commandBarRowElement2.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement2.Name = "commandBarRowElement2";
-            // 
-            // radOpenFileDialogSelectVideo
-            // 
-            this.radOpenFileDialogSelectVideo.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
-            // 
-            // radOpenFolderDialogSelectVideos
-            // 
-            this.radOpenFolderDialogSelectVideos.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
-            this.radOpenFolderDialogSelectVideos.MultiSelect = true;
-            // 
-            // radMenuButtonItem2
-            // 
-            // 
-            // 
-            // 
-            this.radMenuButtonItem2.ButtonElement.ShowBorder = false;
-            this.radMenuButtonItem2.Image = ((System.Drawing.Image)(resources.GetObject("radMenuButtonItem2.Image")));
-            this.radMenuButtonItem2.ImageIndex = 1;
-            this.radMenuButtonItem2.Name = "radMenuButtonItem2";
-            this.radMenuButtonItem2.Text = "Start";
-            // 
-            // radMenuButtonItem1
-            // 
-            // 
-            // 
-            // 
-            this.radMenuButtonItem1.ButtonElement.ShowBorder = false;
-            this.radMenuButtonItem1.Image = ((System.Drawing.Image)(resources.GetObject("radMenuButtonItem1.Image")));
-            this.radMenuButtonItem1.ImageIndex = 0;
-            this.radMenuButtonItem1.Name = "radMenuButtonItem1";
-            this.radMenuButtonItem1.Text = "End";
-            this.radMenuButtonItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.radMenuButtonItem1.Click += new System.EventHandler(this.radMenuButtonItem1_Click);
-            // 
-            // imageListMainPlayerControls
-            // 
-            this.imageListMainPlayerControls.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMainPlayerControls.ImageStream")));
-            this.imageListMainPlayerControls.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListMainPlayerControls.Images.SetKeyName(0, "Media Control-07-WF.png");
-            this.imageListMainPlayerControls.Images.SetKeyName(1, "Media Control-08-WF.png");
-            // 
-            // radMenuItem5
-            // 
-            this.radMenuItem5.Name = "radMenuItem5";
-            this.radMenuItem5.Text = "radMenuItem5";
-            // 
-            // radPanel2
-            // 
-            this.radPanel2.Controls.Add(this.radSplitButton1);
-            this.radPanel2.Controls.Add(this.radButton7);
-            this.radPanel2.Controls.Add(this.radButton6);
-            this.radPanel2.Controls.Add(this.radButton5);
-            this.radPanel2.Controls.Add(this.radTrackBar1);
-            this.radPanel2.ImageList = this.imageListMainPlayerControls;
-            this.radPanel2.Location = new System.Drawing.Point(6, 575);
-            this.radPanel2.Name = "radPanel2";
-            this.radPanel2.Size = new System.Drawing.Size(983, 37);
-            this.radPanel2.TabIndex = 1;
-            this.radPanel2.ThemeName = "FluentDark";
-            // 
-            // radTrackBar1
-            // 
-            this.radTrackBar1.Location = new System.Drawing.Point(301, 3);
-            this.radTrackBar1.Name = "radTrackBar1";
-            this.radTrackBar1.ShowButtons = true;
-            this.radTrackBar1.Size = new System.Drawing.Size(432, 26);
-            this.radTrackBar1.TabIndex = 0;
-            this.radTrackBar1.ThemeName = "FluentDark";
-            this.radTrackBar1.ThumbSize = new System.Drawing.Size(8, 20);
-            this.radTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None;
-            // 
-            // radButton5
-            // 
-            this.radButton5.ImageIndex = 1;
-            this.radButton5.ImageList = this.imageListMainPlayerControls;
-            this.radButton5.Location = new System.Drawing.Point(3, 3);
-            this.radButton5.Name = "radButton5";
-            this.radButton5.Size = new System.Drawing.Size(32, 32);
-            this.radButton5.TabIndex = 1;
-            this.radButton5.ThemeName = "FluentDark";
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radButton5.GetChildAt(0).GetChildAt(1).GetChildAt(0))).StretchHorizontally = true;
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radButton5.GetChildAt(0).GetChildAt(1).GetChildAt(0))).StretchVertically = true;
-            // 
-            // radButton6
-            // 
-            this.radButton6.Location = new System.Drawing.Point(63, 4);
-            this.radButton6.Name = "radButton6";
-            this.radButton6.Size = new System.Drawing.Size(40, 30);
-            this.radButton6.TabIndex = 2;
-            this.radButton6.Text = "10+";
-            this.radButton6.ThemeName = "FluentDark";
-            // 
-            // radButton7
-            // 
-            this.radButton7.Location = new System.Drawing.Point(133, 3);
-            this.radButton7.Name = "radButton7";
-            this.radButton7.Size = new System.Drawing.Size(38, 30);
-            this.radButton7.TabIndex = 3;
-            this.radButton7.Text = "-30";
-            this.radButton7.ThemeName = "FluentDark";
-            // 
-            // radSplitButton1
-            // 
-            this.radSplitButton1.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.radSplitButton1.Image = global::SimpleVideoCutter.Properties.Resources.Follow_WF;
-            this.radSplitButton1.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem6,
-            this.radMenuItem7,
-            this.radMenuItem8});
-            this.radSplitButton1.Location = new System.Drawing.Point(196, 4);
-            this.radSplitButton1.Name = "radSplitButton1";
-            this.radSplitButton1.Size = new System.Drawing.Size(65, 30);
-            this.radSplitButton1.SvgImageXml = null;
-            this.radSplitButton1.TabIndex = 4;
-            this.radSplitButton1.Text = "Rewind";
-            this.radSplitButton1.ThemeName = "FluentDark";
-            this.radSplitButton1.Click += new System.EventHandler(this.radSplitButton1_Click);
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radSplitButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1).GetChildAt(1).GetChildAt(0))).ImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radSplitButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1).GetChildAt(1).GetChildAt(0))).MinSize = new System.Drawing.Size(24, 24);
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radSplitButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1).GetChildAt(1).GetChildAt(0))).MaxSize = new System.Drawing.Size(24, 24);
-            // 
-            // radMenuItem6
-            // 
-            this.radMenuItem6.Name = "radMenuItem6";
-            this.radMenuItem6.Text = "-5";
-            // 
-            // radMenuItem7
-            // 
-            this.radMenuItem7.Name = "radMenuItem7";
-            this.radMenuItem7.Text = "-15";
-            // 
-            // radMenuItem8
-            // 
-            this.radMenuItem8.Name = "radMenuItem8";
-            this.radMenuItem8.Text = "-30";
             // 
             // RadMainForm
             // 
@@ -747,17 +942,12 @@
             this.splitPanel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).EndInit();
             this.splitPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedListBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             this.radPageViewPageTrimVideos.ResumeLayout(false);
             this.radPageViewPageTrimVideos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
@@ -765,10 +955,38 @@
             this.radPanel2.ResumeLayout(false);
             this.radPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radTrackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
+            this.radPanel3.ResumeLayout(false);
+            this.radPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radTrackBar2)).EndInit();
+            this.radPopupContainer1.PanelContainer.ResumeLayout(false);
+            this.radPopupContainer1.PanelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer1)).EndInit();
+            this.radPopupContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupEditor1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupEditor2)).EndInit();
+            this.radPopupContainer2.PanelContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer2)).EndInit();
+            this.radPopupContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -828,12 +1046,25 @@
         private Telerik.WinControls.UI.RadMenuItem radMenuItem5;
         private Telerik.WinControls.UI.RadPanel radPanel2;
         private Telerik.WinControls.UI.RadTrackBar radTrackBar1;
-        private Telerik.WinControls.UI.RadButton radButton5;
-        private Telerik.WinControls.UI.RadSplitButton radSplitButton1;
-        private Telerik.WinControls.UI.RadMenuItem radMenuItem6;
-        private Telerik.WinControls.UI.RadMenuItem radMenuItem7;
-        private Telerik.WinControls.UI.RadMenuItem radMenuItem8;
         private Telerik.WinControls.UI.RadButton radButton7;
         private Telerik.WinControls.UI.RadButton radButton6;
+        private Telerik.WinControls.UI.RadButton radButton10;
+        private Telerik.WinControls.UI.RadButton radButton9;
+        private Telerik.WinControls.UI.RadButton radButton8;
+        private Telerik.WinControls.UI.RadPopupContainer radPopupContainer1;
+        private Telerik.WinControls.UI.RadTrackBar radTrackBar2;
+        private Telerik.WinControls.UI.RadPanel radPanel3;
+        private Telerik.WinControls.UI.RadPopupEditor radPopupEditor1;
+        private Telerik.WinControls.UI.RadLabel radLabel2;
+        private Telerik.WinControls.UI.RadButton radButton12;
+        private Telerik.WinControls.UI.RadButton radButton11;
+        private Telerik.WinControls.UI.RadButton radButton5;
+        private Telerik.WinControls.UI.RadButton radButton13;
+        private Telerik.WinControls.UI.RadButton radButton15;
+        private Telerik.WinControls.UI.RadButton radButton14;
+        private Telerik.WinControls.UI.RadPopupContainer radPopupContainer2;
+        private Telerik.WinControls.UI.RadButton radButton17;
+        private Telerik.WinControls.UI.RadButton radButton16;
+        private Telerik.WinControls.UI.RadPopupEditor radPopupEditor2;
     }
 }

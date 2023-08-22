@@ -533,6 +533,7 @@
     <EmbeddedResource Include="Images\imagecutinverted.png" />
     <None Include="Images\imagecutinverted32 .png" />
     <Content Include="DevNotes_Exclude\Notes.txt" />
+    <EmbeddedResource Include="Images\Chart-Title-Legends.png" />
     <Content Include="Images\icons8-video-trimming-32copy.png" />
     <Content Include="Images\icons8-video-trimming-80 white transback32.png" />
     <Content Include="Images\Settings.png" />
