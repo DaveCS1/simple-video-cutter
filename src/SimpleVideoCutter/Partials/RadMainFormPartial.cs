@@ -270,7 +270,34 @@ namespace SimpleVideoCutter.TelerikForms
         {
             //EnableButtons();
         }
+        //private void OpenFile(string path)
+        //{
+        //    if (!File.Exists(path))
+        //    {
+        //        return;
+        //    }
 
+        //    fileBeingPlayed = path;
+        //    //statusStrip.InvokeIfRequired(() =>
+        //    //{
+        //    //    toolStripStatusLabelFilePath.Text = path;
+        //    //});
+
+        //    if (vlcControl1.MediaPlayer.IsPlaying)
+        //    {
+        //        vlcControl1.MediaPlayer.Stop();
+        //    }
+
+        //    //ClearAllSelections();
+        //    //UpdateIndexLabel();
+        //    //EnableButtons();
+
+        //    vlcControl1.MediaPlayer.Mute = VideoCutterSettings.Instance.Mute;
+        //    vlcControl1.MediaPlayer.Play(new Media(libVLC, path, FromType.FromPath));
+        //    videoViewHover.MediaPlayer.Play(new Media(libVLC, path, FromType.FromPath));
+
+        //    keyFramesExtractor.Start(path);
+        //}
         private void OpenFile()
         {
             if (lastDirectory == null)
@@ -549,6 +576,631 @@ namespace SimpleVideoCutter.TelerikForms
             e.Keyframes = keyFramesExtractor.Keyframes;
             e.InProgress = keyFramesExtractor.InProgress;
         }
+
+        private void ResizePreview()
+        {
+            int width = 800;
+            switch (VideoCutterSettings.Instance.PreviewSize)
+            {
+                case PreviewSize.XS: width = 200; break;
+                case PreviewSize.S: width = 400; break;
+                case PreviewSize.L: width = 800; break;
+                case PreviewSize.XL: width = 1200; break;
+            }
+            float scale = 1920.0f / 1080.0f;
+            videoViewHover.Width = width;
+            videoViewHover.Height = (int)(width / scale);
+        }
+
+        //FORM SHOW
+        private void THEMainForm_Shown(object sender, EventArgs e)
+        {
+            EnsureFFmpegConfigured();
+
+            taskProcessor.Start();
+            //EnableButtons();
+
+            if (fileToLoadOnStartup != null)
+            {
+                OpenFile(fileToLoadOnStartup);
+            }
+        }
+
+        //FORM KEY DOWN
+        private void THEForm1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space || e.KeyCode == Keys.L || e.KeyCode == Keys.K)
+            {
+                PlayPause();
+            }
+
+
+            if (e.KeyCode == Keys.OemOpenBrackets && e.Modifiers == Keys.None)
+                SetStartAtCurrentPosition();
+
+            if (e.KeyCode == Keys.OemOpenBrackets && e.Modifiers == Keys.Shift)
+                SetSelectionAtCurrentPositionTillTheEnd();
+
+            if (e.KeyCode == Keys.OemCloseBrackets && e.Modifiers == Keys.None)
+                SetEndAtCurrentPosition();
+
+            if (e.KeyCode == Keys.OemCloseBrackets && e.Modifiers == Keys.Shift)
+                SetSelectionFromTheBeginningTillCurrentPosition();
+
+            if (e.KeyCode == Keys.Delete && e.Modifiers == Keys.None)
+                ClearCurrentSelection();
+
+            if (e.KeyCode == Keys.D && e.Modifiers == Keys.Control)
+                ClearAllSelections();
+
+            if (e.KeyCode == Keys.E && (e.Modifiers == Keys.None || e.Modifiers == Keys.Shift))
+                this.EnqeueNewTask();
+
+            if (e.KeyCode == Keys.O && e.Modifiers == Keys.Control)
+                this.OpenFile();
+
+            if (e.KeyCode == Keys.Right && e.Modifiers == Keys.Alt)
+                this.OpenNextFileInDirectory();
+
+            if (e.KeyCode == Keys.Left && e.Modifiers == Keys.Alt)
+                this.OpenPrevFileInDirectory();
+
+            if (e.KeyCode == Keys.T && e.Modifiers == Keys.None)
+                toolStripButtonTasksShow.Checked = !toolStripButtonTasksShow.Checked;
+
+            if (e.KeyCode == Keys.D0 && e.Modifiers == Keys.None)
+                this.videoCutterTimeline1.ZoomOut();
+
+            if (e.KeyCode == Keys.D9 && e.Modifiers == Keys.None)
+                this.videoCutterTimeline1.ZoomAuto();
+
+            if (e.KeyCode == Keys.P && e.Modifiers == Keys.Control)
+                this.videoCutterTimeline1.GoToCurrentPosition();
+
+            if (e.KeyCode == Keys.OemOpenBrackets && e.Modifiers == Keys.Control)
+                GoToSelectionStart();
+
+            if (e.KeyCode == Keys.OemCloseBrackets && e.Modifiers == Keys.None)
+                GoToSelectionEnd();
+
+            if (e.KeyCode == Keys.M && e.Modifiers == Keys.Control)
+                Mute();
+
+            if (e.KeyCode == Keys.OemPeriod && e.Modifiers == Keys.None)
+                NextFrame();
+
+            if (e.Modifiers == Keys.None && e.KeyCode == Keys.R)
+                PlaySelection();
+
+            if (e.KeyCode == Keys.E && e.Modifiers == Keys.Control)
+                System.Diagnostics.Process.Start("notepad.exe", VideoCutterSettings.Instance.ConfigPath);
+
+            if (e.KeyCode == Keys.K && e.Modifiers == Keys.Control)
+                AdjustSelectionsToKeyframes();
+        }
+        //END FORM KEY DOWN
+    
+        //FORM CLOSING
+
+        private void THEMainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            taskProcessor.StopRequest = true;
+            StoreSettings();
+        }
+        //END FORM CLOSING
+        private void StoreSettings()
+        {
+            VideoCutterSettings.Instance.MainWindowLocation = new Rectangle(Location, Size);
+            VideoCutterSettings.Instance.MainWindowMaximized = WindowState == FormWindowState.Maximized;
+            ToolStripManager.SaveSettings(this, "SimpleVideoCutterMainForm");
+            VideoCutterSettings.Instance.StoreSettings();
+        }
+
+        private void EnqeueNewTask()
+        {
+            if (videoCutterTimeline1.Selections.Count == 0)
+            {
+                return;
+            }
+
+            if (!EnsureFFmpegConfigured())
+                return;
+
+            FileInfo fileInfo = new FileInfo(fileBeingPlayed);
+            var outputDir = ReplaceStandardDirectoryPatterns(VideoCutterSettings.Instance.OutputDirectory);
+            var outputFileName = ReplaceFilePatterns(VideoCutterSettings.Instance.OutputFilePattern, fileBeingPlayed);
+            var outputFilePath = Path.Combine(outputDir, outputFileName);
+            var fileExtension = Path.GetExtension(outputFilePath);
+
+            var knownExtension = VideoCutterSettings.Instance.VideoFilesExtensions.Any(ext => ext.ToLower() == fileExtension.ToLower());
+            if (!knownExtension || string.IsNullOrEmpty(Path.GetExtension(outputFilePath)))
+            {
+                outputFilePath += Path.GetExtension(fileBeingPlayed);
+            }
+
+            var selections = videoCutterTimeline1.Selections.AllSelections.Select(s => new FFmpegTaskSelection()
+            {
+                Start = TimeSpan.FromMilliseconds(s.Start),
+                End = TimeSpan.FromMilliseconds(s.End - 100),
+            }).ToArray();
+
+            var selectionsOnKeyFrames = videoCutterTimeline1.AreSelectionsOnKeyFrames;
+            var task = new FFmpegTask()
+            {
+                InputFilePath = fileInfo.FullName,
+                OutputFilePath = outputFilePath,
+                InputFileName = fileInfo.Name,
+                Selections = selections,
+                OverallDuration = videoCutterTimeline1.Selections.OverallDuration,
+                TaskId = Guid.NewGuid().ToString(),
+                Lossless = selectionsOnKeyFrames,
+            };
+
+            bool shiftPressed = ModifierKeys == Keys.Shift;
+            if (VideoCutterSettings.Instance.ShowTaskWindow || shiftPressed || !selectionsOnKeyFrames)
+            {
+
+                using (var addTaskDialog = new FormAddTask(task, selectionsOnKeyFrames))
+                {
+                    var result = addTaskDialog.ShowDialog(this);
+                    if (result == DialogResult.Retry)
+                    {
+                        videoCutterTimeline1.AdjustSelectionsToKeyFrames();
+                        return;
+                    }
+                    else if (result != DialogResult.OK)
+                    {
+                        return;
+                    }
+
+                    task = addTaskDialog.Task;
+                }
+            }
+
+            VideoCutterSettings.Instance.ShowTaskWindow = false;
+
+            taskProcessor.EnqueueTask(task);
+            if (!VideoCutterSettings.Instance.KeepSelectionAfterCut)
+            {
+                ClearAllSelections();
+            }
+           //  toolStripButtonTasksShow.Checked = true;
+        }
+
+        private void ClearAllSelections()
+        {
+            // Selections.Clear raises SelectionChanged event, see VideoCutterTimeline1_SelectionChanged
+            videoCutterTimeline1.Selections.Clear();
+        }
+        private void ClearCurrentSelection()
+        {
+            var pos = videoCutterTimeline1.Position;
+            var currSelectionIndex = videoCutterTimeline1.Selections.IsInSelection(pos);
+            if (currSelectionIndex != null)
+            {
+                videoCutterTimeline1.Selections.DeleteSelection(currSelectionIndex.Value);
+            }
+
+        }
+
+        private IList<string> GetVideoFilesInDirectory(string currentFilePath)
+        {
+            var currentDir = Path.GetDirectoryName(currentFilePath);
+
+            var extensions = VideoCutterSettings.Instance.VideoFilesExtensions;
+            var allFiles = Directory.EnumerateFiles(currentDir, "*", SearchOption.TopDirectoryOnly);
+
+            var videoFilesArr = allFiles
+                .Where(f => extensions.Contains(Path.GetExtension(f).ToLowerInvariant()))
+                .Select(s => new FileInfo(Path.Combine(currentDir, s)))
+                .OrderBy(fi => fi.LastWriteTime)
+                .Select(fi => fi.Name)
+                .ToList();
+
+            return videoFilesArr;
+        }
+
+        private string GetNextPrevFileInDirectory(string currentFilePath, int direction)
+        {
+            var currentDir = Path.GetDirectoryName(currentFilePath);
+
+            var videoFilesArr = GetVideoFilesInDirectory(currentFilePath);
+
+            int index = videoFilesArr
+                .TakeWhile(f => f.ToLowerInvariant() != Path.GetFileName(currentFilePath).ToLowerInvariant())
+                .Count();
+            if (index == videoFilesArr.Count)
+                return null; // wtf?
+
+            var newIndex = (index + direction + videoFilesArr.Count) % videoFilesArr.Count;
+
+            return Path.Combine(currentDir, videoFilesArr[newIndex]);
+        }
+
+     
+
+        private void UpdateIndexLabel()
+        {
+            if (fileBeingPlayed == null)
+            {
+                statusStrip.InvokeIfRequired(() =>
+                {
+                    toolStripStatusLabelIndex.Text = "0/0";
+                });
+            }
+            else
+            {
+                var videoFilesArr = GetVideoFilesInDirectory(fileBeingPlayed);
+                int index = videoFilesArr.IndexOf(Path.GetFileName(fileBeingPlayed).ToLowerInvariant());
+                statusStrip.InvokeIfRequired(() =>
+                {
+                    toolStripStatusLabelIndex.Text = string.Format("{0}/{1}", index + 1, videoFilesArr.Count);
+                });
+            }
+
+        }
+        private void UpdateSelectionLabel()
+        {
+            if (fileBeingPlayed == null)
+            {
+                statusStrip.InvokeIfRequired(() =>
+                {
+                    toolStripStatusLabelSelection.Text = GlobalStrings.MainForm_NoSelection;
+                });
+            }
+            else
+            {
+                if (videoCutterTimeline1.Selections.Count == 0)
+                {
+                    statusStrip.InvokeIfRequired(() =>
+                    {
+                        toolStripStatusLabelSelection.Text = GlobalStrings.MainForm_NoSelection;
+                    });
+                }
+                else
+                {
+                    long timeMs = videoCutterTimeline1.Selections.OverallDuration;
+                    statusStrip.InvokeIfRequired(() =>
+                    {
+                        toolStripStatusLabelSelection.Text = string.Format("{0}: {1:####.##} s", GlobalStrings.MainForm_Selection, (float)timeMs / 1000.0);
+                    });
+                }
+            }
+
+        }
+
+        private void EnableButtons()
+        {
+            var isFileLoaded = fileBeingPlayed != null;
+            var isSelection = videoCutterTimeline1.Selections.Count > 0;
+            var isPlaying = isFileLoaded && vlcControl1.MediaPlayer.IsPlaying;
+
+            toolStripPlayback.InvokeIfRequired(() =>
+            {
+                toolStripButtonPlabackPlayPause.Enabled = isFileLoaded;
+                toolStripButtonPlabackNextFrame.Enabled = isFileLoaded;
+                toolStripButtonPlabackPlayPause.Image = isPlaying ? Resources.streamline_icon_controls_pause_32x32 : Resources.streamline_icon_controls_play_32x32;
+                toolStripButtonPlabackMute.Checked = VideoCutterSettings.Instance.Mute;
+            });
+
+            toolStripFile.InvokeIfRequired(() =>
+            {
+                toolStripButtonFileNext.Enabled = isFileLoaded;
+                toolStripButtonFilePrev.Enabled = isFileLoaded;
+            });
+
+            toolStripSelection.InvokeIfRequired(() =>
+            {
+                toolStripButtonSelectionSetStart.Enabled = isFileLoaded;
+                toolStripButtonSelectionSetEnd.Enabled = isFileLoaded && videoCutterTimeline1.NewSelectionStartRegistered;
+                toolStripButtonSelectionGoToStart.Enabled = isSelection;
+                toolStripButtonSelectionGoToEnd.Enabled = isSelection;
+                toolStripButtonSelectionPlay.Enabled = isSelection;
+
+                toolStripButtonSelectionClear.Enabled = isFileLoaded && isSelection;
+                toolStripButtonSelectionEnqueue.Enabled = isFileLoaded && isSelection;
+            });
+
+            toolStripTasks.InvokeIfRequired(() =>
+            {
+            });
+
+            toolStripTimeline.InvokeIfRequired(() =>
+            {
+                toolStripButtonTimelineZoomOut.Enabled = isFileLoaded;
+                toolStripButtonTimelineZoomAuto.Enabled = isFileLoaded;
+                toolStripButtonTimelineGoToCurrentPosition.Enabled = isFileLoaded;
+            });
+
+        }
+
+
+        private void toolStripButtonShowTasks_CheckedChanged(object sender, EventArgs e)
+        {
+            ShowHideTasks();
+        }
+
+        private void ShowHideTasks()
+        {
+            RefreshTasks();
+            splitContainer1.Panel2Collapsed = !toolStripButtonTasksShow.Checked;
+        }
+
+        private void timerHoverPositionChanged_Tick(object sender, EventArgs e)
+        {
+            timerHoverPositionChanged.Stop();
+            var pos = videoCutterTimeline1.HoverPosition;
+            if (pos != null)
+            {
+                float posFloat = (float)pos.Value / videoViewHover.MediaPlayer.Length;
+
+                videoViewHover.Visible = VideoCutterSettings.Instance.PreviewSize != PreviewSize.None && true;
+
+                int posX = videoCutterTimeline1.PositionToPixel(pos) - videoViewHover.Width / 2;
+                posX = Math.Max(posX, 0);
+                posX = Math.Min(posX, videoCutterTimeline1.Width - videoViewHover.Width);
+
+                videoViewHover.Location = new Point(
+                    posX,
+                    videoCutterTimeline1.Location.Y - videoViewHover.Height - 5);
+
+                debouncerHover.Debounce(() =>
+                {
+                    // see  popup preview area is freeze unexpectedly #47 
+                    ThreadPool.QueueUserWorkItem((state) => videoViewHover.MediaPlayer.Position = posFloat);
+                }, 100);
+            }
+            else
+            {
+                videoViewHover.Visible = false;
+            }
+        }
+
+        private void Mute()
+        {
+            VideoCutterSettings.Instance.Mute = !VideoCutterSettings.Instance.Mute;
+            vlcControl1.MediaPlayer.Mute = VideoCutterSettings.Instance.Mute;
+            EnableButtons();
+        }
+
+        private void PlaySelection()
+        {
+            if (videoCutterTimeline1.Selections.OverallStart == null)
+                return;
+            playingSelection = true;
+            vlcControl1.MediaPlayer.Position = (float)videoCutterTimeline1.Selections.OverallStart.Value / vlcControl1.MediaPlayer.Length;
+            vlcControl1.MediaPlayer.SetPause(false);
+        }
+
+        private void AdjustSelectionsToKeyframes()
+        {
+            if (keyFramesExtractor.InProgress)
+            {
+                MessageBox.Show(GlobalStrings.MainForm_KeyFramesNotLoaded, GlobalStrings.GlobalInformation, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+        }
+
+        private void toolStripPlayback_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem == toolStripButtonPlabackPlayPause)
+            {
+                PlayPause();
+            }
+            else if (e.ClickedItem == toolStripButtonPlabackMute)
+            {
+                Mute();
+            }
+            else if (e.ClickedItem == toolStripButtonPlabackNextFrame)
+            {
+                NextFrame();
+            }
+        }
+
+        private void toolStripSelection_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem == toolStripButtonSelectionSetStart)
+            {
+                if (ModifierKeys == Keys.Shift)
+                    SetSelectionAtCurrentPositionTillTheEnd();
+                else
+                    SetStartAtCurrentPosition();
+            }
+            else if (e.ClickedItem == toolStripButtonSelectionSetEnd)
+            {
+                if (ModifierKeys == Keys.Shift)
+                    SetSelectionFromTheBeginningTillCurrentPosition();
+                else
+                    SetEndAtCurrentPosition();
+            }
+            else if (e.ClickedItem == toolStripButtonSelectionPlay)
+            {
+                PlaySelection();
+            }
+            else if (e.ClickedItem == toolStripButtonSelectionClear)
+            {
+                ClearAllSelections();
+            }
+            else if (e.ClickedItem == toolStripButtonSelectionGoToStart)
+            {
+                GoToSelectionStart();
+            }
+            else if (e.ClickedItem == toolStripButtonSelectionGoToEnd)
+            {
+                GoToSelectionEnd();
+            }
+            else if (e.ClickedItem == toolStripButtonSelectionEnqueue)
+            {
+                EnqeueNewTask();
+            }
+        }
+
+
+
+
+        private void toolStripInternet_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem == toolStripButtonInternetVersionCheck)
+            {
+                using (var about = new AboutBox())
+                {
+                    about.ShowDialog();
+                }
+            }
+        }
+
+        private void OpenNextFileInDirectory()
+        {
+            if (fileBeingPlayed != null)
+            {
+                var newFile = GetNextPrevFileInDirectory(fileBeingPlayed, +1);
+                if (newFile != null && String.Compare(newFile, fileBeingPlayed, true) != 0)
+                {
+                    OpenFile(newFile);
+                }
+            }
+        }
+        private void OpenPrevFileInDirectory()
+        {
+            if (fileBeingPlayed != null)
+            {
+                var newFile = GetNextPrevFileInDirectory(fileBeingPlayed, -1);
+                if (newFile != null && String.Compare(newFile, fileBeingPlayed, true) != 0)
+                {
+                    OpenFile(newFile);
+                }
+            }
+        }
+
+        private void toolStripFile_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem == toolStripButtonFileOpen)
+            {
+                OpenFile();
+            }
+            else if (e.ClickedItem == toolStripButtonFileNext)
+            {
+                OpenNextFileInDirectory();
+            }
+            else if (e.ClickedItem == toolStripButtonFilePrev)
+            {
+                OpenPrevFileInDirectory();
+            }
+            else if (e.ClickedItem == toolStripButtonFileSettings)
+            {
+                formSettings.ShowSettingsDialog();
+                ResizePreview();
+            }
+            else if (e.ClickedItem == toolStripButtonFileAbout)
+            {
+                using (var about = new AboutBox())
+                {
+                    about.ShowDialog();
+                }
+            }
+        }
+
+        //add later
+
+        //private void toolStripDropDownButtonFileLanguage_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        //{
+        //    var culture = "en-US";
+
+        //    if (e.ClickedItem == toolStripMenuItemLangEnglish)
+        //        culture = "en-US";
+        //    else if (e.ClickedItem == toolStripMenuItemLangGerman)
+        //        culture = "de-DE";
+        //    else if (e.ClickedItem == toolStripMenuItemLangPolish)
+        //        culture = "pl-PL";
+        //    else if (e.ClickedItem == toolStripMenuItemLangFrench)
+        //        culture = "fr-FR";
+        //    else if (e.ClickedItem == toolStripMenuItemLangItalian)
+        //        culture = "it-IT";
+        //    else if (e.ClickedItem == toolStripMenuItemLangSpanish)
+        //        culture = "es-ES";
+        //    else if (e.ClickedItem == toolStripMenuItemLangChinese)
+        //        culture = "zh-CN";
+        //    else if (e.ClickedItem == toolStripMenuItemLangJapanese)
+        //        culture = "ja-JP";
+
+        //    if (Thread.CurrentThread.CurrentUICulture.Name != culture)
+        //    {
+        //        VideoCutterSettings.Instance.Language = culture;
+        //        var answer = MessageBox.Show(this, GlobalStrings.MainForm_QuestionRestartNewLanguage,
+        //            GlobalStrings.GlobalQuestion, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question,
+        //            MessageBoxDefaultButton.Button3);
+
+        //        if (answer == DialogResult.Yes)
+        //        {
+        //            VideoCutterSettings.Instance.RestoreToolbarsLayout = false;
+        //            Application.Restart();
+        //            Environment.Exit(0);
+        //        }
+        //    }
+        //}
+
+        private void toolStripTimeline_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem == toolStripButtonTimelineZoomOut)
+            {
+                videoCutterTimeline1.ZoomOut();
+            }
+            else if (e.ClickedItem == toolStripButtonTimelineZoomAuto)
+            {
+                videoCutterTimeline1.ZoomAuto();
+            }
+            else if (e.ClickedItem == toolStripButtonTimelineGoToCurrentPosition)
+            {
+                videoCutterTimeline1.GoToCurrentPosition();
+            }
+        }
+
+        private string GetPathOfSingleDraggedFile(IDataObject data)
+        {
+            if (!data.GetDataPresent(DataFormats.FileDrop))
+                return null;
+
+            string[] files = (string[])data.GetData(DataFormats.FileDrop);
+
+            if (files.Length != 1)
+                return null;
+
+            var file = files[0];
+            var ext = System.IO.Path.GetExtension(file);
+            if (VideoCutterSettings.Instance.VideoFilesExtensions.Contains(ext.ToLower()))
+                return file;
+
+            return null;
+        }
+
+        //form drag drop
+        //todo add in later
+        private void THEMainForm_DragOver(object sender, DragEventArgs e)
+        {
+            if (GetPathOfSingleDraggedFile(e.Data) != null)
+                e.Effect = DragDropEffects.Copy;
+        }
+
+        private void THEMainForm_DragDrop(object sender, DragEventArgs e)
+        {
+            var file = GetPathOfSingleDraggedFile(e.Data);
+            if (file != null)
+            {
+                OpenFile(file);
+                Activate();
+            }
+        }
+        //end form drag drop
+
+        //todo add later
+        private void resetToolbarsLayoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VideoCutterSettings.Instance.RestoreToolbarsLayout = false;
+            MessageBox.Show(GlobalStrings.MainForm_DeaultLayoutrestoredAfterRestart, GlobalStrings.GlobalInformation,
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
         #endregion
 
 

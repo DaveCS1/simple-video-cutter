@@ -54,7 +54,6 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.videoViewHover = new LibVLCSharp.WinForms.VideoView();
             this.vlcControl1 = new LibVLCSharp.WinForms.VideoView();
-            this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
             this.panelTasks = new System.Windows.Forms.Panel();
             this.listViewTasks = new System.Windows.Forms.ListView();
             this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -123,6 +122,8 @@
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
             this.timerHoverPositionChanged = new System.Windows.Forms.Timer(this.components);
             this.object_50254541_367b_4ee5_af46_ef9beb1f3d02 = new Telerik.WinControls.RootRadElement();
+            this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
+            this.radToggleButton1 = new Telerik.WinControls.UI.RadToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -181,6 +182,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radToggleButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -219,7 +221,7 @@
             // 
             this.radPageViewPageAddFiles.AllowDrop = true;
             this.radPageViewPageAddFiles.Controls.Add(this.radSplitContainer1);
-            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(64F, 29F);
+            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(62F, 25F);
             this.radPageViewPageAddFiles.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPageAddFiles.Name = "radPageViewPageAddFiles";
             this.radPageViewPageAddFiles.Size = new System.Drawing.Size(1004, 615);
@@ -398,7 +400,7 @@
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel3);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel2);
             this.radPageViewPageTrimVideos.Controls.Add(this.radMenu1);
-            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(79F, 29F);
+            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(77F, 25F);
             this.radPageViewPageTrimVideos.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPageTrimVideos.Name = "radPageViewPageTrimVideos";
             this.radPageViewPageTrimVideos.Size = new System.Drawing.Size(1004, 615);
@@ -413,6 +415,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Salmon;
+            this.splitContainer1.Panel1.Controls.Add(this.radToggleButton1);
             this.splitContainer1.Panel1.Controls.Add(this.videoViewHover);
             this.splitContainer1.Panel1.Controls.Add(this.vlcControl1);
             this.splitContainer1.Panel1.Controls.Add(this.videoCutterTimeline1);
@@ -447,19 +450,6 @@
             this.vlcControl1.Size = new System.Drawing.Size(334, 429);
             this.vlcControl1.TabIndex = 8;
             this.vlcControl1.Text = "videoView1";
-            // 
-            // videoCutterTimeline1
-            // 
-            this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.videoCutterTimeline1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.videoCutterTimeline1.HoverPosition = null;
-            this.videoCutterTimeline1.Length = ((long)(0));
-            this.videoCutterTimeline1.Location = new System.Drawing.Point(0, 429);
-            this.videoCutterTimeline1.Margin = new System.Windows.Forms.Padding(4);
-            this.videoCutterTimeline1.Name = "videoCutterTimeline1";
-            this.videoCutterTimeline1.Position = ((long)(0));
-            this.videoCutterTimeline1.Size = new System.Drawing.Size(334, 79);
-            this.videoCutterTimeline1.TabIndex = 9;
             // 
             // panelTasks
             // 
@@ -693,9 +683,9 @@
             // 
             // radButton15
             // 
-            this.radButton15.Location = new System.Drawing.Point(717, 7);
+            this.radButton15.Location = new System.Drawing.Point(671, 6);
             this.radButton15.Name = "radButton15";
-            this.radButton15.Size = new System.Drawing.Size(90, 30);
+            this.radButton15.Size = new System.Drawing.Size(36, 30);
             this.radButton15.TabIndex = 12;
             this.radButton15.Text = "ZoomOut";
             this.radButton15.ThemeName = "FluentDark";
@@ -704,7 +694,7 @@
             // 
             this.radButton14.Location = new System.Drawing.Point(632, 8);
             this.radButton14.Name = "radButton14";
-            this.radButton14.Size = new System.Drawing.Size(79, 30);
+            this.radButton14.Size = new System.Drawing.Size(30, 30);
             this.radButton14.TabIndex = 11;
             this.radButton14.Text = "Zoom Auto";
             this.radButton14.ThemeName = "FluentDark";
@@ -868,7 +858,7 @@
             // 
             // radPageViewPage3
             // 
-            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(117F, 25F);
             this.radPageViewPage3.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPage3.Name = "radPageViewPage3";
             this.radPageViewPage3.Size = new System.Drawing.Size(1004, 615);
@@ -876,7 +866,7 @@
             // 
             // radPageViewPage4
             // 
-            this.radPageViewPage4.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage4.ItemSize = new System.Drawing.SizeF(117F, 25F);
             this.radPageViewPage4.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPage4.Name = "radPageViewPage4";
             this.radPageViewPage4.Size = new System.Drawing.Size(1004, 615);
@@ -884,7 +874,7 @@
             // 
             // radPageViewPage1
             // 
-            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(117F, 25F);
             this.radPageViewPage1.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPage1.Name = "radPageViewPage1";
             this.radPageViewPage1.Size = new System.Drawing.Size(1004, 615);
@@ -1114,6 +1104,27 @@
             this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchHorizontally = true;
             this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchVertically = true;
             // 
+            // videoCutterTimeline1
+            // 
+            this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.videoCutterTimeline1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.videoCutterTimeline1.HoverPosition = null;
+            this.videoCutterTimeline1.Length = ((long)(0));
+            this.videoCutterTimeline1.Location = new System.Drawing.Point(0, 429);
+            this.videoCutterTimeline1.Margin = new System.Windows.Forms.Padding(4);
+            this.videoCutterTimeline1.Name = "videoCutterTimeline1";
+            this.videoCutterTimeline1.Position = ((long)(0));
+            this.videoCutterTimeline1.Size = new System.Drawing.Size(334, 79);
+            this.videoCutterTimeline1.TabIndex = 9;
+            // 
+            // radToggleButton1
+            // 
+            this.radToggleButton1.Location = new System.Drawing.Point(229, 381);
+            this.radToggleButton1.Name = "radToggleButton1";
+            this.radToggleButton1.Size = new System.Drawing.Size(45, 30);
+            this.radToggleButton1.TabIndex = 10;
+            this.radToggleButton1.Text = "radToggleButton1";
+            // 
             // RadMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1199,6 +1210,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radToggleButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1296,5 +1308,6 @@
         private VideoCutterTimeline videoCutterTimeline1;
         private Telerik.WinControls.UI.RadMenuButtonItem radMenuButtonItem3;
         private Telerik.WinControls.RootRadElement object_50254541_367b_4ee5_af46_ef9beb1f3d02;
+        private Telerik.WinControls.UI.RadToggleButton radToggleButton1;
     }
 }
