@@ -139,5 +139,30 @@ namespace SimpleVideoCutter.TelerikForms
         {
             InitVLC();
         }
+
+      
+        private void radToggleButton1_ToggleStateChanging(object sender, StateChangingEventArgs args)
+        {
+            if (!(radToggleButton1.ToggleState == Telerik.WinControls.Enumerations.ToggleState.On))
+            {
+                //radToggleButton1.ImageIndex = 4;
+                //label1.Text = "Button Toggled On";
+            }
+            else
+            {
+                radToggleButton1.ImageIndex = 3;
+                //label1.Text = "Button Toggled Off";
+            }
+        }
+
+        private void toolStripButtonPlabackPlayPause_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripPlayback_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

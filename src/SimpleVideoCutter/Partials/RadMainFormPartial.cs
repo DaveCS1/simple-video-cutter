@@ -646,7 +646,8 @@ namespace SimpleVideoCutter.TelerikForms
                 this.OpenPrevFileInDirectory();
 
             if (e.KeyCode == Keys.T && e.Modifiers == Keys.None)
-                toolStripButtonTasksShow.Checked = !toolStripButtonTasksShow.Checked;
+                //todo revisit
+                //toolStripButtonTasksShow1.Checked = !toolStripButtonTasksShow1.Checked;
 
             if (e.KeyCode == Keys.D0 && e.Modifiers == Keys.None)
                 this.videoCutterTimeline1.ZoomOut();
@@ -880,7 +881,8 @@ namespace SimpleVideoCutter.TelerikForms
                 toolStripButtonPlabackPlayPause.Enabled = isFileLoaded;
                 toolStripButtonPlabackNextFrame.Enabled = isFileLoaded;
                 toolStripButtonPlabackPlayPause.Image = isPlaying ? Resources.streamline_icon_controls_pause_32x32 : Resources.streamline_icon_controls_play_32x32;
-                toolStripButtonPlabackMute.Checked = VideoCutterSettings.Instance.Mute;
+               //todo fix this
+                //toolStripButtonPlabackMute.CheckState.Checked = VideoCutterSettings.Instance.Mute;
             });
 
             toolStripFile.InvokeIfRequired(() =>
@@ -920,10 +922,11 @@ namespace SimpleVideoCutter.TelerikForms
             ShowHideTasks();
         }
 
+        //todo refactor, new commandbars dont have checked property  - check original code
         private void ShowHideTasks()
         {
             RefreshTasks();
-            splitContainer1.Panel2Collapsed = !toolStripButtonTasksShow.Checked;
+            splitContainer1.Panel2Collapsed = toolStripButtonTasksShow.CheckState== CheckState.Checked;
         }
 
         private void timerHoverPositionChanged_Tick(object sender, EventArgs e)
@@ -980,59 +983,60 @@ namespace SimpleVideoCutter.TelerikForms
                 return;
             }
         }
-
-        private void toolStripPlayback_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        //todo revisit, changed to eventargs
+        private void toolStripPlayback_ItemClicked(object sender, EventArgs e)
         {
-            if (e.ClickedItem == toolStripButtonPlabackPlayPause)
-            {
-                PlayPause();
-            }
-            else if (e.ClickedItem == toolStripButtonPlabackMute)
-            {
-                Mute();
-            }
-            else if (e.ClickedItem == toolStripButtonPlabackNextFrame)
-            {
-                NextFrame();
-            }
+           
+            //if (e == toolStripButtonPlabackPlayPause)
+            //{
+            //    PlayPause();
+            //}
+            //else if (e.ClickedItem == toolStripButtonPlabackMute)
+            //{
+            //    Mute();
+            //}
+            //else if (e.ClickedItem == toolStripButtonPlabackNextFrame)
+            //{
+            //    NextFrame();
+            //}
         }
 
         private void toolStripSelection_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem == toolStripButtonSelectionSetStart)
-            {
-                if (ModifierKeys == Keys.Shift)
-                    SetSelectionAtCurrentPositionTillTheEnd();
-                else
-                    SetStartAtCurrentPosition();
-            }
-            else if (e.ClickedItem == toolStripButtonSelectionSetEnd)
-            {
-                if (ModifierKeys == Keys.Shift)
-                    SetSelectionFromTheBeginningTillCurrentPosition();
-                else
-                    SetEndAtCurrentPosition();
-            }
-            else if (e.ClickedItem == toolStripButtonSelectionPlay)
-            {
-                PlaySelection();
-            }
-            else if (e.ClickedItem == toolStripButtonSelectionClear)
-            {
-                ClearAllSelections();
-            }
-            else if (e.ClickedItem == toolStripButtonSelectionGoToStart)
-            {
-                GoToSelectionStart();
-            }
-            else if (e.ClickedItem == toolStripButtonSelectionGoToEnd)
-            {
-                GoToSelectionEnd();
-            }
-            else if (e.ClickedItem == toolStripButtonSelectionEnqueue)
-            {
-                EnqeueNewTask();
-            }
+            //if (e.ClickedItem == toolStripButtonSelectionSetStart)
+            //{
+            //    if (ModifierKeys == Keys.Shift)
+            //        SetSelectionAtCurrentPositionTillTheEnd();
+            //    else
+            //        SetStartAtCurrentPosition();
+            //}
+            //else if (e.ClickedItem == toolStripButtonSelectionSetEnd)
+            //{
+            //    if (ModifierKeys == Keys.Shift)
+            //        SetSelectionFromTheBeginningTillCurrentPosition();
+            //    else
+            //        SetEndAtCurrentPosition();
+            //}
+            //else if (e.ClickedItem == toolStripButtonSelectionPlay)
+            //{
+            //    PlaySelection();
+            //}
+            //else if (e.ClickedItem == toolStripButtonSelectionClear)
+            //{
+            //    ClearAllSelections();
+            //}
+            //else if (e.ClickedItem == toolStripButtonSelectionGoToStart)
+            //{
+            //    GoToSelectionStart();
+            //}
+            //else if (e.ClickedItem == toolStripButtonSelectionGoToEnd)
+            //{
+            //    GoToSelectionEnd();
+            //}
+            //else if (e.ClickedItem == toolStripButtonSelectionEnqueue)
+            //{
+            //    EnqeueNewTask();
+            //}
         }
 
 
@@ -1040,13 +1044,13 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void toolStripInternet_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem == toolStripButtonInternetVersionCheck)
-            {
-                using (var about = new AboutBox())
-                {
-                    about.ShowDialog();
-                }
-            }
+            //if (e.ClickedItem == toolStripButtonInternetVersionCheck)
+            //{
+            //    using (var about = new AboutBox())
+            //    {
+            //        about.ShowDialog();
+            //    }
+            //}
         }
 
         private void OpenNextFileInDirectory()
@@ -1074,30 +1078,30 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void toolStripFile_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem == toolStripButtonFileOpen)
-            {
-                OpenFile();
-            }
-            else if (e.ClickedItem == toolStripButtonFileNext)
-            {
-                OpenNextFileInDirectory();
-            }
-            else if (e.ClickedItem == toolStripButtonFilePrev)
-            {
-                OpenPrevFileInDirectory();
-            }
-            else if (e.ClickedItem == toolStripButtonFileSettings)
-            {
-                formSettings.ShowSettingsDialog();
-                ResizePreview();
-            }
-            else if (e.ClickedItem == toolStripButtonFileAbout)
-            {
-                using (var about = new AboutBox())
-                {
-                    about.ShowDialog();
-                }
-            }
+            //if (e.ClickedItem == toolStripButtonFileOpen)
+            //{
+            //    OpenFile();
+            //}
+            //else if (e.ClickedItem == toolStripButtonFileNext)
+            //{
+            //    OpenNextFileInDirectory();
+            //}
+            //else if (e.ClickedItem == toolStripButtonFilePrev)
+            //{
+            //    OpenPrevFileInDirectory();
+            //}
+            //else if (e.ClickedItem == toolStripButtonFileSettings)
+            //{
+            //    formSettings.ShowSettingsDialog();
+            //    ResizePreview();
+            //}
+            //else if (e.ClickedItem == toolStripButtonFileAbout)
+            //{
+            //    using (var about = new AboutBox())
+            //    {
+            //        about.ShowDialog();
+            //    }
+            //}
         }
 
         //add later
@@ -1141,18 +1145,18 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void toolStripTimeline_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem == toolStripButtonTimelineZoomOut)
-            {
-                videoCutterTimeline1.ZoomOut();
-            }
-            else if (e.ClickedItem == toolStripButtonTimelineZoomAuto)
-            {
-                videoCutterTimeline1.ZoomAuto();
-            }
-            else if (e.ClickedItem == toolStripButtonTimelineGoToCurrentPosition)
-            {
-                videoCutterTimeline1.GoToCurrentPosition();
-            }
+            //if (e.ClickedItem == toolStripButtonTimelineZoomOut)
+            //{
+            //    videoCutterTimeline1.ZoomOut();
+            //}
+            //else if (e.ClickedItem == toolStripButtonTimelineZoomAuto)
+            //{
+            //    videoCutterTimeline1.ZoomAuto();
+            //}
+            //else if (e.ClickedItem == toolStripButtonTimelineGoToCurrentPosition)
+            //{
+            //    videoCutterTimeline1.GoToCurrentPosition();
+            //}
         }
 
         private string GetPathOfSingleDraggedFile(IDataObject data)
