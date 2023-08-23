@@ -346,6 +346,9 @@
     <EmbeddedResource Include="VideoCutterTimeline.zh-CN.resx">
       <DependentUpon>VideoCutterTimeline.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="BlankVideo.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\VideoCutterData.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

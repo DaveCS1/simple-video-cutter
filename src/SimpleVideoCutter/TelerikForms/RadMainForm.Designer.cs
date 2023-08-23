@@ -106,6 +106,22 @@
             this.radOpenFolderDialogSelectVideos = new Telerik.WinControls.UI.RadOpenFolderDialog();
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.timerHoverPositionChanged = new System.Windows.Forms.Timer(this.components);
+            this.panelTasks = new System.Windows.Forms.Panel();
+            this.listViewTasks = new System.Windows.Forms.ListView();
+            this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnProfile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnFilename = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnOutputFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnError = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.labelTasks = new System.Windows.Forms.Label();
+            this.labelProgress = new System.Windows.Forms.Label();
+            this.videoViewHover = new LibVLCSharp.WinForms.VideoView();
+            this.vlcControl1 = new LibVLCSharp.WinForms.VideoView();
+            this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
+            this.radMenuButtonItem3 = new Telerik.WinControls.UI.RadMenuButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -157,6 +173,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.panelTasks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.videoViewHover)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vlcControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -368,6 +391,7 @@
             // 
             // radPageViewPageTrimVideos
             // 
+            this.radPageViewPageTrimVideos.Controls.Add(this.splitContainer1);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPopupContainer2);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPopupContainer1);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel3);
@@ -643,7 +667,8 @@
             this.radMenu1.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuButtonItem2,
             this.radMenuButtonItem1,
-            this.radMenuItem5});
+            this.radMenuItem5,
+            this.radMenuButtonItem3});
             this.radMenu1.Location = new System.Drawing.Point(0, 0);
             this.radMenu1.Name = "radMenu1";
             this.radMenu1.Size = new System.Drawing.Size(1004, 30);
@@ -926,6 +951,161 @@
             this.radLabel3.Text = "Timeline View";
             this.radLabel3.ThemeName = "FluentDark";
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 30);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Salmon;
+            this.splitContainer1.Panel1.Controls.Add(this.videoViewHover);
+            this.splitContainer1.Panel1.Controls.Add(this.vlcControl1);
+            this.splitContainer1.Panel1.Controls.Add(this.videoCutterTimeline1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
+            this.splitContainer1.Panel2.Controls.Add(this.panelTasks);
+            this.splitContainer1.Size = new System.Drawing.Size(1004, 500);
+            this.splitContainer1.SplitterDistance = 334;
+            this.splitContainer1.TabIndex = 5;
+            // 
+            // timerHoverPositionChanged
+            // 
+            this.timerHoverPositionChanged.Interval = 50;
+            // 
+            // panelTasks
+            // 
+            this.panelTasks.Controls.Add(this.listViewTasks);
+            this.panelTasks.Controls.Add(this.labelTasks);
+            this.panelTasks.Controls.Add(this.labelProgress);
+            this.panelTasks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTasks.Location = new System.Drawing.Point(0, 0);
+            this.panelTasks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTasks.Name = "panelTasks";
+            this.panelTasks.Size = new System.Drawing.Size(666, 500);
+            this.panelTasks.TabIndex = 7;
+            // 
+            // listViewTasks
+            // 
+            this.listViewTasks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnStatus,
+            this.columnProfile,
+            this.columnFilename,
+            this.columnDuration,
+            this.columnOutputFile,
+            this.columnError});
+            this.listViewTasks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewTasks.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.listViewTasks.FullRowSelect = true;
+            this.listViewTasks.GridLines = true;
+            this.listViewTasks.HideSelection = false;
+            this.listViewTasks.Location = new System.Drawing.Point(0, 20);
+            this.listViewTasks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewTasks.Name = "listViewTasks";
+            this.listViewTasks.Size = new System.Drawing.Size(666, 460);
+            this.listViewTasks.TabIndex = 1;
+            this.listViewTasks.UseCompatibleStateImageBehavior = false;
+            this.listViewTasks.View = System.Windows.Forms.View.Details;
+            // 
+            // columnStatus
+            // 
+            this.columnStatus.Text = "Status";
+            // 
+            // columnProfile
+            // 
+            this.columnProfile.Text = "Profile";
+            // 
+            // columnFilename
+            // 
+            this.columnFilename.Text = "Source file";
+            this.columnFilename.Width = 200;
+            // 
+            // columnDuration
+            // 
+            this.columnDuration.Text = "Duration";
+            this.columnDuration.Width = 100;
+            // 
+            // columnOutputFile
+            // 
+            this.columnOutputFile.Text = "Target file";
+            // 
+            // columnError
+            // 
+            this.columnError.Text = "Message";
+            this.columnError.Width = 200;
+            // 
+            // labelTasks
+            // 
+            this.labelTasks.AutoSize = true;
+            this.labelTasks.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelTasks.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelTasks.Location = new System.Drawing.Point(0, 0);
+            this.labelTasks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTasks.Name = "labelTasks";
+            this.labelTasks.Size = new System.Drawing.Size(42, 20);
+            this.labelTasks.TabIndex = 0;
+            this.labelTasks.Text = "Tasks";
+            // 
+            // labelProgress
+            // 
+            this.labelProgress.AutoSize = true;
+            this.labelProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelProgress.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelProgress.Location = new System.Drawing.Point(0, 480);
+            this.labelProgress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelProgress.Name = "labelProgress";
+            this.labelProgress.Size = new System.Drawing.Size(0, 20);
+            this.labelProgress.TabIndex = 2;
+            // 
+            // videoViewHover
+            // 
+            this.videoViewHover.BackColor = System.Drawing.Color.Black;
+            this.videoViewHover.Location = new System.Drawing.Point(-239, 30);
+            this.videoViewHover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.videoViewHover.MediaPlayer = null;
+            this.videoViewHover.Name = "videoViewHover";
+            this.videoViewHover.Size = new System.Drawing.Size(813, 441);
+            this.videoViewHover.TabIndex = 7;
+            this.videoViewHover.Text = "videoViewHover";
+            // 
+            // vlcControl1
+            // 
+            this.vlcControl1.BackColor = System.Drawing.Color.Black;
+            this.vlcControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.vlcControl1.Location = new System.Drawing.Point(0, 0);
+            this.vlcControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vlcControl1.MediaPlayer = null;
+            this.vlcControl1.Name = "vlcControl1";
+            this.vlcControl1.Size = new System.Drawing.Size(334, 421);
+            this.vlcControl1.TabIndex = 8;
+            this.vlcControl1.Text = "videoView1";
+            // 
+            // videoCutterTimeline1
+            // 
+            this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.videoCutterTimeline1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.videoCutterTimeline1.HoverPosition = null;
+            this.videoCutterTimeline1.Length = ((long)(0));
+            this.videoCutterTimeline1.Location = new System.Drawing.Point(0, 421);
+            this.videoCutterTimeline1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.videoCutterTimeline1.Name = "videoCutterTimeline1";
+            this.videoCutterTimeline1.Position = ((long)(0));
+            this.videoCutterTimeline1.Size = new System.Drawing.Size(334, 79);
+            this.videoCutterTimeline1.TabIndex = 9;
+            // 
+            // radMenuButtonItem3
+            // 
+            // 
+            // 
+            // 
+            this.radMenuButtonItem3.ButtonElement.ShowBorder = false;
+            this.radMenuButtonItem3.Name = "radMenuButtonItem3";
+            this.radMenuButtonItem3.Text = "radMenuButtonItem3";
+            this.radMenuButtonItem3.Click += new System.EventHandler(this.radMenuButtonItem3_Click);
+            // 
             // RadMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1003,6 +1183,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.panelTasks.ResumeLayout(false);
+            this.panelTasks.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.videoViewHover)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vlcControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1083,5 +1271,21 @@
         private Telerik.WinControls.UI.RadButton radButton16;
         private Telerik.WinControls.UI.RadPopupEditor radPopupEditor2;
         private Telerik.WinControls.UI.RadLabel radLabel3;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Timer timerHoverPositionChanged;
+        private System.Windows.Forms.Panel panelTasks;
+        private System.Windows.Forms.ListView listViewTasks;
+        private System.Windows.Forms.ColumnHeader columnStatus;
+        private System.Windows.Forms.ColumnHeader columnProfile;
+        private System.Windows.Forms.ColumnHeader columnFilename;
+        private System.Windows.Forms.ColumnHeader columnDuration;
+        private System.Windows.Forms.ColumnHeader columnOutputFile;
+        private System.Windows.Forms.ColumnHeader columnError;
+        private System.Windows.Forms.Label labelTasks;
+        private System.Windows.Forms.Label labelProgress;
+        private LibVLCSharp.WinForms.VideoView videoViewHover;
+        private LibVLCSharp.WinForms.VideoView vlcControl1;
+        private VideoCutterTimeline videoCutterTimeline1;
+        private Telerik.WinControls.UI.RadMenuButtonItem radMenuButtonItem3;
     }
 }
