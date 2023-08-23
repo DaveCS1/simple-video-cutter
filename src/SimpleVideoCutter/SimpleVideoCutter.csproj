@@ -155,7 +155,7 @@
       <DependentUpon>GlobalStrings.resx</DependentUpon>
     </Compile>
     <Compile Include="TaskProcessor.cs" />
-    <Compile Include="Partials\MainMerge.cs">
+    <Compile Include="Partials\RadMainFormPartial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelerikForms\RadMainForm.cs">
