@@ -54,7 +54,6 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.videoViewHover = new LibVLCSharp.WinForms.VideoView();
             this.vlcControl1 = new LibVLCSharp.WinForms.VideoView();
-            this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
             this.panelTasks = new System.Windows.Forms.Panel();
             this.listViewTasks = new System.Windows.Forms.ListView();
             this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -96,6 +95,44 @@
             this.radMenuItem5 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuButtonItem3 = new Telerik.WinControls.UI.RadMenuButtonItem();
             this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.statusStrip = new Telerik.WinControls.UI.RadStatusStrip();
+            this.toolStripStatusLabelIndex = new Telerik.WinControls.UI.RadLabelElement();
+            this.toolStripStatusLabelSelection = new Telerik.WinControls.UI.RadLabelElement();
+            this.toolStripTimeline = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement8 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement6 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.toolStripButtonTimelineZoomOut = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonTimelineZoomAuto = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonTimelineGoToCurrentPosition = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripTasks = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement7 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement5 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.toolStripButtonTasksShow1 = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonTasksShow = new Telerik.WinControls.UI.CommandBarToggleButton();
+            this.toolStripSelection = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement6 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement4 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.toolStripButtonSelectionSetStart = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonSelectionSetEnd = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonSelectionGoToStart = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonSelectionGoToEnd = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonSelectionPlay = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonSelectionClear = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonSelectionEnqueue = new Telerik.WinControls.UI.CommandBarButton();
+            this.commandBarButton18 = new Telerik.WinControls.UI.CommandBarButton();
+            this.commandBarButton19 = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripFile = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement5 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement3 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.toolStripButtonFileNext = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonFilePrev = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripPlayback = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement3 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement2 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.toolStripButtonPlabackPlayPause = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonPlabackNextFrame = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonPlabackMute = new Telerik.WinControls.UI.CommandBarToggleButton();
+            this.commandBarRowElement4 = new Telerik.WinControls.UI.CommandBarRowElement();
             this.radPageViewPage4 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radPageViewPage1 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radCommandBar1 = new Telerik.WinControls.UI.RadCommandBar();
@@ -124,44 +161,7 @@
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
             this.timerHoverPositionChanged = new System.Windows.Forms.Timer(this.components);
             this.object_50254541_367b_4ee5_af46_ef9beb1f3d02 = new Telerik.WinControls.RootRadElement();
-            this.toolStripPlayback = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement3 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement2 = new Telerik.WinControls.UI.CommandBarStripElement();
-            this.toolStripButtonPlabackPlayPause = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonPlabackNextFrame = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonPlabackMute = new Telerik.WinControls.UI.CommandBarToggleButton();
-            this.commandBarRowElement4 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.toolStripFile = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement5 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement3 = new Telerik.WinControls.UI.CommandBarStripElement();
-            this.toolStripButtonFileNext = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonFilePrev = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripSelection = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement6 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement4 = new Telerik.WinControls.UI.CommandBarStripElement();
-            this.toolStripButtonSelectionSetStart = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonSelectionSetEnd = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonSelectionGoToStart = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonSelectionGoToEnd = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonSelectionPlay = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonSelectionClear = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonSelectionEnqueue = new Telerik.WinControls.UI.CommandBarButton();
-            this.commandBarButton18 = new Telerik.WinControls.UI.CommandBarButton();
-            this.commandBarButton19 = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripTasks = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement7 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement5 = new Telerik.WinControls.UI.CommandBarStripElement();
-            this.toolStripTimeline = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement8 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement6 = new Telerik.WinControls.UI.CommandBarStripElement();
-            this.toolStripButtonTimelineZoomOut = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonTimelineZoomAuto = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonTimelineGoToCurrentPosition = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonTasksShow1 = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonTasksShow = new Telerik.WinControls.UI.CommandBarToggleButton();
-            this.statusStrip = new Telerik.WinControls.UI.RadStatusStrip();
-            this.toolStripStatusLabelIndex = new Telerik.WinControls.UI.RadLabelElement();
-            this.toolStripStatusLabelSelection = new Telerik.WinControls.UI.RadLabelElement();
+            this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -221,13 +221,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             this.radPageViewPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripPlayback)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripFile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripSelection)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripTasks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripTimeline)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusStrip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripTimeline)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripTasks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripSelection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripFile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripPlayback)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -257,7 +257,7 @@
             this.radPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView1.Location = new System.Drawing.Point(0, 54);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.radPageViewPage3;
+            this.radPageView1.SelectedPage = this.radPageViewPageTrimVideos;
             this.radPageView1.Size = new System.Drawing.Size(1016, 657);
             this.radPageView1.TabIndex = 2;
             this.radPageView1.ThemeName = "FluentDark";
@@ -266,7 +266,7 @@
             // 
             this.radPageViewPageAddFiles.AllowDrop = true;
             this.radPageViewPageAddFiles.Controls.Add(this.radSplitContainer1);
-            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(64F, 29F);
+            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(62F, 25F);
             this.radPageViewPageAddFiles.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPageAddFiles.Name = "radPageViewPageAddFiles";
             this.radPageViewPageAddFiles.Size = new System.Drawing.Size(1004, 615);
@@ -445,7 +445,7 @@
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel3);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel2);
             this.radPageViewPageTrimVideos.Controls.Add(this.radMenu1);
-            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(79F, 29F);
+            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(77F, 25F);
             this.radPageViewPageTrimVideos.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPageTrimVideos.Name = "radPageViewPageTrimVideos";
             this.radPageViewPageTrimVideos.Size = new System.Drawing.Size(1004, 615);
@@ -494,19 +494,6 @@
             this.vlcControl1.Size = new System.Drawing.Size(334, 429);
             this.vlcControl1.TabIndex = 8;
             this.vlcControl1.Text = "videoView1";
-            // 
-            // videoCutterTimeline1
-            // 
-            this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.videoCutterTimeline1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.videoCutterTimeline1.HoverPosition = null;
-            this.videoCutterTimeline1.Length = ((long)(0));
-            this.videoCutterTimeline1.Location = new System.Drawing.Point(0, 429);
-            this.videoCutterTimeline1.Margin = new System.Windows.Forms.Padding(4);
-            this.videoCutterTimeline1.Name = "videoCutterTimeline1";
-            this.videoCutterTimeline1.Position = ((long)(0));
-            this.videoCutterTimeline1.Size = new System.Drawing.Size(334, 79);
-            this.videoCutterTimeline1.TabIndex = 9;
             // 
             // panelTasks
             // 
@@ -894,23 +881,33 @@
             // 
             // 
             this.radMenuButtonItem2.ButtonElement.ShowBorder = false;
-            this.radMenuButtonItem2.Image = ((System.Drawing.Image)(resources.GetObject("radMenuButtonItem2.Image")));
-            this.radMenuButtonItem2.ImageIndex = 1;
+            this.radMenuButtonItem2.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radMenuButtonItem2.Image = global::SimpleVideoCutter.Properties.Resources.Previous_WF;
+            this.radMenuButtonItem2.ImageIndex = -1;
             this.radMenuButtonItem2.Name = "radMenuButtonItem2";
             this.radMenuButtonItem2.Text = "Start";
+            this.radMenuButtonItem2.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radMenuButtonItem2.GetChildAt(2).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radMenuButtonItem2.GetChildAt(2).GetChildAt(1).GetChildAt(0))).AutoSize = false;
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radMenuButtonItem2.GetChildAt(2).GetChildAt(1).GetChildAt(0))).AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
             // 
             // radMenuButtonItem1
             // 
+            this.radMenuButtonItem1.Alignment = System.Drawing.ContentAlignment.TopLeft;
             // 
             // 
             // 
             this.radMenuButtonItem1.ButtonElement.ShowBorder = false;
-            this.radMenuButtonItem1.Image = ((System.Drawing.Image)(resources.GetObject("radMenuButtonItem1.Image")));
-            this.radMenuButtonItem1.ImageIndex = 0;
+            this.radMenuButtonItem1.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radMenuButtonItem1.Image = global::SimpleVideoCutter.Properties.Resources.Next_02_WF;
+            this.radMenuButtonItem1.ImageIndex = -1;
             this.radMenuButtonItem1.Name = "radMenuButtonItem1";
             this.radMenuButtonItem1.Text = "End";
-            this.radMenuButtonItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.radMenuButtonItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             this.radMenuButtonItem1.Click += new System.EventHandler(this.radMenuButtonItem1_Click);
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radMenuButtonItem1.GetChildAt(2).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radMenuButtonItem1.GetChildAt(2).GetChildAt(1).GetChildAt(0))).AutoSize = false;
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radMenuButtonItem1.GetChildAt(2).GetChildAt(1).GetChildAt(0))).AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
             // 
             // radMenuItem5
             // 
@@ -936,15 +933,321 @@
             this.radPageViewPage3.Controls.Add(this.toolStripSelection);
             this.radPageViewPage3.Controls.Add(this.toolStripFile);
             this.radPageViewPage3.Controls.Add(this.toolStripPlayback);
-            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(117F, 25F);
             this.radPageViewPage3.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPage3.Name = "radPageViewPage3";
             this.radPageViewPage3.Size = new System.Drawing.Size(1004, 615);
             this.radPageViewPage3.Text = "radPageViewPage3";
             // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.toolStripStatusLabelIndex,
+            this.toolStripStatusLabelSelection});
+            this.statusStrip.Location = new System.Drawing.Point(0, 404);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1004, 24);
+            this.statusStrip.TabIndex = 5;
+            this.statusStrip.ThemeName = "FluentDark";
+            // 
+            // toolStripStatusLabelIndex
+            // 
+            this.toolStripStatusLabelIndex.Name = "toolStripStatusLabelIndex";
+            this.statusStrip.SetSpring(this.toolStripStatusLabelIndex, false);
+            this.toolStripStatusLabelIndex.Text = "radLabelElement1";
+            this.toolStripStatusLabelIndex.TextWrap = true;
+            // 
+            // toolStripStatusLabelSelection
+            // 
+            this.toolStripStatusLabelSelection.Name = "toolStripStatusLabelSelection";
+            this.statusStrip.SetSpring(this.toolStripStatusLabelSelection, false);
+            this.toolStripStatusLabelSelection.Text = "radLabelElement1";
+            this.toolStripStatusLabelSelection.TextWrap = true;
+            // 
+            // toolStripTimeline
+            // 
+            this.toolStripTimeline.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripTimeline.Location = new System.Drawing.Point(0, 428);
+            this.toolStripTimeline.Name = "toolStripTimeline";
+            this.toolStripTimeline.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement8});
+            this.toolStripTimeline.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripTimeline.TabIndex = 4;
+            this.toolStripTimeline.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement8
+            // 
+            this.commandBarRowElement8.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement8.Name = "commandBarRowElement8";
+            this.commandBarRowElement8.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement6});
+            // 
+            // commandBarStripElement6
+            // 
+            this.commandBarStripElement6.DisplayName = "commandBarStripElement6";
+            this.commandBarStripElement6.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonTimelineZoomOut,
+            this.toolStripButtonTimelineZoomAuto,
+            this.toolStripButtonTimelineGoToCurrentPosition});
+            this.commandBarStripElement6.Name = "commandBarStripElement6";
+            // 
+            // toolStripButtonTimelineZoomOut
+            // 
+            this.toolStripButtonTimelineZoomOut.DisplayName = "commandBarButton12";
+            this.toolStripButtonTimelineZoomOut.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTimelineZoomOut.Image")));
+            this.toolStripButtonTimelineZoomOut.Name = "toolStripButtonTimelineZoomOut";
+            this.toolStripButtonTimelineZoomOut.Text = "commandBarButton12";
+            // 
+            // toolStripButtonTimelineZoomAuto
+            // 
+            this.toolStripButtonTimelineZoomAuto.DisplayName = "commandBarButton13";
+            this.toolStripButtonTimelineZoomAuto.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTimelineZoomAuto.Image")));
+            this.toolStripButtonTimelineZoomAuto.Name = "toolStripButtonTimelineZoomAuto";
+            this.toolStripButtonTimelineZoomAuto.Text = "commandBarButton13";
+            // 
+            // toolStripButtonTimelineGoToCurrentPosition
+            // 
+            this.toolStripButtonTimelineGoToCurrentPosition.DisplayName = "commandBarButton14";
+            this.toolStripButtonTimelineGoToCurrentPosition.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTimelineGoToCurrentPosition.Image")));
+            this.toolStripButtonTimelineGoToCurrentPosition.Name = "toolStripButtonTimelineGoToCurrentPosition";
+            this.toolStripButtonTimelineGoToCurrentPosition.Text = "commandBarButton14";
+            // 
+            // toolStripTasks
+            // 
+            this.toolStripTasks.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripTasks.Location = new System.Drawing.Point(0, 459);
+            this.toolStripTasks.Name = "toolStripTasks";
+            this.toolStripTasks.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement7});
+            this.toolStripTasks.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripTasks.TabIndex = 3;
+            this.toolStripTasks.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement7
+            // 
+            this.commandBarRowElement7.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement7.Name = "commandBarRowElement7";
+            this.commandBarRowElement7.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement5});
+            // 
+            // commandBarStripElement5
+            // 
+            this.commandBarStripElement5.DisplayName = "commandBarStripElement5";
+            this.commandBarStripElement5.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonTasksShow1,
+            this.toolStripButtonTasksShow});
+            this.commandBarStripElement5.Name = "commandBarStripElement5";
+            // 
+            // toolStripButtonTasksShow1
+            // 
+            this.toolStripButtonTasksShow1.DisplayName = "commandBarButton12";
+            this.toolStripButtonTasksShow1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTasksShow1.Image")));
+            this.toolStripButtonTasksShow1.Name = "toolStripButtonTasksShow1";
+            this.toolStripButtonTasksShow1.Text = "commandBarButton12";
+            this.toolStripButtonTasksShow1.ToolTipText = "show tasks  move this";
+            // 
+            // toolStripButtonTasksShow
+            // 
+            this.toolStripButtonTasksShow.DisplayName = "commandBarToggleButton1";
+            this.toolStripButtonTasksShow.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTasksShow.Image")));
+            this.toolStripButtonTasksShow.Name = "toolStripButtonTasksShow";
+            this.toolStripButtonTasksShow.Text = "commandBarToggleButton1";
+            // 
+            // toolStripSelection
+            // 
+            this.toolStripSelection.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripSelection.Location = new System.Drawing.Point(0, 490);
+            this.toolStripSelection.Name = "toolStripSelection";
+            this.toolStripSelection.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement6});
+            this.toolStripSelection.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripSelection.TabIndex = 2;
+            this.toolStripSelection.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement6
+            // 
+            this.commandBarRowElement6.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement6.Name = "commandBarRowElement6";
+            this.commandBarRowElement6.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement4});
+            // 
+            // commandBarStripElement4
+            // 
+            this.commandBarStripElement4.DisplayName = "commandBarStripElement4";
+            this.commandBarStripElement4.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonSelectionSetStart,
+            this.toolStripButtonSelectionSetEnd,
+            this.toolStripButtonSelectionGoToStart,
+            this.toolStripButtonSelectionGoToEnd,
+            this.toolStripButtonSelectionPlay,
+            this.toolStripButtonSelectionClear,
+            this.toolStripButtonSelectionEnqueue,
+            this.commandBarButton18,
+            this.commandBarButton19});
+            this.commandBarStripElement4.Name = "commandBarStripElement4";
+            // 
+            // toolStripButtonSelectionSetStart
+            // 
+            this.toolStripButtonSelectionSetStart.DisplayName = "commandBarButton12";
+            this.toolStripButtonSelectionSetStart.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionSetStart.Image")));
+            this.toolStripButtonSelectionSetStart.Name = "toolStripButtonSelectionSetStart";
+            this.toolStripButtonSelectionSetStart.Text = "commandBarButton12";
+            // 
+            // toolStripButtonSelectionSetEnd
+            // 
+            this.toolStripButtonSelectionSetEnd.DisplayName = "commandBarButton12";
+            this.toolStripButtonSelectionSetEnd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionSetEnd.Image")));
+            this.toolStripButtonSelectionSetEnd.Name = "toolStripButtonSelectionSetEnd";
+            this.toolStripButtonSelectionSetEnd.Text = "commandBarButton12";
+            // 
+            // toolStripButtonSelectionGoToStart
+            // 
+            this.toolStripButtonSelectionGoToStart.DisplayName = "commandBarButton13";
+            this.toolStripButtonSelectionGoToStart.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionGoToStart.Image")));
+            this.toolStripButtonSelectionGoToStart.Name = "toolStripButtonSelectionGoToStart";
+            this.toolStripButtonSelectionGoToStart.Text = "commandBarButton13";
+            // 
+            // toolStripButtonSelectionGoToEnd
+            // 
+            this.toolStripButtonSelectionGoToEnd.DisplayName = "commandBarButton14";
+            this.toolStripButtonSelectionGoToEnd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionGoToEnd.Image")));
+            this.toolStripButtonSelectionGoToEnd.Name = "toolStripButtonSelectionGoToEnd";
+            this.toolStripButtonSelectionGoToEnd.Text = "commandBarButton14";
+            // 
+            // toolStripButtonSelectionPlay
+            // 
+            this.toolStripButtonSelectionPlay.DisplayName = "commandBarButton15";
+            this.toolStripButtonSelectionPlay.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionPlay.Image")));
+            this.toolStripButtonSelectionPlay.Name = "toolStripButtonSelectionPlay";
+            this.toolStripButtonSelectionPlay.Text = "commandBarButton15";
+            // 
+            // toolStripButtonSelectionClear
+            // 
+            this.toolStripButtonSelectionClear.DisplayName = "commandBarButton16";
+            this.toolStripButtonSelectionClear.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionClear.Image")));
+            this.toolStripButtonSelectionClear.Name = "toolStripButtonSelectionClear";
+            this.toolStripButtonSelectionClear.Text = "commandBarButton16";
+            // 
+            // toolStripButtonSelectionEnqueue
+            // 
+            this.toolStripButtonSelectionEnqueue.DisplayName = "commandBarButton17";
+            this.toolStripButtonSelectionEnqueue.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionEnqueue.Image")));
+            this.toolStripButtonSelectionEnqueue.Name = "toolStripButtonSelectionEnqueue";
+            this.toolStripButtonSelectionEnqueue.Text = "commandBarButton17";
+            // 
+            // commandBarButton18
+            // 
+            this.commandBarButton18.DisplayName = "commandBarButton18";
+            this.commandBarButton18.Image = ((System.Drawing.Image)(resources.GetObject("commandBarButton18.Image")));
+            this.commandBarButton18.Name = "commandBarButton18";
+            this.commandBarButton18.Text = "commandBarButton18";
+            // 
+            // commandBarButton19
+            // 
+            this.commandBarButton19.DisplayName = "commandBarButton19";
+            this.commandBarButton19.Image = ((System.Drawing.Image)(resources.GetObject("commandBarButton19.Image")));
+            this.commandBarButton19.Name = "commandBarButton19";
+            this.commandBarButton19.Text = "commandBarButton19";
+            // 
+            // toolStripFile
+            // 
+            this.toolStripFile.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripFile.Location = new System.Drawing.Point(0, 521);
+            this.toolStripFile.Name = "toolStripFile";
+            this.toolStripFile.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement5});
+            this.toolStripFile.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripFile.TabIndex = 1;
+            this.toolStripFile.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement5
+            // 
+            this.commandBarRowElement5.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement5.Name = "commandBarRowElement5";
+            this.commandBarRowElement5.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement3});
+            // 
+            // commandBarStripElement3
+            // 
+            this.commandBarStripElement3.DisplayName = "commandBarStripElement3";
+            this.commandBarStripElement3.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonFileNext,
+            this.toolStripButtonFilePrev});
+            this.commandBarStripElement3.Name = "commandBarStripElement3";
+            // 
+            // toolStripButtonFileNext
+            // 
+            this.toolStripButtonFileNext.DisplayName = "commandBarButton12";
+            this.toolStripButtonFileNext.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFileNext.Image")));
+            this.toolStripButtonFileNext.Name = "toolStripButtonFileNext";
+            this.toolStripButtonFileNext.Text = "commandBarButton12";
+            // 
+            // toolStripButtonFilePrev
+            // 
+            this.toolStripButtonFilePrev.DisplayName = "commandBarButton12";
+            this.toolStripButtonFilePrev.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFilePrev.Image")));
+            this.toolStripButtonFilePrev.Name = "toolStripButtonFilePrev";
+            this.toolStripButtonFilePrev.Text = "commandBarButton12";
+            // 
+            // toolStripPlayback
+            // 
+            this.toolStripPlayback.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripPlayback.Location = new System.Drawing.Point(0, 552);
+            this.toolStripPlayback.Name = "toolStripPlayback";
+            this.toolStripPlayback.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement3,
+            this.commandBarRowElement4});
+            this.toolStripPlayback.Size = new System.Drawing.Size(1004, 63);
+            this.toolStripPlayback.TabIndex = 0;
+            this.toolStripPlayback.ThemeName = "FluentDark";
+            this.toolStripPlayback.Click += new System.EventHandler(this.toolStripPlayback_Click);
+            // 
+            // commandBarRowElement3
+            // 
+            this.commandBarRowElement3.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement3.Name = "commandBarRowElement3";
+            this.commandBarRowElement3.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement2});
+            // 
+            // commandBarStripElement2
+            // 
+            this.commandBarStripElement2.DisplayName = "commandBarStripElement2";
+            this.commandBarStripElement2.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonPlabackPlayPause,
+            this.toolStripButtonPlabackNextFrame,
+            this.toolStripButtonPlabackMute});
+            this.commandBarStripElement2.Name = "commandBarStripElement2";
+            // 
+            // toolStripButtonPlabackPlayPause
+            // 
+            this.toolStripButtonPlabackPlayPause.DisplayName = "commandBarButton12";
+            this.toolStripButtonPlabackPlayPause.Image = global::SimpleVideoCutter.Properties.Resources.Play_01_WF;
+            this.toolStripButtonPlabackPlayPause.Name = "toolStripButtonPlabackPlayPause";
+            this.toolStripButtonPlabackPlayPause.Text = "commandBarButton12";
+            this.toolStripButtonPlabackPlayPause.Click += new System.EventHandler(this.toolStripButtonPlabackPlayPause_Click);
+            // 
+            // toolStripButtonPlabackNextFrame
+            // 
+            this.toolStripButtonPlabackNextFrame.DisplayName = "commandBarButton12";
+            this.toolStripButtonPlabackNextFrame.Image = global::SimpleVideoCutter.Properties.Resources.Media_Play_02;
+            this.toolStripButtonPlabackNextFrame.Name = "toolStripButtonPlabackNextFrame";
+            this.toolStripButtonPlabackNextFrame.Text = "commandBarButton12";
+            // 
+            // toolStripButtonPlabackMute
+            // 
+            this.toolStripButtonPlabackMute.DisplayName = "commandBarToggleButton1";
+            this.toolStripButtonPlabackMute.Image = global::SimpleVideoCutter.Properties.Resources.Volume_Mute_1_WF;
+            this.toolStripButtonPlabackMute.Name = "toolStripButtonPlabackMute";
+            this.toolStripButtonPlabackMute.Text = "commandBarToggleButton1";
+            // 
+            // commandBarRowElement4
+            // 
+            this.commandBarRowElement4.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement4.Name = "commandBarRowElement4";
+            // 
             // radPageViewPage4
             // 
-            this.radPageViewPage4.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage4.ItemSize = new System.Drawing.SizeF(117F, 25F);
             this.radPageViewPage4.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPage4.Name = "radPageViewPage4";
             this.radPageViewPage4.Size = new System.Drawing.Size(1004, 615);
@@ -952,7 +1255,7 @@
             // 
             // radPageViewPage1
             // 
-            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(117F, 25F);
             this.radPageViewPage1.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPage1.Name = "radPageViewPage1";
             this.radPageViewPage1.Size = new System.Drawing.Size(1004, 615);
@@ -1182,311 +1485,18 @@
             this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchHorizontally = true;
             this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchVertically = true;
             // 
-            // toolStripPlayback
-            // 
-            this.toolStripPlayback.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripPlayback.Location = new System.Drawing.Point(0, 521);
-            this.toolStripPlayback.Name = "toolStripPlayback";
-            this.toolStripPlayback.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement3,
-            this.commandBarRowElement4});
-            this.toolStripPlayback.Size = new System.Drawing.Size(1004, 94);
-            this.toolStripPlayback.TabIndex = 0;
-            this.toolStripPlayback.ThemeName = "FluentDark";
-            this.toolStripPlayback.Click += new System.EventHandler(this.toolStripPlayback_Click);
-            // 
-            // commandBarRowElement3
-            // 
-            this.commandBarRowElement3.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement3.Name = "commandBarRowElement3";
-            this.commandBarRowElement3.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement2});
-            // 
-            // commandBarStripElement2
-            // 
-            this.commandBarStripElement2.DisplayName = "commandBarStripElement2";
-            this.commandBarStripElement2.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonPlabackPlayPause,
-            this.toolStripButtonPlabackNextFrame,
-            this.toolStripButtonPlabackMute});
-            this.commandBarStripElement2.Name = "commandBarStripElement2";
-            // 
-            // toolStripButtonPlabackPlayPause
-            // 
-            this.toolStripButtonPlabackPlayPause.DisplayName = "commandBarButton12";
-            this.toolStripButtonPlabackPlayPause.Image = global::SimpleVideoCutter.Properties.Resources.Play_01_WF;
-            this.toolStripButtonPlabackPlayPause.Name = "toolStripButtonPlabackPlayPause";
-            this.toolStripButtonPlabackPlayPause.Text = "commandBarButton12";
-            this.toolStripButtonPlabackPlayPause.Click += new System.EventHandler(this.toolStripButtonPlabackPlayPause_Click);
-            // 
-            // toolStripButtonPlabackNextFrame
-            // 
-            this.toolStripButtonPlabackNextFrame.DisplayName = "commandBarButton12";
-            this.toolStripButtonPlabackNextFrame.Image = global::SimpleVideoCutter.Properties.Resources.Media_Play_02;
-            this.toolStripButtonPlabackNextFrame.Name = "toolStripButtonPlabackNextFrame";
-            this.toolStripButtonPlabackNextFrame.Text = "commandBarButton12";
-            // 
-            // toolStripButtonPlabackMute
-            // 
-            this.toolStripButtonPlabackMute.DisplayName = "commandBarToggleButton1";
-            this.toolStripButtonPlabackMute.Image = global::SimpleVideoCutter.Properties.Resources.Volume_Mute_1_WF;
-            this.toolStripButtonPlabackMute.Name = "toolStripButtonPlabackMute";
-            this.toolStripButtonPlabackMute.Text = "commandBarToggleButton1";
-            // 
-            // commandBarRowElement4
-            // 
-            this.commandBarRowElement4.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement4.Name = "commandBarRowElement4";
-            // 
-            // toolStripFile
-            // 
-            this.toolStripFile.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripFile.Location = new System.Drawing.Point(0, 490);
-            this.toolStripFile.Name = "toolStripFile";
-            this.toolStripFile.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement5});
-            this.toolStripFile.Size = new System.Drawing.Size(1004, 31);
-            this.toolStripFile.TabIndex = 1;
-            this.toolStripFile.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement5
-            // 
-            this.commandBarRowElement5.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement5.Name = "commandBarRowElement5";
-            this.commandBarRowElement5.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement3});
-            // 
-            // commandBarStripElement3
-            // 
-            this.commandBarStripElement3.DisplayName = "commandBarStripElement3";
-            this.commandBarStripElement3.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonFileNext,
-            this.toolStripButtonFilePrev});
-            this.commandBarStripElement3.Name = "commandBarStripElement3";
-            // 
-            // toolStripButtonFileNext
-            // 
-            this.toolStripButtonFileNext.DisplayName = "commandBarButton12";
-            this.toolStripButtonFileNext.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFileNext.Image")));
-            this.toolStripButtonFileNext.Name = "toolStripButtonFileNext";
-            this.toolStripButtonFileNext.Text = "commandBarButton12";
-            // 
-            // toolStripButtonFilePrev
-            // 
-            this.toolStripButtonFilePrev.DisplayName = "commandBarButton12";
-            this.toolStripButtonFilePrev.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFilePrev.Image")));
-            this.toolStripButtonFilePrev.Name = "toolStripButtonFilePrev";
-            this.toolStripButtonFilePrev.Text = "commandBarButton12";
-            // 
-            // toolStripSelection
-            // 
-            this.toolStripSelection.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripSelection.Location = new System.Drawing.Point(0, 459);
-            this.toolStripSelection.Name = "toolStripSelection";
-            this.toolStripSelection.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement6});
-            this.toolStripSelection.Size = new System.Drawing.Size(1004, 31);
-            this.toolStripSelection.TabIndex = 2;
-            this.toolStripSelection.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement6
-            // 
-            this.commandBarRowElement6.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement6.Name = "commandBarRowElement6";
-            this.commandBarRowElement6.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement4});
-            // 
-            // commandBarStripElement4
-            // 
-            this.commandBarStripElement4.DisplayName = "commandBarStripElement4";
-            this.commandBarStripElement4.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonSelectionSetStart,
-            this.toolStripButtonSelectionSetEnd,
-            this.toolStripButtonSelectionGoToStart,
-            this.toolStripButtonSelectionGoToEnd,
-            this.toolStripButtonSelectionPlay,
-            this.toolStripButtonSelectionClear,
-            this.toolStripButtonSelectionEnqueue,
-            this.commandBarButton18,
-            this.commandBarButton19});
-            this.commandBarStripElement4.Name = "commandBarStripElement4";
-            // 
-            // toolStripButtonSelectionSetStart
-            // 
-            this.toolStripButtonSelectionSetStart.DisplayName = "commandBarButton12";
-            this.toolStripButtonSelectionSetStart.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionSetStart.Image")));
-            this.toolStripButtonSelectionSetStart.Name = "toolStripButtonSelectionSetStart";
-            this.toolStripButtonSelectionSetStart.Text = "commandBarButton12";
-            // 
-            // toolStripButtonSelectionSetEnd
-            // 
-            this.toolStripButtonSelectionSetEnd.DisplayName = "commandBarButton12";
-            this.toolStripButtonSelectionSetEnd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionSetEnd.Image")));
-            this.toolStripButtonSelectionSetEnd.Name = "toolStripButtonSelectionSetEnd";
-            this.toolStripButtonSelectionSetEnd.Text = "commandBarButton12";
-            // 
-            // toolStripButtonSelectionGoToStart
-            // 
-            this.toolStripButtonSelectionGoToStart.DisplayName = "commandBarButton13";
-            this.toolStripButtonSelectionGoToStart.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionGoToStart.Image")));
-            this.toolStripButtonSelectionGoToStart.Name = "toolStripButtonSelectionGoToStart";
-            this.toolStripButtonSelectionGoToStart.Text = "commandBarButton13";
-            // 
-            // toolStripButtonSelectionGoToEnd
-            // 
-            this.toolStripButtonSelectionGoToEnd.DisplayName = "commandBarButton14";
-            this.toolStripButtonSelectionGoToEnd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionGoToEnd.Image")));
-            this.toolStripButtonSelectionGoToEnd.Name = "toolStripButtonSelectionGoToEnd";
-            this.toolStripButtonSelectionGoToEnd.Text = "commandBarButton14";
-            // 
-            // toolStripButtonSelectionPlay
-            // 
-            this.toolStripButtonSelectionPlay.DisplayName = "commandBarButton15";
-            this.toolStripButtonSelectionPlay.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionPlay.Image")));
-            this.toolStripButtonSelectionPlay.Name = "toolStripButtonSelectionPlay";
-            this.toolStripButtonSelectionPlay.Text = "commandBarButton15";
-            // 
-            // toolStripButtonSelectionClear
-            // 
-            this.toolStripButtonSelectionClear.DisplayName = "commandBarButton16";
-            this.toolStripButtonSelectionClear.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionClear.Image")));
-            this.toolStripButtonSelectionClear.Name = "toolStripButtonSelectionClear";
-            this.toolStripButtonSelectionClear.Text = "commandBarButton16";
-            // 
-            // toolStripButtonSelectionEnqueue
-            // 
-            this.toolStripButtonSelectionEnqueue.DisplayName = "commandBarButton17";
-            this.toolStripButtonSelectionEnqueue.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSelectionEnqueue.Image")));
-            this.toolStripButtonSelectionEnqueue.Name = "toolStripButtonSelectionEnqueue";
-            this.toolStripButtonSelectionEnqueue.Text = "commandBarButton17";
-            // 
-            // commandBarButton18
-            // 
-            this.commandBarButton18.DisplayName = "commandBarButton18";
-            this.commandBarButton18.Image = ((System.Drawing.Image)(resources.GetObject("commandBarButton18.Image")));
-            this.commandBarButton18.Name = "commandBarButton18";
-            this.commandBarButton18.Text = "commandBarButton18";
-            // 
-            // commandBarButton19
-            // 
-            this.commandBarButton19.DisplayName = "commandBarButton19";
-            this.commandBarButton19.Image = ((System.Drawing.Image)(resources.GetObject("commandBarButton19.Image")));
-            this.commandBarButton19.Name = "commandBarButton19";
-            this.commandBarButton19.Text = "commandBarButton19";
-            // 
-            // toolStripTasks
-            // 
-            this.toolStripTasks.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripTasks.Location = new System.Drawing.Point(0, 428);
-            this.toolStripTasks.Name = "toolStripTasks";
-            this.toolStripTasks.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement7});
-            this.toolStripTasks.Size = new System.Drawing.Size(1004, 31);
-            this.toolStripTasks.TabIndex = 3;
-            this.toolStripTasks.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement7
-            // 
-            this.commandBarRowElement7.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement7.Name = "commandBarRowElement7";
-            this.commandBarRowElement7.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement5});
-            // 
-            // commandBarStripElement5
-            // 
-            this.commandBarStripElement5.DisplayName = "commandBarStripElement5";
-            this.commandBarStripElement5.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonTasksShow1,
-            this.toolStripButtonTasksShow});
-            this.commandBarStripElement5.Name = "commandBarStripElement5";
-            // 
-            // toolStripTimeline
-            // 
-            this.toolStripTimeline.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripTimeline.Location = new System.Drawing.Point(0, 397);
-            this.toolStripTimeline.Name = "toolStripTimeline";
-            this.toolStripTimeline.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement8});
-            this.toolStripTimeline.Size = new System.Drawing.Size(1004, 31);
-            this.toolStripTimeline.TabIndex = 4;
-            this.toolStripTimeline.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement8
-            // 
-            this.commandBarRowElement8.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement8.Name = "commandBarRowElement8";
-            this.commandBarRowElement8.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement6});
-            // 
-            // commandBarStripElement6
-            // 
-            this.commandBarStripElement6.DisplayName = "commandBarStripElement6";
-            this.commandBarStripElement6.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonTimelineZoomOut,
-            this.toolStripButtonTimelineZoomAuto,
-            this.toolStripButtonTimelineGoToCurrentPosition});
-            this.commandBarStripElement6.Name = "commandBarStripElement6";
-            // 
-            // toolStripButtonTimelineZoomOut
-            // 
-            this.toolStripButtonTimelineZoomOut.DisplayName = "commandBarButton12";
-            this.toolStripButtonTimelineZoomOut.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTimelineZoomOut.Image")));
-            this.toolStripButtonTimelineZoomOut.Name = "toolStripButtonTimelineZoomOut";
-            this.toolStripButtonTimelineZoomOut.Text = "commandBarButton12";
-            // 
-            // toolStripButtonTimelineZoomAuto
-            // 
-            this.toolStripButtonTimelineZoomAuto.DisplayName = "commandBarButton13";
-            this.toolStripButtonTimelineZoomAuto.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTimelineZoomAuto.Image")));
-            this.toolStripButtonTimelineZoomAuto.Name = "toolStripButtonTimelineZoomAuto";
-            this.toolStripButtonTimelineZoomAuto.Text = "commandBarButton13";
-            // 
-            // toolStripButtonTimelineGoToCurrentPosition
-            // 
-            this.toolStripButtonTimelineGoToCurrentPosition.DisplayName = "commandBarButton14";
-            this.toolStripButtonTimelineGoToCurrentPosition.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTimelineGoToCurrentPosition.Image")));
-            this.toolStripButtonTimelineGoToCurrentPosition.Name = "toolStripButtonTimelineGoToCurrentPosition";
-            this.toolStripButtonTimelineGoToCurrentPosition.Text = "commandBarButton14";
-            // 
-            // toolStripButtonTasksShow1
-            // 
-            this.toolStripButtonTasksShow1.DisplayName = "commandBarButton12";
-            this.toolStripButtonTasksShow1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTasksShow1.Image")));
-            this.toolStripButtonTasksShow1.Name = "toolStripButtonTasksShow1";
-            this.toolStripButtonTasksShow1.Text = "commandBarButton12";
-            this.toolStripButtonTasksShow1.ToolTipText = "show tasks  move this";
-            // 
-            // toolStripButtonTasksShow
-            // 
-            this.toolStripButtonTasksShow.DisplayName = "commandBarToggleButton1";
-            this.toolStripButtonTasksShow.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTasksShow.Image")));
-            this.toolStripButtonTasksShow.Name = "toolStripButtonTasksShow";
-            this.toolStripButtonTasksShow.Text = "commandBarToggleButton1";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.toolStripStatusLabelIndex,
-            this.toolStripStatusLabelSelection});
-            this.statusStrip.Location = new System.Drawing.Point(0, 373);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1004, 24);
-            this.statusStrip.TabIndex = 5;
-            this.statusStrip.ThemeName = "FluentDark";
-            // 
-            // toolStripStatusLabelIndex
-            // 
-            this.toolStripStatusLabelIndex.Name = "toolStripStatusLabelIndex";
-            this.statusStrip.SetSpring(this.toolStripStatusLabelIndex, false);
-            this.toolStripStatusLabelIndex.Text = "radLabelElement1";
-            this.toolStripStatusLabelIndex.TextWrap = true;
-            // 
-            // toolStripStatusLabelSelection
-            // 
-            this.toolStripStatusLabelSelection.Name = "toolStripStatusLabelSelection";
-            this.statusStrip.SetSpring(this.toolStripStatusLabelSelection, false);
-            this.toolStripStatusLabelSelection.Text = "radLabelElement1";
-            this.toolStripStatusLabelSelection.TextWrap = true;
+            // videoCutterTimeline1
+            // 
+            this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.videoCutterTimeline1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.videoCutterTimeline1.HoverPosition = null;
+            this.videoCutterTimeline1.Length = ((long)(0));
+            this.videoCutterTimeline1.Location = new System.Drawing.Point(0, 429);
+            this.videoCutterTimeline1.Margin = new System.Windows.Forms.Padding(4);
+            this.videoCutterTimeline1.Name = "videoCutterTimeline1";
+            this.videoCutterTimeline1.Position = ((long)(0));
+            this.videoCutterTimeline1.Size = new System.Drawing.Size(334, 79);
+            this.videoCutterTimeline1.TabIndex = 9;
             // 
             // RadMainForm
             // 
@@ -1575,13 +1585,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             this.radPageViewPage3.ResumeLayout(false);
             this.radPageViewPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripPlayback)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripFile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripSelection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripTasks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toolStripTimeline)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusStrip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripTimeline)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripTasks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripSelection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripFile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolStripPlayback)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
