@@ -733,6 +733,26 @@ namespace SimpleVideoCutter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Maximize___01_24 {
+            get {
+                object obj = ResourceManager.GetObject("Maximize___01_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Maximize___04_24 {
+            get {
+                object obj = ResourceManager.GetObject("Maximize___04_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Media_Back {
             get {
                 object obj = ResourceManager.GetObject("Media_Back", resourceCulture);
@@ -1323,6 +1343,16 @@ namespace SimpleVideoCutter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Minimize___01_24 {
+            get {
+                object obj = ResourceManager.GetObject("Minimize___01_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Movie_Favorite_WF {
             get {
                 object obj = ResourceManager.GetObject("Movie_Favorite_WF", resourceCulture);
@@ -1453,9 +1483,29 @@ namespace SimpleVideoCutter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_WF_24 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle_WF_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Reminder_2_WF {
             get {
                 object obj = ResourceManager.GetObject("Reminder_2_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Restore_01_24 {
+            get {
+                object obj = ResourceManager.GetObject("Restore_01_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2056,6 +2106,46 @@ namespace SimpleVideoCutter.Properties {
         internal static System.Drawing.Bitmap Zip_file_03_WF {
             get {
                 object obj = ResourceManager.GetObject("Zip_file_03_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zoom_In_02_24 {
+            get {
+                object obj = ResourceManager.GetObject("Zoom_In_02_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zoom_Out_01_24 {
+            get {
+                object obj = ResourceManager.GetObject("Zoom_Out_01_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zoom_Scroll_24 {
+            get {
+                object obj = ResourceManager.GetObject("Zoom_Scroll_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zooming_24 {
+            get {
+                object obj = ResourceManager.GetObject("Zooming_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

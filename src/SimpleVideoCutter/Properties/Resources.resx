@@ -718,4 +718,31 @@
   <data name="Chart_Title_Legends" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Chart-Title-Legends.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Maximize___01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Maximize - 01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maximize___04_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Maximize  -04_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize___01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Minimize - 01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle_WF_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Rectangle-WF_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restore_01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Restore-01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zooming_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Zooming_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zoom_In_02_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Zoom In_02_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zoom_Out_01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Zoom Out_01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zoom_Scroll_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Zoom-Scroll_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

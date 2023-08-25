@@ -164,6 +164,11 @@
     <Compile Include="TelerikForms\RadMainForm.Designer.cs">
       <DependentUpon>RadMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelerikForms\ResourceSmallIcons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceSmallIcons.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="VideoCutterSettings.cs" />
     <Compile Include="VideoCutterTimeline.cs" />
@@ -324,6 +329,10 @@
     <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
     <EmbeddedResource Include="TelerikForms\RadMainForm.resx">
       <DependentUpon>RadMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelerikForms\ResourceSmallIcons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceSmallIcons.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="VideoCutterTimeline.de.resx">
       <DependentUpon>VideoCutterTimeline.cs</DependentUpon>
@@ -537,6 +546,15 @@
     <None Include="Images\imagecutinverted32 .png" />
     <Content Include="DevNotes_Exclude\Notes.txt" />
     <EmbeddedResource Include="Images\Chart-Title-Legends.png" />
+    <EmbeddedResource Include="Images\24\Maximize  -04_24.png" />
+    <EmbeddedResource Include="Images\24\Maximize - 01_24.png" />
+    <EmbeddedResource Include="Images\24\Minimize - 01_24.png" />
+    <EmbeddedResource Include="Images\24\Rectangle-WF_24.png" />
+    <EmbeddedResource Include="Images\24\Restore-01_24.png" />
+    <EmbeddedResource Include="Images\24\Zoom In_02_24.png" />
+    <EmbeddedResource Include="Images\24\Zoom Out_01_24.png" />
+    <EmbeddedResource Include="Images\24\Zoom-Scroll_24.png" />
+    <EmbeddedResource Include="Images\24\Zooming_24.png" />
     <Content Include="Images\icons8-video-trimming-32copy.png" />
     <Content Include="Images\icons8-video-trimming-80 white transback32.png" />
     <Content Include="Images\Settings.png" />

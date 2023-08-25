@@ -81,20 +81,20 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void radMenuButtonItem1_Click(object sender, EventArgs e)
         {
-            radMenu1.BackColor = radPageViewPageAddFiles.BackColor;
+            //radMenu1.BackColor = radPageViewPageAddFiles.BackColor;
 
-            RadMenuContentItem textBoxContentItem = new RadMenuContentItem();
-            RadTextBoxElement textBox = new RadTextBoxElement();
-            textBox.Text = "Enter text here";
-            textBox.MinSize = new Size(100, 0);
-            textBoxContentItem.ContentElement = textBox;
-            radMenu1.Items.Add(textBoxContentItem);
-            RadMenuContentItem buttonContentItem = new RadMenuContentItem();
-            RadButtonElement button = new RadButtonElement();
-            button.Text = "OK";
-            //button.Click += new EventHandler(button_Click);
-            buttonContentItem.ContentElement = button;
-            radMenu1.Items.Add(buttonContentItem);
+            //RadMenuContentItem textBoxContentItem = new RadMenuContentItem();
+            //RadTextBoxElement textBox = new RadTextBoxElement();
+            //textBox.Text = "Enter text here";
+            //textBox.MinSize = new Size(100, 0);
+            //textBoxContentItem.ContentElement = textBox;
+            //radMenu1.Items.Add(textBoxContentItem);
+            //RadMenuContentItem buttonContentItem = new RadMenuContentItem();
+            //RadButtonElement button = new RadButtonElement();
+            //button.Text = "OK";
+            ////button.Click += new EventHandler(button_Click);
+            //buttonContentItem.ContentElement = button;
+            //radMenu1.Items.Add(buttonContentItem);
         }
 
         private void radSplitButton1_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void radTrackBar2_ValueChanged(object sender, EventArgs e)
         {
-            radPopupEditor1.Text= radTrackBar2.Value.ToString();
+            radPopupEditorVolume.Text= radTrackBar2.Value.ToString();
         }
 
         private void radPopupContainer2_Click(object sender, EventArgs e)
@@ -125,11 +125,16 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void radMenuButtonItem3_Click(object sender, EventArgs e)
         {
+            ShowHideProcessing();
+        }
+
+        private void ShowHideProcessing()
+        {
             if (splitContainer1.Panel2Collapsed == true)
             {
                 splitContainer1.Panel2Collapsed = false;
             }
-            else if(splitContainer1.Panel2Collapsed == false)
+            else if (splitContainer1.Panel2Collapsed == false)
             {
                 splitContainer1.Panel2Collapsed = true;
             }
@@ -137,20 +142,20 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void radMenuItem5_Click(object sender, EventArgs e)
         {
-            InitVLC();
+           
         }
-
+// InitVLC();   //loads VLC assemblies, initializes  and starts up sample video
       
         private void radToggleButton1_ToggleStateChanging(object sender, StateChangingEventArgs args)
         {
-            if (!(radToggleButton1.ToggleState == Telerik.WinControls.Enumerations.ToggleState.On))
+            if (!(toggleButtonPlayPause.ToggleState == Telerik.WinControls.Enumerations.ToggleState.On))
             {
                 //radToggleButton1.ImageIndex = 4;
                 //label1.Text = "Button Toggled On";
             }
             else
             {
-                radToggleButton1.ImageIndex = 3;
+                toggleButtonPlayPause.ImageIndex = 3;
                 //label1.Text = "Button Toggled Off";
             }
         }
@@ -161,6 +166,16 @@ namespace SimpleVideoCutter.TelerikForms
         }
 
         private void toolStripPlayback_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radButton13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radMenu1_Click(object sender, EventArgs e)
         {
 
         }
