@@ -745,4 +745,10 @@
   <data name="Zoom_Scroll_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\24\Zoom-Scroll_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NextAccent24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\NextAccent24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreviousAccent24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\PreviousAccent24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

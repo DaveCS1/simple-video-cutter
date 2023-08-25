@@ -1413,6 +1413,16 @@ namespace SimpleVideoCutter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NextAccent24 {
+            get {
+                object obj = ResourceManager.GetObject("NextAccent24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Note_Memo {
             get {
                 object obj = ResourceManager.GetObject("Note_Memo", resourceCulture);
@@ -1466,6 +1476,16 @@ namespace SimpleVideoCutter.Properties {
         internal static System.Drawing.Bitmap Previous_WF {
             get {
                 object obj = ResourceManager.GetObject("Previous_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PreviousAccent24 {
+            get {
+                object obj = ResourceManager.GetObject("PreviousAccent24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
