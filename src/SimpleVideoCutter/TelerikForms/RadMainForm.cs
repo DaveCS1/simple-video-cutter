@@ -28,7 +28,7 @@ namespace SimpleVideoCutter.TelerikForms
             //radCommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
 
 
-           // InitVLC(); initialize vlc and related controls
+            InitVLC(); //initialize vlc and related controls
         }
 
         private void radButton4_Click(object sender, EventArgs e)
@@ -170,14 +170,73 @@ namespace SimpleVideoCutter.TelerikForms
 
         }
 
-        private void radButton13_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void radMenu1_Click(object sender, EventArgs e)
         {
 
+        }
+        #region ButtonClickEvents
+
+        private void commandBarBtnAddVideos_Click(object sender, EventArgs e)
+        {
+            OpenFile();
+        }
+
+        private void btnMovePreviousVideo_Click(object sender, EventArgs e)
+        {
+            OpenPrevFileInDirectory();
+        }
+        #endregion
+
+        private void btnMoveNextVideo_Click(object sender, EventArgs e)
+        {
+            OpenNextFileInDirectory();
+        }
+
+        private void btnCutStart_Click(object sender, EventArgs e)
+        {
+            if (ModifierKeys == Keys.Shift)
+                SetSelectionAtCurrentPositionTillTheEnd();
+            else
+                SetStartAtCurrentPosition();
+        }
+
+        private void btnCutEnd_Click(object sender, EventArgs e)
+        {
+            if (ModifierKeys == Keys.Shift)
+                SetSelectionFromTheBeginningTillCurrentPosition();
+            else
+                SetEndAtCurrentPosition();
+        }
+
+        private void btnPlayRange_Click(object sender, EventArgs e)
+        {
+            PlaySelection();
+        }
+
+        private void btnClearSelection_Click(object sender, EventArgs e)
+        {
+            ClearAllSelections();
+        }
+
+        private void btnPerformCut_Click(object sender, EventArgs e)
+        {
+            EnqeueNewTask();
+        }
+
+        private void commandBarBtnSettings_Click(object sender, EventArgs e)
+        {
+            formSettings.ShowSettingsDialog();
+                ResizePreview();
+        }
+
+        private void commandBarBtnHelpDemos_Click(object sender, EventArgs e)
+        {
+            using (var about = new AboutBox())
+            {
+                about.ShowDialog();
+            }
         }
     }
 }

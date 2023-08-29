@@ -111,6 +111,12 @@
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlExtensions.cs" />
+    <Compile Include="Controls\ucViewHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucViewHistory.Designer.cs">
+      <DependentUpon>ucViewHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomWebClient.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -170,6 +176,7 @@
       <DependentUpon>ResourceSmallIcons.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
+    <Compile Include="Util\FindFormChildControls.cs" />
     <Compile Include="VideoCutterSettings.cs" />
     <Compile Include="VideoCutterTimeline.cs" />
     <Compile Include="VideoCutterTimeline.Designer.cs">
@@ -198,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AboutBox.zh-CN.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucViewHistory.resx">
+      <DependentUpon>ucViewHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddTask.de.resx">
       <DependentUpon>FormAddTask.cs</DependentUpon>
@@ -640,7 +650,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
     <Folder Include="DAL\" />
     <Folder Include="Settings\" />
   </ItemGroup>
