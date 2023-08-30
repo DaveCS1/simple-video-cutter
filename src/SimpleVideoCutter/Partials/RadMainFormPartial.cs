@@ -109,7 +109,7 @@ namespace SimpleVideoCutter.TelerikForms
 
             formSettings = new FormSettings();
             voidLoadVLC();
-            TempPlay();
+           // TempPlay();
         }
 
         private void voidLoadVLC() //from form load
@@ -1184,7 +1184,7 @@ namespace SimpleVideoCutter.TelerikForms
             if (GetPathOfSingleDraggedFile(e.Data) != null)
                 e.Effect = DragDropEffects.Copy;
         }
-
+        //todo rename for dragodrop  this is temp
         private void THEMainForm_DragDrop(object sender, DragEventArgs e)
         {
             var file = GetPathOfSingleDraggedFile(e.Data);

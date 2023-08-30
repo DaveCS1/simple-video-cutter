@@ -238,5 +238,18 @@ namespace SimpleVideoCutter.TelerikForms
                 about.ShowDialog();
             }
         }
+
+        private void RadMainForm_Shown(object sender, EventArgs e)
+        {
+            EnsureFFmpegConfigured();
+
+            taskProcessor.Start();
+            //EnableButtons();
+
+            if (fileToLoadOnStartup != null)
+            {
+                OpenFile(fileToLoadOnStartup);
+            }
+        }
     }
 }

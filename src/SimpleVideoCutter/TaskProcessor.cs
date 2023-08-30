@@ -114,6 +114,7 @@ namespace SimpleVideoCutter
 
                 ffmpeg.Complete += (object sender, FFmpeg.NET.Events.ConversionCompleteEventArgs e) =>
                 {
+                    Console.WriteLine("complete");
                     task.State = FFmpegTaskState.FinishedOK;
                     taskInProgress = false;
                     OnPropertyChanged("Tasks");
@@ -121,6 +122,7 @@ namespace SimpleVideoCutter
                 };
                 ffmpeg.Error += (object sender, FFmpeg.NET.Events.ConversionErrorEventArgs e) =>
                 {
+                    Console.WriteLine("error");
                     task.State = FFmpegTaskState.FinishedError;
                     task.ErrorMessage = e.Exception.Message;
                     taskInProgress = false;
@@ -130,6 +132,7 @@ namespace SimpleVideoCutter
 
                 ffmpeg.Progress += (object sender, FFmpeg.NET.Events.ConversionProgressEventArgs e) =>
                 {
+                    Console.WriteLine("progress");
                     var msg = string.Format(GlobalStrings.TaskProcessor_Processed, e.ProcessedDuration.TotalSeconds);
                     OnTaskProgress(msg);
                 };

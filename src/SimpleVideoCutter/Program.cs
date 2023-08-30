@@ -77,15 +77,15 @@ namespace SimpleVideoCutter
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           
-            //todo revert after applying design
+
+            ////todo revert after applying design
             //var form = new MainForm(fileToLoadOnStartup, configFolder);
             //Application.Run(form);
-           
-            
+
+
             var radFormMain = new TelerikForms.RadMainForm();
             Application.Run(radFormMain);
-            
+
         }
     }
 }
