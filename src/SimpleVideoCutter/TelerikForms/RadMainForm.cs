@@ -251,5 +251,34 @@ namespace SimpleVideoCutter.TelerikForms
                 OpenFile(fileToLoadOnStartup);
             }
         }
+
+        /// <summary>
+        /// Double click timeline at start and end position to set start/end times. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void videoCutterTimeline1_DoubleClick(object sender, EventArgs e)
+        {
+
+            //todo make sure timeline has item, button should be disabled anyway - move to partial
+            try
+            {
+                if (!videoCutterTimeline1.NewSelectionStartRegistered)
+                {
+                    SetStartAtCurrentPosition();
+                }
+                else
+                {
+                    SetEndAtCurrentPosition();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace); //temp
+                //todo log any error
+            }
+
+        }
+        //
     }
 }
