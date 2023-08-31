@@ -183,6 +183,11 @@
     </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="Util\FindFormChildControls.cs" />
+    <Compile Include="VideoControlIcons24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VideoControlIcons24.resx</DependentUpon>
+    </Compile>
     <Compile Include="VideoCutterSettings.cs" />
     <Compile Include="VideoCutterTimeline.cs" />
     <Compile Include="VideoCutterTimeline.Designer.cs">
@@ -352,6 +357,10 @@
     <EmbeddedResource Include="TelerikForms\ResourceSmallIcons.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceSmallIcons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoControlIcons24.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VideoControlIcons24.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="VideoCutterTimeline.de.resx">
       <DependentUpon>VideoCutterTimeline.cs</DependentUpon>
@@ -574,8 +583,62 @@
     <EmbeddedResource Include="Images\24\Zoom Out_01_24.png" />
     <EmbeddedResource Include="Images\24\Zoom-Scroll_24.png" />
     <EmbeddedResource Include="Images\24\Zooming_24.png" />
-    <Content Include="Images\24\NextAccent24.png" />
-    <Content Include="Images\24\PreviousAccent24.png" />
+    <EmbeddedResource Include="Images\24\BBM.png" />
+    <EmbeddedResource Include="Images\24\Circle Pause.png" />
+    <EmbeddedResource Include="Images\24\Circle play-WF.png" />
+    <EmbeddedResource Include="Images\24\Clipboard-WF.png" />
+    <EmbeddedResource Include="Images\24\Close-WF.png" />
+    <EmbeddedResource Include="Images\24\Columns-Next.png" />
+    <EmbeddedResource Include="Images\24\CSV-Export.png" />
+    <EmbeddedResource Include="Images\24\Cursor-03-WF.png" />
+    <EmbeddedResource Include="Images\24\Cut-WF%281%29.png" />
+    <EmbeddedResource Include="Images\24\Cut-WF.png" />
+    <EmbeddedResource Include="Images\24\Cut.png" />
+    <EmbeddedResource Include="Images\24\Data previous-WF.png" />
+    <EmbeddedResource Include="Images\24\Data Split-WF.png" />
+    <EmbeddedResource Include="Images\24\Data-Merge.png" />
+    <EmbeddedResource Include="Images\24\Data-Split.png" />
+    <EmbeddedResource Include="Images\24\Expand-03-WF.png" />
+    <EmbeddedResource Include="Images\24\Expand-WF.png" />
+    <EmbeddedResource Include="Images\24\Favorite Delete-WF.png" />
+    <EmbeddedResource Include="Images\24\Favorite Edit-WF.png" />
+    <EmbeddedResource Include="Images\24\Favorite Next-WF.png" />
+    <EmbeddedResource Include="Images\24\Favorite Ok-WF.png" />
+    <EmbeddedResource Include="Images\24\Favorite Search-WF.png" />
+    <EmbeddedResource Include="Images\24\Film-01-WF.png" />
+    <EmbeddedResource Include="Images\24\Film-Shooting-01.png" />
+    <EmbeddedResource Include="Images\24\Folder-Movie-03.png" />
+    <EmbeddedResource Include="Images\24\Forward-1-WF.png" />
+    <EmbeddedResource Include="Images\24\Maximize - 02.png" />
+    <EmbeddedResource Include="Images\24\Media Control-04-WF%281%29.png" />
+    <EmbeddedResource Include="Images\24\Media Control-04-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Control-05-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Control-06-WF%281%29.png" />
+    <EmbeddedResource Include="Images\24\Media Control-06-WF%282%29.png" />
+    <EmbeddedResource Include="Images\24\Media Control-06-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Control-07-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Control-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Fast Backward-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Fast Forward-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Pause-WF.png" />
+    <EmbeddedResource Include="Images\24\Media Play1-WF.png" />
+    <EmbeddedResource Include="Images\24\Media-Pause.png" />
+    <EmbeddedResource Include="Images\24\Media-Play.png" />
+    <EmbeddedResource Include="Images\24\Movie Lock1-WF.png" />
+    <EmbeddedResource Include="Images\24\Movie Next-WF%281%29.png" />
+    <EmbeddedResource Include="Images\24\Movie Next-WF.png" />
+    <EmbeddedResource Include="Images\24\Next-02-WF.png" />
+    <EmbeddedResource Include="Images\24\Next.png" />
+    <EmbeddedResource Include="Images\24\NextAccent24.png" />
+    <EmbeddedResource Include="Images\24\Previous-WF.png" />
+    <EmbeddedResource Include="Images\24\PreviousAccent24.png" />
+    <EmbeddedResource Include="Images\24\Restore-01.png" />
+    <EmbeddedResource Include="Images\24\Restore-02.png" />
+    <EmbeddedResource Include="Images\24\Stop-WF.png" />
+    <EmbeddedResource Include="Images\24\Stop.png" />
+    <EmbeddedResource Include="Images\24\Tag Remove-WF.png" />
+    <EmbeddedResource Include="Images\24\Warning -WF.png" />
+    <EmbeddedResource Include="Images\24\Warning 2 -WF.png" />
     <Content Include="Images\icons8-video-trimming-32copy.png" />
     <Content Include="Images\icons8-video-trimming-80 white transback32.png" />
     <Content Include="Images\Settings.png" />

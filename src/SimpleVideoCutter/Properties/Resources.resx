@@ -118,74 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="streamline_icon_controls_pause_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-controls-pause@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Form_Download_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Form-Download-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-direction-button-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-direction-button-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="streamline-icon-controls-movie-forward@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-controls-movie-forward@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-controls-play@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-controls-play@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Last" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Last.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-volume-control-mute@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-volume-control-mute@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Zoom_Scroll_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Zoom-Scroll_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="House_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\House-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="streamline-icon-go-to-start@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\streamline\streamline-icon-go-to-start@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-eraser@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-eraser@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Fast_Backward_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Fast Backward-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-task-list-add@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-task-list-add@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="To_do_list___03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\To do list - 03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-navigation-right-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-navigation-right-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Previous_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Previous-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-video-player-slider@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-video-player-slider@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Folder_Search_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder Search-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-navigation-right-to@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-navigation-right-to@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-arrow-button-left-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-arrow-button-left-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-arrow-rectangle-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-arrow-rectangle-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-arrow-rectangle-left-2@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-arrow-rectangle-left-2@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-set-end@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-set-end@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-go-to-start@32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-go-to-start@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline_icon_modern_tv_flat_screen_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-modern-tv-flat-screen@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-cursor-move-target-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-cursor-move-target-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-diagram-arrow-dash-left@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-diagram-arrow-dash-left@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-arrow-button-circle-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-arrow-button-circle-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-diagram-arrow-dash-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-diagram-arrow-dash-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-task-list-clock@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-task-list-clock@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-arrow-button-right-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-arrow-button-right-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-laptop-download@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-laptop-download@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Form_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Form-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="streamline-icon-information-circle@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\streamline\streamline-icon-information-circle@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,200 +157,170 @@
   <data name="streamline-icon-set-start@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\streamline\streamline-icon-set-start@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-go-to-end@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-go-to-end@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Form_Upload_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Form-Upload-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="streamline-icon-expand-5@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-expand-5@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-controls-movie-forward@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-controls-movie-forward@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="film-reels" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\film-reels.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline-icon-translate@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-translate@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline_icon_interface_edit_view_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-interface-edit-view@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline_icon_interface_edit_view_off_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-interface-edit-view-off@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="streamline_icon_seo_zoom_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\streamline\streamline-icon-seo-zoom@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bookmark_Favourities_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Bookmark Favourities-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bookmark_Sync_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Bookmark Sync-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Branch_Engineering" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Branch-Engineering.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bullets_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Bullets-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bullets_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Bullets-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bullets_05_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Bullets-05-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Calendar__05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Calendar -05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Check_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Check-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Check_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Check-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circled_Left_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Circled Left 01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Clapper_board_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Clapper board-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data_setting_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Data setting-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Document_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Document-Music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Eye_not_viewed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Eye-not_viewed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye_viewed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\eye-viewed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Favorite_Delete_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Favorite Delete-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Favorite_Edit_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Favorite Edit-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Favorite_Info_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Favorite Info-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Favorite_Ok_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Favorite Ok-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Favorite_Search_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Favorite Search-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="File_Download_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\File Download-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="File_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\File edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="File_Sync" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\File Sync.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Film_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Film-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Film_Role_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Film Role-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Film_Role_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Film Role-05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Film_Shooting_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Film-Shooting-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Film_Shooting_01_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Film-Shooting-01(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="User_Profile_1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\User Profile 1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Filter_10_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Filter-10-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Forward_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Forward-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Minimize___01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Minimize - 01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Branch_Engineering" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Branch-Engineering.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Film_Shooting_01_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Film-Shooting-01(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zooming_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Zooming_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recorded_media_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Recorded media-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Folder_Add_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Folder-Add-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Add_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Add-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Folder_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Add_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Add-04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Workflow_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Workflow-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NextAccent24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\NextAccent24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circled_Left_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Circled Left 01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Message_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Message-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Play-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline_icon_interface_edit_view_off_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-interface-edit-view-off@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-arrow-button-circle-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-arrow-button-circle-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volume_Mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Volume-Mute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Note_memo_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Note memo-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Fast_Forward1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Fast-Forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle_WF_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Rectangle-WF_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagecutinverted32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\imagecutinverted32 .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Eject_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Eject-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MS_Config_Manage_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\MS Config Manage-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Film_Shooting_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Film-Shooting-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Movie_Settings_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Movie Settings-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Play_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Play-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_video_trimming_32copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-video-trimming-32copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volume_Low" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Volume-Low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-arrow-rectangle-left-2@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-arrow-rectangle-left-2@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Messages_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Messages-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-diagram-arrow-dash-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-diagram-arrow-dash-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bookmark_Favourities_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Bookmark Favourities-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Check_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Check-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Play_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Play-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-arrow-button-left-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-arrow-button-left-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-translate@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-translate@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-arrow-button-right-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-arrow-button-right-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite_Search_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Favorite Search-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-diagram-arrow-dash-left@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-diagram-arrow-dash-left@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Note_memo_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Note memo-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Folder_Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Folder-Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Movie_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Movie-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Volume_High" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Volume-High.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Folder_Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Music_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Music-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="streamline_icon_controls_pause_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-controls-pause@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Eye_not_viewed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Eye-not_viewed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="streamline-icon-go-to-start@32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-go-to-start@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="streamline-icon-navigation-right-to@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-navigation-right-to@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Search_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder Search-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Note_Memo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Note-Memo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder_Upload_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Upload-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Folder_Zoom_In" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Folder-Zoom-In.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Follow_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Follow-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Form_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Form-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Form_Download_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Form-Download-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Form_Remove_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Form-Remove-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Form_Upload_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Form-Upload-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="House_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\House-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imagecutinverted" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\imagecutinverted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Backward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Backward_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Backward_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Backward_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Backward_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Pause_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Pause-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Media_Backward_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Media Backward_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -394,361 +328,430 @@
   <data name="Media_Connect_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Media Connect-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media_Connect_WF_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Connect-WF(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_04_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-04-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_05_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-05-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_06_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-06-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_07_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-07-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Control_08_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Control-08-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Eject" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Eject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Eject_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Eject-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_End" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-End.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_End_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media End-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Fast_Backward_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Fast Backward-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Fast_forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Fast-forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Fast_Forward1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Fast-Forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Fast_Forward_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Fast Forward-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Fast_forward___01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Fast-forward - 01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_First" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media First.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Media_First_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Media First-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media_Forward_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Forward_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Forward_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Forward_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Forward_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Forward-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Last" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Last.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pacman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Pacman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Media_Next" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Media Next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media_Next_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Next-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="streamline_icon_seo_zoom_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-seo-zoom@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media_Next_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Next-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_First" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media First.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media_Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Pause1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Pause_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Pause-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Pause_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Pause-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Play1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Play1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Play1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Play2_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Play2-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Player" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Player_VLC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Player-VLC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Player_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Player-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Play_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Play-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Play_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Play-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Play_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Play-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Previous_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Previous-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Previous_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Previous-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Rewind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Rewind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Rewind1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Rewind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Rewind__01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media Rewind -01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-Stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Media-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Messages_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Messages-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Message_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Message-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Message_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Message-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Message_04_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Message-04-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Movie_Favorite_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Movie Favorite-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Folder_Add_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Add-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Movie_Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Movie Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Movie_Settings_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Movie Settings-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MS_Config_Manage_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\MS Config Manage-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Next_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Next-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Next_02_WF_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Next-02-WF(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Note_Memo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Note-Memo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Note_memo_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Note memo-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Note_memo_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Note memo-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pacman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Pacman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Play-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Previous_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Previous-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Recorded_media_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Recorded media-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reminder_2_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Reminder-2-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search_Folder_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Search-Folder-New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Settings___08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Settings - 08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Stop_Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Stop Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tab_History_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Tab History-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="To_do_bar_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\To do bar-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="To_Do_List_2_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\To Do List 2-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="To_Do_List_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\To Do List-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="To_do_list___01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\To do list - 01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="To_do_list___02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\To do list - 02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="To_do_list___03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\To do list - 03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_Favourite_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\User Favourite-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_Message_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\User-Message-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_Profile_1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\User Profile 1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Video" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Video.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Videocam_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Videocam-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Video_Camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Video-Camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volume_Down_1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Volume Down 1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volume_High" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Volume-High.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volume_Low" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Volume-Low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volume_Mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Volume-Mute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volume_Mute_1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Volume Mute 1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volume_Slider" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Volume-Slider.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volume_Up_1__WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Volume Up 1 -WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Workflow_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Workflow-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="YouTube1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\YouTube1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zip_file_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Zip file-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bullets_05_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Bullets-05-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_no_video_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-no-video-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Next_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Next-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_search_property_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-search-property-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Backward_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Backward_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_search_property_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-search-property-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_sending_video_frames_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-sending-video-frames-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_video_editing_80_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-video-editing-80 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_video_editor_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-video-editor-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_video_skimming_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-video-skimming-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_video_trimming_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-video-trimming-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imagecutinverted1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\imagecutinverted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_video_trimming_32copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-video-trimming-32copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_video_trimming_80_white_transback32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\icons8-video-trimming-80 white transback32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imagecutinverted32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\imagecutinverted32 .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Chart_Title_Legends" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Chart-Title-Legends.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Maximize___01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\Maximize - 01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Check_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Check-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Maximize___04_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\24\Maximize  -04_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minimize___01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\Minimize - 01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bullets_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Bullets-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rectangle_WF_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\Rectangle-WF_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Play1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Play1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="To_do_bar_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\To do bar-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-eraser@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-eraser@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Rewind__01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Rewind -01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Sync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\File Sync.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-controls-play@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-controls-play@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_no_video_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-no-video-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Next_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Next-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tab_History_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tab History-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-go-to-end@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-go-to-end@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Player" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Backward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Play_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Play-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bullets_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Bullets-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Download_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\File Download-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_07_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-07-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volume_Slider" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Volume-Slider.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_End" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-End.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Play1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Previous_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Previous-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Connect_WF_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Connect-WF(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-arrow-rectangle-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-arrow-rectangle-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_search_property_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-search-property-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Rewind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Rewind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volume_Mute_1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Volume Mute 1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Follow_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Follow-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagecutinverted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\imagecutinverted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maximize___01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Maximize - 01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-laptop-download@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-laptop-download@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Videocam_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Videocam-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Restore_01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\24\Restore-01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zooming_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\Zooming_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zoom_In_02_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\Zoom In_02_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Movie_Favorite_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Movie Favorite-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-volume-control-mute@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-volume-control-mute@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calendar__05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Calendar -05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volume_Down_1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Volume Down 1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_02_WF_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Next-02-WF(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Previous_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Previous-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-video-player-slider@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-video-player-slider@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-direction-button-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-direction-button-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Document-Music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="To_do_list___01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\To do list - 01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop_Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Stop Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_End_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media End-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Film_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Film-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Backward_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Backward_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Music_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Music-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-task-list-clock@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-task-list-clock@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_Folder_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Search-Folder-New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline_icon_interface_edit_view_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-interface-edit-view@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bookmark_Sync_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Bookmark Sync-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-cursor-move-target-right@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-cursor-move-target-right@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Eject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Eject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User_Favourite_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\User Favourite-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye_viewed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\eye-viewed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite_Edit_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Favorite Edit-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="film-reels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\film-reels.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_video_editing_80_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-video-editing-80 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Fast_forward___01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Fast-forward - 01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_search_property_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-search-property-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagecutinverted1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\imagecutinverted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Player_VLC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Player-VLC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreviousAccent24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\PreviousAccent24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User_Message_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\User-Message-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-navigation-right-3@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-navigation-right-3@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zip_file_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Zip file-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form_Remove_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Form-Remove-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Play2_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Play2-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Film_Role_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Film Role-05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_06_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-06-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite_Delete_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Favorite Delete-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Add_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Add-04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite_Info_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Favorite Info-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="To_Do_List_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\To Do List-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Video_Camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Video-Camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Upload_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Upload-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Forward_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Forward_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Film_Role_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Film Role-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_setting_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Data setting-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Video" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Video.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Message_04_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Message-04-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\File edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Fast_Forward_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Fast Forward-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_video_trimming_80_white_transback32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-video-trimming-80 white transback32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_04_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-04-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Movie_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Movie-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings___08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Settings - 08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volume_Up_1__WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Volume Up 1 -WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Fast_forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Fast-forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Player_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Player-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_sending_video_frames_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-sending-video-frames-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_08_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-08-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_Zoom_In" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-Zoom-In.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_video_skimming_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-video-skimming-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Zoom_Out_01_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\24\Zoom Out_01_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zoom_Scroll_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\Zoom-Scroll_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Control_05_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Control-05-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NextAccent24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\NextAccent24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media_Previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PreviousAccent24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\24\PreviousAccent24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_video_trimming_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-video-trimming-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="To_do_list___02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\To do list - 02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Folder-New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_02_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Next-02-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chart_Title_Legends" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Chart-Title-Legends.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zoom_In_02_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Zoom In_02_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-expand-5@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-expand-5@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite_Ok_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Favorite Ok-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Forward_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Forward_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_video_editor_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-video-editor-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Message_03_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Message-03-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="To_Do_List_2_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\To Do List 2-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline_icon_modern_tv_flat_screen_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-modern-tv-flat-screen@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reminder_2_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Reminder-2-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Pause1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-task-list-add@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-task-list-add@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Rewind1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media-Rewind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clapper_board_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Clapper board-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Pause_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Media Pause-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="streamline-icon-set-end@32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\streamline\streamline-icon-set-end@32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut-WF(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\24\Cut-WF(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
