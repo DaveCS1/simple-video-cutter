@@ -173,6 +173,26 @@ namespace SimpleVideoCutter {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cutendAccent {
+            get {
+                object obj = ResourceManager.GetObject("cutendAccent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cutstartAccent {
+            get {
+                object obj = ResourceManager.GetObject("cutstartAccent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Data_Merge {
             get {
                 object obj = ResourceManager.GetObject("Data_Merge", resourceCulture);
@@ -316,6 +336,36 @@ namespace SimpleVideoCutter {
         internal static System.Drawing.Bitmap Forward_1_WF {
             get {
                 object obj = ResourceManager.GetObject("Forward_1_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_video_skimming_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_video_skimming_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_video_trimming_32a {
+            get {
+                object obj = ResourceManager.GetObject("icons8_video_trimming_32a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_video_trimminggreen32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_video_trimminggreen32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -503,6 +553,26 @@ namespace SimpleVideoCutter {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Movie_Delete {
+            get {
+                object obj = ResourceManager.GetObject("Movie_Delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Movie_Delete_WF {
+            get {
+                object obj = ResourceManager.GetObject("Movie_Delete_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Movie_Lock1_WF {
             get {
                 object obj = ResourceManager.GetObject("Movie_Lock1_WF", resourceCulture);
@@ -526,6 +596,26 @@ namespace SimpleVideoCutter {
         internal static System.Drawing.Bitmap Movie_Next_WF_1_ {
             get {
                 object obj = ResourceManager.GetObject("Movie_Next_WF_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Movie_Ok {
+            get {
+                object obj = ResourceManager.GetObject("Movie_Ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Movie_Ok1 {
+            get {
+                object obj = ResourceManager.GetObject("Movie_Ok1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -593,9 +683,9 @@ namespace SimpleVideoCutter {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Restore_01 {
+        internal static System.Drawing.Bitmap repeat_single {
             get {
-                object obj = ResourceManager.GetObject("Restore_01", resourceCulture);
+                object obj = ResourceManager.GetObject("repeat_single", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -646,6 +736,16 @@ namespace SimpleVideoCutter {
         internal static System.Drawing.Bitmap Tag_Remove_WF {
             get {
                 object obj = ResourceManager.GetObject("Tag_Remove_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tag_WF {
+            get {
+                object obj = ResourceManager.GetObject("Tag_WF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

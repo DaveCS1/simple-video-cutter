@@ -13,7 +13,7 @@ using System.Threading;
 using System.Windows.Forms;
 using Telerik.WinControls;
 using Telerik.WinControls.UI;
-
+//using TempControlTest;
 namespace SimpleVideoCutter.TelerikForms
 {
     public partial class RadMainForm : Telerik.WinControls.UI.RadForm
@@ -21,6 +21,9 @@ namespace SimpleVideoCutter.TelerikForms
         public RadMainForm()
         {
             InitializeComponent();
+            TempControlTest.frmVideoTrimControls frmVideoTrimControls = new TempControlTest.frmVideoTrimControls();
+            frmVideoTrimControls.Show();
+       //frmVideoControls frmVideoControls = new frmVideoControls();
         }
 
         private void RadMainForm_Load(object sender, EventArgs e)
@@ -279,6 +282,38 @@ namespace SimpleVideoCutter.TelerikForms
             }
 
         }
+
+        private void radPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnGoToTrimSelectionStart_Click(object sender, EventArgs e)
+        {
+            GoToSelectionStart();
+        }
+
+        private void btnGoToSelectionEnd_Click(object sender, EventArgs e)
+        {
+            GoToSelectionEnd();
+        }
+
+        private void btnTimeLineZoomOut_Click(object sender, EventArgs e)
+        {
+            videoCutterTimeline1.ZoomOut();
+        }
+
+        private void btnTimeLineZoomAuto_Click(object sender, EventArgs e)
+        {           
+            videoCutterTimeline1.ZoomAuto();
+        }
+
+        private void btnTimeLineCurrent_Click(object sender, EventArgs e)
+        {
+            videoCutterTimeline1.GoToCurrentPosition();
+        }
+
+
         //
     }
 }
