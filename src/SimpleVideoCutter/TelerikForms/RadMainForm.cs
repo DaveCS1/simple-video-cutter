@@ -313,6 +313,59 @@ namespace SimpleVideoCutter.TelerikForms
             videoCutterTimeline1.GoToCurrentPosition();
         }
 
+        private void btnVideoGoForward10Seconds_Click(object sender, EventArgs e)
+        {
+
+            //vlcControl1?.MediaPlayer?.SetRate(1.5f);
+           // AdjustPlaybackSpeed(vlcControl1?.MediaPlayer, 1.0f); // Normal speed (1x)
+            AdjustPlaybackSpeedByIncrement(vlcControl1?.MediaPlayer, vlcControl1.MediaPlayer.Rate);
+        }
+        #region GeneralVideoPlaybackSpeed
+        //static void AdjustPlaybackSpeed(MediaPlayer mediaPlayer, float speedFactor)
+        //{
+        //    mediaPlayer.SetRate(speedFactor);
+        //}
+        // Custom function to adjust playback speed of a MediaPlayer instance
+        //static  void AdjustPlaybackSpeed(MediaPlayer mediaPlayer, float speedFactor, int test)
+        //{
+        //    mediaPlayer.SetRate(speedFactor);
+        //}
+
+        // Custom function to adjust playback speed in increments of 0.25x with a maximum of 4x
+        private void AdjustPlaybackSpeedByIncrement(MediaPlayer mediaPlayer, float speedIncrement)
+        {
+            // Get the current playback rate
+            float currentRate = mediaPlayer.Rate;
+
+            // Calculate the new rate with the increment
+            float newRate = currentRate + 0.25f;// speedIncrement;
+
+            // Ensure the new rate is within the allowed range (0.25x to 4x)
+            newRate = Math.Max(0.25f, Math.Min(4.0f, newRate));
+
+            // Set the new rate
+            mediaPlayer.SetRate(newRate);
+        }
+
+        private void toggleButtonPlayPause_Click(object sender, EventArgs e)
+        {
+            PlayPause();
+        }
+
+        private void toggleButtonPlayPause_ToggleStateChanged(object sender, StateChangedEventArgs args)
+        {
+            if (!(toggleButtonPlayPause.ToggleState == Telerik.WinControls.Enumerations.ToggleState.Off)) //ToggleState.On))
+            {
+                toggleButtonPlayPause.ImageIndex = 0;
+                //label1.Text = "Button Toggled On";
+            }
+            else
+            {
+                toggleButtonPlayPause.ImageIndex = 1;
+                //label1.Text = "Button Toggled Off";
+            }
+        }
+        #endregion
 
         //
     }

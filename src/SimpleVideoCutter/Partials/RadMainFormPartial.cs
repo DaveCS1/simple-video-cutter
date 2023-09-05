@@ -145,7 +145,7 @@ namespace SimpleVideoCutter.TelerikForms
             vlcControl1.MediaPlayer.TimeChanged += VlcControl1_TimeChanged;
             vlcControl1.MediaPlayer.EnableMouseInput = false;
             vlcControl1.MediaPlayer.EnableKeyInput = false;
-
+           
             videoViewHover.MediaPlayer.Volume = 0;
             videoViewHover.MediaPlayer.EnableKeyInput = false;
             videoViewHover.MediaPlayer.TimeChanged += VideoViewerHover_MediaPlayer_TimeChanged;
