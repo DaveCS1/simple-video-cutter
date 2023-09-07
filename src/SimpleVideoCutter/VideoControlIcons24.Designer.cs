@@ -343,6 +343,36 @@ namespace SimpleVideoCutter {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gauge___02 {
+            get {
+                object obj = ResourceManager.GetObject("Gauge___02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gauge___03 {
+            get {
+                object obj = ResourceManager.GetObject("Gauge___03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gauge___04 {
+            get {
+                object obj = ResourceManager.GetObject("Gauge___04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_video_skimming_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_video_skimming_24", resourceCulture);
@@ -746,6 +776,16 @@ namespace SimpleVideoCutter {
         internal static System.Drawing.Bitmap Tag_WF {
             get {
                 object obj = ResourceManager.GetObject("Tag_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tag_WF1 {
+            get {
+                object obj = ResourceManager.GetObject("Tag_WF1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

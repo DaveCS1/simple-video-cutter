@@ -312,15 +312,23 @@ namespace SimpleVideoCutter.TelerikForms
         {
             videoCutterTimeline1.GoToCurrentPosition();
         }
+        #region GeneralVideoPlaybackSpeed
 
         private void btnVideoGoForward10Seconds_Click(object sender, EventArgs e)
         {
 
             //vlcControl1?.MediaPlayer?.SetRate(1.5f);
            // AdjustPlaybackSpeed(vlcControl1?.MediaPlayer, 1.0f); // Normal speed (1x)
-            AdjustPlaybackSpeedByIncrement(vlcControl1?.MediaPlayer, vlcControl1.MediaPlayer.Rate);
+            AdjustPlaybackSpeedByIncrement(vlcControl1?.MediaPlayer, vlcControl1.MediaPlayer.Rate, SpeedMode.Slower);
         }
-        #region GeneralVideoPlaybackSpeed
+        private void btnVideoGoBack30Seconds_Click(object sender, EventArgs e)
+        {
+            AdjustPlaybackSpeedByIncrement(vlcControl1?.MediaPlayer, vlcControl1.MediaPlayer.Rate, SpeedMode.Faster);
+        }
+
+
+
+       
         //static void AdjustPlaybackSpeed(MediaPlayer mediaPlayer, float speedFactor)
         //{
         //    mediaPlayer.SetRate(speedFactor);
@@ -332,19 +340,46 @@ namespace SimpleVideoCutter.TelerikForms
         //}
 
         // Custom function to adjust playback speed in increments of 0.25x with a maximum of 4x
-        private void AdjustPlaybackSpeedByIncrement(MediaPlayer mediaPlayer, float speedIncrement)
+        private  enum SpeedMode
         {
-            // Get the current playback rate
+            Faster, Slower, Default
+
+        }
+        private void AdjustPlaybackSpeedByIncrement(MediaPlayer mediaPlayer, float speedIncrement, SpeedMode speed)
+        {
+
             float currentRate = mediaPlayer.Rate;
+          
+            float newestRate =0;
+            switch (speed)
+            {
+                case SpeedMode.Faster:
+                    // code block
+                    
+                           newestRate = currentRate + 0.25f;// speedIncrement;
+                    break;
+                case SpeedMode.Slower:
+                    // code block
+                    newestRate = currentRate - 0.25f;// speedIncrement;
+                    break;
+                    case SpeedMode.Default:
+                    newestRate = 1.0f;
+                        //mediaPlayer.SetRate(1.0f);
+                    
+                    break;
+                default:
+                    // code block
+                    //todo remove
+                    Console.WriteLine("no value for speed change");
 
-            // Calculate the new rate with the increment
-            float newRate = currentRate + 0.25f;// speedIncrement;
-
+                    break;
+            }
+           
             // Ensure the new rate is within the allowed range (0.25x to 4x)
-            newRate = Math.Max(0.25f, Math.Min(4.0f, newRate));
-
-            // Set the new rate
+            float  newRate = Math.Max(0.25f, Math.Min(4.0f, newestRate));
             mediaPlayer.SetRate(newRate);
+            // Set the new rate
+
         }
 
         private void toggleButtonPlayPause_Click(object sender, EventArgs e)
@@ -356,15 +391,63 @@ namespace SimpleVideoCutter.TelerikForms
         {
             if (!(toggleButtonPlayPause.ToggleState == Telerik.WinControls.Enumerations.ToggleState.Off)) //ToggleState.On))
             {
-                toggleButtonPlayPause.ImageIndex = 0;
+                toggleButtonPlayPause.ImageIndex = 2;
+                toggleButtonPlayPause.BackColor = System.Drawing.Color.Transparent;
                 //label1.Text = "Button Toggled On";
             }
             else
             {
-                toggleButtonPlayPause.ImageIndex = 1;
+                toggleButtonPlayPause.ImageIndex = 3;
                 //label1.Text = "Button Toggled Off";
             }
         }
+        // Function to go to the start of the video
+        private void GoToStartOfVideo(MediaPlayer mediaPlayer)
+        {
+            // Set the playback position to the beginning (time = 0)
+            if (mediaPlayer != null && mediaPlayer.Media?.Duration>0)
+            {
+                mediaPlayer.Time = 0;
+            }
+        }
+
+        // Function to go to the end of the video
+        private void GoToEndOfVideo(MediaPlayer mediaPlayer)
+        {
+            // Get the duration of the video
+            if (mediaPlayer !=null && mediaPlayer.Media?.Duration >0)
+            { 
+                var duration = mediaPlayer.Media.Duration;
+                mediaPlayer.Time = duration -1000;
+            }
+           
+
+            // Set the playback position to the end (time = duration)
+           
+        }
+
+        private void btnGoToCutStart_Click(object sender, EventArgs e)
+        {
+            GoToStartOfVideo(vlcControl1.MediaPlayer);
+        }
+
+        private void btnGoToCutEnd_Click(object sender, EventArgs e)
+        {
+            GoToEndOfVideo(vlcControl1.MediaPlayer);
+        }
+
+        private void radButton14_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void radButton15_Click(object sender, EventArgs e)
+        {
+NextFrame();
+        }
+
+       
+
         #endregion
 
         //

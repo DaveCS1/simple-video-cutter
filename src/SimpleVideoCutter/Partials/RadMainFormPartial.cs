@@ -239,6 +239,7 @@ namespace SimpleVideoCutter.TelerikForms
         private void VlcControl1_Stopped(object sender, EventArgs e)
         {
             playingSelection = false;
+            toggleButtonPlayPause.ToggleState = Telerik.WinControls.Enumerations.ToggleState.Off;
             //EnableButtons();
         }
 
@@ -252,6 +253,7 @@ namespace SimpleVideoCutter.TelerikForms
                 videoCutterTimeline1.Position = (int)(position * length);
             });
             //EnableButtons();
+            toggleButtonPlayPause.ToggleState = Telerik.WinControls.Enumerations.ToggleState.Off;
         }
 
         private void VlcControl1_MediaChanged(object sender, MediaPlayerMediaChangedEventArgs e)
@@ -269,6 +271,7 @@ namespace SimpleVideoCutter.TelerikForms
         private void VlcControl1_Playing(object sender, EventArgs e)
         {
             //EnableButtons();
+            toggleButtonPlayPause.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
         }
         //private void OpenFile(string path)
         //{
