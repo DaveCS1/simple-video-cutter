@@ -472,10 +472,7 @@ namespace SimpleVideoCutter.TelerikForms
             GoToEndOfVideo(vlcControl1.MediaPlayer);
         }
 
-        private void radButton14_Click(object sender, EventArgs e)
-        {
-           
-        }
+      
 
         private void radButton15_Click(object sender, EventArgs e)
         {
