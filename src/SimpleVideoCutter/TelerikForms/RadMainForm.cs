@@ -186,50 +186,41 @@ namespace SimpleVideoCutter.TelerikForms
             OpenFile();
         }
 
-        private void btnMovePreviousVideo_Click(object sender, EventArgs e)
-        {
-            OpenPrevFileInDirectory();
-            DisableNextAndPrevVideoButtonsTwoSeconds();
-        }
+      
         #endregion
 
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-        //private void button1_Click(object sender, EventArgs e)  // event handler of your button
-        //{
-        //    timer.Interval = 30000; // here time in milliseconds
-        //    timer.Tick += nextVideo_Timer;
-        //    timer.Start();
-        //   // button1.Enabled = false;
-
-        //    // place get random code here
-        //}
-
-        void nextVideo_Timer(object sender, System.EventArgs e)
+         void nextVideo_Timer(object sender, System.EventArgs e)
         {
             btnMoveNextVideo.Enabled = true;
             btnMovePreviousVideo.Enabled=true;
             timer.Stop();
         }
-
-
-
-
-        private void btnMoveNextVideo_Click(object sender, EventArgs e)
-        {
-            OpenNextFileInDirectory();
-            DisableNextAndPrevVideoButtonsTwoSeconds();
-
-        }
-
         private void DisableNextAndPrevVideoButtonsTwoSeconds()
         {
+
             btnMoveNextVideo.Enabled = false;
             btnMovePreviousVideo.Enabled = false;
             //todo put in settings with a min of 2 seconds
+
             timer.Interval = 4000; // here time in milliseconds
             timer.Tick += nextVideo_Timer;
             timer.Start();
         }
+        private void btnMovePreviousVideo_Click(object sender, EventArgs e)
+        {
+            OpenPrevFileInDirectory();
+            DisableNextAndPrevVideoButtonsTwoSeconds();
+        }
+        private void btnMoveNextVideo_Click(object sender, EventArgs e)
+        {
+            OpenNextFileInDirectory();
+            //tooltip();
+            DisableNextAndPrevVideoButtonsTwoSeconds();
+
+        }
+       
+      
 
         private void btnCutStart_Click(object sender, EventArgs e)
         {
