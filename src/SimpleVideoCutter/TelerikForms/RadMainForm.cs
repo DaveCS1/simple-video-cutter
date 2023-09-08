@@ -24,6 +24,12 @@ namespace SimpleVideoCutter.TelerikForms
             InitializeComponent();
             TempControlTest.frmVideoTrimControls frmVideoTrimControls = new TempControlTest.frmVideoTrimControls();
             frmVideoTrimControls.Show();
+            //var t = new Util.CreateVideoPoster();
+            var u = new Util.tile();
+            
+
+
+
        //frmVideoControls frmVideoControls = new frmVideoControls();
         }
 
@@ -515,6 +521,32 @@ NextFrame();
                 Clipboard.SetText(fileBeingPlayed);
                 MessageBox.Show(fileBeingPlayed + " path copied to clipboard");
             }
+        }
+
+        private void radBtnShowDisplayCurrentFilesToPlayWinfow_Click(object sender, EventArgs e)
+        {
+
+            if (fileBeingPlayed != null)
+            {
+                //todo check if playing first if so pause it, if paused do nothing
+                PlayPause();
+                var videoFileList =  GetVideoFilesInDirectory(fileBeingPlayed);
+                if (videoFileList.Count>0)
+                {
+                    using (var t = new Windows.RadDisplayCurrentFilesToPlayWindow(videoFileList))
+                    {
+                        t.ShowDialog();
+                    }
+                }
+
+               
+               
+            }// todo remove not needed
+            else
+                {
+                    return;
+                }
+      
         }
 
 
