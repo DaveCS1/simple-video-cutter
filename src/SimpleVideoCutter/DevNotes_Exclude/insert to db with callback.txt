@@ -1,0 +1,123 @@
+To insert file information into an SQLite database in a .NET Framework 4.8 application with a delegate callback to a class named `Test` when the operation is complete, you can follow these steps:
+
+1. Create a class to represent the file information.
+2. Implement a function to insert the file information into the SQLite database asynchronously.
+3. Define a delegate and an event in the same class that handles the database operations.
+4. Invoke the delegate and raise the event when the operation is complete.
+
+Here's an example:
+
+```csharp
+using System;
+using System.Data.SQLite;
+using System.IO;
+using System.Threading.Tasks;
+
+public class FileInformation
+{
+    public int Id { get; set; }
+    public string FileName { get; set; }
+    public long FileSize { get; set; }
+}
+
+public class DatabaseManager
+{
+    private readonly string connectionString;
+    public delegate void DatabaseOperationCompletedDelegate(bool success);
+    public event DatabaseOperationCompletedDelegate DatabaseOperationCompleted;
+
+    public DatabaseManager(string dbFilePath)
+    {
+        connectionString = $"Data Source={dbFilePath};Version=3;";
+    }
+
+    public async Task InsertFileAsync(FileInformation file)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        {
+            await connection.OpenAsync();
+
+            using (SQLiteTransaction transaction = connection.BeginTransaction())
+            {
+                try
+                {
+                    string insertQuery = "INSERT INTO Files (FileName, FileSize) VALUES (@FileName, @FileSize);";
+                    using (SQLiteCommand command = new SQLiteCommand(insertQuery, connection, transaction))
+                    {
+                        command.Parameters.AddWithValue("@FileName", file.FileName);
+                        command.Parameters.AddWithValue("@FileSize", file.FileSize);
+
+                        await command.ExecuteNonQueryAsync();
+                    }
+
+                    transaction.Commit();
+                    OnDatabaseOperationCompleted(true);
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    OnDatabaseOperationCompleted(false);
+                    Console.WriteLine($"Error inserting file: {ex.Message}");
+                }
+            }
+        }
+    }
+
+    protected virtual void OnDatabaseOperationCompleted(bool success)
+    {
+        DatabaseOperationCompleted?.Invoke(success);
+    }
+}
+
+public class Test
+{
+    public void OnDatabaseOperationCompleted(bool success)
+    {
+        if (success)
+        {
+            Console.WriteLine("File information inserted successfully.");
+        }
+        else
+        {
+            Console.WriteLine("File information insertion failed.");
+        }
+    }
+}
+
+class Program
+{
+    static async Task Main()
+    {
+        string dbFilePath = "sample.db"; // Specify your database file path
+        string filePath = "sample.txt"; // Specify the file you want to insert
+        FileInformation fileInfo = new FileInformation
+        {
+            FileName = Path.GetFileName(filePath),
+            FileSize = new FileInfo(filePath).Length
+        };
+
+        var dbManager = new DatabaseManager(dbFilePath);
+        var testClass = new Test();
+
+        // Subscribe to the event
+        dbManager.DatabaseOperationCompleted += testClass.OnDatabaseOperationCompleted;
+
+        // Insert the file information into the database
+        await dbManager.InsertFileAsync(fileInfo);
+    }
+}
+```
+
+In this example:
+
+1. We define a `FileInformation` class to represent file information and a `DatabaseManager` class for managing database operations.
+
+2. The `InsertFileAsync` method inserts file information into the SQLite database asynchronously.
+
+3. We define a delegate `DatabaseOperationCompletedDelegate` and an event `DatabaseOperationCompleted` in the `DatabaseManager` class.
+
+4. The `OnDatabaseOperationCompleted` method in the `Test` class is used as the callback when the database operation is complete.
+
+5. In the `Main` method, we create an instance of `DatabaseManager` and an instance of `Test`, subscribe to the `DatabaseOperationCompleted` event, and then insert the file information into the database. The callback in the `Test` class is executed when the operation is complete.
+
+Make sure to specify the correct database file path and the file you want to insert.

@@ -1,0 +1,11 @@
+﻿crash restore exe for cases where switching videos (or other thing) crashes main exe
+settings
+language  do last
+about low priority
+//
+bookmarks/favorites
+trim speeds
+log history?
+Scan computer add to db
+//
+c# use ffprobe to get keyframes of video

@@ -1,0 +1,69 @@
+﻿To create a summary video from a full video using FFmpeg in a C# application, you can use the `Process` class to execute the FFmpeg command. In this example, I'll show you how to create a summary video by extracting keyframes from the full video and concatenating them into a single video. You'll need to have FFmpeg installed on your system or provide the path to the FFmpeg executable.
+
+First, make sure to install the `System.Diagnostics` namespace for working with processes.
+
+Here's a C# function to create a summary video:
+
+```csharp
+using System;
+using System.Diagnostics;
+using System.IO;
+
+public class VideoSummaryCreator
+{
+    public void CreateSummaryVideo(string fullVideoPath, string summaryVideoPath, double frameIntervalInSeconds)
+    {
+        // Ensure that FFmpeg executable is in your PATH or provide the full path
+        string ffmpegPath = "ffmpeg"; // or provide the full path, e.g., "C:\\ffmpeg\\bin\\ffmpeg.exe"
+
+        if (!File.Exists(ffmpegPath))
+        {
+            Console.WriteLine("FFmpeg not found. Please provide the correct path to FFmpeg.");
+            return;
+        }
+
+        // Define the FFmpeg command to extract keyframes and create the summary video
+        string command = $"-i \"{fullVideoPath}\" -vf \"select='eq(pict_type,I)'\" -vsync vfr -q:v 2 -vf fps=1/{frameIntervalInSeconds} \"{summaryVideoPath}\"";
+
+        ProcessStartInfo startInfo = new ProcessStartInfo
+        {
+            FileName = ffmpegPath,
+            Arguments = command,
+            RedirectStandardOutput = true,
+            UseShellExecute = false,
+            CreateNoWindow = true
+        };
+
+        using (Process process = new Process())
+        {
+            process.StartInfo = startInfo;
+            process.Start();
+
+            process.WaitForExit();
+
+            if (process.ExitCode == 0)
+            {
+                Console.WriteLine("Summary video created successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Error creating the summary video.");
+            }
+        }
+    }
+}
+```
+
+In this code:
+
+- The `CreateSummaryVideo` method takes the paths to the full video, the summary video to be created, and the frame interval in seconds as parameters.
+
+- The FFmpeg command extracts keyframes from the full video using the `select` filter and then creates the summary video with a specified frame rate based on the frame interval.
+
+- The `Process` class is used to execute the FFmpeg command.
+
+- Make sure to adjust the FFmpeg command and parameters to match your specific requirements.
+
+- Ensure that FFmpeg is installed on your system or provide the correct path to the FFmpeg executable in the `ffmpegPath` variable.
+
+You can call the `CreateSummaryVideo` method with the appropriate paths and frame interval to create a summary video from a full video in your C# application.

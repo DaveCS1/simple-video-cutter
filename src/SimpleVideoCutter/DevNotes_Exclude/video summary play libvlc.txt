@@ -1,0 +1,84 @@
+﻿To create a summary video of a full video using FFmpeg and play the output in LibVLCSharp in a C# application, you can follow these steps:
+
+1. Install the necessary libraries:
+   - Install LibVLCSharp: You can install it using NuGet Package Manager.
+   - Download FFmpeg: Download the FFmpeg executable and add its location to your system's PATH.
+
+2. Create a WinForms or WPF application.
+
+3. Add a reference to LibVLCSharp and FFmpeg.
+
+4. Here's an example code to create a summary video from a full video using FFmpeg and play it using LibVLCSharp:
+
+```csharp
+using System;
+using System.Diagnostics;
+using System.Windows.Forms;
+using LibVLCSharp.Shared;
+
+namespace VideoSummaryApp
+{
+    public partial class MainForm : Form
+    {
+        private LibVLC _libVLC;
+        private MediaPlayer _mediaPlayer;
+
+        public MainForm()
+        {
+            InitializeComponent();
+
+            Core.Initialize();
+
+            _libVLC = new LibVLC();
+            _mediaPlayer = new MediaPlayer(_libVLC);
+            _mediaPlayer.Drawable = videoView.Handle; // Replace "videoView" with your control name
+        }
+
+        private void StartSummaryButton_Click(object sender, EventArgs e)
+        {
+            string inputVideoPath = "input.mp4"; // Replace with your input video file
+            string outputSummaryPath = "output_summary.mp4"; // Replace with your output summary video file
+            string ffmpegPath = "ffmpeg"; // Replace with the path to your FFmpeg executable
+
+            // FFmpeg command to create a summary video (e.g., one frame every 10 seconds)
+            string ffmpegCommand = $"-i \"{inputVideoPath}\" -vf \"select='eq(n\\,0)+eq(mod(n\\,300)\\,0)'\" -vsync vfr -q:v 2 -an \"{outputSummaryPath}\"";
+
+            // Start the FFmpeg process
+            using (Process ffmpegProcess = new Process())
+            {
+                ffmpegProcess.StartInfo.FileName = ffmpegPath;
+                ffmpegProcess.StartInfo.Arguments = ffmpegCommand;
+                ffmpegProcess.StartInfo.UseShellExecute = false;
+                ffmpegProcess.StartInfo.RedirectStandardError = true;
+                ffmpegProcess.StartInfo.CreateNoWindow = true;
+                ffmpegProcess.ErrorDataReceived += FfmpegProcess_ErrorDataReceived;
+
+                ffmpegProcess.Start();
+                ffmpegProcess.BeginErrorReadLine();
+                ffmpegProcess.WaitForExit();
+            }
+
+            // Play the summary video using LibVLCSharp
+            _mediaPlayer.Play(new Media(_libVLC, outputSummaryPath, FromType.FromPath));
+        }
+
+        private void FfmpegProcess_ErrorDataReceived(object sender, DataReceivedEventArgs e)
+        {
+            // Handle FFmpeg error output if needed
+        }
+    }
+}
+```
+
+In this code:
+
+- Replace `"input.mp4"` with the path to your input video file.
+- Replace `"output_summary.mp4"` with the desired path for the summary video.
+- Replace `"ffmpeg"` with the path to your FFmpeg executable.
+- The `ffmpegCommand` is an FFmpeg command to create a summary video. In this example, it generates one frame every 300 seconds (5 minutes). You can adjust the filter expression to customize the summary as per your requirements.
+
+- The `FfmpegProcess_ErrorDataReceived` method can be used to handle any error output from FFmpeg.
+
+- LibVLCSharp is used to play the summary video. You'll need to add a control (e.g., `videoView`) to your form to display the video.
+
+Make sure to customize the file paths and FFmpeg command as needed for your specific use case.
