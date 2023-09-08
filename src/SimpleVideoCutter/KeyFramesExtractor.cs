@@ -83,7 +83,7 @@ namespace SimpleVideoCutter
 
             using (var ffprobeProcess = new Process() { StartInfo = startInfo, EnableRaisingEvents = true,   })
             {
-                //Console.WriteLine("starting ffprobe");
+               
                 try
                 {
                     ffprobeProcess.OutputDataReceived += outputDataReceivedHandler;
@@ -93,7 +93,7 @@ namespace SimpleVideoCutter
                     InProgress = true;
                     if (!started)
                     { 
-                        System.Windows.Forms.MessageBox.Show("error in execute using");
+                       
                         //you may allow for the process to be re-used (started = false) 
                         //but I'm not sure about the guarantees of the Exited event in such a case
                        
@@ -106,12 +106,12 @@ namespace SimpleVideoCutter
 
                     while (!ffprobeProcess.HasExited || queue.Count > 0)
                     {
-                        Console.WriteLine("ffprobe not hasexited");
+                      
                         if (token.IsCancellationRequested && !ffprobeProcess.HasExited)
                         {
                             ffprobeProcess.Kill();
                             token.ThrowIfCancellationRequested();
-                            Console.WriteLine("ffprobe not killed");
+                          
                         }
 
                         if (queue.TryDequeue(out var line))
@@ -119,21 +119,25 @@ namespace SimpleVideoCutter
                             var timestampStr = line.Replace("pkt_pts_time=", "");
                             timestampStr = timestampStr.Replace("pts_time=", "");
                             var timestampFloat = float.Parse(timestampStr, CultureInfo.InvariantCulture);
-                            Console.WriteLine("ffprob dequeue");
+                          
                             Keyframes.Add((long)(timestampFloat * 1000));
                             if (Keyframes.Count % 10 == 0)
                                 OnKeyFramesExtractorProgress(false);
                         } 
                         else
                         {
-                            Console.WriteLine("ffprobe sleep");
+                           
                             Thread.Sleep(100);
                         }
                     }
                 }
+                catch
+                {
+                    Console.WriteLine("******************* Error FFProbe");
+                }
                 finally
                 {
-                    Console.WriteLine("finally block in ffprobe");
+                    
                     ffprobeProcess.OutputDataReceived -= outputDataReceivedHandler;
                     ffprobeProcess.ErrorDataReceived -= errorDataReceivedHandler;
                 }
@@ -154,7 +158,7 @@ namespace SimpleVideoCutter
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace);
+               
                 Console.WriteLine(ex.Message + ex.StackTrace);
             }
 
