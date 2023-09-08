@@ -377,31 +377,48 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void OpenFile(string path)
         {
-            if (!File.Exists(path))
+            try
             {
-                return;
+                if (!File.Exists(path))
+                {
+                    return;
+                }
+
+                fileBeingPlayed = path;
+                //statusStrip.InvokeIfRequired(() =>
+                //{
+                //    toolStripStatusLabelFilePath.Text = path;
+                //});
+
+                if (vlcControl1.MediaPlayer.IsPlaying)
+                {
+                    vlcControl1.MediaPlayer.Stop();
+
+                    //todo move
+                    //update rate on ui
+                    //radStatusLabelVideoSpeed.Text = vlcControl1.MediaPlayer.Rate.ToString();
+                }
+
+                //radStatusLabelVideoSpeed.Text = vlcControl1.MediaPlayer.Rate.ToString();
+
+                //ClearAllSelections();
+                //UpdateIndexLabel();
+                //EnableButtons();
+                vlcControl1.MediaPlayer.SetRate(1.0f);
+                radStatusLabelVideoSpeed.Text = vlcControl1.MediaPlayer.Rate.ToString();
+
+                vlcControl1.MediaPlayer.Mute = VideoCutterSettings.Instance.Mute;
+                vlcControl1.MediaPlayer.Play(new Media(libVLC, path, FromType.FromPath));
+                videoViewHover.MediaPlayer.Play(new Media(libVLC, path, FromType.FromPath));
+
+                Console.WriteLine(path);
+                keyFramesExtractor.Start(path);
             }
-
-            fileBeingPlayed = path;
-            //statusStrip.InvokeIfRequired(() =>
-            //{
-            //    toolStripStatusLabelFilePath.Text = path;
-            //});
-
-            if (vlcControl1.MediaPlayer.IsPlaying)
+            catch (Exception ex)
             {
-                vlcControl1.MediaPlayer.Stop();
+                MessageBox.Show(ex.Message + ex.StackTrace);
+                Console.WriteLine(ex.Message + ex.StackTrace); 
             }
-
-            //ClearAllSelections();
-            //UpdateIndexLabel();
-            //EnableButtons();
-
-            vlcControl1.MediaPlayer.Mute = VideoCutterSettings.Instance.Mute;
-            vlcControl1.MediaPlayer.Play(new Media(libVLC, path, FromType.FromPath));
-            videoViewHover.MediaPlayer.Play(new Media(libVLC, path, FromType.FromPath));
-
-            keyFramesExtractor.Start(path);
         }
 
         private void vlcControl1_MouseClick(object sender, MouseEventArgs e)

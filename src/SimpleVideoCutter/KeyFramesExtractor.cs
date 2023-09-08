@@ -30,16 +30,26 @@ namespace SimpleVideoCutter
 
         public void Start(string videoFilePath)
         {
-           
-            if (task != null)
+
+            try
             {
-                tokenSource.Cancel();
+                //Console.WriteLine("start  keyframeextract");
+                if (task != null)
+                {
+                    tokenSource.Cancel();
+                }
+                Keyframes.Clear();
+                tokenSource = new CancellationTokenSource();
+                task = Task.Run(() => Execute(videoFilePath, tokenSource.Token));
             }
-            Keyframes.Clear();
-            tokenSource = new CancellationTokenSource();
-            task = Task.Run(() => Execute(videoFilePath, tokenSource.Token));
+            catch ( Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace);
+                Console.WriteLine(ex.Message + ex.StackTrace);
+            }
         }
 
+        //todo important refactor this - needs to go in safe path 
         private string GetFFprobePath()
         {
             return Path.GetDirectoryName(VideoCutterSettings.Instance.FFmpegPath) + Path.DirectorySeparatorChar + "ffprobe.exe";
@@ -47,6 +57,8 @@ namespace SimpleVideoCutter
 
         private void Execute(string videoFilePath, CancellationToken token)
         {
+            Console.WriteLine("****" +videoFilePath + "****");
+           /* Console.WriteLine("execute called")*/;
             var arguments = $"-select_streams v -skip_frame nokey -show_frames -show_entries frame=pkt_pts_time,pict_type,pts_time {videoFilePath}";
 
             var queue = new ConcurrentQueue<string>();
@@ -61,6 +73,7 @@ namespace SimpleVideoCutter
             DataReceivedEventHandler errorDataReceivedHandler = (object sender, DataReceivedEventArgs ea) =>
             {
                 Console.WriteLine("ERR: " + ea.Data);
+                Console.WriteLine("*** FFPROBE ERR: " + ea.Data + "\n"+ videoFilePath);
             };
             var startInfo = new ProcessStartInfo(GetFFprobePath(), arguments);
             startInfo.RedirectStandardOutput = true;
@@ -70,7 +83,7 @@ namespace SimpleVideoCutter
 
             using (var ffprobeProcess = new Process() { StartInfo = startInfo, EnableRaisingEvents = true,   })
             {
-                
+                //Console.WriteLine("starting ffprobe");
                 try
                 {
                     ffprobeProcess.OutputDataReceived += outputDataReceivedHandler;
@@ -79,10 +92,13 @@ namespace SimpleVideoCutter
                     bool started = ffprobeProcess.Start();
                     InProgress = true;
                     if (!started)
-                    {
+                    { 
+                        System.Windows.Forms.MessageBox.Show("error in execute using");
                         //you may allow for the process to be re-used (started = false) 
                         //but I'm not sure about the guarantees of the Exited event in such a case
+                       
                         throw new InvalidOperationException("Could not start process: " + ffprobeProcess);
+                       
                     }
 
                     ffprobeProcess.BeginOutputReadLine();
@@ -90,10 +106,12 @@ namespace SimpleVideoCutter
 
                     while (!ffprobeProcess.HasExited || queue.Count > 0)
                     {
+                        Console.WriteLine("ffprobe not hasexited");
                         if (token.IsCancellationRequested && !ffprobeProcess.HasExited)
                         {
                             ffprobeProcess.Kill();
                             token.ThrowIfCancellationRequested();
+                            Console.WriteLine("ffprobe not killed");
                         }
 
                         if (queue.TryDequeue(out var line))
@@ -101,18 +119,21 @@ namespace SimpleVideoCutter
                             var timestampStr = line.Replace("pkt_pts_time=", "");
                             timestampStr = timestampStr.Replace("pts_time=", "");
                             var timestampFloat = float.Parse(timestampStr, CultureInfo.InvariantCulture);
+                            Console.WriteLine("ffprob dequeue");
                             Keyframes.Add((long)(timestampFloat * 1000));
                             if (Keyframes.Count % 10 == 0)
                                 OnKeyFramesExtractorProgress(false);
                         } 
                         else
                         {
+                            Console.WriteLine("ffprobe sleep");
                             Thread.Sleep(100);
                         }
                     }
                 }
                 finally
                 {
+                    Console.WriteLine("finally block in ffprobe");
                     ffprobeProcess.OutputDataReceived -= outputDataReceivedHandler;
                     ffprobeProcess.ErrorDataReceived -= errorDataReceivedHandler;
                 }
@@ -122,10 +143,20 @@ namespace SimpleVideoCutter
         }
         private void OnKeyFramesExtractorProgress(bool completed)
         {
-            KeyFramesExtractorProgress?.Invoke(this, new KeyFramesExtractorProgressEventArgs()
+            try
             {
-                Completed = completed,
-            });
+                KeyFramesExtractorProgress?.Invoke(this, new KeyFramesExtractorProgressEventArgs()
+                {
+                    Completed = completed,
+                   
+                });
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace);
+                Console.WriteLine(ex.Message + ex.StackTrace);
+            }
 
         }
 
