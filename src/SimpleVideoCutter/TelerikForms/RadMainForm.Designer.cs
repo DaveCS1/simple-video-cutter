@@ -101,6 +101,9 @@
             this.btnVideoGoForward10Seconds = new Telerik.WinControls.UI.RadButton();
             this.imageListMainPlayerControls = new System.Windows.Forms.ImageList(this.components);
             this.pnlTopVideoScreenMoveForwardBackFavorite = new Telerik.WinControls.UI.RadPanel();
+            this.tblLayoutPnlTopMainVideoControls = new System.Windows.Forms.TableLayoutPanel();
+            this.radLblCurrentVideoFileBeingPlayed = new Telerik.WinControls.UI.RadLabel();
+            this.radBtnCopyVideoPath = new Telerik.WinControls.UI.RadButton();
             this.btnMoveNextVideo = new Telerik.WinControls.UI.RadButton();
             this.btnMovePreviousVideo = new Telerik.WinControls.UI.RadButton();
             this.radPageViewFindVideos = new Telerik.WinControls.UI.RadPageViewPage();
@@ -175,6 +178,7 @@
             this.object_50254541_367b_4ee5_af46_ef9beb1f3d02 = new Telerik.WinControls.RootRadElement();
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipTopVideoPlayerControls = new System.Windows.Forms.ToolTip(this.components);
             this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
             this.ucViewHistory1 = new SimpleVideoCutter.Controls.ucViewHistory();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
@@ -240,6 +244,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoForward10Seconds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTopVideoScreenMoveForwardBackFavorite)).BeginInit();
             this.pnlTopVideoScreenMoveForwardBackFavorite.SuspendLayout();
+            this.tblLayoutPnlTopMainVideoControls.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLblCurrentVideoFileBeingPlayed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).BeginInit();
             this.radPageViewFindVideos.SuspendLayout();
@@ -475,7 +482,6 @@
             // radPageViewPageTrimVideos
             // 
             this.radPageViewPageTrimVideos.Controls.Add(this.splitContainer1);
-            this.radPageViewPageTrimVideos.Controls.Add(this.radPopupContainer1);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel3);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel2);
             this.radPageViewPageTrimVideos.Controls.Add(this.pnlTopVideoScreenMoveForwardBackFavorite);
@@ -528,9 +534,11 @@
             this.vlcControl1.Size = new System.Drawing.Size(334, 434);
             this.vlcControl1.TabIndex = 8;
             this.vlcControl1.Text = "videoView1";
+            this.vlcControl1.Click += new System.EventHandler(this.vlcControl1_Click);
             // 
             // panelTasks
             // 
+            this.panelTasks.Controls.Add(this.radPopupContainer1);
             this.panelTasks.Controls.Add(this.labelTasks);
             this.panelTasks.Controls.Add(this.labelProgress);
             this.panelTasks.Controls.Add(this.listViewTasks);
@@ -675,14 +683,14 @@
             // 
             // radPopupContainer1
             // 
-            this.radPopupContainer1.Location = new System.Drawing.Point(934, 292);
+            this.radPopupContainer1.Location = new System.Drawing.Point(596, 248);
             this.radPopupContainer1.Name = "radPopupContainer1";
             // 
             // radPopupContainer1.PanelContainer
             // 
             this.radPopupContainer1.PanelContainer.Controls.Add(this.radTrackBar2);
-            this.radPopupContainer1.PanelContainer.Size = new System.Drawing.Size(62, 236);
-            this.radPopupContainer1.Size = new System.Drawing.Size(64, 238);
+            this.radPopupContainer1.PanelContainer.Size = new System.Drawing.Size(62, 257);
+            this.radPopupContainer1.Size = new System.Drawing.Size(64, 259);
             this.radPopupContainer1.TabIndex = 3;
             this.radPopupContainer1.ThemeName = "FluentDark";
             // 
@@ -700,7 +708,7 @@
             // 
             this.radTrackBar2.RootElement.StretchHorizontally = false;
             this.radTrackBar2.RootElement.StretchVertically = true;
-            this.radTrackBar2.Size = new System.Drawing.Size(42, 198);
+            this.radTrackBar2.Size = new System.Drawing.Size(42, 196);
             this.radTrackBar2.TabIndex = 7;
             this.radTrackBar2.ThemeName = "FluentDark";
             this.radTrackBar2.ThumbSize = new System.Drawing.Size(8, 20);
@@ -997,6 +1005,7 @@
             // pnlTopVideoScreenMoveForwardBackFavorite
             // 
             this.pnlTopVideoScreenMoveForwardBackFavorite.BackColor = System.Drawing.Color.White;
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.tblLayoutPnlTopMainVideoControls);
             this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.btnMoveNextVideo);
             this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.btnMovePreviousVideo);
             this.pnlTopVideoScreenMoveForwardBackFavorite.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1007,6 +1016,50 @@
             this.pnlTopVideoScreenMoveForwardBackFavorite.Size = new System.Drawing.Size(1004, 25);
             this.pnlTopVideoScreenMoveForwardBackFavorite.TabIndex = 10;
             this.pnlTopVideoScreenMoveForwardBackFavorite.ThemeName = "FluentDark";
+            // 
+            // tblLayoutPnlTopMainVideoControls
+            // 
+            this.tblLayoutPnlTopMainVideoControls.BackColor = System.Drawing.Color.DarkGray;
+            this.tblLayoutPnlTopMainVideoControls.ColumnCount = 4;
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radLblCurrentVideoFileBeingPlayed, 0, 0);
+            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radBtnCopyVideoPath, 1, 0);
+            this.tblLayoutPnlTopMainVideoControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblLayoutPnlTopMainVideoControls.Location = new System.Drawing.Point(24, 0);
+            this.tblLayoutPnlTopMainVideoControls.Name = "tblLayoutPnlTopMainVideoControls";
+            this.tblLayoutPnlTopMainVideoControls.RowCount = 1;
+            this.tblLayoutPnlTopMainVideoControls.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblLayoutPnlTopMainVideoControls.Size = new System.Drawing.Size(955, 25);
+            this.tblLayoutPnlTopMainVideoControls.TabIndex = 2;
+            this.tblLayoutPnlTopMainVideoControls.Paint += new System.Windows.Forms.PaintEventHandler(this.tblLayoutPnlTopMainVideoControls_Paint);
+            // 
+            // radLblCurrentVideoFileBeingPlayed
+            // 
+            this.radLblCurrentVideoFileBeingPlayed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radLblCurrentVideoFileBeingPlayed.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline);
+            this.radLblCurrentVideoFileBeingPlayed.Location = new System.Drawing.Point(3, 3);
+            this.radLblCurrentVideoFileBeingPlayed.Name = "radLblCurrentVideoFileBeingPlayed";
+            this.radLblCurrentVideoFileBeingPlayed.Size = new System.Drawing.Size(55, 18);
+            this.radLblCurrentVideoFileBeingPlayed.TabIndex = 0;
+            this.radLblCurrentVideoFileBeingPlayed.Text = "-----";
+            this.radLblCurrentVideoFileBeingPlayed.ThemeName = "FluentDark";
+            this.toolTipTopVideoPlayerControls.SetToolTip(this.radLblCurrentVideoFileBeingPlayed, "Opens current video file in it\'s folder");
+            this.radLblCurrentVideoFileBeingPlayed.Click += new System.EventHandler(this.radLblCurrentVideoFileBeingPlayed_Click);
+            // 
+            // radBtnCopyVideoPath
+            // 
+            this.radBtnCopyVideoPath.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radBtnCopyVideoPath.Image = global::SimpleVideoCutter.VideoControlIcons24.Copy_02;
+            this.radBtnCopyVideoPath.Location = new System.Drawing.Point(64, 3);
+            this.radBtnCopyVideoPath.Name = "radBtnCopyVideoPath";
+            this.radBtnCopyVideoPath.Size = new System.Drawing.Size(20, 19);
+            this.radBtnCopyVideoPath.TabIndex = 1;
+            this.radBtnCopyVideoPath.Text = "radButton5";
+            this.radBtnCopyVideoPath.ThemeName = "FluentDark";
+            this.radBtnCopyVideoPath.Click += new System.EventHandler(this.radBtnCopyVideoPath_Click);
             // 
             // btnMoveNextVideo
             // 
@@ -1646,6 +1699,11 @@
             this.toolTip1.ShowAlways = true;
             this.toolTip1.ToolTipTitle = "4 Second Delay";
             // 
+            // toolTipTopVideoPlayerControls
+            // 
+            this.toolTipTopVideoPlayerControls.IsBalloon = true;
+            this.toolTipTopVideoPlayerControls.ToolTipTitle = "Open File Location";
+            // 
             // videoCutterTimeline1
             // 
             this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1759,6 +1817,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoForward10Seconds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTopVideoScreenMoveForwardBackFavorite)).EndInit();
             this.pnlTopVideoScreenMoveForwardBackFavorite.ResumeLayout(false);
+            this.tblLayoutPnlTopMainVideoControls.ResumeLayout(false);
+            this.tblLayoutPnlTopMainVideoControls.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLblCurrentVideoFileBeingPlayed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).EndInit();
             this.radPageViewFindVideos.ResumeLayout(false);
@@ -1918,5 +1980,9 @@
         private Telerik.WinControls.UI.RadLabelElement radStatusLabelVideoSpeed;
         private Telerik.WinControls.UI.RadButton btnVideoPlayBackSpeedDefault;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.TableLayoutPanel tblLayoutPnlTopMainVideoControls;
+        private Telerik.WinControls.UI.RadLabel radLblCurrentVideoFileBeingPlayed;
+        private System.Windows.Forms.ToolTip toolTipTopVideoPlayerControls;
+        private Telerik.WinControls.UI.RadButton radBtnCopyVideoPath;
     }
 }

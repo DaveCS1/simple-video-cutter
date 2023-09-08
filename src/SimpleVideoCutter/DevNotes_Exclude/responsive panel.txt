@@ -1,0 +1,67 @@
+using System;
+using System.Windows.Forms;
+
+namespace ResponsivePanelApp
+{
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void InitializeComponents()
+        {
+            // Create a TableLayoutPanel and set properties
+            TableLayoutPanel tableLayoutPanel = new TableLayoutPanel();
+            tableLayoutPanel.Dock = DockStyle.Fill;
+            tableLayoutPanel.AutoSize = true;
+
+            // Create and add controls to the TableLayoutPanel
+            Label label1 = new Label();
+            label1.Text = "Label 1";
+            label1.Anchor = AnchorStyles.Left;
+            
+            TextBox textBox1 = new TextBox();
+            textBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+
+            Label label2 = new Label();
+            label2.Text = "Label 2";
+            label2.Anchor = AnchorStyles.Left;
+
+            TextBox textBox2 = new TextBox();
+            textBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+
+            Button button1 = new Button();
+            button1.Text = "Button 1";
+            button1.Anchor = AnchorStyles.Left;
+
+            Button button2 = new Button();
+            button2.Text = "Button 2";
+            button2.Anchor = AnchorStyles.Left;
+
+            // Add controls to the TableLayoutPanel
+            tableLayoutPanel.Controls.Add(label1, 0, 0);
+            tableLayoutPanel.Controls.Add(textBox1, 1, 0);
+            tableLayoutPanel.Controls.Add(label2, 0, 1);
+            tableLayoutPanel.Controls.Add(textBox2, 1, 1);
+            tableLayoutPanel.Controls.Add(button1, 0, 2);
+            tableLayoutPanel.Controls.Add(button2, 1, 2);
+
+            // Add the TableLayoutPanel to the form
+            Controls.Add(tableLayoutPanel);
+        }
+
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            MainForm mainForm = new MainForm();
+            mainForm.InitializeComponents();
+
+            Application.Run(mainForm);
+        }
+    }
+}

@@ -258,8 +258,24 @@ namespace SimpleVideoCutter.TelerikForms
 
         private void VlcControl1_MediaChanged(object sender, MediaPlayerMediaChangedEventArgs e)
         {
-            var fi = new FileInfo(fileBeingPlayed);
-            string fileInfo = string.Format("{0:yyyy/MM/dd HH:mm:ss}", fi.LastWriteTime);
+            try
+            {
+                if (fileBeingPlayed !=null)
+                {
+                var fi = new FileInfo(fileBeingPlayed);
+                string fileInfo = string.Format("{0:yyyy/MM/dd HH:mm:ss}", fi.LastWriteTime);
+
+                radLblCurrentVideoFileBeingPlayed.Text = fi.Name;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message + ex.StackTrace);
+                
+            }
+           
+
             //statusStrip.InvokeIfRequired(() =>
             //{
             //    toolStripStatusLabelFileDate.Text = fileInfo;

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
@@ -108,6 +109,7 @@ namespace SimpleVideoCutter.TelerikForms
         private void radTrackBar2_ValueChanged(object sender, EventArgs e)
         {
             radPopupEditorVolume.Text= radTrackBar2.Value.ToString();
+            vlcControl1.MediaPlayer.Volume= (int)radTrackBar2.Value;
         }
 
         private void radPopupContainer2_Click(object sender, EventArgs e)
@@ -470,7 +472,50 @@ namespace SimpleVideoCutter.TelerikForms
 NextFrame();
         }
 
-       
+        private void vlcControl1_Click(object sender, EventArgs e)
+        {
+            PlayPause();
+        }
+
+        private void radLblCurrentVideoFileBeingPlayed_Click(object sender, EventArgs e)
+        {
+            //todo change title of tooltip
+            if (File.Exists(fileBeingPlayed))
+            {
+                 HighlightFile(Path.GetDirectoryName(fileBeingPlayed), Path.GetFileName(fileBeingPlayed));
+            }
+           
+        }
+
+        public static void HighlightFile(string folderPath, string fileName)
+        {
+            try
+            {
+                // Combine the folder path and file name to create the full file path
+                string filePath = System.IO.Path.Combine(folderPath, fileName);
+
+                // Use Process.Start to open Windows Explorer and highlight the file
+                Process.Start("explorer.exe", $"/select, \"{filePath}\"");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
+        private void tblLayoutPnlTopMainVideoControls_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radBtnCopyVideoPath_Click(object sender, EventArgs e)
+        {
+            if (fileBeingPlayed != null)
+            {
+                Clipboard.SetText(fileBeingPlayed);
+                MessageBox.Show(fileBeingPlayed + " path copied to clipboard");
+            }
+        }
 
 
 
