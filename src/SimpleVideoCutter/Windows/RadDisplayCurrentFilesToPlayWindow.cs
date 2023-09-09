@@ -120,7 +120,7 @@ namespace SimpleVideoCutter.Windows
             if (File.Exists(message))
             {
                 this.radPicBoxGeneratedCollage.Image = Image.FromFile(message);
-                radPageView.SelectedPage = radPageViewPage2;
+                radPageView.SelectedPage= radPageViewPage2;
             }
             else
             {

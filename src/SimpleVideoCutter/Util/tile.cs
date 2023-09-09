@@ -61,10 +61,15 @@ namespace SimpleVideoCutter.Util
             {
                 FileName = "c:\\ffmpeg\\ffmpeg.exe", // Replace with the actual path to ffmpeg.exe
                 Arguments = ffmpegCommand,
+                //org
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
                 UseShellExecute = false,
                 CreateNoWindow = true
+                //RedirectStandardOutput = false,
+                //RedirectStandardError = false,
+                //UseShellExecute = false,
+                //CreateNoWindow = true
             };
 
             // Create and start the process
@@ -93,8 +98,8 @@ namespace SimpleVideoCutter.Util
 
             //MessageBox.Show("Conversion completed!");
         }
-        public delegate void CallbackHandler(string message);
-        public event CallbackHandler CallbackEvent;
+        public  delegate void CallbackHandler(string message);
+        public  event CallbackHandler CallbackEvent;
         
     }
 }

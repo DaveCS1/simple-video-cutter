@@ -187,6 +187,12 @@
     <Compile Include="TempControlTest\frmVideoTrimControls.Designer.cs">
       <DependentUpon>frmVideoTrimControls.cs</DependentUpon>
     </Compile>
+    <Compile Include="TempControlTest\RadFormWaitingBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TempControlTest\RadFormWaitingBar.Designer.cs">
+      <DependentUpon>RadFormWaitingBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="Util\CreateVideoPoster.cs" />
     <Compile Include="Util\FindFormChildControls.cs" />
@@ -212,6 +218,9 @@
     <Content Include="Testmedia\test.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="TempControlTest\RadFormWaitingBar.resx">
+      <DependentUpon>RadFormWaitingBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\RadDisplayCurrentFilesToPlayWindow.resx">
       <DependentUpon>RadDisplayCurrentFilesToPlayWindow.cs</DependentUpon>
     </EmbeddedResource>

@@ -22,11 +22,12 @@ namespace SimpleVideoCutter.TelerikForms
         public RadMainForm()
         {
             InitializeComponent();
-            TempControlTest.frmVideoTrimControls frmVideoTrimControls = new TempControlTest.frmVideoTrimControls();
-            frmVideoTrimControls.Show();
+            //TempControlTest.frmVideoTrimControls frmVideoTrimControls = new TempControlTest.frmVideoTrimControls();
+            //frmVideoTrimControls.Show();
             //var t = new Util.CreateVideoPoster();
             //var u = new Util.tile();
-            
+            //TempControlTest.RadFormWaitingBar RadFormWaitingBar = new TempControlTest.RadFormWaitingBar();
+            //RadFormWaitingBar.Show();
 
 
 
