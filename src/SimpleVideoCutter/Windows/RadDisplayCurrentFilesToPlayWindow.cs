@@ -41,6 +41,10 @@ namespace SimpleVideoCutter.Windows
         {
             //Util.tile tile = new Util.tile(inputVideoFullPath);
 
+
+           radPageViewPage2.Enabled = false;
+
+
             if (((Telerik.WinControls.UI.RadListElement)sender).SelectedValue !=null)
             {
                 var selectedVideo=  ((Telerik.WinControls.UI.RadListElement)sender).SelectedValue;
@@ -174,8 +178,17 @@ namespace SimpleVideoCutter.Windows
         {
             this.radWaitingBar1.Width = this.Width - 10;
         }
+
+        private void radPicBoxGeneratedCollage_ContextMenuOpening(object sender, CancelEventArgs e)
+        {
+            this.radPicBoxGeneratedCollage.ContextMenuDropDown.Items.Remove(this.radPicBoxGeneratedCollage.ContextMenuProperties.CutItem);
+            this.radPicBoxGeneratedCollage.ContextMenuDropDown.Items.Remove(this.radPicBoxGeneratedCollage.ContextMenuProperties.OpenItem);
+            this.radPicBoxGeneratedCollage.ContextMenuDropDown.Items.Remove(this.radPicBoxGeneratedCollage.ContextMenuProperties.RemoveItem);
+
+        }
     }
+ }
 
     //
-}
+
 

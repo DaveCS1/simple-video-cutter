@@ -35,7 +35,6 @@
             this.dotsRingWaitingBarIndicatorElement1 = new Telerik.WinControls.UI.DotsRingWaitingBarIndicatorElement();
             this.radListControl1 = new Telerik.WinControls.UI.RadListControl();
             this.radPageViewPage2 = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radBtnGenerateCollage = new Telerik.WinControls.UI.RadButton();
             this.radPicBoxGeneratedCollage = new Telerik.WinControls.UI.RadPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -62,7 +61,6 @@
             // 
             this.radPageView.Controls.Add(this.radPageViewPage1);
             this.radPageView.Controls.Add(this.radPageViewPage2);
-            this.radPageView.Controls.Add(this.radPageViewPage3);
             this.radPageView.DefaultPage = this.radPageViewPage1;
             this.radPageView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView.Location = new System.Drawing.Point(0, 0);
@@ -71,23 +69,26 @@
             this.radPageView.Size = new System.Drawing.Size(892, 617);
             this.radPageView.TabIndex = 3;
             this.radPageView.ThemeName = "FluentDark";
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView.GetChildAt(0))).ShowItemPinButton = false;
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.None;
             // 
             // radPageViewPage1
             // 
             this.radPageViewPage1.Controls.Add(this.radWaitingBar1);
             this.radPageViewPage1.Controls.Add(this.radListControl1);
             this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(75F, 29F);
-            this.radPageViewPage1.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage1.Location = new System.Drawing.Point(6, 35);
             this.radPageViewPage1.Name = "radPageViewPage1";
-            this.radPageViewPage1.Size = new System.Drawing.Size(880, 575);
+            this.radPageViewPage1.Size = new System.Drawing.Size(880, 576);
             this.radPageViewPage1.Text = "Files In Use";
             this.radPageViewPage1.ToolTipText = "Files you are viewing in the main video cutter screen";
             // 
             // radWaitingBar1
             // 
+            this.radWaitingBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radWaitingBar1.Location = new System.Drawing.Point(0, 0);
             this.radWaitingBar1.Name = "radWaitingBar1";
-            this.radWaitingBar1.Size = new System.Drawing.Size(837, 449);
+            this.radWaitingBar1.Size = new System.Drawing.Size(880, 576);
             this.radWaitingBar1.TabIndex = 0;
             this.radWaitingBar1.Text = "radWaitingBar1";
             this.radWaitingBar1.ThemeName = "FluentDark";
@@ -112,7 +113,7 @@
             this.radListControl1.Location = new System.Drawing.Point(0, 0);
             this.radListControl1.Margin = new System.Windows.Forms.Padding(3, 35, 3, 3);
             this.radListControl1.Name = "radListControl1";
-            this.radListControl1.Size = new System.Drawing.Size(880, 575);
+            this.radListControl1.Size = new System.Drawing.Size(880, 576);
             this.radListControl1.TabIndex = 7;
             this.radListControl1.ThemeName = "FluentDark";
             this.radListControl1.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.radListControl1_SelectedIndexChanged);
@@ -121,18 +122,10 @@
             // 
             this.radPageViewPage2.Controls.Add(this.radPicBoxGeneratedCollage);
             this.radPageViewPage2.ItemSize = new System.Drawing.SizeF(84F, 29F);
-            this.radPageViewPage2.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage2.Location = new System.Drawing.Point(6, 35);
             this.radPageViewPage2.Name = "radPageViewPage2";
-            this.radPageViewPage2.Size = new System.Drawing.Size(880, 575);
+            this.radPageViewPage2.Size = new System.Drawing.Size(880, 576);
             this.radPageViewPage2.Text = "Video Poster";
-            // 
-            // radPageViewPage3
-            // 
-            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(119F, 29F);
-            this.radPageViewPage3.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewPage3.Name = "radPageViewPage3";
-            this.radPageViewPage3.Size = new System.Drawing.Size(825, 449);
-            this.radPageViewPage3.Text = "radPageViewPage3";
             // 
             // radBtnGenerateCollage
             // 
@@ -152,10 +145,11 @@
             this.radPicBoxGeneratedCollage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPicBoxGeneratedCollage.Location = new System.Drawing.Point(0, 0);
             this.radPicBoxGeneratedCollage.Name = "radPicBoxGeneratedCollage";
-            this.radPicBoxGeneratedCollage.Size = new System.Drawing.Size(880, 575);
+            this.radPicBoxGeneratedCollage.Size = new System.Drawing.Size(880, 576);
             this.radPicBoxGeneratedCollage.SvgImageXml = null;
             this.radPicBoxGeneratedCollage.TabIndex = 0;
             this.radPicBoxGeneratedCollage.ThemeName = "FluentDark";
+            this.radPicBoxGeneratedCollage.ContextMenuOpening += new System.ComponentModel.CancelEventHandler(this.radPicBoxGeneratedCollage_ContextMenuOpening);
             // 
             // panel1
             // 
@@ -259,7 +253,6 @@
         private Telerik.WinControls.UI.RadListControl radListControl1;
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPage2;
         private Telerik.WinControls.UI.RadPictureBox radPicBoxGeneratedCollage;
-        private Telerik.WinControls.UI.RadPageViewPage radPageViewPage3;
         private Telerik.WinControls.UI.RadButton radBtnGenerateCollage;
         private Telerik.WinControls.UI.RadWaitingBar radWaitingBar1;
         private Telerik.WinControls.UI.DotsRingWaitingBarIndicatorElement dotsRingWaitingBarIndicatorElement1;
