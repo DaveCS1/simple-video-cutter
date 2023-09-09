@@ -266,6 +266,8 @@ namespace SimpleVideoCutter.TelerikForms
                 string fileInfo = string.Format("{0:yyyy/MM/dd HH:mm:ss}", fi.LastWriteTime);
 
                 radLblCurrentVideoFileBeingPlayed.Text = fi.Name;
+                
+                    CurrentVideoPlayedDirectory = fi.DirectoryName;
                 }
 
             }
@@ -283,6 +285,11 @@ namespace SimpleVideoCutter.TelerikForms
             //EnableButtons();
 
         }
+
+        /// <summary>
+        /// gets the currently played video directory- for use when generating thumbs from util.tile as parameter
+        /// </summary>
+        public string CurrentVideoPlayedDirectory { get; set; }
 
         private void VlcControl1_Playing(object sender, EventArgs e)
         {

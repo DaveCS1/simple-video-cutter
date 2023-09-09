@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
-            this.radChkedLbox = new Telerik.WinControls.UI.RadCheckedListBox();
             this.radLblVideosToViewCurrentlyCount = new Telerik.WinControls.UI.RadLabel();
+            this.radPageView = new Telerik.WinControls.UI.RadPageView();
+            this.radPageViewPage1 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewPage2 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
             this.radListControl1 = new Telerik.WinControls.UI.RadListControl();
-            ((System.ComponentModel.ISupportInitialize)(this.radChkedLbox)).BeginInit();
+            this.radChkedLbox = new Telerik.WinControls.UI.RadCheckedListBox();
+            this.radPicBoxGeneratedCollage = new Telerik.WinControls.UI.RadPictureBox();
+            this.radBtnGenerateCollage = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radLblVideosToViewCurrentlyCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPageView)).BeginInit();
+            this.radPageView.SuspendLayout();
+            this.radPageViewPage1.SuspendLayout();
+            this.radPageViewPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radListControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radChkedLbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPicBoxGeneratedCollage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnGenerateCollage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
-            // 
-            // radChkedLbox
-            // 
-            this.radChkedLbox.AutoScroll = true;
-            this.radChkedLbox.GroupItemSize = new System.Drawing.Size(200, 28);
-            this.radChkedLbox.ItemSize = new System.Drawing.Size(200, 28);
-            this.radChkedLbox.Location = new System.Drawing.Point(12, 40);
-            this.radChkedLbox.Name = "radChkedLbox";
-            this.radChkedLbox.SelectLastAddedItem = false;
-            this.radChkedLbox.Size = new System.Drawing.Size(802, 93);
-            this.radChkedLbox.TabIndex = 0;
-            this.radChkedLbox.ThemeName = "FluentDark";
             // 
             // radLblVideosToViewCurrentlyCount
             // 
@@ -59,23 +59,95 @@
             this.radLblVideosToViewCurrentlyCount.Text = "radLabel1";
             this.radLblVideosToViewCurrentlyCount.ThemeName = "FluentDark";
             // 
+            // radPageView
+            // 
+            this.radPageView.Controls.Add(this.radPageViewPage1);
+            this.radPageView.Controls.Add(this.radPageViewPage2);
+            this.radPageView.Controls.Add(this.radPageViewPage3);
+            this.radPageView.Location = new System.Drawing.Point(2, 37);
+            this.radPageView.Name = "radPageView";
+            this.radPageView.SelectedPage = this.radPageViewPage2;
+            this.radPageView.Size = new System.Drawing.Size(837, 491);
+            this.radPageView.TabIndex = 3;
+            this.radPageView.ThemeName = "FluentDark";
+            // 
+            // radPageViewPage1
+            // 
+            this.radPageViewPage1.Controls.Add(this.radListControl1);
+            this.radPageViewPage1.Controls.Add(this.radChkedLbox);
+            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage1.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage1.Name = "radPageViewPage1";
+            this.radPageViewPage1.Size = new System.Drawing.Size(825, 449);
+            this.radPageViewPage1.Text = "radPageViewPage1";
+            // 
+            // radPageViewPage2
+            // 
+            this.radPageViewPage2.Controls.Add(this.radPicBoxGeneratedCollage);
+            this.radPageViewPage2.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage2.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage2.Name = "radPageViewPage2";
+            this.radPageViewPage2.Size = new System.Drawing.Size(825, 449);
+            this.radPageViewPage2.Text = "radPageViewPage2";
+            // 
+            // radPageViewPage3
+            // 
+            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(119F, 29F);
+            this.radPageViewPage3.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewPage3.Name = "radPageViewPage3";
+            this.radPageViewPage3.Size = new System.Drawing.Size(825, 449);
+            this.radPageViewPage3.Text = "radPageViewPage3";
+            // 
             // radListControl1
             // 
             this.radListControl1.ItemHeight = 24;
-            this.radListControl1.Location = new System.Drawing.Point(22, 154);
+            this.radListControl1.Location = new System.Drawing.Point(0, 45);
             this.radListControl1.Name = "radListControl1";
-            this.radListControl1.Size = new System.Drawing.Size(772, 345);
-            this.radListControl1.TabIndex = 2;
+            this.radListControl1.Size = new System.Drawing.Size(821, 400);
+            this.radListControl1.TabIndex = 7;
             this.radListControl1.ThemeName = "FluentDark";
+            this.radListControl1.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.radListControl1_SelectedIndexChanged);
+            // 
+            // radChkedLbox
+            // 
+            this.radChkedLbox.AutoScroll = true;
+            this.radChkedLbox.GroupItemSize = new System.Drawing.Size(200, 28);
+            this.radChkedLbox.ItemSize = new System.Drawing.Size(200, 28);
+            this.radChkedLbox.Location = new System.Drawing.Point(-6, 3);
+            this.radChkedLbox.Name = "radChkedLbox";
+            this.radChkedLbox.SelectLastAddedItem = false;
+            this.radChkedLbox.Size = new System.Drawing.Size(827, 36);
+            this.radChkedLbox.TabIndex = 6;
+            this.radChkedLbox.ThemeName = "FluentDark";
+            // 
+            // radPicBoxGeneratedCollage
+            // 
+            this.radPicBoxGeneratedCollage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radPicBoxGeneratedCollage.Location = new System.Drawing.Point(0, 0);
+            this.radPicBoxGeneratedCollage.Name = "radPicBoxGeneratedCollage";
+            this.radPicBoxGeneratedCollage.Size = new System.Drawing.Size(825, 449);
+            this.radPicBoxGeneratedCollage.SvgImageXml = null;
+            this.radPicBoxGeneratedCollage.TabIndex = 0;
+            this.radPicBoxGeneratedCollage.ThemeName = "FluentDark";
+            // 
+            // radBtnGenerateCollage
+            // 
+            this.radBtnGenerateCollage.Location = new System.Drawing.Point(665, 1);
+            this.radBtnGenerateCollage.Name = "radBtnGenerateCollage";
+            this.radBtnGenerateCollage.Size = new System.Drawing.Size(137, 30);
+            this.radBtnGenerateCollage.TabIndex = 4;
+            this.radBtnGenerateCollage.Text = "Video Poster";
+            this.radBtnGenerateCollage.ThemeName = "FluentDark";
+            this.radBtnGenerateCollage.Click += new System.EventHandler(this.radBtnGenerateCollage_Click);
             // 
             // RadDisplayCurrentFilesToPlayWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 530);
-            this.Controls.Add(this.radListControl1);
+            this.Controls.Add(this.radBtnGenerateCollage);
+            this.Controls.Add(this.radPageView);
             this.Controls.Add(this.radLblVideosToViewCurrentlyCount);
-            this.Controls.Add(this.radChkedLbox);
             this.Name = "RadDisplayCurrentFilesToPlayWindow";
             // 
             // 
@@ -85,9 +157,15 @@
             this.Text = "RadDisplayCurrentFilesToPlayWindow";
             this.ThemeName = "FluentDark";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.radChkedLbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLblVideosToViewCurrentlyCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPageView)).EndInit();
+            this.radPageView.ResumeLayout(false);
+            this.radPageViewPage1.ResumeLayout(false);
+            this.radPageViewPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radListControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radChkedLbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPicBoxGeneratedCollage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnGenerateCollage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -97,8 +175,14 @@
         #endregion
 
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
-        private Telerik.WinControls.UI.RadCheckedListBox radChkedLbox;
         private Telerik.WinControls.UI.RadLabel radLblVideosToViewCurrentlyCount;
+        private Telerik.WinControls.UI.RadPageView radPageView;
+        private Telerik.WinControls.UI.RadPageViewPage radPageViewPage1;
         private Telerik.WinControls.UI.RadListControl radListControl1;
+        private Telerik.WinControls.UI.RadCheckedListBox radChkedLbox;
+        private Telerik.WinControls.UI.RadPageViewPage radPageViewPage2;
+        private Telerik.WinControls.UI.RadPictureBox radPicBoxGeneratedCollage;
+        private Telerik.WinControls.UI.RadPageViewPage radPageViewPage3;
+        private Telerik.WinControls.UI.RadButton radBtnGenerateCollage;
     }
 }

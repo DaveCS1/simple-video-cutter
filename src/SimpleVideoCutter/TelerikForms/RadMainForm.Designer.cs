@@ -105,6 +105,7 @@
             this.tblLayoutPnlTopMainVideoControls = new System.Windows.Forms.TableLayoutPanel();
             this.radLblCurrentVideoFileBeingPlayed = new Telerik.WinControls.UI.RadLabel();
             this.radBtnCopyVideoPath = new Telerik.WinControls.UI.RadButton();
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow = new Telerik.WinControls.UI.RadButton();
             this.btnMoveNextVideo = new Telerik.WinControls.UI.RadButton();
             this.btnMovePreviousVideo = new Telerik.WinControls.UI.RadButton();
             this.radPageViewFindVideos = new Telerik.WinControls.UI.RadPageViewPage();
@@ -181,7 +182,6 @@
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipTopVideoPlayerControls = new System.Windows.Forms.ToolTip(this.components);
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -248,6 +248,7 @@
             this.tblLayoutPnlTopMainVideoControls.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLblCurrentVideoFileBeingPlayed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).BeginInit();
             this.radPageViewFindVideos.SuspendLayout();
@@ -259,7 +260,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.toolStripPlayback)).BeginInit();
             this.radPageViewViewHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1078,6 +1078,19 @@
             this.radBtnCopyVideoPath.ThemeName = "FluentDark";
             this.radBtnCopyVideoPath.Click += new System.EventHandler(this.radBtnCopyVideoPath_Click);
             // 
+            // radBtnShowDisplayCurrentFilesToPlayWinfow
+            // 
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Location = new System.Drawing.Point(900, 3);
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Margin = new System.Windows.Forms.Padding(3, 3, 25, 3);
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Name = "radBtnShowDisplayCurrentFilesToPlayWinfow";
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Size = new System.Drawing.Size(30, 19);
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.TabIndex = 2;
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Text = "radButton5";
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.ThemeName = "FluentDark";
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Click += new System.EventHandler(this.radBtnShowDisplayCurrentFilesToPlayWinfow_Click);
+            // 
             // btnMoveNextVideo
             // 
             this.btnMoveNextVideo.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -1729,19 +1742,6 @@
             this.toolTipTopVideoPlayerControls.IsBalloon = true;
             this.toolTipTopVideoPlayerControls.ToolTipTitle = "Open File Location";
             // 
-            // radBtnShowDisplayCurrentFilesToPlayWinfow
-            // 
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Location = new System.Drawing.Point(900, 3);
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Margin = new System.Windows.Forms.Padding(3, 3, 25, 3);
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Name = "radBtnShowDisplayCurrentFilesToPlayWinfow";
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Size = new System.Drawing.Size(30, 19);
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.TabIndex = 2;
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Text = "radButton5";
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.ThemeName = "FluentDark";
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Click += new System.EventHandler(this.radBtnShowDisplayCurrentFilesToPlayWinfow_Click);
-            // 
             // RadMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1837,6 +1837,7 @@
             this.tblLayoutPnlTopMainVideoControls.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLblCurrentVideoFileBeingPlayed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).EndInit();
             this.radPageViewFindVideos.ResumeLayout(false);
@@ -1850,7 +1851,6 @@
             this.radPageViewViewHistory.ResumeLayout(false);
             this.radPageViewViewHistory.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

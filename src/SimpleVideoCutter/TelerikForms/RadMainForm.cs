@@ -25,7 +25,7 @@ namespace SimpleVideoCutter.TelerikForms
             TempControlTest.frmVideoTrimControls frmVideoTrimControls = new TempControlTest.frmVideoTrimControls();
             frmVideoTrimControls.Show();
             //var t = new Util.CreateVideoPoster();
-            var u = new Util.tile();
+            //var u = new Util.tile();
             
 
 
@@ -529,11 +529,15 @@ NextFrame();
             if (fileBeingPlayed != null)
             {
                 //todo check if playing first if so pause it, if paused do nothing
-                PlayPause();
+                //PlayPause();
+
+
+
+
                 var videoFileList =  GetVideoFilesInDirectory(fileBeingPlayed);
                 if (videoFileList.Count>0)
                 {
-                    using (var t = new Windows.RadDisplayCurrentFilesToPlayWindow(videoFileList))
+                    using (var t = new Windows.RadDisplayCurrentFilesToPlayWindow(videoFileList, CurrentVideoPlayedDirectory))
                     {
                         t.ShowDialog();
                     }

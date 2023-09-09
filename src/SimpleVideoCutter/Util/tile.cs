@@ -11,15 +11,22 @@ namespace SimpleVideoCutter.Util
   public  class tile
     {
 
-        public tile()
+        public tile(string inputVideoFullPath)
         {
-            ConvertButton_Click();
-
+            //ConvertButton_Click( inputVideoFullPath);
+        
         }
+        public string fullpath;
+        //inputVideoFullPath
         public string testMediaPath { get; set; } = AppDomain.CurrentDomain.BaseDirectory + "\\testmedia\\test.mp4";
         public string testOutput { get; set; } = AppDomain.CurrentDomain.BaseDirectory + "\\testmedia\\out.png";
-        private void ConvertButton_Click()
+        public string ConvertButton_Click(string fullpath)//inputVideoFullPath)
         {
+            //
+            
+            var output = Path.GetFileNameWithoutExtension(fullpath) +".png";
+            output = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, output); 
+           
             // Input video file path
             //string inputFilePath = @"C:\path\to\input.mp4";
 
@@ -43,8 +50,12 @@ namespace SimpleVideoCutter.Util
  not(expr) inverts the value of the expression contained inside the brackets - 0 if expr is non-zero and 1 if expr evaluates to zero. */
 
 
-            string ffmpegCommand = $" -loglevel panic -y -i \"{testMediaPath}\" -frames 1 -q:v 1 -vf \"select=not(mod(n\\,100)),scale=220:160,tile=4x4\"  \"{testOutput}\"";
 
+
+            //original keep    string ffmpegCommand = $" -loglevel panic -y -i \"{testMediaPath}\" -frames 1 -q:v 1 -vf \"select=not(mod(n\\,100)),scale=220:160,tile=4x4\"  \"{testOutput}\"";
+           
+            string ffmpegCommand = $" -loglevel panic -y -i \"{fullpath}\" -frames 1 -q:v 1 -vf \"select=not(mod(n\\,100)),scale=220:160,tile=4x4\"  \"{output}\"";
+           
             // Create a new process start info
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
@@ -70,8 +81,13 @@ namespace SimpleVideoCutter.Util
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
+            CallbackEvent?.Invoke(output);
+            return testOutput;
 
-            MessageBox.Show("Conversion completed!");
+            //MessageBox.Show("Conversion completed!");
         }
+        public delegate void CallbackHandler(string message);
+        public event CallbackHandler CallbackEvent;
+        
     }
 }
