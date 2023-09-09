@@ -7,6 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using Telerik.WinControls;
 using System.IO;
+using Telerik.WinControls.UI;
+
 namespace SimpleVideoCutter.Windows
 {
     public partial class RadDisplayCurrentFilesToPlayWindow : Telerik.WinControls.UI.RadForm
@@ -17,15 +19,20 @@ namespace SimpleVideoCutter.Windows
         //private string fullVideoPath;
         public RadDisplayCurrentFilesToPlayWindow(IList<string> list, string videoDirectorya) //propery in mainform set when videochange event is fired
         {
-            videoDirectory = videoDirectorya;
+           
+
+           
+            InitializeComponent();
+
+ videoDirectory = videoDirectorya;
             if (videoDirectory == null)
             {
                 MessageBox.Show("param null");
             }
-            InitializeComponent();
+
             radListControl1.DataSource = list;
             this.radLblVideosToViewCurrentlyCount.Text = String.Format("Number Of Videos In Directory  {0}", list.Count);
-
+           
         }
 
         private void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
@@ -41,25 +48,43 @@ namespace SimpleVideoCutter.Windows
        
         }
 
-        private void radBtnGenerateCollage_Click(object sender, EventArgs e)
+        private async void radBtnGenerateCollage_Click(object sender, EventArgs e)
         {
-            var collage = new Util.tile(Path.Combine(videoDirectory,videoFileName));
+            try
+            {
+                //this.radWaitingBar1.Visible = true;
+                //this.radWaitingBar1.StartWaiting();
 
-            collage.CallbackEvent += CallbackHandler;
+                radWaitingBar1.InvokeIfRequired(() =>
+                {
+                    radWaitingBar1.Visible = true;
+                    radWaitingBar1.StartWaiting();
+                });
+                var collage = new Util.tile(Path.Combine(videoDirectory, videoFileName));
 
-            collage.fullpath = Path.Combine(videoDirectory, videoFileName);
-            //Image.FromFile
-            
-            var img = collage.ConvertButton_Click(Path.Combine(videoDirectory, videoFileName));
-           
-            //if (File.Exists(img))
-            //{
-            //    this.radPicBoxGeneratedCollage.Image = Image.FromFile(img);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("image not done");
-            //}
+                collage.CallbackEvent += CallbackHandler;
+
+                collage.fullpath = Path.Combine(videoDirectory, videoFileName);
+                //Image.FromFile
+
+                await collage.ConvertButton_Click(Path.Combine(videoDirectory, videoFileName));
+
+                //if (File.Exists(img))
+                //{
+                //    this.radPicBoxGeneratedCollage.Image = Image.FromFile(img);
+                //}
+                //else
+                //{
+                //    MessageBox.Show("image not done");
+                //}
+            }
+            catch (Exception ex)
+            {
+                this.radWaitingBar1.StopWaiting();
+                this.radWaitingBar1.Visible = false;
+                Console.WriteLine(ex.Message + ex.StackTrace);
+            }
+
         }
         public string MyProperty { get; set; }
         //Receiver receiver = new Receiver();
@@ -75,13 +100,27 @@ namespace SimpleVideoCutter.Windows
 
         // You can wait for the callback using a signal or other mechanisms
 
+        private void waitingbar()
+        {
+            RadWaitingBar radWaitingBar = new RadWaitingBar();
+            radWaitingBar.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash;
+            radWaitingBar.WaitingDirection = ProgressOrientation.Left;
+            this.Controls.Add(radWaitingBar);
+        }
+
+
+
+
 
         private void CallbackHandler(string message)
     {
-        Console.WriteLine($"Received callback: {message}");
+            this.radWaitingBar1.StopWaiting();
+            this.radWaitingBar1.Visible = false;
+            Console.WriteLine($"Received callback: {message}");
             if (File.Exists(message))
             {
                 this.radPicBoxGeneratedCollage.Image = Image.FromFile(message);
+                radPageView.SelectedPage = radPageViewPage2;
             }
             else
             {
@@ -90,7 +129,13 @@ namespace SimpleVideoCutter.Windows
 
             // Do something with the callback result
         }
-  }
+
+        private void RadDisplayCurrentFilesToPlayWindow_Load(object sender, EventArgs e)
+        {
+            this.radWaitingBar1.Visible = false;
+             this.radWaitingBar1.StopWaiting();
+        }
+    }
 
     //
 }

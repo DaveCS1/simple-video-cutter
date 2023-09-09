@@ -20,11 +20,11 @@ namespace SimpleVideoCutter.Util
         //inputVideoFullPath
         public string testMediaPath { get; set; } = AppDomain.CurrentDomain.BaseDirectory + "\\testmedia\\test.mp4";
         public string testOutput { get; set; } = AppDomain.CurrentDomain.BaseDirectory + "\\testmedia\\out.png";
-        public string ConvertButton_Click(string fullpath)//inputVideoFullPath)
+        public async Task ConvertButton_Click(string fullpath)//inputVideoFullPath)
         {
             //
             
-            var output = Path.GetFileNameWithoutExtension(fullpath) +".png";
+            var output = Path.GetFileNameWithoutExtension(fullpath) +".jpg";
             output = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, output); 
            
             // Input video file path
@@ -71,18 +71,25 @@ namespace SimpleVideoCutter.Util
             Process process = new Process
             {
                 StartInfo = startInfo,
-                EnableRaisingEvents = true
+                EnableRaisingEvents = false
             };
 
-            process.OutputDataReceived += (s, args) => Console.WriteLine(args.Data);
-            process.ErrorDataReceived += (s, args) => Console.WriteLine(args.Data);
+            //process.OutputDataReceived += (s, args) => Console.WriteLine(args.Data);
+            //process.ErrorDataReceived += (s, args) => Console.WriteLine(args.Data);
 
             process.Start();
-            process.BeginOutputReadLine();
+
+            await Task.Run(() =>
+            {
+                process.BeginOutputReadLine();
             process.BeginErrorReadLine();
+            });
+
+
+           
             process.WaitForExit();
             CallbackEvent?.Invoke(output);
-            return testOutput;
+            //return testOutput;
 
             //MessageBox.Show("Conversion completed!");
         }
