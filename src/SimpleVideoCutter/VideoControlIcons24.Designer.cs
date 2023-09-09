@@ -73,6 +73,16 @@ namespace SimpleVideoCutter {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Card_Image {
+            get {
+                object obj = ResourceManager.GetObject("Card Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Circle_Pause {
             get {
                 object obj = ResourceManager.GetObject("Circle_Pause", resourceCulture);

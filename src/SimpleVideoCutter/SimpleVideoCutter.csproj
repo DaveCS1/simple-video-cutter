@@ -215,6 +215,7 @@
       <DependentUpon>RadDisplayCurrentFilesToPlayWindow.cs</DependentUpon>
     </Compile>
     <Content Include="DevNotes_Exclude\ffmpeg collage.txt" />
+    <EmbeddedResource Include="Images\24\Card Image.png" />
     <Content Include="Testmedia\test.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

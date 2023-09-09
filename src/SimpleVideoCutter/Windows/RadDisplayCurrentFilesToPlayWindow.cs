@@ -13,7 +13,7 @@ namespace SimpleVideoCutter.Windows
 {
     public partial class RadDisplayCurrentFilesToPlayWindow : Telerik.WinControls.UI.RadForm
     {
-       
+       //TODO REFACTOR everything here
         public string videoDirectory { get; set; }
         private string videoFileName;
         //private string fullVideoPath;
@@ -27,12 +27,14 @@ namespace SimpleVideoCutter.Windows
  videoDirectory = videoDirectorya;
             if (videoDirectory == null)
             {
-                MessageBox.Show("param null");
+                MessageBox.Show("no video directory selected");
             }
 
             radListControl1.DataSource = list;
-            this.radLblVideosToViewCurrentlyCount.Text = String.Format("Number Of Videos In Directory  {0}", list.Count);
-           
+            //this.radLblVideosToViewCurrentlyCount.Text = String.Format("Number Of Videos In Directory  {0}", list.Count);
+            this.radPageViewPage1.Title= String.Format("Number Of Videos In Directory  {0}", list.Count);
+            this.radPageViewPage2.Enabled = false;
+            this.Text = "Files Being Viewed In Main Editor - " + videoDirectory;
         }
 
         private void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
@@ -52,9 +54,15 @@ namespace SimpleVideoCutter.Windows
         {
             try
             {
-                //this.radWaitingBar1.Visible = true;
-                //this.radWaitingBar1.StartWaiting();
-
+              var collageImage = Path.GetFileNameWithoutExtension(Path.Combine(videoDirectory, videoFileName)) + ".jpg";
+                if (File.Exists(collageImage))
+                {
+                    
+                    this.radPicBoxGeneratedCollage.Image = Image.FromFile(collageImage);
+                    radPageView.SelectedPage = radPageViewPage2;
+                    this.radPageViewPage2.Enabled = true;
+                    return;
+                }
                 radWaitingBar1.InvokeIfRequired(() =>
                 {
                     radWaitingBar1.Visible = true;
@@ -121,6 +129,7 @@ namespace SimpleVideoCutter.Windows
             {
                 this.radPicBoxGeneratedCollage.Image = Image.FromFile(message);
                 radPageView.SelectedPage= radPageViewPage2;
+                this.radPageViewPage2.Enabled = true;
             }
             else
             {
@@ -134,6 +143,36 @@ namespace SimpleVideoCutter.Windows
         {
             this.radWaitingBar1.Visible = false;
              this.radWaitingBar1.StopWaiting();
+        }
+
+        private void radBtnCollageZoomIn_Click(object sender, EventArgs e)
+        {
+            this.radPicBoxGeneratedCollage.ZoomProperties.ZoomIn();
+        }
+
+        private void radBtnCollageZoomOut_Click(object sender, EventArgs e)
+        {
+            this.radPicBoxGeneratedCollage.ZoomProperties.ZoomOut();
+        }
+
+        private void radBtnCollageZoomOut_MouseHover(object sender, EventArgs e)
+        {
+            radLblRightClickForMore.Visible = true;
+        }
+
+        private void radBtnCollageZoomIn_MouseHover(object sender, EventArgs e)
+        {
+            radLblRightClickForMore.Visible = true;
+        }
+
+        private void panel1_MouseLeave(object sender, EventArgs e)
+        {
+            radLblRightClickForMore.Visible = false;
+        }
+
+        private void RadDisplayCurrentFilesToPlayWindow_SizeChanged(object sender, EventArgs e)
+        {
+            this.radWaitingBar1.Width = this.Width - 10;
         }
     }
 
