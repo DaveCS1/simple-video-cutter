@@ -1,0 +1,22 @@
+﻿Action safeRefresh = delegate { this.Text="sdafsdfsdafsdfs"; };
+            this.Invoke(safeRefresh);
+
+         
+         
+         
+         using System;
+
+class Program
+{
+    static int Calculate(Func<int, int> operation, int value)
+    {
+        return operation(value);
+    }
+
+    static void Main()
+    {
+        Func<int, int> square = x => x * x;
+        int result = Calculate(square, 5); // Calculates the square of 5
+        Console.WriteLine("Square: " + result);
+    }
+}

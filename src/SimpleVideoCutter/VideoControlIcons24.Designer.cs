@@ -63,6 +63,16 @@ namespace SimpleVideoCutter {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Accented {
+            get {
+                object obj = ResourceManager.GetObject("Accented", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BBM {
             get {
                 object obj = ResourceManager.GetObject("BBM", resourceCulture);
@@ -266,6 +276,16 @@ namespace SimpleVideoCutter {
         internal static System.Drawing.Bitmap Expand_WF {
             get {
                 object obj = ResourceManager.GetObject("Expand_WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eye___03 {
+            get {
+                object obj = ResourceManager.GetObject("Eye - 03", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem1 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 4");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem2 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 5");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem3 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 6");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem4 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 7");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem5 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 4");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem6 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 5");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem7 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 6");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem8 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 7");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadMainForm));
-            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem8 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem9 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem10 = new Telerik.WinControls.UI.RadListDataItem();
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.radStatusStrip1 = new Telerik.WinControls.UI.RadStatusStrip();
             this.radWaitingBarElement1 = new Telerik.WinControls.UI.RadWaitingBarElement();
@@ -48,10 +48,6 @@
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
-            this.radButton3 = new Telerik.WinControls.UI.RadButton();
-            this.radButton4 = new Telerik.WinControls.UI.RadButton();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
@@ -60,10 +56,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.videoViewHover = new LibVLCSharp.WinForms.VideoView();
             this.vlcControl1 = new LibVLCSharp.WinForms.VideoView();
-            this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
             this.panelTasks = new System.Windows.Forms.Panel();
-            this.radPopupContainer1 = new Telerik.WinControls.UI.RadPopupContainer();
-            this.radTrackBar2 = new Telerik.WinControls.UI.RadTrackBar();
             this.labelTasks = new System.Windows.Forms.Label();
             this.labelProgress = new System.Windows.Forms.Label();
             this.listViewTasks = new System.Windows.Forms.ListView();
@@ -74,40 +67,21 @@
             this.columnOutputFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnError = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.radPopupContainer2 = new Telerik.WinControls.UI.RadPopupContainer();
-            this.btnTimeLineCurrent = new Telerik.WinControls.UI.RadButton();
             this.lblTimelineZoomPopupOptions = new Telerik.WinControls.UI.RadLabel();
-            this.btnTimeLineZoomAuto = new Telerik.WinControls.UI.RadButton();
-            this.btnTimeLineZoomOut = new Telerik.WinControls.UI.RadButton();
+            this.radPopupContainer1 = new Telerik.WinControls.UI.RadPopupContainer();
+            this.radTrackBar2 = new Telerik.WinControls.UI.RadTrackBar();
             this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radTrackBar1 = new Telerik.WinControls.UI.RadTrackBar();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
-            this.toggleButtonPlayPause = new Telerik.WinControls.UI.RadToggleButton();
             this.imageList24PlayerControls = new System.Windows.Forms.ImageList(this.components);
-            this.btnVideoPlayBackSpeedDefault = new Telerik.WinControls.UI.RadButton();
             this.radListControlCutsForThisVideo = new Telerik.WinControls.UI.RadListControl();
-            this.btnGoToSelectionEnd = new Telerik.WinControls.UI.RadButton();
-            this.btnGoToTrimSelectionStart = new Telerik.WinControls.UI.RadButton();
             this.radPopupEditTimeLine = new Telerik.WinControls.UI.RadPopupEditor();
-            this.radButton15 = new Telerik.WinControls.UI.RadButton();
-            this.btnPerformCut = new Telerik.WinControls.UI.RadButton();
-            this.btnGoToCutEnd = new Telerik.WinControls.UI.RadButton();
-            this.btnGoToCutStart = new Telerik.WinControls.UI.RadButton();
-            this.btnClearSelection = new Telerik.WinControls.UI.RadButton();
             this.radPopupEditorVolume = new Telerik.WinControls.UI.RadPopupEditor();
-            this.btnPlayRange = new Telerik.WinControls.UI.RadButton();
-            this.btnCutEnd = new Telerik.WinControls.UI.RadButton();
-            this.btnCutStart = new Telerik.WinControls.UI.RadButton();
-            this.btnVideoGoBack30Seconds = new Telerik.WinControls.UI.RadButton();
-            this.btnVideoGoForward10Seconds = new Telerik.WinControls.UI.RadButton();
             this.imageListMainPlayerControls = new System.Windows.Forms.ImageList(this.components);
             this.pnlTopVideoScreenMoveForwardBackFavorite = new Telerik.WinControls.UI.RadPanel();
             this.tblLayoutPnlTopMainVideoControls = new System.Windows.Forms.TableLayoutPanel();
             this.radLblCurrentVideoFileBeingPlayed = new Telerik.WinControls.UI.RadLabel();
-            this.radBtnCopyVideoPath = new Telerik.WinControls.UI.RadButton();
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow = new Telerik.WinControls.UI.RadButton();
-            this.btnMoveNextVideo = new Telerik.WinControls.UI.RadButton();
-            this.btnMovePreviousVideo = new Telerik.WinControls.UI.RadButton();
             this.radPageViewFindVideos = new Telerik.WinControls.UI.RadPageViewPage();
             this.statusStrip = new Telerik.WinControls.UI.RadStatusStrip();
             this.toolStripStatusLabelIndex = new Telerik.WinControls.UI.RadLabelElement();
@@ -115,17 +89,75 @@
             this.toolStripTimeline = new Telerik.WinControls.UI.RadCommandBar();
             this.commandBarRowElement8 = new Telerik.WinControls.UI.CommandBarRowElement();
             this.commandBarStripElement6 = new Telerik.WinControls.UI.CommandBarStripElement();
-            this.toolStripButtonTimelineZoomOut = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonTimelineZoomAuto = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonTimelineGoToCurrentPosition = new Telerik.WinControls.UI.CommandBarButton();
             this.toolStripTasks = new Telerik.WinControls.UI.RadCommandBar();
             this.commandBarRowElement7 = new Telerik.WinControls.UI.CommandBarRowElement();
             this.commandBarStripElement5 = new Telerik.WinControls.UI.CommandBarStripElement();
-            this.toolStripButtonTasksShow1 = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripButtonTasksShow = new Telerik.WinControls.UI.CommandBarToggleButton();
             this.toolStripSelection = new Telerik.WinControls.UI.RadCommandBar();
             this.commandBarRowElement6 = new Telerik.WinControls.UI.CommandBarRowElement();
             this.commandBarStripElement4 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.toolStripFile = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement5 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement3 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.toolStripPlayback = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement3 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement2 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.commandBarRowElement4 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.radPageViewNeedsReview = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewViewFavorites = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewViewHistory = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewTrimmedVideos = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewTagsAndCategories = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewHelpAndDemos = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radListView1 = new Telerik.WinControls.UI.RadListView();
+            this.radCommandBar1 = new Telerik.WinControls.UI.RadCommandBar();
+            this.commandBarRowElement1 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.commandBarStripElement1 = new Telerik.WinControls.UI.CommandBarStripElement();
+            this.commandBarLblCutVideosCount = new Telerik.WinControls.UI.CommandBarLabel();
+            this.commandBarSeparator1 = new Telerik.WinControls.UI.CommandBarSeparator();
+            this.commandBarRowElement2 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.radOpenFileDialogSelectVideo = new Telerik.WinControls.UI.RadOpenFileDialog();
+            this.radOpenFolderDialogSelectVideos = new Telerik.WinControls.UI.RadOpenFolderDialog();
+            this.timerHoverPositionChanged = new System.Windows.Forms.Timer(this.components);
+            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02 = new Telerik.WinControls.RootRadElement();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipTopVideoPlayerControls = new System.Windows.Forms.ToolTip(this.components);
+            this.commandBarRowElement9 = new Telerik.WinControls.UI.CommandBarRowElement();
+            this.radButton5 = new Telerik.WinControls.UI.RadButton();
+            this.radPanel4 = new Telerik.WinControls.UI.RadPanel();
+            this.radCheckBox1 = new Telerik.WinControls.UI.RadCheckBox();
+            this.videoCutterTimeline1 = new SimpleVideoCutter.VideoCutterTimeline();
+            this.ucViewHistory1 = new SimpleVideoCutter.Controls.ucViewHistory();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.radButton3 = new Telerik.WinControls.UI.RadButton();
+            this.radButton4 = new Telerik.WinControls.UI.RadButton();
+            this.btnTimeLineCurrent = new Telerik.WinControls.UI.RadButton();
+            this.btnTimeLineZoomAuto = new Telerik.WinControls.UI.RadButton();
+            this.btnTimeLineZoomOut = new Telerik.WinControls.UI.RadButton();
+            this.toggleButtonPlayPause = new Telerik.WinControls.UI.RadToggleButton();
+            this.btnVideoPlayBackSpeedDefault = new Telerik.WinControls.UI.RadButton();
+            this.btnGoToSelectionEnd = new Telerik.WinControls.UI.RadButton();
+            this.btnGoToTrimSelectionStart = new Telerik.WinControls.UI.RadButton();
+            this.radButton15 = new Telerik.WinControls.UI.RadButton();
+            this.btnPerformCut = new Telerik.WinControls.UI.RadButton();
+            this.btnGoToCutEnd = new Telerik.WinControls.UI.RadButton();
+            this.btnGoToCutStart = new Telerik.WinControls.UI.RadButton();
+            this.btnClearSelection = new Telerik.WinControls.UI.RadButton();
+            this.btnPlayRange = new Telerik.WinControls.UI.RadButton();
+            this.btnCutEnd = new Telerik.WinControls.UI.RadButton();
+            this.btnCutStart = new Telerik.WinControls.UI.RadButton();
+            this.btnVideoGoBack30Seconds = new Telerik.WinControls.UI.RadButton();
+            this.btnVideoGoForward10Seconds = new Telerik.WinControls.UI.RadButton();
+            this.radBtnCopyVideoPath = new Telerik.WinControls.UI.RadButton();
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow = new Telerik.WinControls.UI.RadButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMoveNextVideo = new Telerik.WinControls.UI.RadButton();
+            this.btnMovePreviousVideo = new Telerik.WinControls.UI.RadButton();
+            this.toolStripButtonTimelineZoomOut = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonTimelineZoomAuto = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonTimelineGoToCurrentPosition = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonTasksShow1 = new Telerik.WinControls.UI.CommandBarButton();
+            this.toolStripButtonTasksShow = new Telerik.WinControls.UI.CommandBarToggleButton();
             this.toolStripButtonSelectionSetStart = new Telerik.WinControls.UI.CommandBarButton();
             this.toolStripButtonSelectionSetEnd = new Telerik.WinControls.UI.CommandBarButton();
             this.toolStripButtonSelectionGoToStart = new Telerik.WinControls.UI.CommandBarButton();
@@ -135,28 +167,11 @@
             this.toolStripButtonSelectionEnqueue = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarButton18 = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarButton19 = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripFile = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement5 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement3 = new Telerik.WinControls.UI.CommandBarStripElement();
             this.toolStripButtonFileNext = new Telerik.WinControls.UI.CommandBarButton();
             this.toolStripButtonFilePrev = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolStripPlayback = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement3 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement2 = new Telerik.WinControls.UI.CommandBarStripElement();
             this.toolStripButtonPlabackPlayPause = new Telerik.WinControls.UI.CommandBarButton();
             this.toolStripButtonPlabackNextFrame = new Telerik.WinControls.UI.CommandBarButton();
             this.toolStripButtonPlabackMute = new Telerik.WinControls.UI.CommandBarToggleButton();
-            this.commandBarRowElement4 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.radPageViewNeedsReview = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radPageViewViewFavorites = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radPageViewViewHistory = new Telerik.WinControls.UI.RadPageViewPage();
-            this.ucViewHistory1 = new SimpleVideoCutter.Controls.ucViewHistory();
-            this.radPageViewTrimmedVideos = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radPageViewTagsAndCategories = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radPageViewHelpAndDemos = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radCommandBar1 = new Telerik.WinControls.UI.RadCommandBar();
-            this.commandBarRowElement1 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.commandBarStripElement1 = new Telerik.WinControls.UI.CommandBarStripElement();
             this.commandBarBtnHome = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarBtnAddVideos = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarBtnFindVideos = new Telerik.WinControls.UI.CommandBarButton();
@@ -170,18 +185,9 @@
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem4 = new Telerik.WinControls.UI.RadMenuItem();
             this.commandBarBtnViewTrimmedVideos = new Telerik.WinControls.UI.CommandBarButton();
-            this.commandBarLblCutVideosCount = new Telerik.WinControls.UI.CommandBarLabel();
-            this.commandBarSeparator1 = new Telerik.WinControls.UI.CommandBarSeparator();
             this.commandBarBtnTagsCategories = new Telerik.WinControls.UI.CommandBarButton();
             this.commandBarBtnHelpDemos = new Telerik.WinControls.UI.CommandBarButton();
-            this.commandBarRowElement2 = new Telerik.WinControls.UI.CommandBarRowElement();
-            this.radOpenFileDialogSelectVideo = new Telerik.WinControls.UI.RadOpenFileDialog();
-            this.radOpenFolderDialogSelectVideos = new Telerik.WinControls.UI.RadOpenFolderDialog();
-            this.timerHoverPositionChanged = new System.Windows.Forms.Timer(this.components);
-            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02 = new Telerik.WinControls.RootRadElement();
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTipTopVideoPlayerControls = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -191,10 +197,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
             this.splitPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).BeginInit();
             this.splitPanel2.SuspendLayout();
@@ -209,48 +211,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.videoViewHover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vlcControl1)).BeginInit();
             this.panelTasks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer2)).BeginInit();
+            this.radPopupContainer2.PanelContainer.SuspendLayout();
+            this.radPopupContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTimelineZoomPopupOptions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer1)).BeginInit();
             this.radPopupContainer1.PanelContainer.SuspendLayout();
             this.radPopupContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radTrackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer2)).BeginInit();
-            this.radPopupContainer2.PanelContainer.SuspendLayout();
-            this.radPopupContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineCurrent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblTimelineZoomPopupOptions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomAuto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
             this.radPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTrackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             this.radPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButtonPlayPause)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVideoPlayBackSpeedDefault)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radListControlCutsForThisVideo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToSelectionEnd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToTrimSelectionStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPopupEditTimeLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPerformCut)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutEnd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClearSelection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPopupEditorVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPlayRange)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCutEnd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCutStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoBack30Seconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoForward10Seconds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTopVideoScreenMoveForwardBackFavorite)).BeginInit();
             this.pnlTopVideoScreenMoveForwardBackFavorite.SuspendLayout();
             this.tblLayoutPnlTopMainVideoControls.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLblCurrentVideoFileBeingPlayed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).BeginInit();
             this.radPageViewFindVideos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusStrip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolStripTimeline)).BeginInit();
@@ -259,7 +240,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.toolStripFile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolStripPlayback)).BeginInit();
             this.radPageViewViewHistory.SuspendLayout();
+            this.radPageViewHelpAndDemos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radListView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).BeginInit();
+            this.radPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radCheckBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineCurrent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomAuto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleButtonPlayPause)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideoPlayBackSpeedDefault)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToSelectionEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToTrimSelectionStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPerformCut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClearSelection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPlayRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCutEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCutStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoBack30Seconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoForward10Seconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -310,7 +323,7 @@
             // 
             this.radPageViewPageAddFiles.AllowDrop = true;
             this.radPageViewPageAddFiles.Controls.Add(this.radSplitContainer1);
-            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(64F, 29F);
+            this.radPageViewPageAddFiles.ItemSize = new System.Drawing.SizeF(62F, 25F);
             this.radPageViewPageAddFiles.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPageAddFiles.Name = "radPageViewPageAddFiles";
             this.radPageViewPageAddFiles.Size = new System.Drawing.Size(1004, 615);
@@ -376,51 +389,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1004, 309);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // radButton1
-            // 
-            this.radButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radButton1.Image = global::SimpleVideoCutter.Properties.Resources.Film_Role_05;
-            this.radButton1.Location = new System.Drawing.Point(3, 3);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(202, 59);
-            this.radButton1.TabIndex = 1;
-            this.radButton1.Text = "Open Individual File(s)";
-            this.radButton1.ThemeName = "FluentDark";
-            // 
-            // radButton2
-            // 
-            this.radButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radButton2.Image = global::SimpleVideoCutter.Properties.Resources.Folder_Movie_03;
-            this.radButton2.Location = new System.Drawing.Point(211, 3);
-            this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(207, 59);
-            this.radButton2.TabIndex = 2;
-            this.radButton2.Text = "Open File(s) From Folder";
-            this.radButton2.ThemeName = "FluentDark";
-            // 
-            // radButton3
-            // 
-            this.radButton3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radButton3.Image = global::SimpleVideoCutter.Properties.Resources.Search_Folder_New;
-            this.radButton3.Location = new System.Drawing.Point(424, 3);
-            this.radButton3.Name = "radButton3";
-            this.radButton3.Size = new System.Drawing.Size(218, 59);
-            this.radButton3.TabIndex = 3;
-            this.radButton3.Text = "Search Computer For Videos";
-            this.radButton3.ThemeName = "FluentDark";
-            // 
-            // radButton4
-            // 
-            this.radButton4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radButton4.Image = global::SimpleVideoCutter.Properties.Resources.Tab_History_WF;
-            this.radButton4.Location = new System.Drawing.Point(648, 3);
-            this.radButton4.Name = "radButton4";
-            this.radButton4.Size = new System.Drawing.Size(193, 59);
-            this.radButton4.TabIndex = 4;
-            this.radButton4.Text = "Resume Video Reviews";
-            this.radButton4.ThemeName = "FluentDark";
-            this.radButton4.Click += new System.EventHandler(this.radButton4_Click);
-            // 
             // radLabel1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.radLabel1, 2);
@@ -465,15 +433,15 @@
             // 
             this.radCheckedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radCheckedListBox1.GroupItemSize = new System.Drawing.Size(200, 28);
-            listViewDataItem1.Text = "ListViewItem 4";
-            listViewDataItem2.Text = "ListViewItem 5";
-            listViewDataItem3.Text = "ListViewItem 6";
-            listViewDataItem4.Text = "ListViewItem 7";
+            listViewDataItem5.Text = "ListViewItem 4";
+            listViewDataItem6.Text = "ListViewItem 5";
+            listViewDataItem7.Text = "ListViewItem 6";
+            listViewDataItem8.Text = "ListViewItem 7";
             this.radCheckedListBox1.Items.AddRange(new Telerik.WinControls.UI.ListViewDataItem[] {
-            listViewDataItem1,
-            listViewDataItem2,
-            listViewDataItem3,
-            listViewDataItem4});
+            listViewDataItem5,
+            listViewDataItem6,
+            listViewDataItem7,
+            listViewDataItem8});
             this.radCheckedListBox1.ItemSize = new System.Drawing.Size(200, 28);
             this.radCheckedListBox1.Location = new System.Drawing.Point(0, 0);
             this.radCheckedListBox1.Name = "radCheckedListBox1";
@@ -487,7 +455,7 @@
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel3);
             this.radPageViewPageTrimVideos.Controls.Add(this.radPanel2);
             this.radPageViewPageTrimVideos.Controls.Add(this.pnlTopVideoScreenMoveForwardBackFavorite);
-            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(79F, 29F);
+            this.radPageViewPageTrimVideos.ItemSize = new System.Drawing.SizeF(77F, 25F);
             this.radPageViewPageTrimVideos.Location = new System.Drawing.Point(6, 36);
             this.radPageViewPageTrimVideos.Name = "radPageViewPageTrimVideos";
             this.radPageViewPageTrimVideos.Size = new System.Drawing.Size(1004, 615);
@@ -538,67 +506,19 @@
             this.vlcControl1.Text = "videoView1";
             this.vlcControl1.Click += new System.EventHandler(this.vlcControl1_Click);
             // 
-            // videoCutterTimeline1
-            // 
-            this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.videoCutterTimeline1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.videoCutterTimeline1.HoverPosition = null;
-            this.videoCutterTimeline1.Length = ((long)(0));
-            this.videoCutterTimeline1.Location = new System.Drawing.Point(0, 434);
-            this.videoCutterTimeline1.Margin = new System.Windows.Forms.Padding(4);
-            this.videoCutterTimeline1.Name = "videoCutterTimeline1";
-            this.videoCutterTimeline1.Position = ((long)(0));
-            this.videoCutterTimeline1.Size = new System.Drawing.Size(334, 79);
-            this.videoCutterTimeline1.TabIndex = 9;
-            this.videoCutterTimeline1.DoubleClick += new System.EventHandler(this.videoCutterTimeline1_DoubleClick);
-            // 
             // panelTasks
             // 
-            this.panelTasks.Controls.Add(this.radPopupContainer1);
             this.panelTasks.Controls.Add(this.labelTasks);
             this.panelTasks.Controls.Add(this.labelProgress);
             this.panelTasks.Controls.Add(this.listViewTasks);
             this.panelTasks.Controls.Add(this.radPopupContainer2);
+            this.panelTasks.Controls.Add(this.radPopupContainer1);
             this.panelTasks.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTasks.Location = new System.Drawing.Point(0, 0);
             this.panelTasks.Margin = new System.Windows.Forms.Padding(4);
             this.panelTasks.Name = "panelTasks";
             this.panelTasks.Size = new System.Drawing.Size(666, 513);
             this.panelTasks.TabIndex = 7;
-            // 
-            // radPopupContainer1
-            // 
-            this.radPopupContainer1.Location = new System.Drawing.Point(596, 248);
-            this.radPopupContainer1.Name = "radPopupContainer1";
-            // 
-            // radPopupContainer1.PanelContainer
-            // 
-            this.radPopupContainer1.PanelContainer.Controls.Add(this.radTrackBar2);
-            this.radPopupContainer1.PanelContainer.Size = new System.Drawing.Size(62, 257);
-            this.radPopupContainer1.Size = new System.Drawing.Size(64, 259);
-            this.radPopupContainer1.TabIndex = 3;
-            this.radPopupContainer1.ThemeName = "FluentDark";
-            // 
-            // radTrackBar2
-            // 
-            this.radTrackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radTrackBar2.LargeChange = 25;
-            this.radTrackBar2.Location = new System.Drawing.Point(17, 26);
-            this.radTrackBar2.Maximum = 100F;
-            this.radTrackBar2.Name = "radTrackBar2";
-            this.radTrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            // 
-            // 
-            // 
-            this.radTrackBar2.RootElement.StretchHorizontally = false;
-            this.radTrackBar2.RootElement.StretchVertically = true;
-            this.radTrackBar2.Size = new System.Drawing.Size(42, 196);
-            this.radTrackBar2.TabIndex = 7;
-            this.radTrackBar2.ThemeName = "FluentDark";
-            this.radTrackBar2.ThumbSize = new System.Drawing.Size(8, 20);
-            this.radTrackBar2.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None;
-            this.radTrackBar2.ValueChanged += new System.EventHandler(this.radTrackBar2_ValueChanged);
             // 
             // labelTasks
             // 
@@ -689,17 +609,6 @@
             this.radPopupContainer2.ThemeName = "FluentDark";
             this.radPopupContainer2.Click += new System.EventHandler(this.radPopupContainer2_Click);
             // 
-            // btnTimeLineCurrent
-            // 
-            this.btnTimeLineCurrent.Image = global::SimpleVideoCutter.VideoControlIcons24.Data_Merge;
-            this.btnTimeLineCurrent.Location = new System.Drawing.Point(122, 59);
-            this.btnTimeLineCurrent.Name = "btnTimeLineCurrent";
-            this.btnTimeLineCurrent.Size = new System.Drawing.Size(123, 30);
-            this.btnTimeLineCurrent.TabIndex = 3;
-            this.btnTimeLineCurrent.Text = "  zoom current";
-            this.btnTimeLineCurrent.ThemeName = "FluentDark";
-            this.btnTimeLineCurrent.Click += new System.EventHandler(this.btnTimeLineCurrent_Click);
-            // 
             // lblTimelineZoomPopupOptions
             // 
             this.lblTimelineZoomPopupOptions.Location = new System.Drawing.Point(22, 3);
@@ -709,27 +618,39 @@
             this.lblTimelineZoomPopupOptions.Text = "Timeline Zoom";
             this.lblTimelineZoomPopupOptions.ThemeName = "FluentDark";
             // 
-            // btnTimeLineZoomAuto
+            // radPopupContainer1
             // 
-            this.btnTimeLineZoomAuto.Image = global::SimpleVideoCutter.VideoControlIcons24.Restore_02;
-            this.btnTimeLineZoomAuto.Location = new System.Drawing.Point(3, 81);
-            this.btnTimeLineZoomAuto.Name = "btnTimeLineZoomAuto";
-            this.btnTimeLineZoomAuto.Size = new System.Drawing.Size(113, 30);
-            this.btnTimeLineZoomAuto.TabIndex = 1;
-            this.btnTimeLineZoomAuto.Text = "zoom auto";
-            this.btnTimeLineZoomAuto.ThemeName = "FluentDark";
-            this.btnTimeLineZoomAuto.Click += new System.EventHandler(this.btnTimeLineZoomAuto_Click);
+            this.radPopupContainer1.Location = new System.Drawing.Point(596, 248);
+            this.radPopupContainer1.Name = "radPopupContainer1";
             // 
-            // btnTimeLineZoomOut
+            // radPopupContainer1.PanelContainer
             // 
-            this.btnTimeLineZoomOut.Image = global::SimpleVideoCutter.VideoControlIcons24.Expand_WF;
-            this.btnTimeLineZoomOut.Location = new System.Drawing.Point(3, 45);
-            this.btnTimeLineZoomOut.Name = "btnTimeLineZoomOut";
-            this.btnTimeLineZoomOut.Size = new System.Drawing.Size(113, 30);
-            this.btnTimeLineZoomOut.TabIndex = 0;
-            this.btnTimeLineZoomOut.Text = "zoom out";
-            this.btnTimeLineZoomOut.ThemeName = "FluentDark";
-            this.btnTimeLineZoomOut.Click += new System.EventHandler(this.btnTimeLineZoomOut_Click);
+            this.radPopupContainer1.PanelContainer.Controls.Add(this.radTrackBar2);
+            this.radPopupContainer1.PanelContainer.Size = new System.Drawing.Size(62, 257);
+            this.radPopupContainer1.Size = new System.Drawing.Size(64, 259);
+            this.radPopupContainer1.TabIndex = 3;
+            this.radPopupContainer1.ThemeName = "FluentDark";
+            // 
+            // radTrackBar2
+            // 
+            this.radTrackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radTrackBar2.LargeChange = 25;
+            this.radTrackBar2.Location = new System.Drawing.Point(17, 26);
+            this.radTrackBar2.Maximum = 100F;
+            this.radTrackBar2.Name = "radTrackBar2";
+            this.radTrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
+            // 
+            // 
+            // 
+            this.radTrackBar2.RootElement.StretchHorizontally = false;
+            this.radTrackBar2.RootElement.StretchVertically = true;
+            this.radTrackBar2.Size = new System.Drawing.Size(42, 196);
+            this.radTrackBar2.TabIndex = 7;
+            this.radTrackBar2.ThemeName = "FluentDark";
+            this.radTrackBar2.ThumbSize = new System.Drawing.Size(8, 20);
+            this.radTrackBar2.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None;
+            this.radTrackBar2.ValueChanged += new System.EventHandler(this.radTrackBar2_ValueChanged);
             // 
             // radPanel3
             // 
@@ -794,6 +715,602 @@
             this.radPanel2.ThemeName = "FluentDark";
             this.radPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.radPanel2_Paint);
             // 
+            // imageList24PlayerControls
+            // 
+            this.imageList24PlayerControls.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList24PlayerControls.ImageStream")));
+            this.imageList24PlayerControls.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList24PlayerControls.Images.SetKeyName(0, "Media Pause-WF.png");
+            this.imageList24PlayerControls.Images.SetKeyName(1, "Media Play1-WF.png");
+            this.imageList24PlayerControls.Images.SetKeyName(2, "Media-Pause.png");
+            this.imageList24PlayerControls.Images.SetKeyName(3, "Media-Play.png");
+            // 
+            // radListControlCutsForThisVideo
+            // 
+            this.radListControlCutsForThisVideo.ItemHeight = 17;
+            radListDataItem6.Text = "ListItem 1";
+            radListDataItem7.Text = "ListItem 2";
+            radListDataItem8.Text = "ListItem 3";
+            radListDataItem9.Text = "ListItem 4";
+            radListDataItem10.Text = "ListItem 5";
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem6);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem7);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem8);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem9);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem10);
+            this.radListControlCutsForThisVideo.Location = new System.Drawing.Point(632, 7);
+            this.radListControlCutsForThisVideo.Name = "radListControlCutsForThisVideo";
+            this.radListControlCutsForThisVideo.Size = new System.Drawing.Size(176, 30);
+            this.radListControlCutsForThisVideo.TabIndex = 17;
+            this.radListControlCutsForThisVideo.ThemeName = "FluentDark";
+            // 
+            // radPopupEditTimeLine
+            // 
+            this.radPopupEditTimeLine.AssociatedControl = this.radPopupContainer2;
+            this.radPopupEditTimeLine.Location = new System.Drawing.Point(814, 8);
+            this.radPopupEditTimeLine.Name = "radPopupEditTimeLine";
+            this.radPopupEditTimeLine.ShowTextBox = false;
+            this.radPopupEditTimeLine.Size = new System.Drawing.Size(91, 28);
+            this.radPopupEditTimeLine.TabIndex = 13;
+            this.radPopupEditTimeLine.Text = "Timeline";
+            this.radPopupEditTimeLine.ThemeName = "FluentDark";
+            // 
+            // radPopupEditorVolume
+            // 
+            this.radPopupEditorVolume.AssociatedControl = this.radPopupContainer1;
+            this.radPopupEditorVolume.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.None;
+            this.radPopupEditorVolume.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPopupEditorVolume.Location = new System.Drawing.Point(911, 0);
+            this.radPopupEditorVolume.Name = "radPopupEditorVolume";
+            this.radPopupEditorVolume.ShowTextBox = false;
+            this.radPopupEditorVolume.Size = new System.Drawing.Size(87, 40);
+            this.radPopupEditorVolume.TabIndex = 4;
+            this.radPopupEditorVolume.Text = "0";
+            this.radPopupEditorVolume.ThemeName = "FluentDark";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radPopupEditorVolume.GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(4))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radPopupEditorVolume.GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(4))).ShouldPaint = true;
+            // 
+            // imageListMainPlayerControls
+            // 
+            this.imageListMainPlayerControls.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMainPlayerControls.ImageStream")));
+            this.imageListMainPlayerControls.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListMainPlayerControls.Images.SetKeyName(0, "Media Control-07-WF.png");
+            this.imageListMainPlayerControls.Images.SetKeyName(1, "Media Control-08-WF.png");
+            // 
+            // pnlTopVideoScreenMoveForwardBackFavorite
+            // 
+            this.pnlTopVideoScreenMoveForwardBackFavorite.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.tblLayoutPnlTopMainVideoControls);
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.btnMoveNextVideo);
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.btnMovePreviousVideo);
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopVideoScreenMoveForwardBackFavorite.ForeColor = System.Drawing.Color.Black;
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Name = "pnlTopVideoScreenMoveForwardBackFavorite";
+            this.pnlTopVideoScreenMoveForwardBackFavorite.Size = new System.Drawing.Size(1004, 25);
+            this.pnlTopVideoScreenMoveForwardBackFavorite.TabIndex = 10;
+            this.pnlTopVideoScreenMoveForwardBackFavorite.ThemeName = "FluentDark";
+            // 
+            // tblLayoutPnlTopMainVideoControls
+            // 
+            this.tblLayoutPnlTopMainVideoControls.BackColor = System.Drawing.Color.DarkGray;
+            this.tblLayoutPnlTopMainVideoControls.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tblLayoutPnlTopMainVideoControls.ColumnCount = 8;
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radLblCurrentVideoFileBeingPlayed, 0, 0);
+            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radBtnCopyVideoPath, 1, 0);
+            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radBtnShowDisplayCurrentFilesToPlayWinfow, 8, 0);
+            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radButton5, 3, 0);
+            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radPanel4, 2, 0);
+            this.tblLayoutPnlTopMainVideoControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblLayoutPnlTopMainVideoControls.Location = new System.Drawing.Point(24, 0);
+            this.tblLayoutPnlTopMainVideoControls.Name = "tblLayoutPnlTopMainVideoControls";
+            this.tblLayoutPnlTopMainVideoControls.RowCount = 1;
+            this.tblLayoutPnlTopMainVideoControls.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblLayoutPnlTopMainVideoControls.Size = new System.Drawing.Size(955, 25);
+            this.tblLayoutPnlTopMainVideoControls.TabIndex = 2;
+            this.tblLayoutPnlTopMainVideoControls.Paint += new System.Windows.Forms.PaintEventHandler(this.tblLayoutPnlTopMainVideoControls_Paint);
+            // 
+            // radLblCurrentVideoFileBeingPlayed
+            // 
+            this.radLblCurrentVideoFileBeingPlayed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radLblCurrentVideoFileBeingPlayed.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline);
+            this.radLblCurrentVideoFileBeingPlayed.Location = new System.Drawing.Point(5, 5);
+            this.radLblCurrentVideoFileBeingPlayed.Name = "radLblCurrentVideoFileBeingPlayed";
+            this.radLblCurrentVideoFileBeingPlayed.Size = new System.Drawing.Size(29, 18);
+            this.radLblCurrentVideoFileBeingPlayed.TabIndex = 0;
+            this.radLblCurrentVideoFileBeingPlayed.Text = "-----";
+            this.radLblCurrentVideoFileBeingPlayed.ThemeName = "FluentDark";
+            this.toolTipTopVideoPlayerControls.SetToolTip(this.radLblCurrentVideoFileBeingPlayed, "Opens current video file in it\'s folder");
+            this.radLblCurrentVideoFileBeingPlayed.Click += new System.EventHandler(this.radLblCurrentVideoFileBeingPlayed_Click);
+            // 
+            // radPageViewFindVideos
+            // 
+            this.radPageViewFindVideos.Controls.Add(this.statusStrip);
+            this.radPageViewFindVideos.Controls.Add(this.toolStripTimeline);
+            this.radPageViewFindVideos.Controls.Add(this.toolStripTasks);
+            this.radPageViewFindVideos.Controls.Add(this.toolStripSelection);
+            this.radPageViewFindVideos.Controls.Add(this.toolStripFile);
+            this.radPageViewFindVideos.Controls.Add(this.toolStripPlayback);
+            this.radPageViewFindVideos.ItemSize = new System.Drawing.SizeF(76F, 25F);
+            this.radPageViewFindVideos.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewFindVideos.Name = "radPageViewFindVideos";
+            this.radPageViewFindVideos.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewFindVideos.Text = "Find Videos";
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.toolStripStatusLabelIndex,
+            this.toolStripStatusLabelSelection});
+            this.statusStrip.Location = new System.Drawing.Point(0, 398);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1004, 24);
+            this.statusStrip.TabIndex = 5;
+            this.statusStrip.ThemeName = "FluentDark";
+            // 
+            // toolStripStatusLabelIndex
+            // 
+            this.toolStripStatusLabelIndex.Name = "toolStripStatusLabelIndex";
+            this.statusStrip.SetSpring(this.toolStripStatusLabelIndex, false);
+            this.toolStripStatusLabelIndex.Text = "radLabelElement1";
+            this.toolStripStatusLabelIndex.TextWrap = true;
+            // 
+            // toolStripStatusLabelSelection
+            // 
+            this.toolStripStatusLabelSelection.Name = "toolStripStatusLabelSelection";
+            this.statusStrip.SetSpring(this.toolStripStatusLabelSelection, false);
+            this.toolStripStatusLabelSelection.Text = "radLabelElement1";
+            this.toolStripStatusLabelSelection.TextWrap = true;
+            // 
+            // toolStripTimeline
+            // 
+            this.toolStripTimeline.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripTimeline.Location = new System.Drawing.Point(0, 422);
+            this.toolStripTimeline.Name = "toolStripTimeline";
+            this.toolStripTimeline.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement8});
+            this.toolStripTimeline.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripTimeline.TabIndex = 4;
+            this.toolStripTimeline.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement8
+            // 
+            this.commandBarRowElement8.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement8.Name = "commandBarRowElement8";
+            this.commandBarRowElement8.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement6});
+            // 
+            // commandBarStripElement6
+            // 
+            this.commandBarStripElement6.DisplayName = "commandBarStripElement6";
+            this.commandBarStripElement6.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonTimelineZoomOut,
+            this.toolStripButtonTimelineZoomAuto,
+            this.toolStripButtonTimelineGoToCurrentPosition});
+            this.commandBarStripElement6.Name = "commandBarStripElement6";
+            // 
+            // toolStripTasks
+            // 
+            this.toolStripTasks.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripTasks.Location = new System.Drawing.Point(0, 453);
+            this.toolStripTasks.Name = "toolStripTasks";
+            this.toolStripTasks.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement7});
+            this.toolStripTasks.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripTasks.TabIndex = 3;
+            this.toolStripTasks.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement7
+            // 
+            this.commandBarRowElement7.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement7.Name = "commandBarRowElement7";
+            this.commandBarRowElement7.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement5});
+            // 
+            // commandBarStripElement5
+            // 
+            this.commandBarStripElement5.DisplayName = "commandBarStripElement5";
+            this.commandBarStripElement5.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonTasksShow1,
+            this.toolStripButtonTasksShow});
+            this.commandBarStripElement5.Name = "commandBarStripElement5";
+            // 
+            // toolStripSelection
+            // 
+            this.toolStripSelection.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripSelection.Location = new System.Drawing.Point(0, 484);
+            this.toolStripSelection.Name = "toolStripSelection";
+            this.toolStripSelection.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement6});
+            this.toolStripSelection.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripSelection.TabIndex = 2;
+            this.toolStripSelection.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement6
+            // 
+            this.commandBarRowElement6.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement6.Name = "commandBarRowElement6";
+            this.commandBarRowElement6.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement4});
+            // 
+            // commandBarStripElement4
+            // 
+            this.commandBarStripElement4.DisplayName = "commandBarStripElement4";
+            this.commandBarStripElement4.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonSelectionSetStart,
+            this.toolStripButtonSelectionSetEnd,
+            this.toolStripButtonSelectionGoToStart,
+            this.toolStripButtonSelectionGoToEnd,
+            this.toolStripButtonSelectionPlay,
+            this.toolStripButtonSelectionClear,
+            this.toolStripButtonSelectionEnqueue,
+            this.commandBarButton18,
+            this.commandBarButton19});
+            this.commandBarStripElement4.Name = "commandBarStripElement4";
+            // 
+            // toolStripFile
+            // 
+            this.toolStripFile.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripFile.Location = new System.Drawing.Point(0, 515);
+            this.toolStripFile.Name = "toolStripFile";
+            this.toolStripFile.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement5});
+            this.toolStripFile.Size = new System.Drawing.Size(1004, 31);
+            this.toolStripFile.TabIndex = 1;
+            this.toolStripFile.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement5
+            // 
+            this.commandBarRowElement5.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement5.Name = "commandBarRowElement5";
+            this.commandBarRowElement5.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement3});
+            // 
+            // commandBarStripElement3
+            // 
+            this.commandBarStripElement3.DisplayName = "commandBarStripElement3";
+            this.commandBarStripElement3.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonFileNext,
+            this.toolStripButtonFilePrev});
+            this.commandBarStripElement3.Name = "commandBarStripElement3";
+            // 
+            // toolStripPlayback
+            // 
+            this.toolStripPlayback.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripPlayback.Location = new System.Drawing.Point(0, 546);
+            this.toolStripPlayback.Name = "toolStripPlayback";
+            this.toolStripPlayback.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement3,
+            this.commandBarRowElement4});
+            this.toolStripPlayback.Size = new System.Drawing.Size(1004, 69);
+            this.toolStripPlayback.TabIndex = 0;
+            this.toolStripPlayback.ThemeName = "FluentDark";
+            this.toolStripPlayback.Click += new System.EventHandler(this.toolStripPlayback_Click);
+            // 
+            // commandBarRowElement3
+            // 
+            this.commandBarRowElement3.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement3.Name = "commandBarRowElement3";
+            this.commandBarRowElement3.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement2});
+            // 
+            // commandBarStripElement2
+            // 
+            this.commandBarStripElement2.DisplayName = "commandBarStripElement2";
+            this.commandBarStripElement2.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.toolStripButtonPlabackPlayPause,
+            this.toolStripButtonPlabackNextFrame,
+            this.toolStripButtonPlabackMute});
+            this.commandBarStripElement2.Name = "commandBarStripElement2";
+            // 
+            // commandBarRowElement4
+            // 
+            this.commandBarRowElement4.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement4.Name = "commandBarRowElement4";
+            // 
+            // radPageViewNeedsReview
+            // 
+            this.radPageViewNeedsReview.ItemSize = new System.Drawing.SizeF(89F, 25F);
+            this.radPageViewNeedsReview.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewNeedsReview.Name = "radPageViewNeedsReview";
+            this.radPageViewNeedsReview.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewNeedsReview.Text = "Needs Review";
+            // 
+            // radPageViewViewFavorites
+            // 
+            this.radPageViewViewFavorites.ItemSize = new System.Drawing.SizeF(91F, 25F);
+            this.radPageViewViewFavorites.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewViewFavorites.Name = "radPageViewViewFavorites";
+            this.radPageViewViewFavorites.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewViewFavorites.Text = "View Favorites";
+            // 
+            // radPageViewViewHistory
+            // 
+            this.radPageViewViewHistory.Controls.Add(this.ucViewHistory1);
+            this.radPageViewViewHistory.ItemSize = new System.Drawing.SizeF(81F, 25F);
+            this.radPageViewViewHistory.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewViewHistory.Name = "radPageViewViewHistory";
+            this.radPageViewViewHistory.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewViewHistory.Text = "View History";
+            // 
+            // radPageViewTrimmedVideos
+            // 
+            this.radPageViewTrimmedVideos.ItemSize = new System.Drawing.SizeF(102F, 25F);
+            this.radPageViewTrimmedVideos.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewTrimmedVideos.Name = "radPageViewTrimmedVideos";
+            this.radPageViewTrimmedVideos.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewTrimmedVideos.Text = "Trimmed Videos";
+            // 
+            // radPageViewTagsAndCategories
+            // 
+            this.radPageViewTagsAndCategories.ItemSize = new System.Drawing.SizeF(189F, 25F);
+            this.radPageViewTagsAndCategories.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewTagsAndCategories.Name = "radPageViewTagsAndCategories";
+            this.radPageViewTagsAndCategories.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewTagsAndCategories.Text = "radPageViewTagsAndCategories";
+            // 
+            // radPageViewHelpAndDemos
+            // 
+            this.radPageViewHelpAndDemos.Controls.Add(this.radListView1);
+            this.radPageViewHelpAndDemos.ItemSize = new System.Drawing.SizeF(93F, 25F);
+            this.radPageViewHelpAndDemos.Location = new System.Drawing.Point(6, 36);
+            this.radPageViewHelpAndDemos.Name = "radPageViewHelpAndDemos";
+            this.radPageViewHelpAndDemos.Size = new System.Drawing.Size(1004, 615);
+            this.radPageViewHelpAndDemos.Text = "Help & Demos";
+            // 
+            // radListView1
+            // 
+            this.radListView1.GroupItemSize = new System.Drawing.Size(200, 28);
+            this.radListView1.ItemSize = new System.Drawing.Size(200, 28);
+            this.radListView1.Location = new System.Drawing.Point(340, 101);
+            this.radListView1.Name = "radListView1";
+            this.radListView1.Size = new System.Drawing.Size(635, 422);
+            this.radListView1.TabIndex = 0;
+            this.radListView1.ThemeName = "FluentDark";
+            // 
+            // radCommandBar1
+            // 
+            this.radCommandBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radCommandBar1.Location = new System.Drawing.Point(0, 0);
+            this.radCommandBar1.Name = "radCommandBar1";
+            this.radCommandBar1.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.commandBarRowElement1});
+            this.radCommandBar1.Size = new System.Drawing.Size(1016, 54);
+            this.radCommandBar1.TabIndex = 0;
+            this.radCommandBar1.ThemeName = "FluentDark";
+            // 
+            // commandBarRowElement1
+            // 
+            this.commandBarRowElement1.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement1.Name = "commandBarRowElement1";
+            this.commandBarRowElement1.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.commandBarStripElement1});
+            // 
+            // commandBarStripElement1
+            // 
+            this.commandBarStripElement1.DisplayName = "commandBarStripElement1";
+            this.commandBarStripElement1.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.commandBarBtnHome,
+            this.commandBarBtnAddVideos,
+            this.commandBarBtnFindVideos,
+            this.commandBarBtnNeedsReview,
+            this.commandBarBtnViewFavorites,
+            this.commandBarBtnViewHistory,
+            this.commandBarBtnSettings,
+            this.commandBarDDBtnViewHistories,
+            this.commandBarBtnViewTrimmedVideos,
+            this.commandBarLblCutVideosCount,
+            this.commandBarSeparator1,
+            this.commandBarBtnTagsCategories,
+            this.commandBarBtnHelpDemos});
+            this.commandBarStripElement1.Name = "commandBarStripElement1";
+            // 
+            // commandBarLblCutVideosCount
+            // 
+            this.commandBarLblCutVideosCount.DisplayName = "commandBarLabel1";
+            this.commandBarLblCutVideosCount.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commandBarLblCutVideosCount.Name = "commandBarLblCutVideosCount";
+            this.commandBarLblCutVideosCount.Text = "0";
+            this.commandBarLblCutVideosCount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.commandBarLblCutVideosCount.ToolTipText = "Trimmed Videos";
+            // 
+            // commandBarSeparator1
+            // 
+            this.commandBarSeparator1.DisplayName = "commandBarSeparator1";
+            this.commandBarSeparator1.Name = "commandBarSeparator1";
+            this.commandBarSeparator1.VisibleInOverflowMenu = false;
+            // 
+            // commandBarRowElement2
+            // 
+            this.commandBarRowElement2.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement2.Name = "commandBarRowElement2";
+            // 
+            // radOpenFileDialogSelectVideo
+            // 
+            this.radOpenFileDialogSelectVideo.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
+            // 
+            // radOpenFolderDialogSelectVideos
+            // 
+            this.radOpenFolderDialogSelectVideos.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
+            this.radOpenFolderDialogSelectVideos.MultiSelect = true;
+            // 
+            // timerHoverPositionChanged
+            // 
+            this.timerHoverPositionChanged.Interval = 50;
+            // 
+            // object_50254541_367b_4ee5_af46_ef9beb1f3d02
+            // 
+            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.Name = "object_50254541_367b_4ee5_af46_ef9beb1f3d02";
+            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchHorizontally = true;
+            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchVertically = true;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 4000;
+            this.toolTip1.InitialDelay = 500;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ReshowDelay = 100;
+            this.toolTip1.ShowAlways = true;
+            this.toolTip1.ToolTipTitle = "4 Second Delay";
+            // 
+            // toolTipTopVideoPlayerControls
+            // 
+            this.toolTipTopVideoPlayerControls.IsBalloon = true;
+            this.toolTipTopVideoPlayerControls.ToolTipTitle = "Open File Location";
+            // 
+            // commandBarRowElement9
+            // 
+            this.commandBarRowElement9.MinSize = new System.Drawing.Size(25, 25);
+            this.commandBarRowElement9.Name = "commandBarRowElement9";
+            // 
+            // radButton5
+            // 
+            this.radButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radButton5.Location = new System.Drawing.Point(283, 2);
+            this.radButton5.Margin = new System.Windows.Forms.Padding(0);
+            this.radButton5.Name = "radButton5";
+            this.radButton5.Size = new System.Drawing.Size(25, 21);
+            this.radButton5.TabIndex = 3;
+            this.radButton5.Text = "radButton5";
+            this.radButton5.ThemeName = "FluentDark";
+            // 
+            // radPanel4
+            // 
+            this.radPanel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radPanel4.BackColor = System.Drawing.Color.Maroon;
+            this.radPanel4.Controls.Add(this.pictureBox1);
+            this.radPanel4.Controls.Add(this.radCheckBox1);
+            this.radPanel4.Location = new System.Drawing.Point(81, 2);
+            this.radPanel4.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.radPanel4.MinimumSize = new System.Drawing.Size(200, 25);
+            this.radPanel4.Name = "radPanel4";
+            // 
+            // 
+            // 
+            this.radPanel4.RootElement.MinSize = new System.Drawing.Size(200, 25);
+            this.radPanel4.Size = new System.Drawing.Size(200, 25);
+            this.radPanel4.TabIndex = 4;
+            this.radPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.radPanel4_Paint);
+            // 
+            // radCheckBox1
+            // 
+            this.radCheckBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radCheckBox1.Location = new System.Drawing.Point(0, 0);
+            this.radCheckBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.radCheckBox1.Name = "radCheckBox1";
+            this.radCheckBox1.Size = new System.Drawing.Size(85, 18);
+            this.radCheckBox1.TabIndex = 6;
+            this.radCheckBox1.Text = "Log History?";
+            this.radCheckBox1.ThemeName = "FluentDark";
+            // 
+            // videoCutterTimeline1
+            // 
+            this.videoCutterTimeline1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.videoCutterTimeline1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.videoCutterTimeline1.HoverPosition = null;
+            this.videoCutterTimeline1.Length = ((long)(0));
+            this.videoCutterTimeline1.Location = new System.Drawing.Point(0, 434);
+            this.videoCutterTimeline1.Margin = new System.Windows.Forms.Padding(4);
+            this.videoCutterTimeline1.Name = "videoCutterTimeline1";
+            this.videoCutterTimeline1.Position = ((long)(0));
+            this.videoCutterTimeline1.Size = new System.Drawing.Size(334, 79);
+            this.videoCutterTimeline1.TabIndex = 9;
+            this.videoCutterTimeline1.DoubleClick += new System.EventHandler(this.videoCutterTimeline1_DoubleClick);
+            // 
+            // ucViewHistory1
+            // 
+            this.ucViewHistory1.AutoSize = true;
+            this.ucViewHistory1.Location = new System.Drawing.Point(41, 3);
+            this.ucViewHistory1.Name = "ucViewHistory1";
+            this.ucViewHistory1.Size = new System.Drawing.Size(913, 632);
+            this.ucViewHistory1.TabIndex = 0;
+            // 
+            // radButton1
+            // 
+            this.radButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radButton1.Image = global::SimpleVideoCutter.Properties.Resources.Film_Role_05;
+            this.radButton1.Location = new System.Drawing.Point(3, 3);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(202, 59);
+            this.radButton1.TabIndex = 1;
+            this.radButton1.Text = "Open Individual File(s)";
+            this.radButton1.ThemeName = "FluentDark";
+            // 
+            // radButton2
+            // 
+            this.radButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radButton2.Image = global::SimpleVideoCutter.Properties.Resources.Folder_Movie_03;
+            this.radButton2.Location = new System.Drawing.Point(211, 3);
+            this.radButton2.Name = "radButton2";
+            this.radButton2.Size = new System.Drawing.Size(207, 59);
+            this.radButton2.TabIndex = 2;
+            this.radButton2.Text = "Open File(s) From Folder";
+            this.radButton2.ThemeName = "FluentDark";
+            // 
+            // radButton3
+            // 
+            this.radButton3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radButton3.Image = global::SimpleVideoCutter.Properties.Resources.Search_Folder_New;
+            this.radButton3.Location = new System.Drawing.Point(424, 3);
+            this.radButton3.Name = "radButton3";
+            this.radButton3.Size = new System.Drawing.Size(218, 59);
+            this.radButton3.TabIndex = 3;
+            this.radButton3.Text = "Search Computer For Videos";
+            this.radButton3.ThemeName = "FluentDark";
+            // 
+            // radButton4
+            // 
+            this.radButton4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radButton4.Image = global::SimpleVideoCutter.Properties.Resources.Tab_History_WF;
+            this.radButton4.Location = new System.Drawing.Point(648, 3);
+            this.radButton4.Name = "radButton4";
+            this.radButton4.Size = new System.Drawing.Size(193, 59);
+            this.radButton4.TabIndex = 4;
+            this.radButton4.Text = "Resume Video Reviews";
+            this.radButton4.ThemeName = "FluentDark";
+            this.radButton4.Click += new System.EventHandler(this.radButton4_Click);
+            // 
+            // btnTimeLineCurrent
+            // 
+            this.btnTimeLineCurrent.Image = global::SimpleVideoCutter.VideoControlIcons24.Data_Merge;
+            this.btnTimeLineCurrent.Location = new System.Drawing.Point(122, 59);
+            this.btnTimeLineCurrent.Name = "btnTimeLineCurrent";
+            this.btnTimeLineCurrent.Size = new System.Drawing.Size(123, 30);
+            this.btnTimeLineCurrent.TabIndex = 3;
+            this.btnTimeLineCurrent.Text = "  zoom current";
+            this.btnTimeLineCurrent.ThemeName = "FluentDark";
+            this.btnTimeLineCurrent.Click += new System.EventHandler(this.btnTimeLineCurrent_Click);
+            // 
+            // btnTimeLineZoomAuto
+            // 
+            this.btnTimeLineZoomAuto.Image = global::SimpleVideoCutter.VideoControlIcons24.Restore_02;
+            this.btnTimeLineZoomAuto.Location = new System.Drawing.Point(3, 81);
+            this.btnTimeLineZoomAuto.Name = "btnTimeLineZoomAuto";
+            this.btnTimeLineZoomAuto.Size = new System.Drawing.Size(113, 30);
+            this.btnTimeLineZoomAuto.TabIndex = 1;
+            this.btnTimeLineZoomAuto.Text = "zoom auto";
+            this.btnTimeLineZoomAuto.ThemeName = "FluentDark";
+            this.btnTimeLineZoomAuto.Click += new System.EventHandler(this.btnTimeLineZoomAuto_Click);
+            // 
+            // btnTimeLineZoomOut
+            // 
+            this.btnTimeLineZoomOut.Image = global::SimpleVideoCutter.VideoControlIcons24.Expand_WF;
+            this.btnTimeLineZoomOut.Location = new System.Drawing.Point(3, 45);
+            this.btnTimeLineZoomOut.Name = "btnTimeLineZoomOut";
+            this.btnTimeLineZoomOut.Size = new System.Drawing.Size(113, 30);
+            this.btnTimeLineZoomOut.TabIndex = 0;
+            this.btnTimeLineZoomOut.Text = "zoom out";
+            this.btnTimeLineZoomOut.ThemeName = "FluentDark";
+            this.btnTimeLineZoomOut.Click += new System.EventHandler(this.btnTimeLineZoomOut_Click);
+            // 
             // toggleButtonPlayPause
             // 
             this.toggleButtonPlayPause.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -810,15 +1327,6 @@
             this.toggleButtonPlayPause.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.toggleButtonPlayPause_ToggleStateChanged);
             this.toggleButtonPlayPause.Click += new System.EventHandler(this.toggleButtonPlayPause_Click);
             // 
-            // imageList24PlayerControls
-            // 
-            this.imageList24PlayerControls.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList24PlayerControls.ImageStream")));
-            this.imageList24PlayerControls.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList24PlayerControls.Images.SetKeyName(0, "Media Pause-WF.png");
-            this.imageList24PlayerControls.Images.SetKeyName(1, "Media Play1-WF.png");
-            this.imageList24PlayerControls.Images.SetKeyName(2, "Media-Pause.png");
-            this.imageList24PlayerControls.Images.SetKeyName(3, "Media-Play.png");
-            // 
             // btnVideoPlayBackSpeedDefault
             // 
             this.btnVideoPlayBackSpeedDefault.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -830,25 +1338,6 @@
             this.btnVideoPlayBackSpeedDefault.Text = "radButton5";
             this.btnVideoPlayBackSpeedDefault.ThemeName = "FluentDark";
             this.btnVideoPlayBackSpeedDefault.Click += new System.EventHandler(this.btnVideoPlayBackSpeedDefault_Click);
-            // 
-            // radListControlCutsForThisVideo
-            // 
-            this.radListControlCutsForThisVideo.ItemHeight = 17;
-            radListDataItem1.Text = "ListItem 1";
-            radListDataItem2.Text = "ListItem 2";
-            radListDataItem3.Text = "ListItem 3";
-            radListDataItem4.Text = "ListItem 4";
-            radListDataItem5.Text = "ListItem 5";
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem1);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem2);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem3);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem4);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem5);
-            this.radListControlCutsForThisVideo.Location = new System.Drawing.Point(632, 7);
-            this.radListControlCutsForThisVideo.Name = "radListControlCutsForThisVideo";
-            this.radListControlCutsForThisVideo.Size = new System.Drawing.Size(176, 30);
-            this.radListControlCutsForThisVideo.TabIndex = 17;
-            this.radListControlCutsForThisVideo.ThemeName = "FluentDark";
             // 
             // btnGoToSelectionEnd
             // 
@@ -871,17 +1360,6 @@
             this.btnGoToTrimSelectionStart.TabIndex = 15;
             this.btnGoToTrimSelectionStart.ThemeName = "FluentDark";
             this.btnGoToTrimSelectionStart.Click += new System.EventHandler(this.btnGoToTrimSelectionStart_Click);
-            // 
-            // radPopupEditTimeLine
-            // 
-            this.radPopupEditTimeLine.AssociatedControl = this.radPopupContainer2;
-            this.radPopupEditTimeLine.Location = new System.Drawing.Point(814, 8);
-            this.radPopupEditTimeLine.Name = "radPopupEditTimeLine";
-            this.radPopupEditTimeLine.ShowTextBox = false;
-            this.radPopupEditTimeLine.Size = new System.Drawing.Size(91, 28);
-            this.radPopupEditTimeLine.TabIndex = 13;
-            this.radPopupEditTimeLine.Text = "Timeline";
-            this.radPopupEditTimeLine.ThemeName = "FluentDark";
             // 
             // radButton15
             // 
@@ -937,21 +1415,6 @@
             this.btnClearSelection.TabIndex = 7;
             this.btnClearSelection.ThemeName = "FluentDark";
             this.btnClearSelection.Click += new System.EventHandler(this.btnClearSelection_Click);
-            // 
-            // radPopupEditorVolume
-            // 
-            this.radPopupEditorVolume.AssociatedControl = this.radPopupContainer1;
-            this.radPopupEditorVolume.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.None;
-            this.radPopupEditorVolume.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radPopupEditorVolume.Location = new System.Drawing.Point(911, 0);
-            this.radPopupEditorVolume.Name = "radPopupEditorVolume";
-            this.radPopupEditorVolume.ShowTextBox = false;
-            this.radPopupEditorVolume.Size = new System.Drawing.Size(87, 40);
-            this.radPopupEditorVolume.TabIndex = 4;
-            this.radPopupEditorVolume.Text = "0";
-            this.radPopupEditorVolume.ThemeName = "FluentDark";
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radPopupEditorVolume.GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(4))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.radPopupEditorVolume.GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(4))).ShouldPaint = true;
             // 
             // btnPlayRange
             // 
@@ -1011,66 +1474,14 @@
             this.btnVideoGoForward10Seconds.ThemeName = "FluentDark";
             this.btnVideoGoForward10Seconds.Click += new System.EventHandler(this.btnVideoGoForward10Seconds_Click);
             // 
-            // imageListMainPlayerControls
-            // 
-            this.imageListMainPlayerControls.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMainPlayerControls.ImageStream")));
-            this.imageListMainPlayerControls.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListMainPlayerControls.Images.SetKeyName(0, "Media Control-07-WF.png");
-            this.imageListMainPlayerControls.Images.SetKeyName(1, "Media Control-08-WF.png");
-            // 
-            // pnlTopVideoScreenMoveForwardBackFavorite
-            // 
-            this.pnlTopVideoScreenMoveForwardBackFavorite.BackColor = System.Drawing.Color.White;
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.tblLayoutPnlTopMainVideoControls);
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.btnMoveNextVideo);
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Controls.Add(this.btnMovePreviousVideo);
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTopVideoScreenMoveForwardBackFavorite.ForeColor = System.Drawing.Color.Black;
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Location = new System.Drawing.Point(0, 0);
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Name = "pnlTopVideoScreenMoveForwardBackFavorite";
-            this.pnlTopVideoScreenMoveForwardBackFavorite.Size = new System.Drawing.Size(1004, 25);
-            this.pnlTopVideoScreenMoveForwardBackFavorite.TabIndex = 10;
-            this.pnlTopVideoScreenMoveForwardBackFavorite.ThemeName = "FluentDark";
-            // 
-            // tblLayoutPnlTopMainVideoControls
-            // 
-            this.tblLayoutPnlTopMainVideoControls.BackColor = System.Drawing.Color.DarkGray;
-            this.tblLayoutPnlTopMainVideoControls.ColumnCount = 4;
-            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tblLayoutPnlTopMainVideoControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radLblCurrentVideoFileBeingPlayed, 0, 0);
-            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radBtnCopyVideoPath, 1, 0);
-            this.tblLayoutPnlTopMainVideoControls.Controls.Add(this.radBtnShowDisplayCurrentFilesToPlayWinfow, 3, 0);
-            this.tblLayoutPnlTopMainVideoControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblLayoutPnlTopMainVideoControls.Location = new System.Drawing.Point(24, 0);
-            this.tblLayoutPnlTopMainVideoControls.Name = "tblLayoutPnlTopMainVideoControls";
-            this.tblLayoutPnlTopMainVideoControls.RowCount = 1;
-            this.tblLayoutPnlTopMainVideoControls.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblLayoutPnlTopMainVideoControls.Size = new System.Drawing.Size(955, 25);
-            this.tblLayoutPnlTopMainVideoControls.TabIndex = 2;
-            this.tblLayoutPnlTopMainVideoControls.Paint += new System.Windows.Forms.PaintEventHandler(this.tblLayoutPnlTopMainVideoControls_Paint);
-            // 
-            // radLblCurrentVideoFileBeingPlayed
-            // 
-            this.radLblCurrentVideoFileBeingPlayed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radLblCurrentVideoFileBeingPlayed.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline);
-            this.radLblCurrentVideoFileBeingPlayed.Location = new System.Drawing.Point(3, 3);
-            this.radLblCurrentVideoFileBeingPlayed.Name = "radLblCurrentVideoFileBeingPlayed";
-            this.radLblCurrentVideoFileBeingPlayed.Size = new System.Drawing.Size(55, 18);
-            this.radLblCurrentVideoFileBeingPlayed.TabIndex = 0;
-            this.radLblCurrentVideoFileBeingPlayed.Text = "-----";
-            this.radLblCurrentVideoFileBeingPlayed.ThemeName = "FluentDark";
-            this.toolTipTopVideoPlayerControls.SetToolTip(this.radLblCurrentVideoFileBeingPlayed, "Opens current video file in it\'s folder");
-            this.radLblCurrentVideoFileBeingPlayed.Click += new System.EventHandler(this.radLblCurrentVideoFileBeingPlayed_Click);
-            // 
             // radBtnCopyVideoPath
             // 
+            this.radBtnCopyVideoPath.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radBtnCopyVideoPath.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.radBtnCopyVideoPath.Image = global::SimpleVideoCutter.VideoControlIcons24.Copy_02;
-            this.radBtnCopyVideoPath.Location = new System.Drawing.Point(64, 3);
+            this.radBtnCopyVideoPath.Image = global::SimpleVideoCutter.Images16.Copy_02;
+            this.radBtnCopyVideoPath.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radBtnCopyVideoPath.Location = new System.Drawing.Point(39, 3);
+            this.radBtnCopyVideoPath.Margin = new System.Windows.Forms.Padding(0);
             this.radBtnCopyVideoPath.Name = "radBtnCopyVideoPath";
             this.radBtnCopyVideoPath.Size = new System.Drawing.Size(20, 19);
             this.radBtnCopyVideoPath.TabIndex = 1;
@@ -1080,16 +1491,29 @@
             // 
             // radBtnShowDisplayCurrentFilesToPlayWinfow
             // 
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.radBtnShowDisplayCurrentFilesToPlayWinfow.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Location = new System.Drawing.Point(900, 3);
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Margin = new System.Windows.Forms.Padding(3, 3, 25, 3);
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Image = global::SimpleVideoCutter.Images16.Columns_Next;
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Location = new System.Drawing.Point(903, 2);
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Margin = new System.Windows.Forms.Padding(0, 0, 25, 0);
             this.radBtnShowDisplayCurrentFilesToPlayWinfow.Name = "radBtnShowDisplayCurrentFilesToPlayWinfow";
-            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Size = new System.Drawing.Size(30, 19);
+            this.radBtnShowDisplayCurrentFilesToPlayWinfow.Size = new System.Drawing.Size(25, 21);
             this.radBtnShowDisplayCurrentFilesToPlayWinfow.TabIndex = 2;
             this.radBtnShowDisplayCurrentFilesToPlayWinfow.Text = "radButton5";
             this.radBtnShowDisplayCurrentFilesToPlayWinfow.ThemeName = "FluentDark";
             this.radBtnShowDisplayCurrentFilesToPlayWinfow.Click += new System.EventHandler(this.radBtnShowDisplayCurrentFilesToPlayWinfow_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::SimpleVideoCutter.VideoControlIcons24.Eye___03;
+            this.pictureBox1.Location = new System.Drawing.Point(175, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // btnMoveNextVideo
             // 
@@ -1119,72 +1543,6 @@
             this.toolTip1.SetToolTip(this.btnMovePreviousVideo, "Between Videos");
             this.btnMovePreviousVideo.Click += new System.EventHandler(this.btnMovePreviousVideo_Click);
             // 
-            // radPageViewFindVideos
-            // 
-            this.radPageViewFindVideos.Controls.Add(this.statusStrip);
-            this.radPageViewFindVideos.Controls.Add(this.toolStripTimeline);
-            this.radPageViewFindVideos.Controls.Add(this.toolStripTasks);
-            this.radPageViewFindVideos.Controls.Add(this.toolStripSelection);
-            this.radPageViewFindVideos.Controls.Add(this.toolStripFile);
-            this.radPageViewFindVideos.Controls.Add(this.toolStripPlayback);
-            this.radPageViewFindVideos.ItemSize = new System.Drawing.SizeF(78F, 29F);
-            this.radPageViewFindVideos.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewFindVideos.Name = "radPageViewFindVideos";
-            this.radPageViewFindVideos.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewFindVideos.Text = "Find Videos";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.toolStripStatusLabelIndex,
-            this.toolStripStatusLabelSelection});
-            this.statusStrip.Location = new System.Drawing.Point(0, 615);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1004, 0);
-            this.statusStrip.TabIndex = 5;
-            this.statusStrip.ThemeName = "FluentDark";
-            // 
-            // toolStripStatusLabelIndex
-            // 
-            this.toolStripStatusLabelIndex.Name = "toolStripStatusLabelIndex";
-            this.statusStrip.SetSpring(this.toolStripStatusLabelIndex, false);
-            this.toolStripStatusLabelIndex.Text = "radLabelElement1";
-            this.toolStripStatusLabelIndex.TextWrap = true;
-            // 
-            // toolStripStatusLabelSelection
-            // 
-            this.toolStripStatusLabelSelection.Name = "toolStripStatusLabelSelection";
-            this.statusStrip.SetSpring(this.toolStripStatusLabelSelection, false);
-            this.toolStripStatusLabelSelection.Text = "radLabelElement1";
-            this.toolStripStatusLabelSelection.TextWrap = true;
-            // 
-            // toolStripTimeline
-            // 
-            this.toolStripTimeline.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripTimeline.Location = new System.Drawing.Point(0, 615);
-            this.toolStripTimeline.Name = "toolStripTimeline";
-            this.toolStripTimeline.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement8});
-            this.toolStripTimeline.Size = new System.Drawing.Size(1004, 0);
-            this.toolStripTimeline.TabIndex = 4;
-            this.toolStripTimeline.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement8
-            // 
-            this.commandBarRowElement8.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement8.Name = "commandBarRowElement8";
-            this.commandBarRowElement8.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement6});
-            // 
-            // commandBarStripElement6
-            // 
-            this.commandBarStripElement6.DisplayName = "commandBarStripElement6";
-            this.commandBarStripElement6.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonTimelineZoomOut,
-            this.toolStripButtonTimelineZoomAuto,
-            this.toolStripButtonTimelineGoToCurrentPosition});
-            this.commandBarStripElement6.Name = "commandBarStripElement6";
-            // 
             // toolStripButtonTimelineZoomOut
             // 
             this.toolStripButtonTimelineZoomOut.DisplayName = "commandBarButton12";
@@ -1206,32 +1564,6 @@
             this.toolStripButtonTimelineGoToCurrentPosition.Name = "toolStripButtonTimelineGoToCurrentPosition";
             this.toolStripButtonTimelineGoToCurrentPosition.Text = "commandBarButton14";
             // 
-            // toolStripTasks
-            // 
-            this.toolStripTasks.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripTasks.Location = new System.Drawing.Point(0, 615);
-            this.toolStripTasks.Name = "toolStripTasks";
-            this.toolStripTasks.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement7});
-            this.toolStripTasks.Size = new System.Drawing.Size(1004, 0);
-            this.toolStripTasks.TabIndex = 3;
-            this.toolStripTasks.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement7
-            // 
-            this.commandBarRowElement7.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement7.Name = "commandBarRowElement7";
-            this.commandBarRowElement7.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement5});
-            // 
-            // commandBarStripElement5
-            // 
-            this.commandBarStripElement5.DisplayName = "commandBarStripElement5";
-            this.commandBarStripElement5.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonTasksShow1,
-            this.toolStripButtonTasksShow});
-            this.commandBarStripElement5.Name = "commandBarStripElement5";
-            // 
             // toolStripButtonTasksShow1
             // 
             this.toolStripButtonTasksShow1.DisplayName = "commandBarButton12";
@@ -1246,39 +1578,6 @@
             this.toolStripButtonTasksShow.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTasksShow.Image")));
             this.toolStripButtonTasksShow.Name = "toolStripButtonTasksShow";
             this.toolStripButtonTasksShow.Text = "commandBarToggleButton1";
-            // 
-            // toolStripSelection
-            // 
-            this.toolStripSelection.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripSelection.Location = new System.Drawing.Point(0, 615);
-            this.toolStripSelection.Name = "toolStripSelection";
-            this.toolStripSelection.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement6});
-            this.toolStripSelection.Size = new System.Drawing.Size(1004, 0);
-            this.toolStripSelection.TabIndex = 2;
-            this.toolStripSelection.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement6
-            // 
-            this.commandBarRowElement6.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement6.Name = "commandBarRowElement6";
-            this.commandBarRowElement6.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement4});
-            // 
-            // commandBarStripElement4
-            // 
-            this.commandBarStripElement4.DisplayName = "commandBarStripElement4";
-            this.commandBarStripElement4.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonSelectionSetStart,
-            this.toolStripButtonSelectionSetEnd,
-            this.toolStripButtonSelectionGoToStart,
-            this.toolStripButtonSelectionGoToEnd,
-            this.toolStripButtonSelectionPlay,
-            this.toolStripButtonSelectionClear,
-            this.toolStripButtonSelectionEnqueue,
-            this.commandBarButton18,
-            this.commandBarButton19});
-            this.commandBarStripElement4.Name = "commandBarStripElement4";
             // 
             // toolStripButtonSelectionSetStart
             // 
@@ -1343,32 +1642,6 @@
             this.commandBarButton19.Name = "commandBarButton19";
             this.commandBarButton19.Text = "commandBarButton19";
             // 
-            // toolStripFile
-            // 
-            this.toolStripFile.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripFile.Location = new System.Drawing.Point(0, 615);
-            this.toolStripFile.Name = "toolStripFile";
-            this.toolStripFile.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement5});
-            this.toolStripFile.Size = new System.Drawing.Size(1004, 0);
-            this.toolStripFile.TabIndex = 1;
-            this.toolStripFile.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement5
-            // 
-            this.commandBarRowElement5.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement5.Name = "commandBarRowElement5";
-            this.commandBarRowElement5.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement3});
-            // 
-            // commandBarStripElement3
-            // 
-            this.commandBarStripElement3.DisplayName = "commandBarStripElement3";
-            this.commandBarStripElement3.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonFileNext,
-            this.toolStripButtonFilePrev});
-            this.commandBarStripElement3.Name = "commandBarStripElement3";
-            // 
             // toolStripButtonFileNext
             // 
             this.toolStripButtonFileNext.DisplayName = "commandBarButton12";
@@ -1382,35 +1655,6 @@
             this.toolStripButtonFilePrev.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFilePrev.Image")));
             this.toolStripButtonFilePrev.Name = "toolStripButtonFilePrev";
             this.toolStripButtonFilePrev.Text = "commandBarButton12";
-            // 
-            // toolStripPlayback
-            // 
-            this.toolStripPlayback.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStripPlayback.Location = new System.Drawing.Point(0, 615);
-            this.toolStripPlayback.Name = "toolStripPlayback";
-            this.toolStripPlayback.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement3,
-            this.commandBarRowElement4});
-            this.toolStripPlayback.Size = new System.Drawing.Size(1004, 0);
-            this.toolStripPlayback.TabIndex = 0;
-            this.toolStripPlayback.ThemeName = "FluentDark";
-            this.toolStripPlayback.Click += new System.EventHandler(this.toolStripPlayback_Click);
-            // 
-            // commandBarRowElement3
-            // 
-            this.commandBarRowElement3.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement3.Name = "commandBarRowElement3";
-            this.commandBarRowElement3.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement2});
-            // 
-            // commandBarStripElement2
-            // 
-            this.commandBarStripElement2.DisplayName = "commandBarStripElement2";
-            this.commandBarStripElement2.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.toolStripButtonPlabackPlayPause,
-            this.toolStripButtonPlabackNextFrame,
-            this.toolStripButtonPlabackMute});
-            this.commandBarStripElement2.Name = "commandBarStripElement2";
             // 
             // toolStripButtonPlabackPlayPause
             // 
@@ -1433,105 +1677,6 @@
             this.toolStripButtonPlabackMute.Image = global::SimpleVideoCutter.Properties.Resources.Volume_Mute_1_WF;
             this.toolStripButtonPlabackMute.Name = "toolStripButtonPlabackMute";
             this.toolStripButtonPlabackMute.Text = "commandBarToggleButton1";
-            // 
-            // commandBarRowElement4
-            // 
-            this.commandBarRowElement4.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement4.Name = "commandBarRowElement4";
-            // 
-            // radPageViewNeedsReview
-            // 
-            this.radPageViewNeedsReview.ItemSize = new System.Drawing.SizeF(91F, 29F);
-            this.radPageViewNeedsReview.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewNeedsReview.Name = "radPageViewNeedsReview";
-            this.radPageViewNeedsReview.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewNeedsReview.Text = "Needs Review";
-            // 
-            // radPageViewViewFavorites
-            // 
-            this.radPageViewViewFavorites.ItemSize = new System.Drawing.SizeF(93F, 29F);
-            this.radPageViewViewFavorites.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewViewFavorites.Name = "radPageViewViewFavorites";
-            this.radPageViewViewFavorites.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewViewFavorites.Text = "View Favorites";
-            // 
-            // radPageViewViewHistory
-            // 
-            this.radPageViewViewHistory.Controls.Add(this.ucViewHistory1);
-            this.radPageViewViewHistory.ItemSize = new System.Drawing.SizeF(83F, 29F);
-            this.radPageViewViewHistory.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewViewHistory.Name = "radPageViewViewHistory";
-            this.radPageViewViewHistory.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewViewHistory.Text = "View History";
-            // 
-            // ucViewHistory1
-            // 
-            this.ucViewHistory1.AutoSize = true;
-            this.ucViewHistory1.Location = new System.Drawing.Point(41, 3);
-            this.ucViewHistory1.Name = "ucViewHistory1";
-            this.ucViewHistory1.Size = new System.Drawing.Size(913, 632);
-            this.ucViewHistory1.TabIndex = 0;
-            // 
-            // radPageViewTrimmedVideos
-            // 
-            this.radPageViewTrimmedVideos.ItemSize = new System.Drawing.SizeF(104F, 29F);
-            this.radPageViewTrimmedVideos.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewTrimmedVideos.Name = "radPageViewTrimmedVideos";
-            this.radPageViewTrimmedVideos.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewTrimmedVideos.Text = "Trimmed Videos";
-            // 
-            // radPageViewTagsAndCategories
-            // 
-            this.radPageViewTagsAndCategories.ItemSize = new System.Drawing.SizeF(191F, 29F);
-            this.radPageViewTagsAndCategories.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewTagsAndCategories.Name = "radPageViewTagsAndCategories";
-            this.radPageViewTagsAndCategories.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewTagsAndCategories.Text = "radPageViewTagsAndCategories";
-            // 
-            // radPageViewHelpAndDemos
-            // 
-            this.radPageViewHelpAndDemos.ItemSize = new System.Drawing.SizeF(95F, 29F);
-            this.radPageViewHelpAndDemos.Location = new System.Drawing.Point(6, 36);
-            this.radPageViewHelpAndDemos.Name = "radPageViewHelpAndDemos";
-            this.radPageViewHelpAndDemos.Size = new System.Drawing.Size(1004, 615);
-            this.radPageViewHelpAndDemos.Text = "Help & Demos";
-            // 
-            // radCommandBar1
-            // 
-            this.radCommandBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radCommandBar1.Location = new System.Drawing.Point(0, 0);
-            this.radCommandBar1.Name = "radCommandBar1";
-            this.radCommandBar1.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
-            this.commandBarRowElement1});
-            this.radCommandBar1.Size = new System.Drawing.Size(1016, 54);
-            this.radCommandBar1.TabIndex = 0;
-            this.radCommandBar1.ThemeName = "FluentDark";
-            // 
-            // commandBarRowElement1
-            // 
-            this.commandBarRowElement1.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement1.Name = "commandBarRowElement1";
-            this.commandBarRowElement1.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
-            this.commandBarStripElement1});
-            // 
-            // commandBarStripElement1
-            // 
-            this.commandBarStripElement1.DisplayName = "commandBarStripElement1";
-            this.commandBarStripElement1.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
-            this.commandBarBtnHome,
-            this.commandBarBtnAddVideos,
-            this.commandBarBtnFindVideos,
-            this.commandBarBtnNeedsReview,
-            this.commandBarBtnViewFavorites,
-            this.commandBarBtnViewHistory,
-            this.commandBarBtnSettings,
-            this.commandBarDDBtnViewHistories,
-            this.commandBarBtnViewTrimmedVideos,
-            this.commandBarLblCutVideosCount,
-            this.commandBarSeparator1,
-            this.commandBarBtnTagsCategories,
-            this.commandBarBtnHelpDemos});
-            this.commandBarStripElement1.Name = "commandBarStripElement1";
             // 
             // commandBarBtnHome
             // 
@@ -1659,21 +1804,6 @@
             this.commandBarBtnViewTrimmedVideos.Text = "Trimed Videos";
             this.commandBarBtnViewTrimmedVideos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // commandBarLblCutVideosCount
-            // 
-            this.commandBarLblCutVideosCount.DisplayName = "commandBarLabel1";
-            this.commandBarLblCutVideosCount.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commandBarLblCutVideosCount.Name = "commandBarLblCutVideosCount";
-            this.commandBarLblCutVideosCount.Text = "0";
-            this.commandBarLblCutVideosCount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.commandBarLblCutVideosCount.ToolTipText = "Trimmed Videos";
-            // 
-            // commandBarSeparator1
-            // 
-            this.commandBarSeparator1.DisplayName = "commandBarSeparator1";
-            this.commandBarSeparator1.Name = "commandBarSeparator1";
-            this.commandBarSeparator1.VisibleInOverflowMenu = false;
-            // 
             // commandBarBtnTagsCategories
             // 
             this.commandBarBtnTagsCategories.DisplayName = "commandBarButton11";
@@ -1694,30 +1824,6 @@
             this.commandBarBtnHelpDemos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.commandBarBtnHelpDemos.Click += new System.EventHandler(this.commandBarBtnHelpDemos_Click);
             // 
-            // commandBarRowElement2
-            // 
-            this.commandBarRowElement2.MinSize = new System.Drawing.Size(25, 25);
-            this.commandBarRowElement2.Name = "commandBarRowElement2";
-            // 
-            // radOpenFileDialogSelectVideo
-            // 
-            this.radOpenFileDialogSelectVideo.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
-            // 
-            // radOpenFolderDialogSelectVideos
-            // 
-            this.radOpenFolderDialogSelectVideos.InitialSelectedLayout = Telerik.WinControls.FileDialogs.LayoutType.Details;
-            this.radOpenFolderDialogSelectVideos.MultiSelect = true;
-            // 
-            // timerHoverPositionChanged
-            // 
-            this.timerHoverPositionChanged.Interval = 50;
-            // 
-            // object_50254541_367b_4ee5_af46_ef9beb1f3d02
-            // 
-            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.Name = "object_50254541_367b_4ee5_af46_ef9beb1f3d02";
-            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchHorizontally = true;
-            this.object_50254541_367b_4ee5_af46_ef9beb1f3d02.StretchVertically = true;
-            // 
             // commandBarButton4
             // 
             this.commandBarButton4.DisabledTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -1727,20 +1833,6 @@
             this.commandBarButton4.Text = "commandBarButton3";
             this.commandBarButton4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.commandBarButton4.UseCompatibleTextRendering = false;
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.AutoPopDelay = 4000;
-            this.toolTip1.InitialDelay = 500;
-            this.toolTip1.IsBalloon = true;
-            this.toolTip1.ReshowDelay = 100;
-            this.toolTip1.ShowAlways = true;
-            this.toolTip1.ToolTipTitle = "4 Second Delay";
-            // 
-            // toolTipTopVideoPlayerControls
-            // 
-            this.toolTipTopVideoPlayerControls.IsBalloon = true;
-            this.toolTipTopVideoPlayerControls.ToolTipTitle = "Open File Location";
             // 
             // RadMainForm
             // 
@@ -1773,10 +1865,6 @@
             this.splitPanel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).EndInit();
             this.splitPanel2.ResumeLayout(false);
@@ -1793,19 +1881,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.vlcControl1)).EndInit();
             this.panelTasks.ResumeLayout(false);
             this.panelTasks.PerformLayout();
+            this.radPopupContainer2.PanelContainer.ResumeLayout(false);
+            this.radPopupContainer2.PanelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer2)).EndInit();
+            this.radPopupContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lblTimelineZoomPopupOptions)).EndInit();
             this.radPopupContainer1.PanelContainer.ResumeLayout(false);
             this.radPopupContainer1.PanelContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer1)).EndInit();
             this.radPopupContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radTrackBar2)).EndInit();
-            this.radPopupContainer2.PanelContainer.ResumeLayout(false);
-            this.radPopupContainer2.PanelContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radPopupContainer2)).EndInit();
-            this.radPopupContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineCurrent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblTimelineZoomPopupOptions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomAuto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
             this.radPanel3.ResumeLayout(false);
             this.radPanel3.PerformLayout();
@@ -1814,32 +1899,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             this.radPanel2.ResumeLayout(false);
             this.radPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toggleButtonPlayPause)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVideoPlayBackSpeedDefault)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radListControlCutsForThisVideo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToSelectionEnd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToTrimSelectionStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPopupEditTimeLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPerformCut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutEnd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClearSelection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPopupEditorVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPlayRange)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCutEnd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCutStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoBack30Seconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoForward10Seconds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTopVideoScreenMoveForwardBackFavorite)).EndInit();
             this.pnlTopVideoScreenMoveForwardBackFavorite.ResumeLayout(false);
             this.tblLayoutPnlTopMainVideoControls.ResumeLayout(false);
             this.tblLayoutPnlTopMainVideoControls.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLblCurrentVideoFileBeingPlayed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).EndInit();
             this.radPageViewFindVideos.ResumeLayout(false);
             this.radPageViewFindVideos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusStrip)).EndInit();
@@ -1850,7 +1917,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.toolStripPlayback)).EndInit();
             this.radPageViewViewHistory.ResumeLayout(false);
             this.radPageViewViewHistory.PerformLayout();
+            this.radPageViewHelpAndDemos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radListView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).EndInit();
+            this.radPanel4.ResumeLayout(false);
+            this.radPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radCheckBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineCurrent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomAuto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTimeLineZoomOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleButtonPlayPause)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideoPlayBackSpeedDefault)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToSelectionEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToTrimSelectionStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPerformCut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoToCutStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClearSelection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPlayRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCutEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCutStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoBack30Seconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideoGoForward10Seconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnCopyVideoPath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnShowDisplayCurrentFilesToPlayWinfow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMoveNextVideo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMovePreviousVideo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2002,5 +2102,11 @@
         private System.Windows.Forms.ToolTip toolTipTopVideoPlayerControls;
         private Telerik.WinControls.UI.RadButton radBtnCopyVideoPath;
         private Telerik.WinControls.UI.RadButton radBtnShowDisplayCurrentFilesToPlayWinfow;
+        private Telerik.WinControls.UI.RadListView radListView1;
+        private Telerik.WinControls.UI.CommandBarRowElement commandBarRowElement9;
+        private Telerik.WinControls.UI.RadButton radButton5;
+        private Telerik.WinControls.UI.RadPanel radPanel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Telerik.WinControls.UI.RadCheckBox radCheckBox1;
     }
 }

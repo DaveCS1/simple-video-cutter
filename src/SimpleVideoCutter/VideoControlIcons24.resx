@@ -124,6 +124,9 @@
   <data name="Movie_Ok1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Movie Ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Media_Control_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Images\24\Media Control-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Zoom_Scroll_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Zoom-Scroll_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +181,8 @@
   <data name="Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media_Control_04_WF_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Images\24\Media Control-04-WF(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Restore_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Images\24\Restore-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Data_previous_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Data previous-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +220,9 @@
   <data name="Film_01_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Film-01-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Accented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Images\24\Accented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Close_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Close-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -252,6 +258,9 @@
   </data>
   <data name="Circle_Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Circle Pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media_Control_04_WF_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Images\24\Media Control-04-WF(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tag_WF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Tag-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,9 +307,6 @@
   <data name="Forward_1_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Forward-1-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Restore_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Images\24\Restore-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Columns_Next" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Columns-Next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -343,8 +349,8 @@
   <data name="Stop_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Stop-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media_Control_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Images\24\Media Control-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Card Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Images\24\Card Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Favorite_Delete_WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\Favorite Delete-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -364,7 +370,7 @@
   <data name="CSV_Export" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\24\CSV-Export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Card Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Images\24\Card Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Eye - 03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Images\24\Eye - 03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -517,6 +517,8 @@ NextFrame();
 
         private void radBtnCopyVideoPath_Click(object sender, EventArgs e)
         {
+            
+       
             if (fileBeingPlayed != null)
             {
                 Clipboard.SetText(fileBeingPlayed);
@@ -552,6 +554,11 @@ NextFrame();
                     return;
                 }
       
+        }
+
+        private void radPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
 

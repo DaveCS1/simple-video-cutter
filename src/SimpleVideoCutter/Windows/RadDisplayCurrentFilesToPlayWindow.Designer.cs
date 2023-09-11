@@ -38,9 +38,9 @@
             this.radBtnGenerateCollage = new Telerik.WinControls.UI.RadButton();
             this.radPicBoxGeneratedCollage = new Telerik.WinControls.UI.RadPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.radLblRightClickForMore = new Telerik.WinControls.UI.RadLabel();
             this.radBtnCollageZoomOut = new Telerik.WinControls.UI.RadButton();
             this.radBtnCollageZoomIn = new Telerik.WinControls.UI.RadButton();
-            this.radLblRightClickForMore = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView)).BeginInit();
             this.radPageView.SuspendLayout();
             this.radPageViewPage1.SuspendLayout();
@@ -51,9 +51,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPicBoxGeneratedCollage)).BeginInit();
             this.radPicBoxGeneratedCollage.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLblRightClickForMore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radBtnCollageZoomOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radBtnCollageZoomIn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLblRightClickForMore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             this.radPageView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView.Location = new System.Drawing.Point(0, 0);
             this.radPageView.Name = "radPageView";
-            this.radPageView.SelectedPage = this.radPageViewPage2;
+            this.radPageView.SelectedPage = this.radPageViewPage1;
             this.radPageView.Size = new System.Drawing.Size(892, 617);
             this.radPageView.TabIndex = 3;
             this.radPageView.ThemeName = "FluentDark";
@@ -76,10 +76,10 @@
             // 
             this.radPageViewPage1.Controls.Add(this.radWaitingBar1);
             this.radPageViewPage1.Controls.Add(this.radListControl1);
-            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(75F, 29F);
-            this.radPageViewPage1.Location = new System.Drawing.Point(6, 35);
+            this.radPageViewPage1.ItemSize = new System.Drawing.SizeF(73F, 25F);
+            this.radPageViewPage1.Location = new System.Drawing.Point(6, 31);
             this.radPageViewPage1.Name = "radPageViewPage1";
-            this.radPageViewPage1.Size = new System.Drawing.Size(880, 576);
+            this.radPageViewPage1.Size = new System.Drawing.Size(880, 580);
             this.radPageViewPage1.Text = "Files In Use";
             this.radPageViewPage1.ToolTipText = "Files you are viewing in the main video cutter screen";
             // 
@@ -88,7 +88,7 @@
             this.radWaitingBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radWaitingBar1.Location = new System.Drawing.Point(0, 0);
             this.radWaitingBar1.Name = "radWaitingBar1";
-            this.radWaitingBar1.Size = new System.Drawing.Size(880, 576);
+            this.radWaitingBar1.Size = new System.Drawing.Size(880, 580);
             this.radWaitingBar1.TabIndex = 0;
             this.radWaitingBar1.Text = "radWaitingBar1";
             this.radWaitingBar1.ThemeName = "FluentDark";
@@ -98,6 +98,7 @@
             this.radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.DotsRing;
             ((Telerik.WinControls.UI.RadWaitingBarElement)(this.radWaitingBar1.GetChildAt(0))).WaitingIndicatorSize = new System.Drawing.Size(100, 14);
             ((Telerik.WinControls.UI.RadWaitingBarElement)(this.radWaitingBar1.GetChildAt(0))).WaitingSpeed = 50;
+            ((Telerik.WinControls.UI.WaitingBarContentElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0))).WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.DotsRing;
             ((Telerik.WinControls.UI.WaitingBarSeparatorElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0).GetChildAt(0))).Dash = false;
             // 
             // dotsRingWaitingBarIndicatorElement1
@@ -113,7 +114,7 @@
             this.radListControl1.Location = new System.Drawing.Point(0, 0);
             this.radListControl1.Margin = new System.Windows.Forms.Padding(3, 35, 3, 3);
             this.radListControl1.Name = "radListControl1";
-            this.radListControl1.Size = new System.Drawing.Size(880, 576);
+            this.radListControl1.Size = new System.Drawing.Size(880, 580);
             this.radListControl1.TabIndex = 7;
             this.radListControl1.ThemeName = "FluentDark";
             this.radListControl1.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.radListControl1_SelectedIndexChanged);
@@ -121,7 +122,7 @@
             // radPageViewPage2
             // 
             this.radPageViewPage2.Controls.Add(this.radPicBoxGeneratedCollage);
-            this.radPageViewPage2.ItemSize = new System.Drawing.SizeF(84F, 29F);
+            this.radPageViewPage2.ItemSize = new System.Drawing.SizeF(82F, 25F);
             this.radPageViewPage2.Location = new System.Drawing.Point(6, 35);
             this.radPageViewPage2.Name = "radPageViewPage2";
             this.radPageViewPage2.Size = new System.Drawing.Size(880, 576);
@@ -164,6 +165,17 @@
             this.panel1.TabIndex = 0;
             this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
             // 
+            // radLblRightClickForMore
+            // 
+            this.radLblRightClickForMore.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLblRightClickForMore.Location = new System.Drawing.Point(20, 10);
+            this.radLblRightClickForMore.Name = "radLblRightClickForMore";
+            this.radLblRightClickForMore.Size = new System.Drawing.Size(162, 16);
+            this.radLblRightClickForMore.TabIndex = 3;
+            this.radLblRightClickForMore.Text = "Right Click Image For More Options";
+            this.radLblRightClickForMore.ThemeName = "FluentDark";
+            this.radLblRightClickForMore.Visible = false;
+            // 
             // radBtnCollageZoomOut
             // 
             this.radBtnCollageZoomOut.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
@@ -192,17 +204,6 @@
             this.radBtnCollageZoomIn.ThemeName = "FluentDark";
             this.radBtnCollageZoomIn.Click += new System.EventHandler(this.radBtnCollageZoomIn_Click);
             this.radBtnCollageZoomIn.MouseHover += new System.EventHandler(this.radBtnCollageZoomIn_MouseHover);
-            // 
-            // radLblRightClickForMore
-            // 
-            this.radLblRightClickForMore.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLblRightClickForMore.Location = new System.Drawing.Point(20, 10);
-            this.radLblRightClickForMore.Name = "radLblRightClickForMore";
-            this.radLblRightClickForMore.Size = new System.Drawing.Size(162, 16);
-            this.radLblRightClickForMore.TabIndex = 3;
-            this.radLblRightClickForMore.Text = "Right Click Image For More Options";
-            this.radLblRightClickForMore.ThemeName = "FluentDark";
-            this.radLblRightClickForMore.Visible = false;
             // 
             // RadDisplayCurrentFilesToPlayWindow
             // 
@@ -237,9 +238,9 @@
             this.radPicBoxGeneratedCollage.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLblRightClickForMore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radBtnCollageZoomOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radBtnCollageZoomIn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLblRightClickForMore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 

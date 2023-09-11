@@ -146,6 +146,11 @@
       <DependentUpon>FormSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="GitHubVersionCheck.cs" />
+    <Compile Include="Images16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images16.resx</DependentUpon>
+    </Compile>
     <Compile Include="KeyFramesExtractor.cs" />
     <Compile Include="LicenseBox.cs">
       <SubType>Form</SubType>
@@ -214,8 +219,141 @@
     <Compile Include="Windows\RadDisplayCurrentFilesToPlayWindow.Designer.cs">
       <DependentUpon>RadDisplayCurrentFilesToPlayWindow.cs</DependentUpon>
     </Compile>
+    <Content Include="DevNotes_Exclude\action func.txt" />
     <Content Include="DevNotes_Exclude\ffmpeg collage.txt" />
+    <EmbeddedResource Include="Images16.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images16.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\24\Card Image.png" />
+    <EmbeddedResource Include="Images\16\Accented.png" />
+    <EmbeddedResource Include="Images\16\BBM.png" />
+    <EmbeddedResource Include="Images\16\Bookmark Favourities-WF.png" />
+    <EmbeddedResource Include="Images\16\Bookmark Sync-WF.png" />
+    <EmbeddedResource Include="Images\16\Branch-Engineering.png" />
+    <EmbeddedResource Include="Images\16\Card Image.png" />
+    <EmbeddedResource Include="Images\16\Circle Pause.png" />
+    <EmbeddedResource Include="Images\16\Circle play-WF.png" />
+    <EmbeddedResource Include="Images\16\Circled Left 01-WF.png" />
+    <EmbeddedResource Include="Images\16\Clipboard-Next-Down.png" />
+    <EmbeddedResource Include="Images\16\Clipboard-WF.png" />
+    <EmbeddedResource Include="Images\16\Close-WF.png" />
+    <EmbeddedResource Include="Images\16\Columns-Next.png" />
+    <EmbeddedResource Include="Images\16\Copy_02.png" />
+    <EmbeddedResource Include="Images\16\CSV-Export.png" />
+    <EmbeddedResource Include="Images\16\Cursor-03-WF.png" />
+    <EmbeddedResource Include="Images\16\Cut-WF%281%29.png" />
+    <EmbeddedResource Include="Images\16\Cut-WF.png" />
+    <EmbeddedResource Include="Images\16\Cut.png" />
+    <EmbeddedResource Include="Images\16\Data previous-WF.png" />
+    <EmbeddedResource Include="Images\16\Data setting-WF.png" />
+    <EmbeddedResource Include="Images\16\Data Split-WF.png" />
+    <EmbeddedResource Include="Images\16\Data-Merge.png" />
+    <EmbeddedResource Include="Images\16\Data-Split.png" />
+    <EmbeddedResource Include="Images\16\Download.png" />
+    <EmbeddedResource Include="Images\16\Exit-02-WF.png" />
+    <EmbeddedResource Include="Images\16\Expand-03-WF.png" />
+    <EmbeddedResource Include="Images\16\Expand-WF.png" />
+    <EmbeddedResource Include="Images\16\Eye - 03.png" />
+    <EmbeddedResource Include="Images\16\Favorite Delete-WF.png" />
+    <EmbeddedResource Include="Images\16\Favorite Edit-WF.png" />
+    <EmbeddedResource Include="Images\16\Favorite Info-WF.png" />
+    <EmbeddedResource Include="Images\16\Favorite Next-WF.png" />
+    <EmbeddedResource Include="Images\16\Favorite Ok-WF.png" />
+    <EmbeddedResource Include="Images\16\Favorite Search-WF.png" />
+    <EmbeddedResource Include="Images\16\Favourites Help.png" />
+    <EmbeddedResource Include="Images\16\File Download-WF.png" />
+    <EmbeddedResource Include="Images\16\File edit.png" />
+    <EmbeddedResource Include="Images\16\File Sync.png" />
+    <EmbeddedResource Include="Images\16\Film-01-WF.png" />
+    <EmbeddedResource Include="Images\16\Film-Shooting-01.png" />
+    <EmbeddedResource Include="Images\16\Filter-10-WF.png" />
+    <EmbeddedResource Include="Images\16\Folder Add.png" />
+    <EmbeddedResource Include="Images\16\Folder Search-WF.png" />
+    <EmbeddedResource Include="Images\16\Folder-Add-01.png" />
+    <EmbeddedResource Include="Images\16\Folder-Add-02.png" />
+    <EmbeddedResource Include="Images\16\Folder-Add-04.png" />
+    <EmbeddedResource Include="Images\16\Folder-Add.png" />
+    <EmbeddedResource Include="Images\16\Folder-Copy.png" />
+    <EmbeddedResource Include="Images\16\Folder-Movie-03.png" />
+    <EmbeddedResource Include="Images\16\Folder-Music-01.png" />
+    <EmbeddedResource Include="Images\16\Folder-New.png" />
+    <EmbeddedResource Include="Images\16\Folder-Picture.png" />
+    <EmbeddedResource Include="Images\16\Folder-Refresh.png" />
+    <EmbeddedResource Include="Images\16\Folder-Upload-01.png" />
+    <EmbeddedResource Include="Images\16\Folder-Zoom-In.png" />
+    <EmbeddedResource Include="Images\16\Forward-1-WF.png" />
+    <EmbeddedResource Include="Images\16\Gauge - 02.png" />
+    <EmbeddedResource Include="Images\16\Gauge - 03.png" />
+    <EmbeddedResource Include="Images\16\Gauge - 04.png" />
+    <EmbeddedResource Include="Images\16\Help.png" />
+    <EmbeddedResource Include="Images\16\House-03-WF.png" />
+    <EmbeddedResource Include="Images\16\Maximize  -04.png" />
+    <EmbeddedResource Include="Images\16\Maximize - 01.png" />
+    <EmbeddedResource Include="Images\16\Maximize - 02.png" />
+    <EmbeddedResource Include="Images\16\Media Control-04-WF%281%29.png" />
+    <EmbeddedResource Include="Images\16\Media Control-04-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Control-05-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Control-06-WF%281%29.png" />
+    <EmbeddedResource Include="Images\16\Media Control-06-WF%282%29.png" />
+    <EmbeddedResource Include="Images\16\Media Control-06-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Control-07-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Control-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Fast Backward-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Fast Forward-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Pause-WF.png" />
+    <EmbeddedResource Include="Images\16\Media Play1-WF.png" />
+    <EmbeddedResource Include="Images\16\Media-Pause.png" />
+    <EmbeddedResource Include="Images\16\Media-Play.png" />
+    <EmbeddedResource Include="Images\16\Minimize - 01.png" />
+    <EmbeddedResource Include="Images\16\Movie Delete-WF.png" />
+    <EmbeddedResource Include="Images\16\Movie Delete.png" />
+    <EmbeddedResource Include="Images\16\Movie Favorite-WF.png" />
+    <EmbeddedResource Include="Images\16\Movie Help.png" />
+    <EmbeddedResource Include="Images\16\Movie Lock1-WF.png" />
+    <EmbeddedResource Include="Images\16\Movie Next-WF%281%29.png" />
+    <EmbeddedResource Include="Images\16\Movie Next-WF.png" />
+    <EmbeddedResource Include="Images\16\Movie Ok.png" />
+    <EmbeddedResource Include="Images\16\Movie Settings-WF.png" />
+    <EmbeddedResource Include="Images\16\Movie Settings.png" />
+    <EmbeddedResource Include="Images\16\MS Config Manage-02-WF.png" />
+    <EmbeddedResource Include="Images\16\Next-02-WF%281%29.png" />
+    <EmbeddedResource Include="Images\16\Next-02-WF.png" />
+    <EmbeddedResource Include="Images\16\Next.png" />
+    <EmbeddedResource Include="Images\16\PayPal.png" />
+    <EmbeddedResource Include="Images\16\Previous-WF.png" />
+    <EmbeddedResource Include="Images\16\Rectangle-WF.png" />
+    <EmbeddedResource Include="Images\16\Restore-01.png" />
+    <EmbeddedResource Include="Images\16\Restore-02.png" />
+    <EmbeddedResource Include="Images\16\Search-Folder-New.png" />
+    <EmbeddedResource Include="Images\16\Settings - 08.png" />
+    <EmbeddedResource Include="Images\16\Settings.png" />
+    <EmbeddedResource Include="Images\16\Stop-WF.png" />
+    <EmbeddedResource Include="Images\16\Stop.png" />
+    <EmbeddedResource Include="Images\16\Tag Remove-WF.png" />
+    <EmbeddedResource Include="Images\16\Tag-WF.png" />
+    <EmbeddedResource Include="Images\16\To do list - 02.png" />
+    <EmbeddedResource Include="Images\16\USB.png" />
+    <EmbeddedResource Include="Images\16\User Favourite-01-WF.png" />
+    <EmbeddedResource Include="Images\16\User Profile 1-WF.png" />
+    <EmbeddedResource Include="Images\16\Volume-High.png" />
+    <EmbeddedResource Include="Images\16\Volume-Low.png" />
+    <EmbeddedResource Include="Images\16\Volume-Mute.png" />
+    <EmbeddedResource Include="Images\16\Volume-Slider.png" />
+    <EmbeddedResource Include="Images\16\Warning -WF.png" />
+    <EmbeddedResource Include="Images\16\Warning 2 -WF.png" />
+    <EmbeddedResource Include="Images\16\Web Cam-WF.png" />
+    <EmbeddedResource Include="Images\16\Workflow-01-WF.png" />
+    <EmbeddedResource Include="Images\16\Zip file-03-WF.png" />
+    <EmbeddedResource Include="Images\16\Zoom In_02.png" />
+    <EmbeddedResource Include="Images\16\Zoom Out_01.png" />
+    <EmbeddedResource Include="Images\16\Zoom-Scroll.png" />
+    <EmbeddedResource Include="Images\16\Zooming.png" />
+    <Content Include="DevNotes_Exclude\record screeen.txt" />
+    <EmbeddedResource Include="Images\16\Pictures-WF.png" />
+    <EmbeddedResource Include="Images\24\Accented.png" />
+    <Content Include="Images\24\Circled Left 01-WF.png" />
+    <Content Include="Images\24\Eye - 03.png" />
     <Content Include="Testmedia\test.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
