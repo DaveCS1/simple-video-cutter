@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls;
 
 namespace SimpleVideoCutter.Controls
 {
@@ -15,6 +16,7 @@ namespace SimpleVideoCutter.Controls
         public ucTrimmedVideo()
         {
             InitializeComponent();
+            ThemeResolutionService.ApplyThemeToControlTree(this, "FluentDark");
         }
     }
 }

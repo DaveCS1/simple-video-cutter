@@ -561,6 +561,11 @@ NextFrame();
 
         }
 
+        private void radCheckedListBox2_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         #endregion

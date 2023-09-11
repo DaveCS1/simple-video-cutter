@@ -30,14 +30,27 @@ namespace SimpleVideoCutter.Controls
         private void InitializeComponent()
         {
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // radButton1
+            // 
+            this.radButton1.Location = new System.Drawing.Point(416, 146);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(137, 30);
+            this.radButton1.TabIndex = 0;
+            this.radButton1.Text = "radButton1";
+            this.radButton1.ThemeName = "FluentDark";
             // 
             // ucTrimmedVideo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.radButton1);
             this.Name = "ucTrimmedVideo";
             this.Size = new System.Drawing.Size(1125, 758);
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -45,5 +58,6 @@ namespace SimpleVideoCutter.Controls
         #endregion
 
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
+        private Telerik.WinControls.UI.RadButton radButton1;
     }
 }
