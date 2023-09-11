@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem1 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 4");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem2 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 5");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem3 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 6");
-            Telerik.WinControls.UI.ListViewDataItem listViewDataItem4 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 7");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem5 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 4");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem6 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 5");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem7 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 6");
+            Telerik.WinControls.UI.ListViewDataItem listViewDataItem8 = new Telerik.WinControls.UI.ListViewDataItem("ListViewItem 7");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadMainForm));
-            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem8 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem9 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem10 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadCheckedListDataItem radCheckedListDataItem1 = new Telerik.WinControls.UI.RadCheckedListDataItem();
             Telerik.WinControls.UI.RadCheckedListDataItem radCheckedListDataItem2 = new Telerik.WinControls.UI.RadCheckedListDataItem();
             Telerik.WinControls.UI.RadCheckedListDataItem radCheckedListDataItem3 = new Telerik.WinControls.UI.RadCheckedListDataItem();
@@ -169,9 +169,6 @@
             this.radPageViewTrimmedVideos = new Telerik.WinControls.UI.RadPageViewPage();
             this.ucTrimmedVideo1 = new SimpleVideoCutter.Controls.ucTrimmedVideo();
             this.radPageViewTagsAndCategories = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radBtnAddTag = new Telerik.WinControls.UI.RadButton();
-            this.radTextBoxControl1 = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radCheckedDropDownList1 = new Telerik.WinControls.UI.RadCheckedDropDownList();
             this.radPageViewHelpAndDemos = new Telerik.WinControls.UI.RadPageViewPage();
             this.radListView1 = new Telerik.WinControls.UI.RadListView();
             this.radCommandBar1 = new Telerik.WinControls.UI.RadCommandBar();
@@ -203,6 +200,9 @@
             this.toolTipTopVideoPlayerControls = new System.Windows.Forms.ToolTip(this.components);
             this.commandBarRowElement9 = new Telerik.WinControls.UI.CommandBarRowElement();
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
+            this.radCheckedDropDownList1 = new Telerik.WinControls.UI.RadCheckedDropDownList();
+            this.radTextBoxControl1 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radBtnAddTag = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -289,12 +289,12 @@
             this.radPageViewViewHistory.SuspendLayout();
             this.radPageViewTrimmedVideos.SuspendLayout();
             this.radPageViewTagsAndCategories.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTag)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownList1)).BeginInit();
             this.radPageViewHelpAndDemos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radListView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownList1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -336,7 +336,7 @@
             this.radPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView1.Location = new System.Drawing.Point(0, 54);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.radPageViewTrimmedVideos;
+            this.radPageView1.SelectedPage = this.radPageViewTagsAndCategories;
             this.radPageView1.Size = new System.Drawing.Size(1016, 657);
             this.radPageView1.TabIndex = 2;
             this.radPageView1.ThemeName = "FluentDark";
@@ -500,15 +500,15 @@
             // 
             this.radCheckedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radCheckedListBox1.GroupItemSize = new System.Drawing.Size(200, 28);
-            listViewDataItem1.Text = "ListViewItem 4";
-            listViewDataItem2.Text = "ListViewItem 5";
-            listViewDataItem3.Text = "ListViewItem 6";
-            listViewDataItem4.Text = "ListViewItem 7";
+            listViewDataItem5.Text = "ListViewItem 4";
+            listViewDataItem6.Text = "ListViewItem 5";
+            listViewDataItem7.Text = "ListViewItem 6";
+            listViewDataItem8.Text = "ListViewItem 7";
             this.radCheckedListBox1.Items.AddRange(new Telerik.WinControls.UI.ListViewDataItem[] {
-            listViewDataItem1,
-            listViewDataItem2,
-            listViewDataItem3,
-            listViewDataItem4});
+            listViewDataItem5,
+            listViewDataItem6,
+            listViewDataItem7,
+            listViewDataItem8});
             this.radCheckedListBox1.ItemSize = new System.Drawing.Size(200, 28);
             this.radCheckedListBox1.Location = new System.Drawing.Point(0, 0);
             this.radCheckedListBox1.Name = "radCheckedListBox1";
@@ -869,16 +869,16 @@
             // radListControlCutsForThisVideo
             // 
             this.radListControlCutsForThisVideo.ItemHeight = 17;
-            radListDataItem1.Text = "ListItem 1";
-            radListDataItem2.Text = "ListItem 2";
-            radListDataItem3.Text = "ListItem 3";
-            radListDataItem4.Text = "ListItem 4";
-            radListDataItem5.Text = "ListItem 5";
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem1);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem2);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem3);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem4);
-            this.radListControlCutsForThisVideo.Items.Add(radListDataItem5);
+            radListDataItem6.Text = "ListItem 1";
+            radListDataItem7.Text = "ListItem 2";
+            radListDataItem8.Text = "ListItem 3";
+            radListDataItem9.Text = "ListItem 4";
+            radListDataItem10.Text = "ListItem 5";
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem6);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem7);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem8);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem9);
+            this.radListControlCutsForThisVideo.Items.Add(radListDataItem10);
             this.radListControlCutsForThisVideo.Location = new System.Drawing.Point(632, 7);
             this.radListControlCutsForThisVideo.Name = "radListControlCutsForThisVideo";
             this.radListControlCutsForThisVideo.Size = new System.Drawing.Size(176, 30);
@@ -1628,58 +1628,7 @@
             this.radPageViewTagsAndCategories.Name = "radPageViewTagsAndCategories";
             this.radPageViewTagsAndCategories.Size = new System.Drawing.Size(1004, 615);
             this.radPageViewTagsAndCategories.Text = "radPageViewTagsAndCategories";
-            // 
-            // radBtnAddTag
-            // 
-            this.radBtnAddTag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radBtnAddTag.Image = global::SimpleVideoCutter.VideoControlIcons24.Expand_03_WF;
-            this.radBtnAddTag.Location = new System.Drawing.Point(725, 125);
-            this.radBtnAddTag.Name = "radBtnAddTag";
-            this.radBtnAddTag.Size = new System.Drawing.Size(137, 30);
-            this.radBtnAddTag.TabIndex = 2;
-            this.radBtnAddTag.Text = "Done";
-            this.radBtnAddTag.ThemeName = "FluentDark";
-            // 
-            // radTextBoxControl1
-            // 
-            this.radTextBoxControl1.EmbeddedLabelText = "Add Tag";
-            this.radTextBoxControl1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radTextBoxControl1.Location = new System.Drawing.Point(165, 35);
-            this.radTextBoxControl1.Name = "radTextBoxControl1";
-            this.radTextBoxControl1.ShowClearButton = true;
-            this.radTextBoxControl1.ShowEmbeddedLabel = true;
-            this.radTextBoxControl1.Size = new System.Drawing.Size(697, 40);
-            this.radTextBoxControl1.TabIndex = 1;
-            this.radTextBoxControl1.ThemeName = "FluentDark";
-            // 
-            // radCheckedDropDownList1
-            // 
-            this.radCheckedDropDownList1.DropDownAnimationEnabled = true;
-            radCheckedListDataItem1.Text = "CheckedItem 1";
-            radCheckedListDataItem2.Text = "CheckedItem 2";
-            radCheckedListDataItem3.Text = "CheckedItem 3";
-            radCheckedListDataItem4.Text = "CheckedItem 4";
-            radCheckedListDataItem5.Text = "CheckedItem 5";
-            radCheckedListDataItem6.Text = "CheckedItem 6";
-            radCheckedListDataItem7.Text = "CheckedItem 7";
-            descriptionTextCheckedListDataItem1.DescriptionText = "sdfsdf";
-            descriptionTextCheckedListDataItem1.Text = "CheckedItem 8";
-            descriptionTextCheckedListDataItem2.DescriptionText = "dfsdf";
-            descriptionTextCheckedListDataItem2.Text = "CheckedItem 9";
-            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem1);
-            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem2);
-            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem3);
-            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem4);
-            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem5);
-            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem6);
-            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem7);
-            this.radCheckedDropDownList1.Items.Add(descriptionTextCheckedListDataItem1);
-            this.radCheckedDropDownList1.Items.Add(descriptionTextCheckedListDataItem2);
-            this.radCheckedDropDownList1.Location = new System.Drawing.Point(165, 81);
-            this.radCheckedDropDownList1.Name = "radCheckedDropDownList1";
-            this.radCheckedDropDownList1.Size = new System.Drawing.Size(697, 24);
-            this.radCheckedDropDownList1.TabIndex = 0;
-            this.radCheckedDropDownList1.ThemeName = "FluentDark";
+            this.radPageViewTagsAndCategories.Paint += new System.Windows.Forms.PaintEventHandler(this.radPageViewTagsAndCategories_Paint);
             // 
             // radPageViewHelpAndDemos
             // 
@@ -1951,6 +1900,58 @@
             this.commandBarButton4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.commandBarButton4.UseCompatibleTextRendering = false;
             // 
+            // radCheckedDropDownList1
+            // 
+            this.radCheckedDropDownList1.DropDownAnimationEnabled = true;
+            radCheckedListDataItem1.Text = "CheckedItem 1";
+            radCheckedListDataItem2.Text = "CheckedItem 2";
+            radCheckedListDataItem3.Text = "CheckedItem 3";
+            radCheckedListDataItem4.Text = "CheckedItem 4";
+            radCheckedListDataItem5.Text = "CheckedItem 5";
+            radCheckedListDataItem6.Text = "CheckedItem 6";
+            radCheckedListDataItem7.Text = "CheckedItem 7";
+            descriptionTextCheckedListDataItem1.DescriptionText = "sdfsdf";
+            descriptionTextCheckedListDataItem1.Text = "CheckedItem 8";
+            descriptionTextCheckedListDataItem2.DescriptionText = "dfsdf";
+            descriptionTextCheckedListDataItem2.Text = "CheckedItem 9";
+            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem1);
+            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem2);
+            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem3);
+            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem4);
+            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem5);
+            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem6);
+            this.radCheckedDropDownList1.Items.Add(radCheckedListDataItem7);
+            this.radCheckedDropDownList1.Items.Add(descriptionTextCheckedListDataItem1);
+            this.radCheckedDropDownList1.Items.Add(descriptionTextCheckedListDataItem2);
+            this.radCheckedDropDownList1.Location = new System.Drawing.Point(165, 81);
+            this.radCheckedDropDownList1.Name = "radCheckedDropDownList1";
+            this.radCheckedDropDownList1.Size = new System.Drawing.Size(697, 24);
+            this.radCheckedDropDownList1.TabIndex = 0;
+            this.radCheckedDropDownList1.ThemeName = "FluentDark";
+            // 
+            // radTextBoxControl1
+            // 
+            this.radTextBoxControl1.EmbeddedLabelText = "Add Tag- Add  multiple tags with , (comma) - Car,House,Pet, Boat";
+            this.radTextBoxControl1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBoxControl1.Location = new System.Drawing.Point(165, 35);
+            this.radTextBoxControl1.Name = "radTextBoxControl1";
+            this.radTextBoxControl1.ShowClearButton = true;
+            this.radTextBoxControl1.ShowEmbeddedLabel = true;
+            this.radTextBoxControl1.Size = new System.Drawing.Size(697, 40);
+            this.radTextBoxControl1.TabIndex = 1;
+            this.radTextBoxControl1.ThemeName = "FluentDark";
+            // 
+            // radBtnAddTag
+            // 
+            this.radBtnAddTag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radBtnAddTag.Image = global::SimpleVideoCutter.VideoControlIcons24.Expand_03_WF;
+            this.radBtnAddTag.Location = new System.Drawing.Point(725, 125);
+            this.radBtnAddTag.Name = "radBtnAddTag";
+            this.radBtnAddTag.Size = new System.Drawing.Size(137, 30);
+            this.radBtnAddTag.TabIndex = 2;
+            this.radBtnAddTag.Text = "Done";
+            this.radBtnAddTag.ThemeName = "FluentDark";
+            // 
             // RadMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2070,12 +2071,12 @@
             this.radPageViewTrimmedVideos.ResumeLayout(false);
             this.radPageViewTagsAndCategories.ResumeLayout(false);
             this.radPageViewTagsAndCategories.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTag)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownList1)).EndInit();
             this.radPageViewHelpAndDemos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radListView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCommandBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownList1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2235,9 +2236,9 @@
         private Telerik.WinControls.UI.RadCheckBox radChkLogHistory;
         private Telerik.WinControls.UI.RadButton radBtnBookMark;
         private Telerik.WinControls.UI.RadButton radButton5;
-        private Telerik.WinControls.UI.RadCheckedDropDownList radCheckedDropDownList1;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl1;
-        private Telerik.WinControls.UI.RadButton radBtnAddTag;
         private Controls.ucTrimmedVideo ucTrimmedVideo1;
+        private Telerik.WinControls.UI.RadButton radBtnAddTag;
+        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl1;
+        private Telerik.WinControls.UI.RadCheckedDropDownList radCheckedDropDownList1;
     }
 }

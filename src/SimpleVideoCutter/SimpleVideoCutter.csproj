@@ -111,6 +111,12 @@
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlExtensions.cs" />
+    <Compile Include="Controls\ctlTagsCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlTagsCategories.Designer.cs">
+      <DependentUpon>ctlTagsCategories.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ucTrimmedVideo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </Compile>
     <Content Include="DevNotes_Exclude\action func.txt" />
     <Content Include="DevNotes_Exclude\ffmpeg collage.txt" />
+    <EmbeddedResource Include="Controls\ctlTagsCategories.resx">
+      <DependentUpon>ctlTagsCategories.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images16.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Images16.Designer.cs</LastGenOutput>
@@ -352,8 +361,12 @@
     <Content Include="DevNotes_Exclude\record screeen.txt" />
     <EmbeddedResource Include="Images\16\Pictures-WF.png" />
     <EmbeddedResource Include="Images\24\Accented.png" />
+    <EmbeddedResource Include="Images\16\Check Mark.png" />
+    <EmbeddedResource Include="Images\16\Save-WF.png" />
+    <EmbeddedResource Include="Images\24\Check Mark.png" />
     <Content Include="Images\24\Circled Left 01-WF.png" />
     <Content Include="Images\24\Eye - 03.png" />
+    <EmbeddedResource Include="Images\24\Save-WF.png" />
     <Content Include="Testmedia\test.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

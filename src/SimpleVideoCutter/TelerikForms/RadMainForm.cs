@@ -566,6 +566,11 @@ NextFrame();
 
         }
 
+        private void radPageViewTagsAndCategories_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
 
         #endregion
