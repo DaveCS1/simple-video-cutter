@@ -8,8 +8,13 @@ namespace SimpleVideoCutter
 {
     public class VideoCutterSettings
     {
-        private const string configFile = "config.json";
+        //Start additions
+        public static string DatabasePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data\\VideoCutterData.db");
+        public static string CacheFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Cache\\");
+        public static string DefaultBlankVideo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources\\BlankVideo.mp4");
 
+        //End additions
+        private const string configFile = "config.json";
         public string DefaultInitialDirectory { get; set; } = "{UserVideos}";
         public string OutputDirectory { get; set; } = "{UserVideos}";
         public string OutputFilePattern { get; set; } = "{FileDate}-{FileNameWithoutExtension}.{Timestamp}{FileExtension}";

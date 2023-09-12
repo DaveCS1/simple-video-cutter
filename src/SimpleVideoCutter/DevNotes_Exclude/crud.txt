@@ -1,0 +1,154 @@
+Here's a C# ADO.NET SQLite CRUD (Create, Read, Update, Delete) sample with error handling. In this example, we'll use the `System.Data.SQLite` package to interact with the SQLite database. Ensure that you have this package installed in your project through NuGet.
+
+```csharp
+using System;
+using System.Data;
+using System.Data.SQLite;
+
+public class SQLiteCRUDSample
+{
+    private readonly string connectionString;
+
+    public SQLiteCRUDSample(string dbFilePath)
+    {
+        connectionString = $"Data Source={dbFilePath};Version=3;";
+    }
+
+    public void CreateRecord(string name, int age)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                using (SQLiteCommand cmd = new SQLiteCommand(connection))
+                {
+                    cmd.CommandText = "INSERT INTO People (Name, Age) VALUES (@Name, @Age)";
+                    cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Age", age);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                        Console.WriteLine("Record added successfully.");
+                    else
+                        Console.WriteLine("Failed to add a new record.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating record: {ex.Message}");
+            }
+        }
+    }
+
+    public void ReadRecords()
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM People", connection))
+                {
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Console.WriteLine($"ID: {reader["ID"]}, Name: {reader["Name"]}, Age: {reader["Age"]}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error reading records: {ex.Message}");
+            }
+        }
+    }
+
+    public void UpdateRecord(int id, string newName, int newAge)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                using (SQLiteCommand cmd = new SQLiteCommand(connection))
+                {
+                    cmd.CommandText = "UPDATE People SET Name = @Name, Age = @Age WHERE ID = @ID";
+                    cmd.Parameters.AddWithValue("@ID", id);
+                    cmd.Parameters.AddWithValue("@Name", newName);
+                    cmd.Parameters.AddWithValue("@Age", newAge);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                        Console.WriteLine("Record updated successfully.");
+                    else
+                        Console.WriteLine("Failed to update the record.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error updating record: {ex.Message}");
+            }
+        }
+    }
+
+    public void DeleteRecord(int id)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                using (SQLiteCommand cmd = new SQLiteCommand(connection))
+                {
+                    cmd.CommandText = "DELETE FROM People WHERE ID = @ID";
+                    cmd.Parameters.AddWithValue("@ID", id);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                        Console.WriteLine("Record deleted successfully.");
+                    else
+                        Console.WriteLine("Failed to delete the record.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error deleting record: {ex.Message}");
+            }
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Provide the path to your SQLite database file
+        string dbFilePath = "YourDatabase.db";
+        SQLiteCRUDSample sqliteCrud = new SQLiteCRUDSample(dbFilePath);
+
+        // Create a record
+        sqliteCrud.CreateRecord("John Doe", 30);
+
+        // Read records
+        sqliteCrud.ReadRecords();
+
+        // Update a record
+        sqliteCrud.UpdateRecord(1, "Updated Name", 35);
+
+        // Delete a record
+        sqliteCrud.DeleteRecord(1);
+    }
+}
+```
+
+This code demonstrates how to perform basic CRUD operations in SQLite using ADO.NET, along with proper error handling to catch and display exceptions. Make sure to replace `"YourDatabase.db"` with the path to your SQLite database file.

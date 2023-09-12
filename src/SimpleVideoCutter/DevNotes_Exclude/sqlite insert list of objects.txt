@@ -1,0 +1,88 @@
+﻿To insert items from a list of objects into an SQLite database using C# and ADO.NET, you can follow these steps:
+
+1. Define your data model class that represents the structure of your database table. For this example, let's assume you have a `Person` class:
+
+```csharp
+public class Person
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+```
+
+2. Create a method to insert the list of objects into the SQLite database:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
+
+public class SQLiteCRUDSample
+{
+    private readonly string connectionString;
+
+    public SQLiteCRUDSample(string dbFilePath)
+    {
+        connectionString = $"Data Source={dbFilePath};Version=3;";
+    }
+
+    public void InsertPeople(List<Person> people)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        {
+            connection.Open();
+
+            using (SQLiteTransaction transaction = connection.BeginTransaction())
+            {
+                try
+                {
+                    foreach (var person in people)
+                    {
+                        using (SQLiteCommand cmd = connection.CreateCommand())
+                        {
+                            cmd.CommandText = "INSERT INTO People (Name, Age) VALUES (@Name, @Age)";
+                            cmd.Parameters.AddWithValue("@Name", person.Name);
+                            cmd.Parameters.AddWithValue("@Age", person.Age);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+
+                    transaction.Commit();
+                    Console.WriteLine("Insertion successful.");
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    Console.WriteLine($"Error inserting records: {ex.Message}");
+                }
+            }
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Provide the path to your SQLite database file
+        string dbFilePath = "YourDatabase.db";
+
+        // Create a list of Person objects
+        List<Person> people = new List<Person>
+        {
+            new Person { Name = "John Doe", Age = 30 },
+            new Person { Name = "Jane Smith", Age = 25 },
+            new Person { Name = "Bob Johnson", Age = 35 }
+        };
+
+        SQLiteCRUDSample sqliteCrud = new SQLiteCRUDSample(dbFilePath);
+
+        // Insert the list of people into the database
+        sqliteCrud.InsertPeople(people);
+    }
+}
+```
+
+In this example, we create a `SQLiteCRUDSample` class that contains a method `InsertPeople` which takes a list of `Person` objects as a parameter. Inside the method, we iterate through the list and insert each `Person` object into the SQLite database table named "People." The method uses a transaction to ensure that all inserts are atomic and either all succeed or all fail. Replace `"YourDatabase.db"` with the path to your SQLite database file.

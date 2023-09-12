@@ -28,7 +28,8 @@ namespace SimpleVideoCutter.TelerikForms
             //var u = new Util.tile();
             //TempControlTest.RadFormWaitingBar RadFormWaitingBar = new TempControlTest.RadFormWaitingBar();
             //RadFormWaitingBar.Show();
-
+            var t = new DAL.AddTags();
+            var v = t.tagsList();
 
 
        //frmVideoControls frmVideoControls = new frmVideoControls();
@@ -567,6 +568,11 @@ NextFrame();
         }
 
         private void radPageViewTagsAndCategories_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radBtnAddTag_Click(object sender, EventArgs e)
         {
 
         }

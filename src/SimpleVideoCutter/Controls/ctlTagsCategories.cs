@@ -18,5 +18,14 @@ namespace SimpleVideoCutter.Controls
             InitializeComponent();
             ThemeResolutionService.ApplyThemeToControlTree(this, "FluentDark");
         }
+
+
+        
+        private void ctlTagsCategories_Load(object sender, EventArgs e)
+        {
+            List<string> tags = new List<string>() { "tag", "tag1", "tag2", "tag3", "tag4", "tag5", "tag6", "tag7", };
+            radCheckedDropDownList1.DataSource = tags;
+            
+        }
     }
 }
