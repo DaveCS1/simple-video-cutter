@@ -25,12 +25,8 @@ namespace SimpleVideoCutter.Controls
         private  DatabaseHelper db;
         private void ctlTagsCategories_Load(object sender, EventArgs e)
         {
-            //List<string> tags = new List<string>() { "tag", "tag1", "tag2", "tag3", "tag4", "tag5", "tag6", "tag7", };
             radCheckedDropDownList1.DataSource = GetAllTags();
-            //GetAllTags();
             db = new DatabaseHelper($"Data Source={VideoCutterSettings.DatabasePath};Version=3;");
-
-                      
         }
 
     
@@ -39,7 +35,7 @@ namespace SimpleVideoCutter.Controls
       /// Add Tag(s) accepts list of strings which is a comma seperated list of strings, the tags.
       /// </summary>
       /// <param name="tagListFromAddTagsTextBox"></param>
-        static void AddTagList1(List<string> tagListFromAddTagsTextBox)
+        static void AddTagList(List<string> tagListFromAddTagsTextBox)
         {
             string dbFilePath = VideoCutterSettings.DatabasePath;
             using (SQLiteConnection connection = new SQLiteConnection($"Data Source={dbFilePath};Version=3;"))
@@ -82,86 +78,7 @@ namespace SimpleVideoCutter.Controls
             }
         }
 
-
-
-        //public List<Tag> GetAllTags()
-
-        //{
-        //    using (SQLiteConnection cn = new SQLiteConnection("Data Source=" + VideoCutterSettings.DatabasePath + "; Version=3"))
-        //    {
-
-        //        cn.Open();
-        //        var cmd = new SQLiteCommand(cn);
-
-        //        cmd.CommandText = "Select * From Tags";
-
-        //        using (SQLiteDataReader rdr = cmd.ExecuteReader())
-        //        {
-        //            try
-        //            {
-        //                var list = new List<Tag>();
-
-        //                while (rdr.Read())
-        //                {
-        //                    if (!rdr.IsDBNull(1))
-        //                    {
-        //                        list.Add(new Tag
-        //                        {
-        //                            Id = rdr.GetInt32(0),
-        //                            TagValue = rdr.GetString(1)
-
-        //                        });
-
-        //                    }
-
-        //                }
-
-        //                return list;
-
-        //            }
-        //            catch (Exception ex)
-        //            {
-
-        //                Console.WriteLine(ex.Message + ex.StackTrace);
-        //                return null;
-        //            }
-
-
-        //        }
-
-        //    }
-
-        //}
-        //public List<Tag> GetAllTags()
-        //{
-        //    string connectionString = "Data Source=" + VideoCutterSettings.DatabasePath + "; Version=3";
-
-        //    using (SQLiteConnection cn = new SQLiteConnection(connectionString))
-        //    {
-        //        cn.Open();
-
-        //        using (SQLiteCommand cmd = cn.CreateCommand())
-        //        {
-        //            cmd.CommandText = "SELECT Id, TagValue FROM Tags WHERE TagValue IS NOT NULL";
-
-        //            using (SQLiteDataReader rdr = cmd.ExecuteReader())
-        //            {
-        //                var tags = new List<Tag>();
-
-        //                while (rdr.Read())
-        //                {
-        //                    tags.Add(new Tag
-        //                    {
-        //                        Id = rdr.GetInt32(0),
-        //                        TagValue = rdr.GetString(1)
-        //                    });
-        //                }
-
-        //                return tags;
-        //            }
-        //        }
-        //    }
-        //}
+     
         public List<Tag> GetAllTags()
         {
             try
@@ -196,7 +113,7 @@ namespace SimpleVideoCutter.Controls
             catch (Exception ex)
             {
                 // Handle the exception appropriately, e.g., throw, log, or return an empty list
-               
+                Console.WriteLine("Error fetching tags: " + ex.Message, ex);
                 throw new Exception("Error fetching tags: " + ex.Message, ex);
             }
         }
@@ -225,21 +142,13 @@ namespace SimpleVideoCutter.Controls
                     .Select(entry => entry.Trim())  // Trim to remove leading/trailing spaces
                     .Where(entry => !string.IsNullOrWhiteSpace(entry))
                     .ToList();
-
-
-
-                var pp = tagsFromTextBox;
-                AddTagList1(pp);
+              
+                AddTagList1(tagsFromTextBox);
                 //radCheckedDropDownList1.DataSource = GetAllTags();
                 Action safeRefresh = delegate { this.radCheckedDropDownList1.DataSource = GetAllTags(); };
                 this.Invoke(safeRefresh);
                 // Display the result (for demonstration purposes)
                 radTextBoxCtlAddTags.Clear();
-
-
-                //  AddTagList(list);
-
-
             }
         }
         /// <summary>
@@ -277,7 +186,7 @@ namespace SimpleVideoCutter.Controls
             catch (Exception ex)
             {
                 // Handle the exception appropriately, e.g., throw, log, or display an error message
-                Console.WriteLine("Error updating tag: " + newTag + id + + ex.Message);
+                Console.WriteLine("Error updating tag: " + newTag + id  + ex.Message);
             }
         }
 
