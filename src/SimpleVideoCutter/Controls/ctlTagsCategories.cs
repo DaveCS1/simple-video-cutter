@@ -25,16 +25,22 @@ namespace SimpleVideoCutter.Controls
         private  DatabaseHelper db;
         private void ctlTagsCategories_Load(object sender, EventArgs e)
         {
-            radCheckedDropDownList1.DataSource = GetAllTags();
+            PopulateTags();
             db = new DatabaseHelper($"Data Source={VideoCutterSettings.DatabasePath};Version=3;");
         }
 
-    
+        private void PopulateTags()
+        {
+            radCheckedDropDownList1.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
+            radListCtlExistingTags.DataSource = GetAllTags().OrderBy(tag=>tag.TagValue);
+        }
 
-      /// <summary>
-      /// Add Tag(s) accepts list of strings which is a comma seperated list of strings, the tags.
-      /// </summary>
-      /// <param name="tagListFromAddTagsTextBox"></param>
+
+
+        /// <summary>
+        /// Add Tag(s) accepts list of strings which is a comma seperated list of strings, the tags.
+        /// </summary>
+        /// <param name="tagListFromAddTagsTextBox"></param>
         static void AddTagList(List<string> tagListFromAddTagsTextBox)
         {
             string dbFilePath = VideoCutterSettings.DatabasePath;
@@ -143,12 +149,14 @@ namespace SimpleVideoCutter.Controls
                     .Where(entry => !string.IsNullOrWhiteSpace(entry))
                     .ToList();
               
-                AddTagList1(tagsFromTextBox);
-                //radCheckedDropDownList1.DataSource = GetAllTags();
-                Action safeRefresh = delegate { this.radCheckedDropDownList1.DataSource = GetAllTags(); };
-                this.Invoke(safeRefresh);
+                AddTagList(tagsFromTextBox);
+               
+                //Action safeRefresh = delegate { this.radCheckedDropDownList1.DataSource = GetAllTags(); };
+                //this.Invoke(safeRefresh);
+               
                 // Display the result (for demonstration purposes)
                 radTextBoxCtlAddTags.Clear();
+                PopulateTags();
             }
         }
         /// <summary>
