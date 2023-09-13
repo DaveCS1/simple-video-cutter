@@ -168,7 +168,7 @@ namespace SimpleVideoCutter.DAL
         ///list of tags
         ///
 
-        static void AddList(List<string> tagValues1)
+        static void AddTagList(List<string> tagValues1)
         {
             // Provide the path to your SQLite database file
             string dbFilePath = "YourDatabase.db";

@@ -128,7 +128,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABY
-        CwAAAk1TRnQBSQFMAgEBBAEAAUABAgFAAQIBGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
+        CwAAAk1TRnQBSQFMAgEBBAEAAUgBAgFIAQIBGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
         AwABMAMAAQEBAAEgBgABSP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
         /wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AJoAA0oBiwNtAfcDXQHXAzoBYAMDAQRMAANcAd8c/wNH
         AYAQAANHAYAg/wQAA1wBzwMyAVBcAAMqAUADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANH
@@ -199,7 +199,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACK
-        BQAAAk1TRnQBSQFMAgEBAgEAAbgBBAG4AQQBEgEAARIBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFI
+        BQAAAk1TRnQBSQFMAgEBAgEAAcABBAHAAQQBEgEAARIBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFI
         AwABEgMAAQEBAAEgBQABQAEU/wD/AFQAA14B1QMgAS8YAAMgAS8DOwFkAwQBBhgAAzUBVgM1AVYDDgET
         GAADGgEkA1kBxxgAAwgBCwNAAXGQAAT/A38B/gM9AWgDBAEFEAADJgE4BP8DVwG6Aw4BExQACP8DJgE5
         EAADAgEDAzIBUQMrAfwE/xQAAxIBGQNcAckE/5AABP8DOgRhAeQDWwHIAwcBCgwAAyYBOAT/A1YBswNi
@@ -225,11 +225,11 @@
         CAACBwGPAQ8IAAEfAQ8CjwGABwACPwH/Ac8B4AcABP8B8AcABP8B8AcACw==
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1493, 17</value>
-  </metadata>
   <metadata name="toolTipTopVideoPlayerControls.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 60</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1493, 17</value>
   </metadata>
   <data name="toolStripButtonTimelineZoomOut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

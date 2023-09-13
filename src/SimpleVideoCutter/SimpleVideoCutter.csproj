@@ -368,6 +368,7 @@
     <EmbeddedResource Include="Images\16\Save-WF.png" />
     <EmbeddedResource Include="Images\24\Check Mark.png" />
     <Content Include="DevNotes_Exclude\sqlite insert list of objects.txt" />
+    <Content Include="DevNotes_Exclude\textbox comma seperated with linq.txt" />
     <Content Include="Images\24\Circled Left 01-WF.png" />
     <Content Include="Images\24\Eye - 03.png" />
     <EmbeddedResource Include="Images\24\Save-WF.png" />
