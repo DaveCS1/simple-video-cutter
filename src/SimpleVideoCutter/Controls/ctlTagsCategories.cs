@@ -22,17 +22,17 @@ namespace SimpleVideoCutter.Controls
         }
 
 
-        private DatabaseHelper db;
+        //private DatabaseHelper db;
         private void ctlTagsCategories_Load(object sender, EventArgs e)
         {
-            PopulateTags();
-            db = new DatabaseHelper($"Data Source={VideoCutterSettings.DatabasePath};Version=3;");
+            //PopulateTags();
+            //db = new DatabaseHelper($"Data Source={VideoCutterSettings.DatabasePath};Version=3;");
         }
 
         private void PopulateTags()
         {
-            radCheckedDropDownList1.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
-            radListCtlExistingTags.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
+            //radCheckedDropDownList1.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
+            //radListCtlExistingTags.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
         }
 
 
@@ -136,27 +136,27 @@ namespace SimpleVideoCutter.Controls
             if (radTextBoxCtlAddTags.Text.Length > 0)
             {
 
-                //    string s = radTextBoxCtlAddTags.Text.Trim(); //tags;
-                //    string[] values = s.Split(',').Select(sValue => sValue.Trim()).ToArray();
+                ////    string s = radTextBoxCtlAddTags.Text.Trim(); //tags;
+                ////    string[] values = s.Split(',').Select(sValue => sValue.Trim()).ToArray();
 
-                //List<string> list = new List<string>(values.ToList());
+                ////List<string> list = new List<string>(values.ToList());
 
 
-                // Split the input text by commas and remove empty entries using LINQ
-                List<string> tagsFromTextBox = radTextBoxCtlAddTags.Text
-                    .Split(',')
-                    .Select(entry => entry.Trim())  // Trim to remove leading/trailing spaces
-                    .Where(entry => !string.IsNullOrWhiteSpace(entry))
-                    .ToList();
+                //// Split the input text by commas and remove empty entries using LINQ
+                //List<string> tagsFromTextBox = radTextBoxCtlAddTags.Text
+                //    .Split(',')
+                //    .Select(entry => entry.Trim())  // Trim to remove leading/trailing spaces
+                //    .Where(entry => !string.IsNullOrWhiteSpace(entry))
+                //    .ToList();
 
-                AddTagList(tagsFromTextBox);
+                //AddTagList(tagsFromTextBox);
 
-                //Action safeRefresh = delegate { this.radCheckedDropDownList1.DataSource = GetAllTags(); };
-                //this.Invoke(safeRefresh);
+                ////Action safeRefresh = delegate { this.radCheckedDropDownList1.DataSource = GetAllTags(); };
+                ////this.Invoke(safeRefresh);
 
-                // Display the result (for demonstration purposes)
-                radTextBoxCtlAddTags.Clear();
-                PopulateTags();
+                //// Display the result (for demonstration purposes)
+                //radTextBoxCtlAddTags.Clear();
+                //PopulateTags();
             }
         }
         /// <summary>
@@ -164,39 +164,39 @@ namespace SimpleVideoCutter.Controls
         /// </summary>
         /// <param name="newTag"></param>
         /// <param name="id"></param>
-        public void UpdateTag(string newTag, int id)
-        {
-            try
-            {
-                using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + VideoCutterSettings.DatabasePath + "; Version=3"))
-                {
-                    connection.Open();
+        //public void UpdateTag(string newTag, int id)
+        //{
+        //    try
+        //    {
+        //        using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + VideoCutterSettings.DatabasePath + "; Version=3"))
+        //        {
+        //            connection.Open();
 
-                    using (SQLiteCommand command = connection.CreateCommand())
-                    {
-                        command.CommandText = "UPDATE Tags SET Tag = @NewTag WHERE Id = @Id";
-                        command.Parameters.AddWithValue("@NewTag", newTag);
-                        command.Parameters.AddWithValue("@Id", id);
+        //            using (SQLiteCommand command = connection.CreateCommand())
+        //            {
+        //                command.CommandText = "UPDATE Tags SET Tag = @NewTag WHERE Id = @Id";
+        //                command.Parameters.AddWithValue("@NewTag", newTag);
+        //                command.Parameters.AddWithValue("@Id", id);
 
-                        int rowsUpdated = command.ExecuteNonQuery();
+        //                int rowsUpdated = command.ExecuteNonQuery();
 
-                        if (rowsUpdated > 0)
-                        {
-                            Console.WriteLine($"Updated person with ID {id} to '{newTag}'.");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"No records updated for ID {id}.");
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                // Handle the exception appropriately, e.g., throw, log, or display an error message
-                Console.WriteLine("Error updating tag: " + newTag + id + ex.Message);
-            }
-        }
+        //                if (rowsUpdated > 0)
+        //                {
+        //                    Console.WriteLine($"Updated person with ID {id} to '{newTag}'.");
+        //                }
+        //                else
+        //                {
+        //                    Console.WriteLine($"No records updated for ID {id}.");
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Handle the exception appropriately, e.g., throw, log, or display an error message
+        //        Console.WriteLine("Error updating tag: " + newTag + id + ex.Message);
+        //    }
+        //}
 
         //
 
@@ -204,38 +204,38 @@ namespace SimpleVideoCutter.Controls
         /// Delete a tag by tag name
         /// </summary>
         /// <param name="tag"></param>
-        public void DeleteItemByTag(string tag)
-        {
-            try
-            {
-                using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + VideoCutterSettings.DatabasePath + "; Version=3"))
-                {
-                    connection.Open();
+        //public void DeleteItemByTag(string tag)
+        //{
+        //    try
+        //    {
+        //        using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + VideoCutterSettings.DatabasePath + "; Version=3"))
+        //        {
+        //            connection.Open();
 
-                    using (SQLiteCommand command = connection.CreateCommand())
-                    {
-                        command.CommandText = "DELETE FROM Tags WHERE Tag = @Tag";
-                        command.Parameters.AddWithValue("@Tag", tag);
+        //            using (SQLiteCommand command = connection.CreateCommand())
+        //            {
+        //                command.CommandText = "DELETE FROM Tags WHERE Tag = @Tag";
+        //                command.Parameters.AddWithValue("@Tag", tag);
 
-                        int rowsDeleted = command.ExecuteNonQuery();
+        //                int rowsDeleted = command.ExecuteNonQuery();
 
-                        if (rowsDeleted > 0)
-                        {
-                            Console.WriteLine($"Deleted item with tag '{tag}'.");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"No records deleted for tag '{tag}'.");
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                // Handle the exception appropriately, e.g., throw, log, or display an error message
-                Console.WriteLine("Error deleting item: " + tag + ex.Message);
-            }
-        }
+        //                if (rowsDeleted > 0)
+        //                {
+        //                    Console.WriteLine($"Deleted item with tag '{tag}'.");
+        //                }
+        //                else
+        //                {
+        //                    Console.WriteLine($"No records deleted for tag '{tag}'.");
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Handle the exception appropriately, e.g., throw, log, or display an error message
+        //        Console.WriteLine("Error deleting item: " + tag + ex.Message);
+        //    }
+        //}
 
 
 

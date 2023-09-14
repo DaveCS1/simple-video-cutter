@@ -65,7 +65,7 @@ namespace SimpleVideoCutter.Controls
             this.radPageViewTagsCategories.Location = new System.Drawing.Point(0, 0);
             this.radPageViewTagsCategories.Margin = new System.Windows.Forms.Padding(3, 25, 3, 3);
             this.radPageViewTagsCategories.Name = "radPageViewTagsCategories";
-            this.radPageViewTagsCategories.SelectedPage = this.radPageViewPageAddTag;
+            this.radPageViewTagsCategories.SelectedPage = this.radPageViewPageAddCategoriesAndTags;
             this.radPageViewTagsCategories.Size = new System.Drawing.Size(920, 640);
             this.radPageViewTagsCategories.TabIndex = 0;
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageViewTagsCategories.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.Auto;

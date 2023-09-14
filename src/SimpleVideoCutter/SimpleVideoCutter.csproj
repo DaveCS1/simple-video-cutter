@@ -111,6 +111,18 @@
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlExtensions.cs" />
+    <Compile Include="Controls\ctlRightAddTagsCategoryNotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlRightAddTagsCategoryNotes.Designer.cs">
+      <DependentUpon>ctlRightAddTagsCategoryNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlRightSidePanelBookMarkTags.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlRightSidePanelBookMarkTags.Designer.cs">
+      <DependentUpon>ctlRightSidePanelBookMarkTags.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ctlTagsCategories.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -228,8 +240,20 @@
     <Compile Include="Windows\RadDisplayCurrentFilesToPlayWindow.Designer.cs">
       <DependentUpon>RadDisplayCurrentFilesToPlayWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Windows\RadTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\RadTestForm.Designer.cs">
+      <DependentUpon>RadTestForm.cs</DependentUpon>
+    </Compile>
     <Content Include="DevNotes_Exclude\action func.txt" />
     <Content Include="DevNotes_Exclude\ffmpeg collage.txt" />
+    <EmbeddedResource Include="Controls\ctlRightAddTagsCategoryNotes.resx">
+      <DependentUpon>ctlRightAddTagsCategoryNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctlRightSidePanelBookMarkTags.resx">
+      <DependentUpon>ctlRightSidePanelBookMarkTags.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ctlTagsCategories.resx">
       <DependentUpon>ctlTagsCategories.cs</DependentUpon>
     </EmbeddedResource>
@@ -380,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\RadDisplayCurrentFilesToPlayWindow.resx">
       <DependentUpon>RadDisplayCurrentFilesToPlayWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\RadTestForm.resx">
+      <DependentUpon>RadTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Resources\Tag-WF.png" />
     <EmbeddedResource Include="AboutBox.de.resx">

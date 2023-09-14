@@ -25,12 +25,13 @@ namespace SimpleVideoCutter.TelerikForms
             //TempControlTest.frmVideoTrimControls frmVideoTrimControls = new TempControlTest.frmVideoTrimControls();
             //frmVideoTrimControls.Show();
             //var t = new Util.CreateVideoPoster();
-            //var u = new Util.tile();
+            //var u = new Util.tile();  
             //TempControlTest.RadFormWaitingBar RadFormWaitingBar = new TempControlTest.RadFormWaitingBar();
             //RadFormWaitingBar.Show();
             var t = new DAL.AddTags();
             var v = t.tagsList();
-
+            Windows.RadTestForm radTestForm = new Windows.RadTestForm();
+            radTestForm.Show();
 
        //frmVideoControls frmVideoControls = new frmVideoControls();
         }
