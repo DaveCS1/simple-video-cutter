@@ -22,7 +22,7 @@ namespace SimpleVideoCutter.Controls
         }
 
 
-        private  DatabaseHelper db;
+        private DatabaseHelper db;
         private void ctlTagsCategories_Load(object sender, EventArgs e)
         {
             PopulateTags();
@@ -32,7 +32,7 @@ namespace SimpleVideoCutter.Controls
         private void PopulateTags()
         {
             radCheckedDropDownList1.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
-            radListCtlExistingTags.DataSource = GetAllTags().OrderBy(tag=>tag.TagValue);
+            radListCtlExistingTags.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
         }
 
 
@@ -84,7 +84,7 @@ namespace SimpleVideoCutter.Controls
             }
         }
 
-     
+
         public List<Tag> GetAllTags()
         {
             try
@@ -126,21 +126,21 @@ namespace SimpleVideoCutter.Controls
 
         private void radBtnAddTag_Click(object sender, EventArgs e)
         {
-           
+
             //var person = new { Age = 34, Name = "John", Address = "Miami" };
 
         }
 
         private void radBtnAddTags_Click(object sender, EventArgs e)
         {
-            if (radTextBoxCtlAddTags.Text.Length>0)
-                {
-                  
+            if (radTextBoxCtlAddTags.Text.Length > 0)
+            {
+
                 //    string s = radTextBoxCtlAddTags.Text.Trim(); //tags;
                 //    string[] values = s.Split(',').Select(sValue => sValue.Trim()).ToArray();
 
                 //List<string> list = new List<string>(values.ToList());
-                           
+
 
                 // Split the input text by commas and remove empty entries using LINQ
                 List<string> tagsFromTextBox = radTextBoxCtlAddTags.Text
@@ -148,12 +148,12 @@ namespace SimpleVideoCutter.Controls
                     .Select(entry => entry.Trim())  // Trim to remove leading/trailing spaces
                     .Where(entry => !string.IsNullOrWhiteSpace(entry))
                     .ToList();
-              
+
                 AddTagList(tagsFromTextBox);
-               
+
                 //Action safeRefresh = delegate { this.radCheckedDropDownList1.DataSource = GetAllTags(); };
                 //this.Invoke(safeRefresh);
-               
+
                 // Display the result (for demonstration purposes)
                 radTextBoxCtlAddTags.Clear();
                 PopulateTags();
@@ -194,7 +194,7 @@ namespace SimpleVideoCutter.Controls
             catch (Exception ex)
             {
                 // Handle the exception appropriately, e.g., throw, log, or display an error message
-                Console.WriteLine("Error updating tag: " + newTag + id  + ex.Message);
+                Console.WriteLine("Error updating tag: " + newTag + id + ex.Message);
             }
         }
 
@@ -237,7 +237,7 @@ namespace SimpleVideoCutter.Controls
             }
         }
 
-        //
-        //
+
+
     }
 }

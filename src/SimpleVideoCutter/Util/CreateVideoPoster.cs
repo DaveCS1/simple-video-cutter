@@ -12,7 +12,7 @@ namespace SimpleVideoCutter.Util
 {
   public  class CreateVideoPoster
     {
-        private Bitmap collageImage;
+        //private Bitmap collageImage;
 
         public CreateVideoPoster()
         {
@@ -56,7 +56,7 @@ namespace SimpleVideoCutter.Util
                    // pictureBox.Image = collageImage;
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 //MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

@@ -35,12 +35,12 @@ namespace SimpleVideoCutter.Controls
             this.radTextBoxControl1 = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radCheckedDropDownList1 = new Telerik.WinControls.UI.RadCheckedDropDownList();
             this.radPageViewPageAddTag = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radBtnAddTags = new Telerik.WinControls.UI.RadButton();
-            this.radTextBoxCtlAddTags = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.radTextBoxCtlAddTags = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radBtnAddTags = new Telerik.WinControls.UI.RadButton();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radListCtlExistingTags = new Telerik.WinControls.UI.RadListControl();
+            this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
             ((System.ComponentModel.ISupportInitialize)(this.radPageViewTagsCategories)).BeginInit();
             this.radPageViewTagsCategories.SuspendLayout();
             this.radPageViewPageAddCategoriesAndTags.SuspendLayout();
@@ -48,9 +48,9 @@ namespace SimpleVideoCutter.Controls
             ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownList1)).BeginInit();
             this.radPageViewPageAddTag.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTags)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxCtlAddTags)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxCtlAddTags)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTags)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radListCtlExistingTags)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +65,7 @@ namespace SimpleVideoCutter.Controls
             this.radPageViewTagsCategories.Location = new System.Drawing.Point(0, 0);
             this.radPageViewTagsCategories.Margin = new System.Windows.Forms.Padding(3, 25, 3, 3);
             this.radPageViewTagsCategories.Name = "radPageViewTagsCategories";
-            this.radPageViewTagsCategories.SelectedPage = this.radPageViewPageAddCategoriesAndTags;
+            this.radPageViewTagsCategories.SelectedPage = this.radPageViewPageAddTag;
             this.radPageViewTagsCategories.Size = new System.Drawing.Size(920, 640);
             this.radPageViewTagsCategories.TabIndex = 0;
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageViewTagsCategories.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.Auto;
@@ -124,16 +124,19 @@ namespace SimpleVideoCutter.Controls
             this.radPageViewPageAddTag.Size = new System.Drawing.Size(899, 592);
             this.radPageViewPageAddTag.Text = "All Tags";
             // 
-            // radBtnAddTags
+            // flowLayoutPanel1
             // 
-            this.radBtnAddTags.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radBtnAddTags.Image = global::SimpleVideoCutter.VideoControlIcons24.Save_WF;
-            this.radBtnAddTags.Location = new System.Drawing.Point(705, 49);
-            this.radBtnAddTags.Name = "radBtnAddTags";
-            this.radBtnAddTags.Size = new System.Drawing.Size(137, 30);
-            this.radBtnAddTags.TabIndex = 6;
-            this.radBtnAddTags.Text = "Add Tags";
-            this.radBtnAddTags.Click += new System.EventHandler(this.radBtnAddTags_Click);
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.radTextBoxCtlAddTags);
+            this.flowLayoutPanel1.Controls.Add(this.radBtnAddTags);
+            this.flowLayoutPanel1.Controls.Add(this.radLabel1);
+            this.flowLayoutPanel1.Controls.Add(this.radListCtlExistingTags);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(28, 31);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(854, 558);
+            this.flowLayoutPanel1.TabIndex = 7;
             // 
             // radTextBoxCtlAddTags
             // 
@@ -148,27 +151,16 @@ namespace SimpleVideoCutter.Controls
             this.radTextBoxCtlAddTags.TabIndex = 5;
             this.radTextBoxCtlAddTags.ThemeName = "FluentDark";
             // 
-            // radPageViewPage3
+            // radBtnAddTags
             // 
-            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(112F, 28F);
-            this.radPageViewPage3.Location = new System.Drawing.Point(10, 37);
-            this.radPageViewPage3.Name = "radPageViewPage3";
-            this.radPageViewPage3.Size = new System.Drawing.Size(899, 592);
-            this.radPageViewPage3.Text = "radPageViewPage3";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.radTextBoxCtlAddTags);
-            this.flowLayoutPanel1.Controls.Add(this.radBtnAddTags);
-            this.flowLayoutPanel1.Controls.Add(this.radLabel1);
-            this.flowLayoutPanel1.Controls.Add(this.radListCtlExistingTags);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(28, 31);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(854, 558);
-            this.flowLayoutPanel1.TabIndex = 7;
+            this.radBtnAddTags.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radBtnAddTags.Image = global::SimpleVideoCutter.VideoControlIcons24.Save_WF;
+            this.radBtnAddTags.Location = new System.Drawing.Point(705, 49);
+            this.radBtnAddTags.Name = "radBtnAddTags";
+            this.radBtnAddTags.Size = new System.Drawing.Size(137, 30);
+            this.radBtnAddTags.TabIndex = 6;
+            this.radBtnAddTags.Text = "Add Tags";
+            this.radBtnAddTags.Click += new System.EventHandler(this.radBtnAddTags_Click);
             // 
             // radLabel1
             // 
@@ -192,6 +184,14 @@ namespace SimpleVideoCutter.Controls
             this.radListCtlExistingTags.Size = new System.Drawing.Size(839, 412);
             this.radListCtlExistingTags.TabIndex = 8;
             // 
+            // radPageViewPage3
+            // 
+            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(112F, 28F);
+            this.radPageViewPage3.Location = new System.Drawing.Point(10, 37);
+            this.radPageViewPage3.Name = "radPageViewPage3";
+            this.radPageViewPage3.Size = new System.Drawing.Size(899, 592);
+            this.radPageViewPage3.Text = "radPageViewPage3";
+            // 
             // ctlTagsCategories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -208,10 +208,10 @@ namespace SimpleVideoCutter.Controls
             ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownList1)).EndInit();
             this.radPageViewPageAddTag.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTags)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxCtlAddTags)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxCtlAddTags)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radBtnAddTags)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radListCtlExistingTags)).EndInit();
             this.ResumeLayout(false);
