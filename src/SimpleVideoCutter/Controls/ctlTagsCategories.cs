@@ -15,22 +15,29 @@ namespace SimpleVideoCutter.Controls
 {
     public partial class ctlTagsCategories : UserControl
     {
+        private TagsUse tagsData;
+
         public ctlTagsCategories()
         {
             InitializeComponent();
             ThemeResolutionService.ApplyThemeToControlTree(this, "FluentDark");
+             tagsData = new TagsUse();
         }
-
+       
 
         //private DatabaseHelper db;
         private void ctlTagsCategories_Load(object sender, EventArgs e)
         {
-            //PopulateTags();
+            PopulateTags();
             //db = new DatabaseHelper($"Data Source={VideoCutterSettings.DatabasePath};Version=3;");
         }
 
         private void PopulateTags()
         {
+            var allTags= tagsData.GetAllTags().OrderBy(tag => tag.TagValue);
+            radCheckedDropDownList1.DataSource = allTags;
+            radListCtlExistingTags.DataSource = allTags;
+                
             //radCheckedDropDownList1.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
             //radListCtlExistingTags.DataSource = GetAllTags().OrderBy(tag => tag.TagValue);
         }
@@ -143,20 +150,20 @@ namespace SimpleVideoCutter.Controls
 
 
                 //// Split the input text by commas and remove empty entries using LINQ
-                //List<string> tagsFromTextBox = radTextBoxCtlAddTags.Text
-                //    .Split(',')
-                //    .Select(entry => entry.Trim())  // Trim to remove leading/trailing spaces
-                //    .Where(entry => !string.IsNullOrWhiteSpace(entry))
-                //    .ToList();
+                List<string> tagsFromTextBox = radTextBoxCtlAddTags.Text
+                    .Split(',')
+                    .Select(entry => entry.Trim())  // Trim to remove leading/trailing spaces
+                    .Where(entry => !string.IsNullOrWhiteSpace(entry))
+                    .ToList();
 
-                //AddTagList(tagsFromTextBox);
+                tagsData.AddTagList(tagsFromTextBox);
 
                 ////Action safeRefresh = delegate { this.radCheckedDropDownList1.DataSource = GetAllTags(); };
                 ////this.Invoke(safeRefresh);
 
                 //// Display the result (for demonstration purposes)
-                //radTextBoxCtlAddTags.Clear();
-                //PopulateTags();
+                radTextBoxCtlAddTags.Clear();
+                PopulateTags();
             }
         }
         /// <summary>

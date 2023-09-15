@@ -9,7 +9,7 @@ namespace SimpleVideoCutter.DAL
     }
 
 
-   public class Tag
+   public class Tag1
     {
         public int Id { get; set; }
         public string TagValue { get; set; }

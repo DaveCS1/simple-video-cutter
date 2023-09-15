@@ -117,12 +117,6 @@
     <Compile Include="Controls\ctlRightAddTagsCategoryNotes.Designer.cs">
       <DependentUpon>ctlRightAddTagsCategoryNotes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ctlRightSidePanelBookMarkTags.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ctlRightSidePanelBookMarkTags.Designer.cs">
-      <DependentUpon>ctlRightSidePanelBookMarkTags.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\ctlTagsCategories.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +141,7 @@
     <Compile Include="DAL\GenericTest.cs" />
     <Compile Include="DAL\ManageTags.cs" />
     <Compile Include="DAL\Tags.cs" />
+    <Compile Include="DAL\TagsUse.cs" />
     <Compile Include="FFmpegNET\FFmpegArgumentBuilder.cs" />
     <Compile Include="FormAddTask.cs">
       <SubType>Form</SubType>
@@ -250,9 +245,6 @@
     <Content Include="DevNotes_Exclude\ffmpeg collage.txt" />
     <EmbeddedResource Include="Controls\ctlRightAddTagsCategoryNotes.resx">
       <DependentUpon>ctlRightAddTagsCategoryNotes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ctlRightSidePanelBookMarkTags.resx">
-      <DependentUpon>ctlRightSidePanelBookMarkTags.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ctlTagsCategories.resx">
       <DependentUpon>ctlTagsCategories.cs</DependentUpon>
