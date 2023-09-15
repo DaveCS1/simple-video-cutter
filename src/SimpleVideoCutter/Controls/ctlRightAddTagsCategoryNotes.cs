@@ -14,7 +14,10 @@ namespace SimpleVideoCutter.Controls
 {
     public partial class ctlRightAddTagsCategoryNotes : UserControl
     {
-        //private TagsUse tagsData;
+        private TagsUse tagsData;
+        private Categories categoriesData;
+       
+        public int importance { get; set; }
         public ctlRightAddTagsCategoryNotes()
         {
             InitializeComponent();
@@ -30,21 +33,65 @@ namespace SimpleVideoCutter.Controls
 
         private void ctlRightAddTagsCategoryNotes_Load(object sender, EventArgs e)
         {
-            
-            //DAL.TagsUse tagsUse= new DAL.TagsUse();
-            //tagsData = tagsUse;
-            //LoadTags();
-        }
-        private void LoadTags()
-        {
-            //radCheckedDropDownListTags.DataSource = tagsData.GetAllTags().OrderBy(t=>t);
 
+            DAL.TagsUse tagsUse = new DAL.TagsUse();
+            tagsData = tagsUse;
+            DAL.Categories categories = new DAL.Categories();
+            categoriesData = categories;
+            
+            LoadTagsAndCategories();
+        }
+        private void LoadTagsAndCategories()
+        {           
+           radCheckedDropDownListTags.DataSource = tagsData.GetAllTags();
+            //var t = new { Bill = "test" };
+           radCheckedDropDownListCategory.DataSource = categoriesData.GetAllCategories();
         }
 
         private void radDDListImportance_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
         {
-            var t = ((Telerik.WinControls.UI.RadDropDownList)sender).SelectedItem;
+            //todo refactor importance everywhere
+            importance= ((Telerik.WinControls.UI.RadDropDownList)sender).SelectedIndex +1;
+        
+        }
+
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            DAL.Categories categories = new DAL.Categories();
+            categoriesData = categories;
+
+            List<string> tagsFromTextBox = "one,two,three, sdfsdf"
+                   .Split(',')
+                   .Select(entry => entry.Trim())  // Trim to remove leading/trailing spaces
+                   .Where(entry => !string.IsNullOrWhiteSpace(entry))
+                   .ToList();
+
+            //tagsData.AddTagList(tagsFromTextBox);
+
+            categories.AddCategoryList(tagsFromTextBox);
+        }
+
+        private void AddBookMark()
+        {
+            //BookMarks bookMark = new BookMarks();
+
+            //bookMark.Categories = Category; //txtCategory.Text.Trim(); //categoryList;
+            //bookMark.SubCategory = SubCategory;
+
+            //bookMark.Tags = txtTags.Text.Trim();
+            //bookMark.Description = txtDescription.Text.Trim();
+            //bookMark.Importance = Convert.ToInt32(cboImportance.SelectedIndex + 1);
+
+            ////bookMark.FileName = fileBeingPlayed;
+            //bookMark.FileName = lnkFilePath.Text;
+            //bookMark.AddBookMark(bookMark);
+
+            //lblBookMarkStatus.Text = "Bookmark Added";
+            ////puyt back    lnkFilePath.Text = fileBeingPlayed;
+            //chkBookMarkAdded.Checked = true;
 
         }
+
+
     }
 }

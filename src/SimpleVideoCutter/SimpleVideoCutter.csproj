@@ -138,6 +138,8 @@
     <Compile Include="CustomWebClient.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DAL\BookMarks.cs" />
+    <Compile Include="DAL\Categories.cs" />
     <Compile Include="DAL\GenericTest.cs" />
     <Compile Include="DAL\ManageTags.cs" />
     <Compile Include="DAL\Tags.cs" />
@@ -215,6 +217,7 @@
       <DependentUpon>RadFormWaitingBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
+    <Compile Include="Util\CommaSeperatedToListOfString.cs" />
     <Compile Include="Util\CreateVideoPoster.cs" />
     <Compile Include="Util\FindFormChildControls.cs" />
     <Compile Include="Util\GetVideoTrimControls.cs" />

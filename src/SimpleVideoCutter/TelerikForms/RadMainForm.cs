@@ -28,10 +28,10 @@ namespace SimpleVideoCutter.TelerikForms
             //var u = new Util.tile();  
             //TempControlTest.RadFormWaitingBar RadFormWaitingBar = new TempControlTest.RadFormWaitingBar();
             //RadFormWaitingBar.Show();
-            var t = new DAL.AddTags();
-            var v = t.tagsList();
+           
             Windows.RadTestForm radTestForm = new Windows.RadTestForm();
             radTestForm.Show();
+
 
        //frmVideoControls frmVideoControls = new frmVideoControls();
         }
@@ -41,7 +41,7 @@ namespace SimpleVideoCutter.TelerikForms
             //radCommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
 
 
-            InitVLC(); //initialize vlc and related controls
+          InitVLC(); //initialize vlc and related controls
         }
 
         private void radButton4_Click(object sender, EventArgs e)
