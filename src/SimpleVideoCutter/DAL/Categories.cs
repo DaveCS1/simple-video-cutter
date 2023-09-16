@@ -154,7 +154,7 @@ namespace SimpleVideoCutter.DAL
 
                     using (SQLiteCommand command = connection.CreateCommand())
                     {
-                        command.CommandText = "UPDATE CAtegoriews SET Category = @NewCategory WHERE Id = @Id";
+                        command.CommandText = "UPDATE Categories SET Category = @NewCategory WHERE Id = @Id";
                         command.Parameters.AddWithValue("@NewCategory", newCategory);
                         command.Parameters.AddWithValue("@Id", id);
 
@@ -177,6 +177,39 @@ namespace SimpleVideoCutter.DAL
                 Console.WriteLine("Error updating category: " + newCategory + id + ex.Message);
             }
         }
+
+        public void DeleteCategory(int id)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={VideoCutterSettings.DatabasePath};Version=3;"))
+            {
+                connection.Open();
+
+                using (SQLiteCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "DELETE FROM Categories WHERE Id = @Id";
+                    command.Parameters.AddWithValue("@Id", id);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+        public void DeleteAllCategories()
+        {
+            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={VideoCutterSettings.DatabasePath};Version=3;"))
+            {
+                connection.Open();
+
+                using (SQLiteCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "DELETE * FROM Categories";
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
 
 
         //

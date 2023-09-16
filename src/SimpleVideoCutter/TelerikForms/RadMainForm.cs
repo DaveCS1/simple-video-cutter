@@ -39,9 +39,27 @@ namespace SimpleVideoCutter.TelerikForms
         private void RadMainForm_Load(object sender, EventArgs e)
         {
             //radCommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            //test
+            //DAL.BookMarks bookMarks = new DAL.BookMarks();
+            //bookMarks.GetAllBookmarks();
+            //var p = bookMarks.GetAllBookmarks();
+
+            //bookMarks.InsertBookmark(new DAL.Bookmark() { Category = "test", Description = "sadfsdfsdfsdfsd", FileName = "C:/dsfsdfs", SubCategory = "er", Importance = 2, Tags = "test,billy, testing" });
+
+            //var y = bookMarks.GetAllBookmarks();
+
+          
+
+            //var h = bookMarks.GetAllBookmarks();
+
+            //bookMarks.DeleteBookmark(5);
+
+            //var tty = bookMarks.GetAllBookmarks();
+            DAL.SubCategories subCategories = new DAL.SubCategories();
+            subCategories.AddSubCategory("asdfsadfsadfsadf");
 
 
-          InitVLC(); //initialize vlc and related controls
+            InitVLC(); //initialize vlc and related controls
         }
 
         private void radButton4_Click(object sender, EventArgs e)

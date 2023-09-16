@@ -29,9 +29,9 @@ namespace SimpleVideoCutter.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
@@ -39,13 +39,13 @@ namespace SimpleVideoCutter.Controls
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radCheckedDropDownListSubCategories = new Telerik.WinControls.UI.RadCheckedDropDownList();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.radCheckedDropDownListCategory = new Telerik.WinControls.UI.RadCheckedDropDownList();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radCheckedDropDownListTags = new Telerik.WinControls.UI.RadCheckedDropDownList();
             this.radDDListImportance = new Telerik.WinControls.UI.RadDropDownList();
             this.radLbleImportance = new Telerik.WinControls.UI.RadLabel();
             this.radTxtBoxVideoName = new Telerik.WinControls.UI.RadTextBox();
             this.radPicBoxVideoThumb = new Telerik.WinControls.UI.RadPictureBox();
+            this.radDDListCategory = new Telerik.WinControls.UI.RadDropDownList();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
@@ -54,25 +54,25 @@ namespace SimpleVideoCutter.Controls
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownListSubCategories)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownListCategory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownListTags)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDDListImportance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLbleImportance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTxtBoxVideoName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPicBoxVideoThumb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radDDListCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
             // 
             this.radPanel1.AutoScroll = true;
+            this.radPanel1.Controls.Add(this.radDDListCategory);
             this.radPanel1.Controls.Add(this.radButton1);
             this.radPanel1.Controls.Add(this.radLabel4);
             this.radPanel1.Controls.Add(this.radTextBoxControlNotes);
             this.radPanel1.Controls.Add(this.radLabel3);
             this.radPanel1.Controls.Add(this.radCheckedDropDownListSubCategories);
             this.radPanel1.Controls.Add(this.radLabel2);
-            this.radPanel1.Controls.Add(this.radCheckedDropDownListCategory);
             this.radPanel1.Controls.Add(this.radLabel1);
             this.radPanel1.Controls.Add(this.radCheckedDropDownListTags);
             this.radPanel1.Controls.Add(this.radDDListImportance);
@@ -123,9 +123,10 @@ namespace SimpleVideoCutter.Controls
             // 
             // radCheckedDropDownListSubCategories
             // 
-            this.radCheckedDropDownListSubCategories.Cursor = System.Windows.Forms.Cursors.No;
+            this.radCheckedDropDownListSubCategories.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.radCheckedDropDownListSubCategories.DataMember = "Id";
+            this.radCheckedDropDownListSubCategories.DisplayMember = "SubCategoryValue";
             this.radCheckedDropDownListSubCategories.DropDownAnimationEnabled = true;
-            this.radCheckedDropDownListSubCategories.Enabled = false;
             this.radCheckedDropDownListSubCategories.Location = new System.Drawing.Point(4, 295);
             this.radCheckedDropDownListSubCategories.Name = "radCheckedDropDownListSubCategories";
             this.radCheckedDropDownListSubCategories.Size = new System.Drawing.Size(323, 20);
@@ -138,16 +139,6 @@ namespace SimpleVideoCutter.Controls
             this.radLabel2.Size = new System.Drawing.Size(51, 18);
             this.radLabel2.TabIndex = 7;
             this.radLabel2.Text = "Category";
-            // 
-            // radCheckedDropDownListCategory
-            // 
-            this.radCheckedDropDownListCategory.DisplayMember = "CategoryValue";
-            this.radCheckedDropDownListCategory.DropDownAnimationEnabled = true;
-            this.radCheckedDropDownListCategory.Location = new System.Drawing.Point(4, 245);
-            this.radCheckedDropDownListCategory.Name = "radCheckedDropDownListCategory";
-            this.radCheckedDropDownListCategory.Size = new System.Drawing.Size(323, 20);
-            this.radCheckedDropDownListCategory.TabIndex = 6;
-            this.radCheckedDropDownListCategory.ValueMember = "Id";
             // 
             // radLabel1
             // 
@@ -170,12 +161,12 @@ namespace SimpleVideoCutter.Controls
             // radDDListImportance
             // 
             this.radDDListImportance.DropDownAnimationEnabled = true;
-            radListDataItem1.Text = "Standard";
-            radListDataItem2.Text = "Important";
-            radListDataItem3.Text = "Very Important";
-            this.radDDListImportance.Items.Add(radListDataItem1);
-            this.radDDListImportance.Items.Add(radListDataItem2);
-            this.radDDListImportance.Items.Add(radListDataItem3);
+            radListDataItem4.Text = "Standard";
+            radListDataItem5.Text = "Important";
+            radListDataItem6.Text = "Very Important";
+            this.radDDListImportance.Items.Add(radListDataItem4);
+            this.radDDListImportance.Items.Add(radListDataItem5);
+            this.radDDListImportance.Items.Add(radListDataItem6);
             this.radDDListImportance.Location = new System.Drawing.Point(144, 67);
             this.radDDListImportance.Name = "radDDListImportance";
             this.radDDListImportance.Size = new System.Drawing.Size(183, 24);
@@ -206,6 +197,16 @@ namespace SimpleVideoCutter.Controls
             this.radPicBoxVideoThumb.SvgImageXml = null;
             this.radPicBoxVideoThumb.TabIndex = 0;
             // 
+            // radDDListCategory
+            // 
+            this.radDDListCategory.DataMember = "Id";
+            this.radDDListCategory.DisplayMember = "CategoryValue";
+            this.radDDListCategory.DropDownAnimationEnabled = true;
+            this.radDDListCategory.Location = new System.Drawing.Point(4, 241);
+            this.radDDListCategory.Name = "radDDListCategory";
+            this.radDDListCategory.Size = new System.Drawing.Size(323, 24);
+            this.radDDListCategory.TabIndex = 13;
+            // 
             // ctlRightAddTagsCategoryNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,13 +224,13 @@ namespace SimpleVideoCutter.Controls
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownListSubCategories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownListCategory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckedDropDownListTags)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radDDListImportance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLbleImportance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTxtBoxVideoName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPicBoxVideoThumb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radDDListCategory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,8 +248,8 @@ namespace SimpleVideoCutter.Controls
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private Telerik.WinControls.UI.RadCheckedDropDownList radCheckedDropDownListSubCategories;
         private Telerik.WinControls.UI.RadLabel radLabel2;
-        private Telerik.WinControls.UI.RadCheckedDropDownList radCheckedDropDownListCategory;
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadDropDownList radDDListCategory;
     }
 }

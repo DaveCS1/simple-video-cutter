@@ -17,39 +17,48 @@ namespace SimpleVideoCutter.DAL
         }
         public List<Bookmark> GetAllBookmarks()
         {
-            List<Bookmark> bookmarks = new List<Bookmark>();
-
-            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={VideoCutterSettings.DatabasePath};Version=3;"))
+            try
             {
-                connection.Open();
+                List<Bookmark> bookmarks = new List<Bookmark>();
 
-                using (SQLiteCommand command = connection.CreateCommand())
+                using (SQLiteConnection connection = new SQLiteConnection($"Data Source={VideoCutterSettings.DatabasePath};Version=3;"))
                 {
-                    command.CommandText = "SELECT * FROM BookMark";
+                    connection.Open();
 
-                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    using (SQLiteCommand command = connection.CreateCommand())
                     {
-                        while (reader.Read())
-                        {
-                            Bookmark bookmark = new Bookmark
-                            {
-                                Id = reader.GetInt32(0),
-                                Description = reader.GetString(1),
-                                Category = reader.GetString(2),
-                                Tags = reader.GetString(3),
-                                DateAdded = reader.GetString(4),
-                                Importance = reader.GetInt32(5),
-                                FileName = reader.GetString(6),
-                                SubCategory = reader.GetString(7)
-                            };
+                        command.CommandText = "SELECT * FROM BookMark";
 
-                            bookmarks.Add(bookmark);
+                        using (SQLiteDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                Bookmark bookmark = new Bookmark
+                                {
+                                    Id = reader.GetInt32(0),
+                                    Description = reader.GetString(1),
+                                    Category = reader.GetString(2),
+                                    Tags = reader.GetString(3),
+                                    DateAdded = reader.GetString(4),
+                                    Importance = reader.GetInt32(5),
+                                    FileName = reader.GetString(6),
+                                    SubCategory = reader.GetString(7)
+                                };
+
+                                bookmarks.Add(bookmark);
+                            }
                         }
                     }
                 }
-            }
 
-            return bookmarks;
+                return bookmarks;
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(  ex.Message + ex.StackTrace + ex.InnerException);
+                return null;
+            }
         }
 
 
@@ -63,7 +72,7 @@ namespace SimpleVideoCutter.DAL
 
                 using (SQLiteCommand command = connection.CreateCommand())
                 {
-                    command.CommandText = "INSERT INTO BookMark (Description, Category, Tags, DateAdded, Importance, FileName, SubCategory) " +
+                    command.CommandText = "INSERT OR IGNORE INTO BookMark (Description, Category, Tags, DateAdded, Importance, FileName, SubCategory) " +
                                          "VALUES (@Description, @Category, @Tags, @DateAdded, @Importance, @FileName, @SubCategory)";
                     command.Parameters.AddWithValue("@Description", bookmark.Description);
                     command.Parameters.AddWithValue("@Category", bookmark.Category);
@@ -80,7 +89,7 @@ namespace SimpleVideoCutter.DAL
         }
         public void DeleteBookmark(int id)
         {
-            using (SQLiteConnection connection = new SQLiteConnection("Data Source=YourDatabasePath.db;Version=3;"))
+            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={VideoCutterSettings.DatabasePath};Version=3;"))
             {
                 connection.Open();
 
@@ -95,7 +104,7 @@ namespace SimpleVideoCutter.DAL
         }
         public void UpdateBookmark(Bookmark bookmark)
         {
-            using (SQLiteConnection connection = new SQLiteConnection("Data Source=YourDatabasePath.db;Version=3;"))
+            using (SQLiteConnection connection = new SQLiteConnection($"Data Source={VideoCutterSettings.DatabasePath};Version=3;"))
             {
                 connection.Open();
 
@@ -107,7 +116,7 @@ namespace SimpleVideoCutter.DAL
                     command.Parameters.AddWithValue("@Description", bookmark.Description);
                     command.Parameters.AddWithValue("@Category", bookmark.Category);
                     command.Parameters.AddWithValue("@Tags", bookmark.Tags);
-                    command.Parameters.AddWithValue("@DateAdded", bookmark.DateAdded);
+                    command.Parameters.AddWithValue("@DateAdded", DateTime.Now.ToString("MM/dd/yyyy hh:mm tt"));
                     command.Parameters.AddWithValue("@Importance", bookmark.Importance);
                     command.Parameters.AddWithValue("@FileName", bookmark.FileName);
                     command.Parameters.AddWithValue("@SubCategory", bookmark.SubCategory);
@@ -117,35 +126,93 @@ namespace SimpleVideoCutter.DAL
                 }
             }
         }
-        //
+       
+    //update with orginal values
+    // Update
+    /// <summary>
+    /// Accepts original bookmark to retain values and the new bookmark
+    /// </summary>
+    /// <param name="originalBookMark"></param>
+    /// <param name="updatedBookMark"></param>
+    /// <returns></returns>
+    public bool UpdateBookMarkWithOriginalValues(Bookmark originalBookMark, Bookmark updatedBookMark)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection($"Data Source={VideoCutterSettings.DatabasePath};Version=3;"))
+            {
+            connection.Open();
+
+            using (SQLiteTransaction transaction = connection.BeginTransaction())
+            {
+                using (SQLiteCommand command = connection.CreateCommand())
+                {
+                    command.Transaction = transaction;
+
+                    command.CommandText = @"UPDATE BookMark
+                                            SET Description = @UpdatedDescription, Category = @UpdatedCategory,
+                                                Tags = @UpdatedTags, DateAdded = @UpdatedDateAdded,
+                                                Importance = @UpdatedImportance, FileName = @UpdatedFileName,
+                                                SubCategory = @UpdatedSubCategory
+                                            WHERE Id = @OriginalId
+                                              AND Description = @OriginalDescription
+                                              AND Category = @OriginalCategory
+                                              AND Tags = @OriginalTags
+                                              AND DateAdded = @OriginalDateAdded
+                                              AND Importance = @OriginalImportance
+                                              AND FileName = @OriginalFileName
+                                              AND SubCategory = @OriginalSubCategory";
+
+                    command.Parameters.AddWithValue("@UpdatedDescription", updatedBookMark.Description);
+                    command.Parameters.AddWithValue("@UpdatedCategory", updatedBookMark.Category);
+                    command.Parameters.AddWithValue("@UpdatedTags", updatedBookMark.Tags);
+                    command.Parameters.AddWithValue("@UpdatedDateAdded", updatedBookMark.DateAdded);//todo may need  DateTime.Now.ToString("MM/dd/yyyy hh:mm tt"));
+                        command.Parameters.AddWithValue("@UpdatedImportance", updatedBookMark.Importance);
+                    command.Parameters.AddWithValue("@UpdatedFileName", updatedBookMark.FileName);
+                    command.Parameters.AddWithValue("@UpdatedSubCategory", updatedBookMark.SubCategory);
+
+                    command.Parameters.AddWithValue("@OriginalId", originalBookMark.Id);
+                    command.Parameters.AddWithValue("@OriginalDescription", originalBookMark.Description);
+                    command.Parameters.AddWithValue("@OriginalCategory", originalBookMark.Category);
+                    command.Parameters.AddWithValue("@OriginalTags", originalBookMark.Tags);
+                    command.Parameters.AddWithValue("@OriginalDateAdded", originalBookMark.DateAdded);
+                    command.Parameters.AddWithValue("@OriginalImportance", originalBookMark.Importance);
+                    command.Parameters.AddWithValue("@OriginalFileName", originalBookMark.FileName);
+                    command.Parameters.AddWithValue("@OriginalSubCategory", originalBookMark.SubCategory);
+
+                    int rowsUpdated = command.ExecuteNonQuery();
+
+                    if (rowsUpdated > 0)
+                    {
+                        transaction.Commit();
+                        return true;
+                    }
+                    else
+                    {
+                        transaction.Rollback();
+                        return false;
+                    }
+                }
+            }
+        }
     }
+
+
+        //end
+    }
+
+
+
 
     public class Bookmark
     {
-        public int? Id { get; internal set; } = null;
+        public Int32? Id { get; internal set; } = null;
         public string Description { get; internal set; }
         public string Category { get; internal set; }
         public string Tags { get; internal set; }
         public string DateAdded { get; internal set; }
-        public int Importance { get; internal set; } = 1;
+        public Int32 Importance { get; internal set; } = 1;
         public string SubCategory { get; internal set; }
         public string FileName { get; internal set; }
 
-        //public string Description { get; set; }
-        //public string FileName { get; set; }
-        ////public List<string> Tags { get; set; }
-        //public string Tags { get; set; }
-        //////public List<string> Categories { get; set; }
-        ///// <summary>
-        //public string Categories { get; set; }
-        //public string SubCategory { get; set; }
-        ///// </summary>
-        ////private string DateViewed { get; set; } = DateTime.Now.ToString("MM/dd/yyyy hh:mm tt");
-        //public int Importance { get; set; } = 1;
-
-
-
-
-
+       
     }
 }

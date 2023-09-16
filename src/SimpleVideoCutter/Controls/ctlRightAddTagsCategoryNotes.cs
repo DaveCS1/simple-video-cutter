@@ -16,7 +16,8 @@ namespace SimpleVideoCutter.Controls
     {
         private TagsUse tagsData;
         private Categories categoriesData;
-       
+        private SubCategories subCategoriesData;
+
         public int importance { get; set; }
         public ctlRightAddTagsCategoryNotes()
         {
@@ -38,14 +39,19 @@ namespace SimpleVideoCutter.Controls
             tagsData = tagsUse;
             DAL.Categories categories = new DAL.Categories();
             categoriesData = categories;
-            
+            DAL.SubCategories subCategories = new DAL.SubCategories();
+            subCategoriesData = subCategories;
+           
             LoadTagsAndCategories();
         }
         private void LoadTagsAndCategories()
         {           
-           radCheckedDropDownListTags.DataSource = tagsData.GetAllTags();
-            //var t = new { Bill = "test" };
-           radCheckedDropDownListCategory.DataSource = categoriesData.GetAllCategories();
+            radCheckedDropDownListTags.DataSource = tagsData.GetAllTags();
+            radDDListCategory.DataSource = categoriesData.GetAllCategories();
+            radCheckedDropDownListSubCategories.DataSource = subCategoriesData.GetAllSubCategories();
+ //var t = new { Bill = "test" };
+           
+
         }
 
         private void radDDListImportance_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
@@ -73,8 +79,13 @@ namespace SimpleVideoCutter.Controls
 
         private void AddBookMark()
         {
-            //BookMarks bookMark = new BookMarks();
-
+            BookMarks bookMark = new BookMarks();
+            bookMark.InsertBookmark(new Bookmark() 
+            { 
+           //
+            
+            
+            });
             //bookMark.Categories = Category; //txtCategory.Text.Trim(); //categoryList;
             //bookMark.SubCategory = SubCategory;
 

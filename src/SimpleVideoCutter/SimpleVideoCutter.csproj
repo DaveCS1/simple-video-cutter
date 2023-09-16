@@ -142,6 +142,7 @@
     <Compile Include="DAL\Categories.cs" />
     <Compile Include="DAL\GenericTest.cs" />
     <Compile Include="DAL\ManageTags.cs" />
+    <Compile Include="DAL\SubCategories.cs" />
     <Compile Include="DAL\Tags.cs" />
     <Compile Include="DAL\TagsUse.cs" />
     <Compile Include="FFmpegNET\FFmpegArgumentBuilder.cs" />
