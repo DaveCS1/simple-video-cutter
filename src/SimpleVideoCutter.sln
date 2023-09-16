@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleVideoCutter", "Simple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikWinFormsTest", "..\..\simple-video-cutterTelerik\src\TelerikWinFormsTest\TelerikWinFormsTest.csproj", "{278DF2FA-8A0F-48C1-95D0-93D4605BDF20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleVideoCutterTests", "SimpleVideoCutterTests\SimpleVideoCutterTests.csproj", "{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,18 @@ Global
 		{278DF2FA-8A0F-48C1-95D0-93D4605BDF20}.Release|x64.ActiveCfg = Release|x86
 		{278DF2FA-8A0F-48C1-95D0-93D4605BDF20}.Release|x86.ActiveCfg = Release|x86
 		{278DF2FA-8A0F-48C1-95D0-93D4605BDF20}.Release|x86.Build.0 = Release|x86
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Debug|x64.Build.0 = Debug|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Release|x64.ActiveCfg = Release|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Release|x64.Build.0 = Release|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F216EF6-AAB8-4A7F-AF73-F01DD3C460ED}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -42,7 +42,8 @@ namespace SimpleVideoCutter.DAL
                                     DateAdded = reader.GetString(4),
                                     Importance = reader.GetInt32(5),
                                     FileName = reader.GetString(6),
-                                    SubCategory = reader.GetString(7)
+                                    SubCategory = reader.GetString(7),
+                                    Notes = reader.GetString(8)
                                 };
 
                                 bookmarks.Add(bookmark);
@@ -82,7 +83,7 @@ namespace SimpleVideoCutter.DAL
                     command.Parameters.AddWithValue("@Importance", bookmark.Importance);
                     command.Parameters.AddWithValue("@FileName", bookmark.FileName);
                     command.Parameters.AddWithValue("@SubCategory", bookmark.SubCategory);
-
+                    command.Parameters.AddWithValue("@Notes", bookmark.Notes);
                     command.ExecuteNonQuery();
                 }
             }
@@ -146,12 +147,12 @@ namespace SimpleVideoCutter.DAL
                 using (SQLiteCommand command = connection.CreateCommand())
                 {
                     command.Transaction = transaction;
-
+                        //todo maybe need to look at notes param  added last check
                     command.CommandText = @"UPDATE BookMark
                                             SET Description = @UpdatedDescription, Category = @UpdatedCategory,
                                                 Tags = @UpdatedTags, DateAdded = @UpdatedDateAdded,
                                                 Importance = @UpdatedImportance, FileName = @UpdatedFileName,
-                                                SubCategory = @UpdatedSubCategory
+                                                SubCategory = @UpdatedSubCategory, Notes=@UpdatedNotes
                                             WHERE Id = @OriginalId
                                               AND Description = @OriginalDescription
                                               AND Category = @OriginalCategory
@@ -159,7 +160,7 @@ namespace SimpleVideoCutter.DAL
                                               AND DateAdded = @OriginalDateAdded
                                               AND Importance = @OriginalImportance
                                               AND FileName = @OriginalFileName
-                                              AND SubCategory = @OriginalSubCategory";
+                                              AND SubCategory = @OriginalSubCategory AND Notes = @OriginalNotes";
 
                     command.Parameters.AddWithValue("@UpdatedDescription", updatedBookMark.Description);
                     command.Parameters.AddWithValue("@UpdatedCategory", updatedBookMark.Category);
@@ -168,8 +169,11 @@ namespace SimpleVideoCutter.DAL
                         command.Parameters.AddWithValue("@UpdatedImportance", updatedBookMark.Importance);
                     command.Parameters.AddWithValue("@UpdatedFileName", updatedBookMark.FileName);
                     command.Parameters.AddWithValue("@UpdatedSubCategory", updatedBookMark.SubCategory);
+                        command.Parameters.AddWithValue("@UpdatedNotes", updatedBookMark.Notes);
 
-                    command.Parameters.AddWithValue("@OriginalId", originalBookMark.Id);
+
+
+                        command.Parameters.AddWithValue("@OriginalId", originalBookMark.Id);
                     command.Parameters.AddWithValue("@OriginalDescription", originalBookMark.Description);
                     command.Parameters.AddWithValue("@OriginalCategory", originalBookMark.Category);
                     command.Parameters.AddWithValue("@OriginalTags", originalBookMark.Tags);
@@ -177,8 +181,8 @@ namespace SimpleVideoCutter.DAL
                     command.Parameters.AddWithValue("@OriginalImportance", originalBookMark.Importance);
                     command.Parameters.AddWithValue("@OriginalFileName", originalBookMark.FileName);
                     command.Parameters.AddWithValue("@OriginalSubCategory", originalBookMark.SubCategory);
-
-                    int rowsUpdated = command.ExecuteNonQuery();
+                        command.Parameters.AddWithValue("@OriginalNotes", originalBookMark.Notes);
+                        int rowsUpdated = command.ExecuteNonQuery();
 
                     if (rowsUpdated > 0)
                     {
@@ -212,7 +216,7 @@ namespace SimpleVideoCutter.DAL
         public Int32 Importance { get; internal set; } = 1;
         public string SubCategory { get; internal set; }
         public string FileName { get; internal set; }
+        public string Notes { get; internal set; }
 
-       
     }
 }
